@@ -1,5 +1,6 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,
@@ -11,12 +12,11 @@ import {
 } from "react-native";
 
 
-class TriviaBabyJogger3 extends Component {
+class TriviaBabyJogger1 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
-        headerLeft: null,
-        gesturesEnabled: false,
+        headerBackTitle: 'Volver',
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -29,17 +29,20 @@ class TriviaBabyJogger3 extends Component {
             <Container>
                 <Content>
                      <View style={styles.logo}>
-                        <Image source={require('../assets/images/mp_logo.png')} />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
+                        />
                         <Text style={styles.textoPregunta}>
-                            Las normas de seguridad de los cochecitos Baby Jogger cumplen con los requisitos de la:
+                            El Baby Jogger City Premier posee asiento reversible y capota con protección solar
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BabyJoggeradd3')}>
+                            onPress={() => this.props.navigation.navigate('BabyJoggeradd1')}>
                             {/* Respuesta Correcta */}
-                            <Text style={styles.blanco}>American Society for Testing and Materials (ASTM) y TUV EN-1888</Text>
+                            <Text style={styles.blanco}>UPF 50+</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -48,12 +51,12 @@ class TriviaBabyJogger3 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>American Academy of Pediatrics</Text>
+                            <Text style={styles.blanco}>UPF 30</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -62,12 +65,12 @@ class TriviaBabyJogger3 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Society for Pediatric Research (APS/SPR)</Text>
+                            <Text style={styles.blanco}>UPF 20</Text>
                         </Button>
                     </View>
 
@@ -115,8 +118,7 @@ const styles = StyleSheet.create({
         fontSize: 19,
         color: '#733596',
         padding: 20,
-        textAlign: 'center',
-        alignItems: 'center'
+        textAlign: 'center'
     },
     btnA: {
         marginBottom: 15,
@@ -155,4 +157,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaBabyJogger3;
+export default TriviaBabyJogger1;

@@ -1,21 +1,24 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,
     StyleSheet,
     StatusBar,
     Image,
-    Platform,
+    Platform, 
+    Trivia, 
     Alert
 } from "react-native";
 
 
-class TriviaBabyJogger1 extends Component {
+class TriviaBabyJogger2 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
-        headerBackTitle: 'Volver',
+        headerLeft: null,
+        gesturesEnabled: false,
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -33,29 +36,29 @@ class TriviaBabyJogger1 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El Baby Jogger City Premier posee asiento reversible y capota con protección solar
+                             ¿Cual fue la ciudad más visitada del mundo en el 2017 fue:?
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BabyJoggeradd1')}>
-                            {/* Respuesta Correcta */}
-                            <Text style={styles.blanco}>UPF 50+</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>UPF 30</Text>
+                            <Text style={styles.blanco}>Amsterdam</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('BabyJoggeradd2')}>
+                            {/* Respuesta Correcta */}
+                            <Text style={styles.blanco}>Bangkok</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -64,12 +67,12 @@ class TriviaBabyJogger1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>UPF 20</Text>
+                            <Text style={styles.blanco}>Nueva York</Text>
                         </Button>
                     </View>
 
@@ -156,4 +159,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaBabyJogger1;
+export default TriviaBabyJogger2;

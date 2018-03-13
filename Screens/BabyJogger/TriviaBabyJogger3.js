@@ -1,18 +1,18 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,
     StyleSheet,
     StatusBar,
     Image,
-    Platform, 
-    Trivia, 
+    Platform,
     Alert
 } from "react-native";
 
 
-class TriviaBabyJogger2 extends Component {
+class TriviaBabyJogger3 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -30,31 +30,34 @@ class TriviaBabyJogger2 extends Component {
             <Container>
                 <Content>
                      <View style={styles.logo}>
-                        <Image source={require('../assets/images/mp_logo.png')} />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
+                        />
                         <Text style={styles.textoPregunta}>
-                             ¿Cual fue la ciudad más visitada del mundo en el 2017 fue:?
+                            Las normas de seguridad de los cochecitos Baby Jogger cumplen con los requisitos de la:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
+                            onPress={() => this.props.navigation.navigate('BabyJoggeradd3')}>
+                            {/* Respuesta Correcta */}
+                            <Text style={styles.blanco}>American Society for Testing and Materials (ASTM) y TUV EN-1888</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Amsterdam</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('BabyJoggeradd2')}>
-                            {/* Respuesta Correcta */}
-                            <Text style={styles.blanco}>Bangkok</Text>
+                            <Text style={styles.blanco}>American Academy of Pediatrics</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -63,12 +66,12 @@ class TriviaBabyJogger2 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Nueva York</Text>
+                            <Text style={styles.blanco}>Society for Pediatric Research (APS/SPR)</Text>
                         </Button>
                     </View>
 
@@ -116,7 +119,8 @@ const styles = StyleSheet.create({
         fontSize: 19,
         color: '#733596',
         padding: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        alignItems: 'center'
     },
     btnA: {
         marginBottom: 15,
@@ -155,4 +159,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaBabyJogger2;
+export default TriviaBabyJogger3;
