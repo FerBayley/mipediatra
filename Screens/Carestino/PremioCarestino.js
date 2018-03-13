@@ -37,8 +37,14 @@ class PremioCarestino extends Component {
             <Container style={styles.container}>
                 <Content>
                     <View style={styles.logoCarestinoChico}>
-                        <Image source={require('../assets/images/carestino-logo.png')} />
-                        <Image source={require('../assets/images/premio-carestino1.jpg')} />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/carestino-logo.png'}}
+                        />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.jpg'}}
+                        />
                     </View>
                 </Content>
 

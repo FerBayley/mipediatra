@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-class TriviaCarestino1 extends Component {
+class TriviaCarestino3 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -28,47 +28,29 @@ class TriviaCarestino1 extends Component {
             <Container>
                 <Content showsVerticalScrollIndicator={false}>
                      <View style={styles.logo}>
-                        <Image source={require('../assets/images/mp_logo.png')} />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
+                        />
                         <Text style={styles.textoPregunta}>
-                             ¿Cuáles de estos recursos son barreras físicas para prevenir picaduras de insectos?
+                             ¿Qué son los loquios?
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
-                        <Button full style={styles.btnA}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaCarestino2')},
-                                    ],
-                                    { cancelable: false }
-                                  )}
-                        >
-                            <Text style={styles.blanco}>Mosquiteros</Text>
+                        <Button full style={styles.btnA}>
+                            <Text style={styles.blanco}>La secreción vaginal durante el puerperio</Text>
                         </Button>
 
-                        <Button full style={styles.btnB}
-                             onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaCarestino2')},
-                                    ],
-                                    { cancelable: false }
-                                  )}
-                        >
-                            <Text style={styles.blanco}>Prendas de mangas largas</Text>
+                        <Button full style={styles.btnB}>
+                            <Text style={styles.blanco}>La percepción paternal de la ubicación del bebé</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('PremioCarestino')}
-                        >
-                            <Text style={styles.blanco}>Ambos</Text>
+                        <Button full style={styles.btnC}>
+                            <Text style={styles.blanco}>Un desorden neurológico genético</Text>
                         </Button>
                     </View>
+
                 </Content>
                 <Footer style={styles.Pie}>
                     <FooterTab>
@@ -120,7 +102,7 @@ const styles = StyleSheet.create({
         height: 70,
         backgroundColor: '#733596',
         borderRadius: 4,
-        shadowOffset:{  width: 2,  height: 3,  },
+        shadowOffset:{  width: 2,  height: 1,  },
         shadowColor: 'grey',
         shadowOpacity: 1.0
     },
@@ -128,19 +110,13 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         height: 70,
         backgroundColor: '#39AD45',
-        borderRadius: 4,
-        shadowOffset:{  width: 2,  height: 3,  },
-        shadowColor: 'grey',
-        shadowOpacity: 1.0
+        borderRadius: 4
     },
     btnC: {
         marginBottom: 15,
         height: 70,
         backgroundColor: '#01ACEE',
-        borderRadius: 4,
-        shadowOffset:{  width: 2,  height: 3,  },
-        shadowColor: 'grey',
-        shadowOpacity: 1.0
+        borderRadius: 4
     },
     contenedorBtn: {
         padding: 20,
@@ -152,4 +128,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaCarestino1;
+export default TriviaCarestino3;

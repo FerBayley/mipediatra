@@ -6,12 +6,12 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform,
+    Platform, 
     Alert
 } from "react-native";
 
 
-class TriviaCarestino3 extends Component {
+class TriviaCarestino2 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -28,23 +28,26 @@ class TriviaCarestino3 extends Component {
             <Container>
                 <Content showsVerticalScrollIndicator={false}>
                      <View style={styles.logo}>
-                        <Image source={require('../assets/images/mp_logo.png')} />
+                        <Image
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
+                        />
                         <Text style={styles.textoPregunta}>
-                             ¿Qué son los loquios?
+                             ¿A qué edad del bebé recomienda la OMS el inicio de la alimentación complementaria?
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}>
-                            <Text style={styles.blanco}>La secreción vaginal durante el puerperio</Text>
+                            <Text style={styles.blanco}>3 Meses</Text>
                         </Button>
 
                         <Button full style={styles.btnB}>
-                            <Text style={styles.blanco}>La percepción paternal de la ubicación del bebé</Text>
+                            <Text style={styles.blanco}>6 Meses</Text>
                         </Button>
 
                         <Button full style={styles.btnC}>
-                            <Text style={styles.blanco}>Un desorden neurológico genético</Text>
+                            <Text style={styles.blanco}>12 Meses</Text>
                         </Button>
                     </View>
 
@@ -125,4 +128,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaCarestino3;
+export default TriviaCarestino2;
