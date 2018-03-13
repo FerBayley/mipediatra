@@ -26,15 +26,16 @@ class LoginScreen extends Component {
 
     render() {
         return (
-            <Container style={styles.container}>
-                <Content showsVerticalScrollIndicator={false}>
+            <Container showsVerticalScrollIndicator={false} 
+                style={styles.container}>
+                <Content>
                     <View>
                         <StatusBar
                             barStyle="light-content"
                         />
                     </View>
 
-                    <View>
+                    <View style={styles.container1}>
                         <Text style={styles.textoNoAcepto}>Para poder jugar tenes que aceptar las bases y condicioens.</Text>
                     </View>
 
@@ -59,8 +60,13 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10
+        alignItems: 'center'
+    },
+    container1: {
+        flex: 1,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     Pie: {
         ...Platform.select({

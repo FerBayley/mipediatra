@@ -17,9 +17,6 @@ class Loading extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <StatusBar
-                    barStyle="dark-content"
-                />
                 <ActivityIndicator size="large" color="#DB0A88" />
                 <Text style={{ color: '#DB0A88', marginTop: 10 }}>CARGANDO</Text>
             </View>

@@ -21,7 +21,8 @@ class LoginScreen extends Component {
     render() {
         return (
             
-            <Container style={styles.container}>
+            <Container showsVerticalScrollIndicator={false}
+                style={styles.container}>
                 <Content>
                     <View style={styles.logo}>
                         <View style={styles.logo}>
@@ -39,7 +40,7 @@ class LoginScreen extends Component {
                     </Button>
                     
                     <Button full style={styles.btnFacebook}>
-                        <Text style={styles.btnTextBtn}>Accede con tu contraseña acá</Text>
+                        <Text style={styles.btnTextBtn}>Facebook</Text>
                     </Button>
 
                     <Grid style={styles.griden}>
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        marginTop: 50
+        marginTop: 130
     },      
     btn1: {
         backgroundColor: '#ddd',

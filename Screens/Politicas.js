@@ -254,14 +254,14 @@ class Politicas extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => this.props.navigation.navigate('Loading')}>
-                            <Text style={styles.acepto}>ACEPTO</Text>
+                        <Button onPress={() => this.props.navigation.navigate('NoAcepto')}>
+                            <Text style={styles.acepto}>NO ACEPTO</Text>
                         </Button>                       
                     </FooterTab>
 
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => this.props.navigation.navigate('NoAcepto')}>
-                            <Text style={styles.acepto}>NO ACEPTO</Text>
+                        <Button onPress={() => this.props.navigation.navigate('Loading')}>
+                            <Text style={styles.acepto}>ACEPTO</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
