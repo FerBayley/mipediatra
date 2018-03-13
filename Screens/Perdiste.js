@@ -7,7 +7,8 @@ import {
     Image, 
     StatusBar,
     Dimensions,
-    TouchableOpacity
+    TouchableOpacity,
+    Platform
 } from "react-native";
 
 class Perdiste extends Component {       

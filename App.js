@@ -51,6 +51,11 @@ import SuccesEstrella from './Screens/EstrellaBaby/SuccesEstrella'
 import Perdiste from './Screens/Perdiste'
 import NoAcepto from './Screens/NoAcepto'
 
+//CarestinoAdds
+import CarestinoAdd1 from './Screens/Carestino/CarestinoAdd1'
+import CarestinoAdd2 from './Screens/Carestino/CarestinoAdd2'
+import CarestinoAdd3 from './Screens/Carestino/CarestinoAdd3'
+
 
 export default class App extends React.Component {
     render() {
@@ -61,6 +66,11 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
+    CarestinoAdd1: { screen: CarestinoAdd1 },
+    CarestinoAdd2: { screen: CarestinoAdd2 },
+    CarestinoAdd3: { screen: CarestinoAdd3 },
+    
+    AddCarestino: { screen: AddCarestino },
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     //Estrella Baby//
@@ -95,7 +105,6 @@ const AppNavigator = StackNavigator({
     Politicas: { screen: Politicas },
     HomeScreen: { screen: HomeScreen },
     Ayuda: { screen: Ayuda },
-    AddCarestino: { screen: AddCarestino },
     AddEstrella: { screen: AddEstrella },
     AddGraco: { screen: AddGraco },
     //Trivias de Carestino

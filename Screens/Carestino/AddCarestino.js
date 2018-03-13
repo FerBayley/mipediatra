@@ -15,7 +15,6 @@ class AddCarestino extends Component {
     static navigationOptions = {
         title: 'Carestino',
         headerBackTitle: 'Volver',
-        gesturesEnabled: false,
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -26,7 +25,7 @@ class AddCarestino extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <Content>
+                <Content showsVerticalScrollIndicator={false}>
                    
                 </Content>
 
