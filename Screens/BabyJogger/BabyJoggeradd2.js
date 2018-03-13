@@ -36,7 +36,7 @@ class BabyJoggeradd2 extends Component {
                             <Image
                                 style={{width: 316, height: 610}}
                                 source={{uri: 'http://ideaswhite.com/mipediatra/clientes/babyjogger/adds/pauta-baby-jogger2.png'}}
-                                />
+                            />
                         </TouchableOpacity>
                     </View>                    
                 </Content>

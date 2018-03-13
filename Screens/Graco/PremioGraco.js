@@ -1,5 +1,6 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,
@@ -26,12 +27,11 @@ class PremioGraco extends Component {
         return (
             <Container style={styles.container}>
                 <Content>
-                    <View style={styles.logoCarestinoChico}>
-                        <Image source={require('../assets/images/gracos-logo.png')} />
-                    </View>
-
                     <View style={styles.addProducto}>
-                        <Image source={require('../assets/images/turboBooster.png')} />
+                        <Image
+                            style={{width: 316, height: 508}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/graco/turbo-booster.png'}}
+                        />
                     </View>
                 </Content>
 

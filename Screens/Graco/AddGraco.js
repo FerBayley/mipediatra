@@ -1,5 +1,6 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,

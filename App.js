@@ -6,18 +6,17 @@ import LoginScreen from './Screens/LoginScreen'
 import HomeScreen from './Screens/HomeScreen'
 import Politicas from './Screens/Politicas'
 import BrandScreen from './Screens/BrandScreen'
-import Add from './Screens/Add'
 import Ayuda from './Screens/Ayuda'
 import AddCarestino from './Screens/Carestino/AddCarestino'
-import AddEstrella from './Screens/AddEstrella'
-import AddGraco from './Screens/AddGraco'
+import AddEstrella from './Screens/EstrellaBaby/AddEstrella'
+import AddGraco from './Screens/Graco/AddGraco'
 import AddEwe from './Screens/Ewe/AddEwe'
 import TriviaCarestino1 from './Screens/Carestino/TriviaCarestino1'
 import TriviaCarestino2 from './Screens/Carestino/TriviaCarestino2'
 import TriviaCarestino3 from './Screens/Carestino/TriviaCarestino3'
 import PremioCarestino from './Screens/Carestino/PremioCarestino'
-import PremioGraco from './Screens/PremioGraco'
-import PremioSilfab from './Screens/PremioSilfab'
+import PremioGraco from './Screens/Graco/PremioGraco'
+import PremioSilfab from './Screens/Silfab/PremioSilfab'
 import Loading from './Screens/Loading'
 import BabyJoggeradd1 from './Screens/BabyJogger/BabyJoggeradd1'
 import BabyJoggeradd2 from './Screens/BabyJogger/BabyJoggeradd2'
@@ -91,7 +90,6 @@ const AppNavigator = StackNavigator({
     TriviaBabyJogger2: { screen: TriviaBabyJogger2 },
     BabyJoggeradd2: { screen: BabyJoggeradd2 },
     BabyJoggeradd3: { screen: BabyJoggeradd3 },
-    Add: { screen: Add },
     Loading: { screen: Loading },
     Politicas: { screen: Politicas },
     HomeScreen: { screen: HomeScreen },

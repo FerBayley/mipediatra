@@ -26,13 +26,10 @@ class PremioSilfab extends Component {
         return (
             <Container style={styles.container}>
                 <Content>
-                    <View style={styles.logoCarestinoChico}>
-                        <Image source={require('../assets/images/logo-silfab.png')} />
-                    </View>
-
-                    <View style={styles.addProducto}>
-                        <Image source={require('../assets/images/sorteo-silfab.png')} />
-                    </View>
+                <Image
+                    style={{width: 316, height: 610}}
+                    source={{uri: 'http://ideaswhite.com/mipediatra/clientes/silfab/silfab.png'}}
+                />
                 </Content>
 
                 <Footer style={styles.Pie}>
