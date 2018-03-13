@@ -10,9 +10,18 @@ import {
     TouchableOpacity,
     TextInput
 } from "react-native";
-import { auth } from '../config/firebase';
+import email from 'react-native-email';
 
 class LoginScreen extends Component {   
+
+    handleEmail = () => {
+        const to = ['fernando.bayley@gmail.com'] // string or array of email addresses
+        email(to, {
+            subject: 'Consulta sobre Mi Pediatra Trivia',
+            body: 'Escribí tu comentario acá'
+        }).catch(console.error)
+    }
+
 
     static navigationOptions = {
         header: null,
@@ -60,18 +69,17 @@ class LoginScreen extends Component {
                         </Item>
                     </Form>
            
-                    <Button full style={styles.btn1}
-                    onPress={() => this.autenticateUser(this.state.email, this.state.password)}>
+                    <Button full style={styles.btn1}>
                         <Text style={styles.btnTextBtn}>Crea una cuenta nueva</Text>
                     </Button>
 
                     <Button full style={styles.btn2} 
                     onPress={() => this.props.navigation.navigate('Politicas')}>
-                        <Text style={styles.btnTextBtn}>Accede con tu contraseña acá</Text>
+                        <Text style={styles.btnTextBtn}>Empezá a juagar acá</Text>
                     </Button>
                     
                     <Button full style={styles.btnFacebook} 
-                    onPress={() => this.props.navigation.navigate('SignUp')}>
+                    onPress={() => this.props.navigation.navigate(null)}>
                         <Text style={styles.btnTextBtn}>Accede con tu contraseña acá</Text>
                     </Button>
 
@@ -84,8 +92,10 @@ class LoginScreen extends Component {
                         </Col>
 
                         <Col style={{ height: 200 }}>
-                        <TouchableOpacity onPress={this.handleEmail}>
-                            <Text style={styles.btnText}>Bases y condiciones</Text>
+                        <TouchableOpacity 
+                            onPress={() => this.props.navigation.navigate('Politicas')}
+                        >
+                            <Text style={styles.btnText}>Bases del juego</Text>
                         </TouchableOpacity>
                         
                         </Col>
@@ -118,20 +128,20 @@ const styles = StyleSheet.create({
         marginTop: 50
     },      
     btn1: {
-        backgroundColor: '#DB0A88',
+        backgroundColor: '#ddd',
         marginBottom: 15,
         marginTop: 15,
         borderRadius: 4,
         height: 60
     },
     btn2: {
-        backgroundColor: '#733596',
+        backgroundColor: '#DB0A88',
         marginBottom: 5,
         borderRadius: 4,
         height: 45
     },
     btnFacebook: {
-        backgroundColor: '#375D97',
+        backgroundColor: '#ddd',
         marginBottom: 10,
         borderRadius: 4,
         height: 45

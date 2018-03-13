@@ -116,7 +116,14 @@ const styles = StyleSheet.create({
         padding: 10
     },
     Pie: {
-        backgroundColor: '#DB0A88'
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     colorBotones: {
         color: '#fff'

@@ -51,7 +51,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Pie: {
-        backgroundColor: '#733596'
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     colorBotones: {
         color: '#fff'

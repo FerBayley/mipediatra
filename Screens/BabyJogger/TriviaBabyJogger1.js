@@ -112,7 +112,14 @@ const styles = StyleSheet.create({
         marginTop: 100
     },
     Pie: {
-        backgroundColor: '#DB0A88'
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     textoPregunta: {
         fontSize: 19,
