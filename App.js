@@ -8,11 +8,10 @@ import Politicas from './Screens/Politicas'
 import BrandScreen from './Screens/BrandScreen'
 import Add from './Screens/Add'
 import Ayuda from './Screens/Ayuda'
-import AddCarestino from './Screens/AddCarestino'
+import AddCarestino from './Screens/Carestino/AddCarestino'
 import AddEstrella from './Screens/AddEstrella'
-import AddJohnsons from './Screens/AddJohnsons'
 import AddGraco from './Screens/AddGraco'
-import AddEwe from './Screens/AddEwe'
+import AddEwe from './Screens/Ewe/AddEwe'
 import TriviaCarestino1 from './Screens/Carestino/TriviaCarestino1'
 import TriviaCarestino2 from './Screens/Carestino/TriviaCarestino2'
 import TriviaCarestino3 from './Screens/Carestino/TriviaCarestino3'
@@ -99,7 +98,6 @@ const AppNavigator = StackNavigator({
     Ayuda: { screen: Ayuda },
     AddCarestino: { screen: AddCarestino },
     AddEstrella: { screen: AddEstrella },
-    AddJohnsons: { screen: AddJohnsons },
     AddGraco: { screen: AddGraco },
     //Trivias de Carestino
     TriviaCarestino1: { screen: TriviaCarestino1 },

@@ -42,7 +42,7 @@ class PremioCarestino extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/carestino-logo.png'}}
                         />
                         <Image
-                            style={{width: 230, height: 46}}
+                            style={{width: 334, height: 454}}
                             source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.jpg'}}
                         />
                     </View>
