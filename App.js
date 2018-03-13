@@ -51,6 +51,8 @@ import PremioEstrella from './Screens/EstrellaBaby/PremioEstrella'
 import SuccesEstrella from './Screens/EstrellaBaby/SuccesEstrella'
 //Estrella Baby
 
+import Perdiste from './Screens/Perdiste'
+
 
 export default class App extends React.Component {
     render() {
@@ -110,5 +112,6 @@ const AppNavigator = StackNavigator({
     PremioCarestino: { screen: PremioCarestino },
     PremioGraco: { screen: PremioGraco },
     PremioSilfab: { screen: PremioSilfab },
-    PremioJogger: { screen: PremioJogger }
+    PremioJogger: { screen: PremioJogger },
+    Perdiste: { screen: Perdiste }
 })

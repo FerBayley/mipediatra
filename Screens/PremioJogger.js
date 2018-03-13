@@ -14,7 +14,7 @@ class PremioJogger extends Component {
 
     static navigationOptions = {
         title: 'Seleccionaste',
-        headerBackTitle: 'Volver',
+        backTitle: 'Volver',
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -26,9 +26,10 @@ class PremioJogger extends Component {
         return (
             <Container style={styles.container}>
                 <Content>
-                    <View style={styles.logoCarestinoChico}>
-                        <Image source={require('../assets/images/jogger-logo.png')} />
-                    </View>
+                    <Image
+                        style={{width: 316, height: 118, marginTop: 40}}
+                        source={{uri: 'http://ideaswhite.com/mipediatra/clientes/jogger/jogger-logo.png'}}
+                    />
 
 
                     <View style={styles.addProducto}>

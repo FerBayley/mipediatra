@@ -24,11 +24,11 @@ class HomeScreen extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
                         </Button>                       
 
                         <Button>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
                         </Button>
 
                     </FooterTab>

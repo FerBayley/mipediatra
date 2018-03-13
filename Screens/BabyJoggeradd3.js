@@ -7,7 +7,7 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking,
+    Linking
 } from "react-native";
 import { Constants, WebBrowser } from 'expo';
 

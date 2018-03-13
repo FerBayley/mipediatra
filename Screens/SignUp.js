@@ -85,10 +85,6 @@ class LoginScreen extends Component {
                         <Text style={styles.btnTextBtn}>Crea una cuenta acá</Text>
                     </Button>
 
-
-
-
-
                     <Grid style={styles.griden}>
                         <Col style={{ height: 200 }}>
                             <TouchableOpacity

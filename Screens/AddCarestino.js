@@ -34,7 +34,7 @@ class AddCarestino extends Component {
                     <FooterTab>
                         <Button
                         onPress={() => this.props.navigation.navigate('TriviaCarestino1')}>
-                            <Text style={{ color: 'white' }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>

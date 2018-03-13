@@ -44,11 +44,11 @@ class BabyJoggeradd2 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('https://www.facebook.com/babyjoggerarg/')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('TriviaBabyJogger3')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
 
                     </FooterTab>

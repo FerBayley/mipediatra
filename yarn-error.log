@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run ios
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
 
 PATH: 
   /Users/FerBayley/.rvm/gems/ruby-head/bin:/Users/FerBayley/.rvm/gems/ruby-head@global/bin:/Users/FerBayley/.rvm/rubies/ruby-head/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/FerBayley/.rvm/bin
@@ -4508,7 +4508,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yarn-upgrade/-/yarn-upgrade-1.0.0.tgz#45b28877de9aa57dab1af0e9bf9a88055d7f1cf6"
 
 Trace: 
-  Error: Command "ios" not found.
+  Error: Command "start" not found.
       at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
       at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87307:17
       at Generator.next (<anonymous>)

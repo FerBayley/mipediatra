@@ -6,7 +6,9 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform, 
+    Trivia, 
+    Alert
 } from "react-native";
 
 
@@ -35,7 +37,17 @@ class TriviaBabyJogger2 extends Component {
                     </View>
 
                     <View style={styles.contenedorBtn}>
-                        <Button full style={styles.btnA}>
+                        <Button full style={styles.btnA}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Amsterdam</Text>
                         </Button>
 
@@ -45,7 +57,17 @@ class TriviaBabyJogger2 extends Component {
                             <Text style={styles.blanco}>Bangkok</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Nueva York</Text>
                         </Button>
                     </View>
@@ -54,11 +76,11 @@ class TriviaBabyJogger2 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
                         </Button>                       
 
                         <Button>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
                         </Button>
 
                     </FooterTab>

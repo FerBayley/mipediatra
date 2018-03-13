@@ -36,11 +36,11 @@ class Add extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button>
-                            <Text style={{ color: 'white' }}>COMPRAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>COMPRAR</Text>
                         </Button>                       
 
                         <Button>
-                            <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
 
                     </FooterTab>

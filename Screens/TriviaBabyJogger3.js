@@ -6,7 +6,8 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    Alert
 } from "react-native";
 
 
@@ -41,11 +42,31 @@ class TriviaBabyJogger3 extends Component {
                             <Text style={styles.blanco}>American Society for Testing and Materials (ASTM) y TUV EN-1888</Text>
                         </Button>
 
-                        <Button full style={styles.btnB}>
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>American Academy of Pediatrics</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd3')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Society for Pediatric Research (APS/SPR)</Text>
                         </Button>
                     </View>
@@ -54,11 +75,11 @@ class TriviaBabyJogger3 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
                         </Button>                       
 
                         <Button>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
                         </Button>
 
                     </FooterTab>

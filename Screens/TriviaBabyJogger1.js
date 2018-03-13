@@ -6,7 +6,8 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    Alert
 } from "react-native";
 
 
@@ -43,11 +44,31 @@ class TriviaBabyJogger1 extends Component {
                             <Text style={styles.blanco}>UPF 50+</Text>
                         </Button>
 
-                        <Button full style={styles.btnB}>
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>UPF 30</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>UPF 20</Text>
                         </Button>
                     </View>
@@ -56,11 +77,11 @@ class TriviaBabyJogger1 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
                         </Button>                       
 
                         <Button>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
                         </Button>
 
                     </FooterTab>

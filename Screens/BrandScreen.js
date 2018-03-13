@@ -16,7 +16,7 @@ class BrandScreen extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
-        backTitle: 'Back',
+        backTitle: 'Volver',
         headerLeft: null,
         gesturesEnabled: false,
         headerStyle: {
