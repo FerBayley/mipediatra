@@ -12,7 +12,6 @@ import AddCarestino from './Screens/AddCarestino'
 import AddEstrella from './Screens/AddEstrella'
 import AddJohnsons from './Screens/AddJohnsons'
 import AddGraco from './Screens/AddGraco'
-import AddMimo from './Screens/AddMimo'
 import AddEwe from './Screens/AddEwe'
 import TriviaCarestino1 from './Screens/TriviaCarestino1'
 import TriviaCarestino2 from './Screens/TriviaCarestino2'
@@ -20,7 +19,6 @@ import TriviaCarestino3 from './Screens/TriviaCarestino3'
 import PremioCarestino from './Screens/PremioCarestino'
 import PremioGraco from './Screens/PremioGraco'
 import PremioSilfab from './Screens/PremioSilfab'
-import PremioJogger from './Screens/PremioJogger'
 import Loading from './Screens/Loading'
 import BabyJoggeradd1 from './Screens/BabyJogger/BabyJoggeradd1'
 import BabyJoggeradd2 from './Screens/BabyJogger/BabyJoggeradd2'
@@ -28,6 +26,7 @@ import BabyJoggeradd3 from './Screens/BabyJogger/BabyJoggeradd3'
 import TriviaBabyJogger1 from './Screens/BabyJogger/TriviaBabyJogger1'
 import TriviaBabyJogger2 from './Screens/BabyJogger/TriviaBabyJogger2'
 import TriviaBabyJogger3 from './Screens/BabyJogger/TriviaBabyJogger3'
+import PremioJogger from './Screens/BabyJogger/PremioJogger'
 import SuccesJogger from './Screens/SuccesJogger'
 //Ewe//
 import PremioEwe from './Screens/Ewe/PremioEwe'
@@ -102,7 +101,6 @@ const AppNavigator = StackNavigator({
     AddEstrella: { screen: AddEstrella },
     AddJohnsons: { screen: AddJohnsons },
     AddGraco: { screen: AddGraco },
-    AddMimo: { screen: AddMimo },
     //Trivias de Carestino
     TriviaCarestino1: { screen: TriviaCarestino1 },
     TriviaCarestino2: { screen: TriviaCarestino2 },
