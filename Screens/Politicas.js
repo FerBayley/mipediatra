@@ -260,7 +260,7 @@ class Politicas extends Component {
                     </FooterTab>
 
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => this.props.navigation.navigate('')}>
+                        <Button onPress={() => this.props.navigation.navigate('NoAcepto')}>
                             <Text style={styles.acepto}>NO ACEPTO</Text>
                         </Button>                       
                     </FooterTab>

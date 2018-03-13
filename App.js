@@ -49,6 +49,7 @@ import SuccesEstrella from './Screens/EstrellaBaby/SuccesEstrella'
 //Estrella Baby
 
 import Perdiste from './Screens/Perdiste'
+import NoAcepto from './Screens/NoAcepto'
 
 
 export default class App extends React.Component {
@@ -60,6 +61,7 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
+    LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     //Estrella Baby//
     EstrellaAdd1: { screen: EstrellaAdd1 },
@@ -84,7 +86,6 @@ const AppNavigator = StackNavigator({
     PremioCarestino: { screen: PremioCarestino },
     SuccesJogger: { screen: SuccesJogger },
     SuccesEwe: { screen: SuccesEwe },
-    LoginScreen: { screen: LoginScreen },
     TriviaBabyJogger1: { screen: TriviaBabyJogger1 },
     TriviaBabyJogger3: { screen: TriviaBabyJogger3 },
     TriviaBabyJogger2: { screen: TriviaBabyJogger2 },
@@ -107,5 +108,6 @@ const AppNavigator = StackNavigator({
     PremioGraco: { screen: PremioGraco },
     PremioSilfab: { screen: PremioSilfab },
     PremioJogger: { screen: PremioJogger },
-    Perdiste: { screen: Perdiste }
+    Perdiste: { screen: Perdiste },
+    NoAcepto: { screen: NoAcepto }
 })
