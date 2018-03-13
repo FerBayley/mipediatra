@@ -66,11 +66,6 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
-    CarestinoAdd1: { screen: CarestinoAdd1 },
-    CarestinoAdd2: { screen: CarestinoAdd2 },
-    CarestinoAdd3: { screen: CarestinoAdd3 },
-    
-    AddCarestino: { screen: AddCarestino },
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     //Estrella Baby//
@@ -93,7 +88,6 @@ const AppNavigator = StackNavigator({
     Eweadd1: { screen: Eweadd1 },
     PremioEwe: { screen: PremioEwe },
     AddEwe: { screen: AddEwe },
-    PremioCarestino: { screen: PremioCarestino },
     SuccesJogger: { screen: SuccesJogger },
     SuccesEwe: { screen: SuccesEwe },
     TriviaBabyJogger1: { screen: TriviaBabyJogger1 },
@@ -118,5 +112,10 @@ const AppNavigator = StackNavigator({
     PremioSilfab: { screen: PremioSilfab },
     PremioJogger: { screen: PremioJogger },
     Perdiste: { screen: Perdiste },
-    NoAcepto: { screen: NoAcepto }
+    NoAcepto: { screen: NoAcepto },
+    CarestinoAdd1: { screen: CarestinoAdd1 },
+    CarestinoAdd2: { screen: CarestinoAdd2 },
+    CarestinoAdd3: { screen: CarestinoAdd3 },
+    PremioCarestino: { screen: PremioCarestino },
+    AddCarestino: { screen: AddCarestino }
 })

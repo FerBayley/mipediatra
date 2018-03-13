@@ -37,9 +37,8 @@ class PremioGraco extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab>
-                        <Button
-                        onPress={() => this.props.navigation.navigate('TriviaCarestino1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                        <Button onPress={() => this.props.navigation.navigate(null)}>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>PROXIMAMENTE</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>

@@ -44,7 +44,7 @@ class TriviaCarestino1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaCarestino2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('CarestinoAdd1')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -58,7 +58,7 @@ class TriviaCarestino1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaCarestino2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('CarestinoAdd1')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -67,8 +67,8 @@ class TriviaCarestino1 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('PremioCarestino')}
-                        >
+                            onPress={() => this.props.navigation.navigate('TriviaCarestino2')}
+                        >   {/* RESPUESTA CORRECTA */}
                             <Text style={styles.blanco}>Ambos</Text>
                         </Button>
                     </View>

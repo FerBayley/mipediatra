@@ -32,14 +32,16 @@ class CarestinoAdd2 extends Component {
                             barStyle="light-content"
                         />
                     </View>
-                    <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
+                    <View style={styles.logoCarestinoChico}>
                         <Image
-                            style={{width: 316, height: 610}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
+                            style={{width: 230, height: 46}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/carestino-logo.png'}}
                         />
-                       </TouchableOpacity>
-                    </View>                    
+                        <Image
+                            style={{width: 334, height: 454}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.jpg'}}
+                        />
+                    </View>         
                 </Content>
 
                 <Footer style={styles.Pie}>

@@ -14,31 +14,9 @@ import email from 'react-native-email';
 
 class LoginScreen extends Component {   
 
-    handleEmail = () => {
-        const to = ['fernando.bayley@gmail.com'] // string or array of email addresses
-        email(to, {
-            subject: 'Consulta sobre Mi Pediatra Trivia',
-            body: 'Escribí tu comentario acá'
-        }).catch(console.error)
-    }
-
-
     static navigationOptions = {
         header: null,
-      };
-
-    autenticateUser(email, password) {
-        auth.signInWithEmailAndPassword(email, password)
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: '',
-            password: ''
-        }
-    }
-    
+      };    
 
     render() {
         return (
@@ -50,24 +28,6 @@ class LoginScreen extends Component {
                             <Image source={require('../assets/images/mp_logo.jpg')} />
                         </View>
                     </View>  
-
-                    <Form>
-                        <Item floatingLabel>
-                        <Label style={styles.label}>Tu Email</Label>
-                        <Input 
-                        onChangeText={(text) => this.setState({ email: text })}
-                        value={this.state.email}
-                        />
-
-                        </Item>
-                        <Item floatingLabel last>
-                        <Label style={styles.label}>Tu Contraseña</Label>
-                        <Input
-                        onChangeText={(text) => this.setState({ password: text })}
-                        value={this.state.password}
-                        />
-                        </Item>
-                    </Form>
            
                     <Button full style={styles.btn1}>
                         <Text style={styles.btnTextBtn}>Crea una cuenta nueva</Text>
@@ -78,8 +38,7 @@ class LoginScreen extends Component {
                         <Text style={styles.btnTextBtn}>Empezá a juagar acá</Text>
                     </Button>
                     
-                    <Button full style={styles.btnFacebook} 
-                    onPress={() => this.props.navigation.navigate(null)}>
+                    <Button full style={styles.btnFacebook}>
                         <Text style={styles.btnTextBtn}>Accede con tu contraseña acá</Text>
                     </Button>
 
