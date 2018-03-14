@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-class BabyjoggerMore6 extends Component {
+class EstrellaMore1 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -33,23 +33,44 @@ class BabyjoggerMore6 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El ejercicio más recomendado en el post parto es:
+                            El muñón del cordón umbilical se cae después del nacimiento entre:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate(null)}>
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>1-3 días</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>3-5 días</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd2')}
+                        >
                             {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>CaminataS</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}>
-                            <Text style={styles.blanco}>Sentadillas</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}>
-                            <Text style={styles.blanco}>Natación</Text>
+                            <Text style={styles.blanco}>7-10 días</Text>
                         </Button>
                     </View>
 
@@ -143,4 +164,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default BabyjoggerMore6;
+export default EstrellaMore1;

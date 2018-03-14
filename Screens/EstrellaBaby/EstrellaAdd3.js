@@ -8,7 +8,8 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking
+    Linking,
+    Alert
 } from "react-native";
 
 class EstrellaAdd3 extends Component {    
@@ -33,10 +34,10 @@ class EstrellaAdd3 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('Succes')}>
+                       <TouchableOpacity onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
                         <Image
                             style={{width: 316, height: 610}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add3.png'}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
                         />
                        </TouchableOpacity>
                     </View>                    
@@ -48,7 +49,7 @@ class EstrellaAdd3 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Succes')}>
+                        <Button onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

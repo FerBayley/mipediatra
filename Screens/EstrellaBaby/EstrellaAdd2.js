@@ -8,7 +8,8 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking
+    Linking,
+    Alert
 } from "react-native";
 
 class EstrellaAdd2 extends Component {    
@@ -36,7 +37,7 @@ class EstrellaAdd2 extends Component {
                        <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella3')}>
                         <Image
                             style={{width: 316, height: 610}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add2.png'}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
                         />
                        </TouchableOpacity>
                     </View>                    
@@ -44,7 +45,7 @@ class EstrellaAdd2 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png')}>
+                        <Button onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
@@ -80,10 +81,7 @@ const styles = StyleSheet.create({
     },
     imagenPauta: {
         alignItems: 'center',
-        justifyContent: 'center',
-        shadowColor: 'grey',
-        shadowOpacity: 5.0,
-        borderRadius: 4
+        justifyContent: 'center'
     }
 });
 

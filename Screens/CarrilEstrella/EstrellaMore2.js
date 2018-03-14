@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-class BabyjoggerMore4 extends Component {
+class EstrellaMore2 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -33,23 +33,43 @@ class BabyjoggerMore4 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El Baby Jogger City Tour pesa:
+                            Los hisopos deben utilizarse para la higiene del oído:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate(null)}>
-                            <Text style={styles.blanco}>7kg</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}>
-                            <Text style={styles.blanco}>6,8Kg</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}>
+                            onPress={() => this.props.navigation.navigate('EstrellaMore3')}>
                             {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>6,6Kg</Text>
+                            <Text style={styles.blanco}>Externo</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>Medio</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>Interno</Text>
                         </Button>
                     </View>
 
@@ -143,4 +163,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default BabyjoggerMore4;
+export default EstrellaMore2;

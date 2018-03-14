@@ -7,7 +7,6 @@ import HomeScreen from './Screens/HomeScreen'
 import Politicas from './Screens/Politicas'
 import BrandScreen from './Screens/BrandScreen'
 import Ayuda from './Screens/Ayuda'
-import AddEstrella from './Screens/EstrellaBaby/AddEstrella'
 import AddGraco from './Screens/Graco/AddGraco'
 import AddEwe from './Screens/Ewe/AddEwe'
 import TriviaCarestino1 from './Screens/Carestino/TriviaCarestino1'
@@ -55,33 +54,28 @@ import CarestinoAdd1 from './Screens/Carestino/CarestinoAdd1'
 import CarestinoAdd2 from './Screens/Carestino/CarestinoAdd2'
 import CarestinoAdd3 from './Screens/Carestino/CarestinoAdd3'
 
-import EweMore1 from './Screens/MoreTrivias/EweMore1'
-import EweMore2 from './Screens/MoreTrivias/EweMore2'
-import EweMore3 from './Screens/MoreTrivias/EweMore3'
-import EweMore4 from './Screens/MoreTrivias/EweMore4'
-import EweMore5 from './Screens/MoreTrivias/EweMore5'
-import EweMore6 from './Screens/MoreTrivias/EweMore6'
-
-import BabyjoggerMore1 from './Screens/MoreTrivias/BabyjoggerMore1'
-import BabyjoggerMore2 from './Screens/MoreTrivias/BabyjoggerMore2'
-import BabyjoggerMore3 from './Screens/MoreTrivias/BabyjoggerMore3'
-import BabyjoggerMore4 from './Screens/MoreTrivias/BabyjoggerMore4'
-import BabyjoggerMore5 from './Screens/MoreTrivias/BabyjoggerMore5'
-import BabyjoggerMore6 from './Screens/MoreTrivias/BabyjoggerMore6'
-
-import EstrellaMore1 from './Screens/MoreTrivias/EstrellaMore1'
-import EstrellaMore2 from './Screens/MoreTrivias/EstrellaMore2'
-import EstrellaMore3 from './Screens/MoreTrivias/EstrellaMore3'
-import EstrellaMore4 from './Screens/MoreTrivias/EstrellaMore4'
-import EstrellaMore5 from './Screens/MoreTrivias/EstrellaMore5'
-import EstrellaMore6 from './Screens/MoreTrivias/EstrellaMore6'
-
-import ErrorBabyJoggeradd1 from './Screens/ErrorAds/ErrorBabyJoggeradd1'
-import ErrorBabyJoggeradd2 from './Screens/ErrorAds/ErrorBabyJoggeradd2'
-import ErrorBabyJoggeradd3 from './Screens/ErrorAds/ErrorBabyJoggeradd3'
-
 import Succes from './Screens/Succes'
 
+import ErrorBabyJoggeradd1 from './Screens/CarrilBabyJogger/ErrorBabyJoggeradd1'
+import ErrorBabyJoggeradd2 from './Screens/CarrilBabyJogger/ErrorBabyJoggeradd2'
+import ErrorBabyJoggeradd3 from './Screens/CarrilBabyJogger/ErrorBabyJoggeradd3'
+import BabyjoggerMore1 from './Screens/CarrilBabyJogger/BabyjoggerMore1'
+import BabyjoggerMore2 from './Screens/CarrilBabyJogger/BabyjoggerMore2'
+import BabyjoggerMore3 from './Screens/CarrilBabyJogger/BabyjoggerMore3'
+
+import EstrellaMore1 from './Screens/CarrilEstrella/EstrellaMore1'
+import EstrellaMore2 from './Screens/CarrilEstrella/EstrellaMore2'
+import EstrellaMore3 from './Screens/CarrilEstrella/EstrellaMore3'
+import ErrorEstrellaAdd1 from './Screens/CarrilEstrella/ErrorEstrellaAdd1'
+import ErrorEstrellaAdd2 from './Screens/CarrilEstrella/ErrorEstrellaAdd2'
+import ErrorEstrellaAdd3 from './Screens/CarrilEstrella/ErrorEstrellaAdd3'
+
+import EweMore1 from './Screens/CarrilEwe/EweMore1'
+import EweMore2 from './Screens/CarrilEwe/EweMore2'
+import EweMore3 from './Screens/CarrilEwe/EweMore3'
+import ErrorEweAdd1 from './Screens/CarrilEwe/ErrorEweAdd1'
+import ErrorEweAdd2 from './Screens/CarrilEwe/ErrorEweAdd2'
+import ErrorEweAdd3 from './Screens/CarrilEwe/ErrorEweAdd3'
 
 export default class App extends React.Component {
     render() {
@@ -126,7 +120,6 @@ const AppNavigator = StackNavigator({
     Politicas: { screen: Politicas },
     HomeScreen: { screen: HomeScreen },
     Ayuda: { screen: Ayuda },
-    AddEstrella: { screen: AddEstrella },
     AddGraco: { screen: AddGraco },
     Succes: { screen: Succes },
     //Trivias de Carestino
@@ -146,36 +139,24 @@ const AppNavigator = StackNavigator({
     CarestinoAdd3: { screen: CarestinoAdd3 },
     PremioCarestino: { screen: PremioCarestino },
 
-    //More EWE
-    EweMore1: { screen: EweMore1 },
-    EweMore2: { screen: EweMore2 },
-    EweMore3: { screen: EweMore3 },
-    EweMore4: { screen: EweMore4 },
-    EweMore5: { screen: EweMore5 },
-    EweMore6: { screen: EweMore6 },
-    //More EWE
-
-    //More BABYJOGGER
+    ErrorBabyJoggeradd1: { screen: ErrorBabyJoggeradd1 },
+    ErrorBabyJoggeradd2: { screen: ErrorBabyJoggeradd2 },
+    ErrorBabyJoggeradd3: { screen: ErrorBabyJoggeradd3 },
     BabyjoggerMore1: { screen: BabyjoggerMore1 },
     BabyjoggerMore2: { screen: BabyjoggerMore2 },
     BabyjoggerMore3: { screen: BabyjoggerMore3 },
-    BabyjoggerMore4: { screen: BabyjoggerMore4 },
-    BabyjoggerMore5: { screen: BabyjoggerMore5 },
-    BabyjoggerMore6: { screen: BabyjoggerMore6 },
-    //More BABYJOGGER
 
-    //More ESTRELLABABY
     EstrellaMore1: { screen: EstrellaMore1 },
     EstrellaMore2: { screen: EstrellaMore2 },
     EstrellaMore3: { screen: EstrellaMore3 },
-    EstrellaMore4: { screen: EstrellaMore4 },
-    EstrellaMore5: { screen: EstrellaMore5 },
-    EstrellaMore6: { screen: EstrellaMore6 },
-    //More ESTRELLABABY
+    ErrorEstrellaAdd1: { screen: ErrorEstrellaAdd1 },
+    ErrorEstrellaAdd2: { screen: ErrorEstrellaAdd2 },
+    ErrorEstrellaAdd3: { screen: ErrorEstrellaAdd3 },
 
-     //More ESTRELLABABY
-     ErrorBabyJoggeradd1: { screen: ErrorBabyJoggeradd1 },
-     ErrorBabyJoggeradd2: { screen: ErrorBabyJoggeradd2 },
-     ErrorBabyJoggeradd3: { screen: ErrorBabyJoggeradd3 },
-     //More ESTRELLABABY
+    EweMore1: { screen: EweMore1 },
+    EweMore2: { screen: EweMore2 },
+    EweMore3: { screen: EweMore3 },
+    ErrorEweAdd1: { screen: ErrorEweAdd1 },
+    ErrorEweAdd2: { screen: ErrorEweAdd2 },
+    ErrorEweAdd3: { screen: ErrorEweAdd3 },
 })

@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     textoParrafo: {
         color: '#733596',
         fontSize: 18,
-        textAlign: 'justify',
+        textAlign: 'center',
         lineHeight: 25,
         marginBottom: 20
     }
