@@ -33,7 +33,7 @@ class PremioSilfab extends Component {
                 </Content>
 
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('BrandScreen')}>
                             <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>PROXIMAMENTE</Text>
@@ -58,10 +58,10 @@ const styles = StyleSheet.create({
                 backgroundColor: '#733596',
             },
             android: {
-                backgroundColor: '#733596',
+                backgroundColor: '#733596'
             }
         }),
-    },
+},
     colorBotones: {
         color: '#fff'
     },

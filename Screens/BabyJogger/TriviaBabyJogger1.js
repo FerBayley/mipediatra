@@ -51,7 +51,7 @@ class TriviaBabyJogger1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd1')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -65,7 +65,7 @@ class TriviaBabyJogger1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BabyJoggeradd1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd1')},
                                     ],
                                     { cancelable: false }
                                   )}

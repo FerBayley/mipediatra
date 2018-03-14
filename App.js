@@ -77,6 +77,10 @@ import EstrellaMore4 from './Screens/MoreTrivias/EstrellaMore4'
 import EstrellaMore5 from './Screens/MoreTrivias/EstrellaMore5'
 import EstrellaMore6 from './Screens/MoreTrivias/EstrellaMore6'
 
+import ErrorBabyJoggeradd1 from './Screens/ErrorAds/ErrorBabyJoggeradd1'
+import ErrorBabyJoggeradd2 from './Screens/ErrorAds/ErrorBabyJoggeradd2'
+import ErrorBabyJoggeradd3 from './Screens/ErrorAds/ErrorBabyJoggeradd3'
+
 
 export default class App extends React.Component {
     render() {
@@ -166,4 +170,10 @@ const AppNavigator = StackNavigator({
     EstrellaMore5: { screen: EstrellaMore5 },
     EstrellaMore6: { screen: EstrellaMore6 },
     //More ESTRELLABABY
+
+     //More ESTRELLABABY
+     ErrorBabyJoggeradd1: { screen: ErrorBabyJoggeradd1 },
+     ErrorBabyJoggeradd2: { screen: ErrorBabyJoggeradd2 },
+     ErrorBabyJoggeradd3: { screen: ErrorBabyJoggeradd3 },
+     //More ESTRELLABABY
 })

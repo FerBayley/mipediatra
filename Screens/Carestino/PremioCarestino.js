@@ -35,7 +35,7 @@ class AddCarestino extends Component {
                 </Content>
 
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button 
                             onPress={() => this.props.navigation.navigate('TriviaEstrella1')}>
                             <Text style={{color:'white',fontWeight:'800',fontSize:17}}>EMPEZAR A JUGAR</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
                 backgroundColor: '#733596'
             }
         }),
-    },
+},
     colorBotones: {
         color: '#fff'
     },
