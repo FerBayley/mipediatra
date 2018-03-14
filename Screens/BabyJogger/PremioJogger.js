@@ -25,7 +25,7 @@ class PremioJogger extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <Content>
+                <Content showsVerticalScrollIndicator={false}>
                     <Image
                         style={{width: 316, height: 118, marginTop: 40}}
                         source={{uri: 'http://ideaswhite.com/mipediatra/clientes/jogger/jogger-logo.png'}}

@@ -26,7 +26,7 @@ class PremioGraco extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <Content>
+                <Content showsVerticalScrollIndicator={false}>
                     <View style={styles.addProducto}>
                         <Image
                             style={{width: 316, height: 600}}
