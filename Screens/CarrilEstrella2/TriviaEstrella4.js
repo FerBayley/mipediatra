@@ -7,7 +7,8 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    Alert
 } from "react-native";
 
 
@@ -44,7 +45,7 @@ class TriviaEstrella4 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -58,7 +59,7 @@ class TriviaEstrella4 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -67,7 +68,7 @@ class TriviaEstrella4 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd4')}
+                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd4')} 
                         >
                             {/* Respuesta Correcta*/}
                             <Text style={styles.blanco}>7-10 días</Text>

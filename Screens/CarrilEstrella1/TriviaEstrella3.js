@@ -45,7 +45,7 @@ class TriviaEstrella3 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint2')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -65,7 +65,7 @@ class TriviaEstrella3 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint2')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -77,14 +77,9 @@ class TriviaEstrella3 extends Component {
                 </Content>
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
-                        </Button>                       
+                        <Button><Text style={{ color: 'white' }}>Contacto</Text></Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
-                        </Button>
+                        <Button><Text style={{ color: 'white' }}>Como jugar</Text></Button>
 
                     </FooterTab>
                 </Footer>

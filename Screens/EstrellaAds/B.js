@@ -10,7 +10,7 @@ import {
     Linking
 } from "react-native";
 
-class AddPoint extends Component {    
+class B extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -32,7 +32,7 @@ class AddPoint extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <Text>Error Estrella Add 4</Text>
+                       <Text>AddPoint 2</Text>
                     </View>                    
                 </Content>
 
@@ -42,7 +42,7 @@ class AddPoint extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella5')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella1')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -79,4 +79,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default AddPoint;
+export default B;

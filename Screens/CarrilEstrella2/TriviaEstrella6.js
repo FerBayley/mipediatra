@@ -7,7 +7,8 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    Alert
 } from "react-native";
 
 
@@ -39,7 +40,7 @@ class TriviaEstrella6 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
+                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd6')}>
                             {/* Respuesta Correcta*/}
                             <Text style={styles.blanco}>Externo</Text>
                         </Button>
@@ -50,7 +51,7 @@ class TriviaEstrella6 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint2')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -64,7 +65,7 @@ class TriviaEstrella6 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint')},
                                     ],
                                     { cancelable: false }
                                   )}
