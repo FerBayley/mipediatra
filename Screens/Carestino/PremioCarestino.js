@@ -26,13 +26,18 @@ class AddCarestino extends Component {
         return (
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
-                   <Text>Premio Carestino</Text>
+                    <View style={styles.addProducto}>
+                        <Image
+                            style={{width: 316, height: 600}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.png'}}
+                        />
+                    </View>
                 </Content>
 
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button onPress={() => this.props.navigation.navigate('TriviaCarestino1')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -51,10 +56,10 @@ const styles = StyleSheet.create({
     Pie: {
         ...Platform.select({
             ios: {
-                backgroundColor: '#DB0A88',
+                backgroundColor: '#733596',
             },
             android: {
-                backgroundColor: '#DB0A88'
+                backgroundColor: '#733596'
             }
         }),
     },
@@ -70,9 +75,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10
-    },
-    Pie: {
-        backgroundColor: '#DB0A88'
     }
 });
 

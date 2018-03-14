@@ -27,17 +27,10 @@ class PremioEstrella extends Component {
         return (
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
-                    <View style={styles.logoCarestinoChico}>
-                        <Image
-                            style={{width: 159, height: 66}}
-                            source={{uri: 'http://ideaswhite.com//mipediatra/clientes/estrella/estrella-logo.png'}}
-                        />
-                    </View>
-
                     <View style={styles.addProducto}>
                         <Image
-                            style={{width: 386, height: 408}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/panal.png'}}
+                            style={{width: 386, height: 600}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/panal2.png'}}
                         />
                     </View>
                 </Content>

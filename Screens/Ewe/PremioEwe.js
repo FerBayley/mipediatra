@@ -1,21 +1,21 @@
 import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator } from 'react-navigation';
 import {
     View,
     Text,
     StyleSheet,
     StatusBar,
     Image,
-    Platform,
+    Platform
 } from "react-native";
-import { Font, AppLoading } from "expo";
 
 
-class PremioEwe extends Component {
+class PremioGraco extends Component {
 
     static navigationOptions = {
         title: 'Seleccionaste',
+        headerBackTitle: 'Volver',
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -23,38 +23,21 @@ class PremioEwe extends Component {
       };
 
 
-
-      async componentWillMount() {
-        await Font.loadAsync({
-          Roboto: require("native-base/Fonts/Roboto.ttf"),
-          Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
-        });
-        this.setState({ loading: false });
-      }
-
     render() {
         return (
             <Container style={styles.container}>
-                <Content showsVerticalScrollIndicator={false}>
-                    <View style={styles.logoCarestinoChico}>
-                    <Image
-                        style={{width: 159, height: 66}}
-                        source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/ads/ewe-logo.png'}}
-                    />
-                    </View>
-
-                    <View>
+                <Content>
+                    <View style={styles.addProducto}>
                         <Image
-                            style={{width: 334, height: 458}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/ads/ewe-premio.png'}}
+                            style={{width: 316, height: 600}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/ewe-premio.png'}}
                         />
                     </View>
                 </Content>
 
                 <Footer style={styles.Pie}>
-                    <FooterTab style={styles.Pie}>
-                        <Button
-                        onPress={() => this.props.navigation.navigate('TriviaEwe1')}>
+                    <FooterTab>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEwe1')}>
                             <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
@@ -72,14 +55,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Pie: {
-            ...Platform.select({
-                ios: {
-                    backgroundColor: '#733596',
-                },
-                android: {
-                    backgroundColor: '#733596'
-                }
-            }),
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#733596',
+            },
+            android: {
+                backgroundColor: '#733596'
+            }
+        }),
     },
     colorBotones: {
         color: '#fff'
@@ -87,30 +70,13 @@ const styles = StyleSheet.create({
     logoCarestinoChico: {
         justifyContent: 'center',
         alignItems: 'center',
-            ...Platform.select({
-                ios: {
-                    marginTop: 35
-                },
-                android: {
-                    marginTop: 10
-                }
-            }),
+        marginTop: 35
     },
     addProducto: {
-        flex: 1, 
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 10,
-        ...Platform.select({
-            ios: {
-                marginTop: 5,
-            },
-            android: {
-                marginTop: 1,
-                alignSelf: 'stretch'
-            }
-        }),
+        marginTop: 10
     }
 });
 
-export default PremioEwe;
+export default PremioGraco;

@@ -29,7 +29,7 @@ class PremioGraco extends Component {
                 <Content>
                     <View style={styles.addProducto}>
                         <Image
-                            style={{width: 316, height: 508}}
+                            style={{width: 316, height: 600}}
                             source={{uri: 'http://ideaswhite.com/mipediatra/clientes/graco/turbo-booster.png'}}
                         />
                     </View>

@@ -159,11 +159,11 @@ const AppNavigator = StackNavigator({
     //More BABYJOGGER
 
     //More ESTRELLABABY
-        EstrellaMore1: { screen: EstrellaMore1 },
-        EstrellaMore2: { screen: EstrellaMore2 },
-        EstrellaMore3: { screen: EstrellaMore3 },
-        EstrellaMore4: { screen: EstrellaMore4 },
-        EstrellaMore5: { screen: EstrellaMore5 },
-        EstrellaMore6: { screen: EstrellaMore6 },
-     //More ESTRELLABABY
+    EstrellaMore1: { screen: EstrellaMore1 },
+    EstrellaMore2: { screen: EstrellaMore2 },
+    EstrellaMore3: { screen: EstrellaMore3 },
+    EstrellaMore4: { screen: EstrellaMore4 },
+    EstrellaMore5: { screen: EstrellaMore5 },
+    EstrellaMore6: { screen: EstrellaMore6 },
+    //More ESTRELLABABY
 })
