@@ -7,7 +7,6 @@ import HomeScreen from './Screens/HomeScreen'
 import Politicas from './Screens/Politicas'
 import BrandScreen from './Screens/BrandScreen'
 import Ayuda from './Screens/Ayuda'
-import AddCarestino from './Screens/Carestino/AddCarestino'
 import AddEstrella from './Screens/EstrellaBaby/AddEstrella'
 import AddGraco from './Screens/Graco/AddGraco'
 import AddEwe from './Screens/Ewe/AddEwe'
@@ -81,6 +80,8 @@ import ErrorBabyJoggeradd1 from './Screens/ErrorAds/ErrorBabyJoggeradd1'
 import ErrorBabyJoggeradd2 from './Screens/ErrorAds/ErrorBabyJoggeradd2'
 import ErrorBabyJoggeradd3 from './Screens/ErrorAds/ErrorBabyJoggeradd3'
 
+import Succes from './Screens/Succes'
+
 
 export default class App extends React.Component {
     render() {
@@ -115,6 +116,7 @@ const AppNavigator = StackNavigator({
     AddEwe: { screen: AddEwe },
     SuccesJogger: { screen: SuccesJogger },
     SuccesEwe: { screen: SuccesEwe },
+    SuccesJogger: { screen: SuccesJogger },
     TriviaBabyJogger1: { screen: TriviaBabyJogger1 },
     TriviaBabyJogger3: { screen: TriviaBabyJogger3 },
     TriviaBabyJogger2: { screen: TriviaBabyJogger2 },
@@ -126,6 +128,7 @@ const AppNavigator = StackNavigator({
     Ayuda: { screen: Ayuda },
     AddEstrella: { screen: AddEstrella },
     AddGraco: { screen: AddGraco },
+    Succes: { screen: Succes },
     //Trivias de Carestino
     TriviaCarestino1: { screen: TriviaCarestino1 },
     TriviaCarestino2: { screen: TriviaCarestino2 },
@@ -142,7 +145,6 @@ const AppNavigator = StackNavigator({
     CarestinoAdd2: { screen: CarestinoAdd2 },
     CarestinoAdd3: { screen: CarestinoAdd3 },
     PremioCarestino: { screen: PremioCarestino },
-    AddCarestino: { screen: AddCarestino },
 
     //More EWE
     EweMore1: { screen: EweMore1 },

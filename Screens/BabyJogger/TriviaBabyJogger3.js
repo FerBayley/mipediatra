@@ -43,7 +43,7 @@ class TriviaBabyJogger3 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() => this.props.navigation.navigate('BabyJoggeradd3')}>
                             {/* Respuesta Correcta */}
-                            <Text style={styles.blanco}>American Society for Testing and Materials (ASTM) y TUV EN-1888</Text>
+                            <Text style={styles.blanco2}>American Society for Testing and Materials (ASTM) y TUV EN-1888</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -163,6 +163,12 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 20,
         lineHeight: 25
+    },
+    blanco2: {
+        color: 'white',
+        fontSize: 19,
+        lineHeight: 25,
+        textAlign: 'center'
     }
 });
 

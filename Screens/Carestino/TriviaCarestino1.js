@@ -67,8 +67,8 @@ class TriviaCarestino1 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('TriviaCarestino2')}
-                        >   {/* RESPUESTA CORRECTA */}
+                            onPress={() => this.props.navigation.navigate('CarestinoAdd1')}>   
+                            {/* RESPUESTA CORRECTA */}
                             <Text style={styles.blanco}>Ambos</Text>
                         </Button>
                     </View>
@@ -76,13 +76,11 @@ class TriviaCarestino1 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab>
                         <Button>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
-                        </Button>                       
-
+                            <Text style={{color:'white',fontWeight:'800'}}>Contacto</Text>
+                        </Button>    
                         <Button>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
+                            <Text style={{color:'white',fontWeight:'800'}}>Como jugar</Text>
                         </Button>
-
                     </FooterTab>
                 </Footer>
             </Container>

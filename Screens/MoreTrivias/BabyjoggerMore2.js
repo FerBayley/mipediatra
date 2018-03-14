@@ -60,8 +60,7 @@ class BabyjoggerMore2 extends Component {
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('Eweadd1')}>
+                        <Button>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 

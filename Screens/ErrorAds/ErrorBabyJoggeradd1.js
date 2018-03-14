@@ -47,7 +47,7 @@ class ErrorBabyJoggeradd1 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaBabyJogger2')}>
+                        <Button onPress={() => this.props.navigation.navigate('BabyjoggerMore1')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

@@ -39,7 +39,7 @@ class BabyjoggerMore3 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('Eweadd1')}>
+                            onPress={() => this.props.navigation.navigate(null)}>
                             <Text style={styles.blanco}>75x36x32cm</Text>
                         </Button>
 
@@ -60,8 +60,7 @@ class BabyjoggerMore3 extends Component {
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('Eweadd1')}>
+                        <Button>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 

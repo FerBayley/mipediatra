@@ -33,6 +33,7 @@ class TriviaBabyJogger1 extends Component {
                             style={{width: 230, height: 46}}
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
+                        {/* TITULO */}
                         <Text style={styles.textoPregunta}>
                             El Baby Jogger City Premier posee asiento reversible y capota con protección solar
                         </Text>

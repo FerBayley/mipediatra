@@ -39,15 +39,35 @@ class BabyjoggerMore1 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('Eweadd1')}>
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Viajar a upa y llevar el cochecito como equipaje de mano</Text>
                         </Button>
 
-                        <Button full style={styles.btnB}>
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Ocupar un asiento con butaca homologada para aviones</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('BabyJoggedadd2')}>
                             {/* Respuesta Correcta*/}
                             <Text style={styles.blanco}>Ambas opciones</Text>
                         </Button>
@@ -60,8 +80,7 @@ class BabyjoggerMore1 extends Component {
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('Eweadd1')}>
+                        <Button>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 

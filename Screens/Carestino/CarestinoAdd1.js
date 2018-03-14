@@ -1,17 +1,17 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
 import React, { Component } from "react";
-import { StackNavigator } from 'react-navigation'
 import {
     View,
+    Text,
     StyleSheet,
-    StatusBar, 
+    StatusBar,
     Image,
     Platform,
-    TouchableOpacity,
     Linking
 } from "react-native";
 
-class CarestinoAdd1 extends Component {    
+
+class AddCarestino1 extends Component {
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -23,36 +23,33 @@ class CarestinoAdd1 extends Component {
           headerTintColor: '#fff'
       };
 
+
     render() {
         return (
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
-                    <View>
-                        <StatusBar
-                            barStyle="light-content"
-                        />
-                    </View>
-                    <View style={styles.logoCarestinoChico}>
+                    <View style={styles.addProducto}>
                         <Image
-                            style={{width: 230, height: 46}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/carestino-logo.png'}}
-                        />
-                        <Image
-                            style={{width: 334, height: 454}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.jpg'}}
+                            style={{width: 316, height: 600}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.png'}}
                         />
                     </View>
                 </Content>
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}>
+                        <Button 
+                            onPress={() => Linking.openURL('https://www.carestino.com/producto/cochecito-fly-rojo/')}
+                        >
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
+                        <Button
+                            onPress={() => this.props.navigation.navigate('TriviaCarestino2')}
+                        >
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
+
                     </FooterTab>
                 </Footer>
             </Container>
@@ -63,7 +60,7 @@ class CarestinoAdd1 extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -80,11 +77,16 @@ const styles = StyleSheet.create({
     colorBotones: {
         color: '#fff'
     },
-    imagenPauta: {
+    logoCarestinoChico: {
+        justifyContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        marginTop: 35
+    },
+    addProducto: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 10
     }
 });
 
-
-export default CarestinoAdd1;
+export default AddCarestino1;
