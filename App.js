@@ -46,6 +46,7 @@ import TriviaEstrella3 from './Screens/CarrilEstrella1/TriviaEstrella3'
 import ErrorEstrellaAdd4 from './Screens/EstrellaAds/ErrorEstrellaAdd4'
 import ErrorEstrellaAdd5 from './Screens/EstrellaAds/ErrorEstrellaAdd5'
 import ErrorEstrellaAdd6 from './Screens/EstrellaAds/ErrorEstrellaAdd6'
+import AddPoint from './Screens/EstrellaAds/AddPoint'
 import TriviaEstrella4 from './Screens/CarrilEstrella2/TriviaEstrella4'
 import TriviaEstrella5 from './Screens/CarrilEstrella2/TriviaEstrella5'
 import TriviaEstrella6 from './Screens/CarrilEstrella2/TriviaEstrella6'
@@ -161,4 +162,6 @@ const AppNavigator = StackNavigator({
     ErrorEweAdd1: { screen: ErrorEweAdd1 },
     ErrorEweAdd2: { screen: ErrorEweAdd2 },
     ErrorEweAdd3: { screen: ErrorEweAdd3 },
+
+    AddPoint: { screen: AddPoint },
 })
