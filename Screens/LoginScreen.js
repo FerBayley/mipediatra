@@ -21,9 +21,8 @@ class LoginScreen extends Component {
     render() {
         return (
             
-            <Container showsVerticalScrollIndicator={false}
-                style={styles.container}>
-                <Content>
+            <Container style={styles.container}>
+                <Content showsVerticalScrollIndicator={false}>
                     <View style={styles.logo}>
                         <View style={styles.logo}>
                             <Image source={require('../assets/images/mp_logo.jpg')} />
