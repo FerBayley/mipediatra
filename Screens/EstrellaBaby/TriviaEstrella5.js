@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-class EstrellaMore3 extends Component {
+class TriviaEstrella4 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -143,4 +143,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default EstrellaMore3;
+export default TriviaEstrella4;

@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text, Body } from 'native-base';
 import React, { Component } from "react";
 import {
     View,
@@ -7,10 +7,11 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking,
+    Linking
 } from "react-native";
+import { Constants, WebBrowser } from 'expo';
 
-class ErrorEstrellaAdd3 extends Component {    
+class EstrellaAdd5 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -32,18 +33,28 @@ class ErrorEstrellaAdd3 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <Text>Add Error 3</Text>
-                    </View>            
+                        <Text>Add Error 2</Text>
+                    </View>                  
                 </Content>
+                
+                <Button
+                    style={styles.paragraph}
+                    title="Open WebBrowser"
+                    onPress={this._handlePressButtonAsync}
+                />
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('https://www.facebook.com/babyjoggerarg/')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontWeight: '800' }}>VER MAS</Text>
+                        <Button 
+                            onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}
+                        >
+                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaBabyJogger3')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                        <Button
+                            onPress={() => this.props.navigation.navigate('EstrellaMore3')}
+                        >
+                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
 
                     </FooterTab>
@@ -74,10 +85,11 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     imagenPauta: {
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     }
 });
 
 
-export default ErrorEstrellaAdd3;
+export default EstrellaAdd5;

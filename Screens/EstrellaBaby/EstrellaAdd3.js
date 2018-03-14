@@ -34,7 +34,7 @@ class EstrellaAdd3 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
+                       <TouchableOpacity onPress={() => this.props.navigation.navigate('Succes')}>
                         <Image
                             style={{width: 316, height: 610}}
                             source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
@@ -49,7 +49,7 @@ class EstrellaAdd3 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
+                        <Button onPress={() => this.props.navigation.navigate('Succes')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

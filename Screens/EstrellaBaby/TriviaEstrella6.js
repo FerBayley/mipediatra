@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-class EstrellaMore1 extends Component {
+class TriviaEstrella4 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -33,23 +33,15 @@ class EstrellaMore1 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El muñón del cordón umbilical se cae después del nacimiento entre:
+                            Los hisopos deben utilizarse para la higiene del oído:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
-                                    ],
-                                    { cancelable: false }
-                                  )}
-                        >
-                            <Text style={styles.blanco}>1-3 días</Text>
+                            onPress={() => this.props.navigation.navigate('EstrellaMore3')}>
+                            {/* Respuesta Correcta*/}
+                            <Text style={styles.blanco}>Externo</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -63,14 +55,21 @@ class EstrellaMore1 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>3-5 días</Text>
+                            <Text style={styles.blanco}>Medio</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd2')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
                         >
-                            {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>7-10 días</Text>
+                            <Text style={styles.blanco}>Interno</Text>
                         </Button>
                     </View>
 
@@ -164,4 +163,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default EstrellaMore1;
+export default TriviaEstrella4;
