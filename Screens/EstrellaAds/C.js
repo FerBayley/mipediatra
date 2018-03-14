@@ -32,8 +32,14 @@ class C extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <Text>AddPoint 2</Text>
-                    </View>                    
+                        <Text style={{ fontSize: 30, marginTop: 130 }}>Vista C</Text>
+                       <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella3')}>
+                        <Image
+                            style={{width: 316, height: 610}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
+                        />
+                       </TouchableOpacity>
+                    </View>                                     
                 </Content>
 
                 <Footer style={styles.Pie}>

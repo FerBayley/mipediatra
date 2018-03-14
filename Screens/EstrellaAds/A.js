@@ -31,9 +31,15 @@ class A extends Component {
                             barStyle="light-content"
                         />
                     </View>
-                    <View style={styles.imagenPauta}>
-                       <Text>AddPoint</Text>
-                    </View>                    
+                        <View style={styles.imagenPauta}>
+                        <Text style={{ fontSize: 30, marginTop: 130 }}>Vista A</Text>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella3')}>
+                            <Image
+                                style={{width: 316, height: 610}}
+                                source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
+                            />
+                        </TouchableOpacity>              
+                        </View>                    
                 </Content>
 
                 <Footer style={styles.Pie}>

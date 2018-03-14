@@ -45,7 +45,7 @@ class TriviaEstrella4 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -59,7 +59,7 @@ class TriviaEstrella4 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddPoint')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}
