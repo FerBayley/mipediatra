@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Text, Body } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
 import {
     View,
@@ -9,9 +9,8 @@ import {
     TouchableOpacity,
     Linking
 } from "react-native";
-import { Constants, WebBrowser } from 'expo';
 
-class EstrellaAdd5 extends Component {    
+class ErrorEstrellaAdd4 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -33,30 +32,19 @@ class EstrellaAdd5 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                        <Text>Add Error 2</Text>
-                    </View>                  
+                       <Text>Add Error 1</Text>
+                    </View>                    
                 </Content>
-                
-                <Button
-                    style={styles.paragraph}
-                    title="Open WebBrowser"
-                    onPress={this._handlePressButtonAsync}
-                />
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button 
-                            onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}
-                        >
+                        <Button onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('EstrellaMore3')}
-                        >
+                        <Button onPress={() => this.props.navigation.navigate('EstrellaMore1')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
-
                     </FooterTab>
                 </Footer>
             </Container>
@@ -85,11 +73,10 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     imagenPauta: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     }
 });
 
 
-export default EstrellaAdd5;
+export default ErrorEstrellaAdd4;

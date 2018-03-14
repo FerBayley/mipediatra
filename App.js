@@ -39,9 +39,9 @@ import SuccesEwe from './Screens/Ewe/SuccesEwe'
 import EstrellaAdd1 from './Screens/EstrellaBaby/EstrellaAdd1'
 import EstrellaAdd2 from './Screens/EstrellaBaby/EstrellaAdd2'
 import EstrellaAdd3 from './Screens/EstrellaBaby/EstrellaAdd3'
-import EstrellaAdd4 from './Screens/EstrellaBaby/EstrellaAdd4'
-import EstrellaAdd5 from './Screens/EstrellaBaby/EstrellaAdd5'
-import EstrellaAdd6 from './Screens/EstrellaBaby/EstrellaAdd6'
+import ErrorEstrellaAdd4 from './Screens/EstrellaBaby/ErrorEstrellaAdd4'
+import ErrorEstrellaAdd5 from './Screens/EstrellaBaby/ErrorEstrellaAdd5'
+import ErrorEstrellaAdd6 from './Screens/EstrellaBaby/ErrorEstrellaAdd6'
 
 import TriviaEstrella1 from './Screens/EstrellaBaby/TriviaEstrella1'
 import TriviaEstrella2 from './Screens/EstrellaBaby/TriviaEstrella2'
@@ -93,9 +93,9 @@ const AppNavigator = StackNavigator({
     EstrellaAdd1: { screen: EstrellaAdd1 },
     EstrellaAdd2: { screen: EstrellaAdd2 },
     EstrellaAdd3: { screen: EstrellaAdd3 },
-    EstrellaAdd4: { screen: EstrellaAdd4 },
-    EstrellaAdd5: { screen: EstrellaAdd5 },
-    EstrellaAdd6: { screen: EstrellaAdd6 },
+    ErrorEstrellaAdd4: { screen: ErrorEstrellaAdd4 },
+    ErrorEstrellaAdd5: { screen: ErrorEstrellaAdd5 },
+    ErrorEstrellaAdd6: { screen: ErrorEstrellaAdd6 },
     TriviaEstrella1: { screen: TriviaEstrella1 },
     TriviaEstrella2: { screen: TriviaEstrella2 },
     TriviaEstrella3: { screen: TriviaEstrella3 },

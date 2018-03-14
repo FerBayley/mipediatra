@@ -1,6 +1,5 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text, Body } from 'native-base';
 import React, { Component } from "react";
-import { StackNavigator } from 'react-navigation'
 import {
     View,
     StyleSheet,
@@ -8,11 +7,11 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking,
-    Alert
+    Linking
 } from "react-native";
+import { Constants, WebBrowser } from 'expo';
 
-class EstrellaAdd6 extends Component {    
+class ErrorEstrellaAdd5 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -34,24 +33,30 @@ class EstrellaAdd6 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
-                        <Image
-                            style={{width: 316, height: 610}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
-                        />
-                       </TouchableOpacity>
-                    </View>                    
+                        <Text>Add Error 2</Text>
+                    </View>                  
                 </Content>
+                
+                <Button
+                    style={styles.paragraph}
+                    title="Open WebBrowser"
+                    onPress={this._handlePressButtonAsync}
+                />
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}>
+                        <Button 
+                            onPress={() => Linking.openURL('https://www.facebook.com/EstrellaBabyArgentina/')}
+                        >
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
+                        <Button
+                            onPress={() => this.props.navigation.navigate('EstrellaMore3')}
+                        >
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
+
                     </FooterTab>
                 </Footer>
             </Container>
@@ -62,7 +67,7 @@ class EstrellaAdd6 extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -80,10 +85,11 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     imagenPauta: {
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     }
 });
 
 
-export default EstrellaAdd6;
+export default ErrorEstrellaAdd5;
