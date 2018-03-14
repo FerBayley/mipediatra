@@ -25,7 +25,12 @@ class Ayuda extends Component {
     render() {
         return (
             <Container>
-                <Content>
+                <Content showsVerticalScrollIndicator={false}>
+                    <View>
+                        <StatusBar
+                            barStyle="light-content"
+                        />
+                    </View>
                 </Content>
                 <Footer style={styles.Pie}>
                     <FooterTab>

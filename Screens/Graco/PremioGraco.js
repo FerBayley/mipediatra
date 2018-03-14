@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
                 backgroundColor: '#733596',
             },
             android: {
-                backgroundColor: '#733596'
+                backgroundColor: '#733596',
             }
         }),
     },

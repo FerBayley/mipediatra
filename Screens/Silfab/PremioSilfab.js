@@ -25,7 +25,7 @@ class PremioSilfab extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <Content>
+                <Content showsVerticalScrollIndicator={false}>
                 <Image
                     style={{width: 316, height: 610}}
                     source={{uri: 'http://ideaswhite.com/mipediatra/clientes/silfab/silfab.png'}}
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
                 backgroundColor: '#733596',
             },
             android: {
-                backgroundColor: '#733596'
+                backgroundColor: '#733596',
             }
         }),
     },

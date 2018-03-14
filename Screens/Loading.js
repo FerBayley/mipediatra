@@ -6,6 +6,8 @@ class Loading extends Component {
 
     static navigationOptions = {
         header: null,
+        headerLeft: null,
+        gesturesEnabled: false
       };
 
     componentDidMount() {
