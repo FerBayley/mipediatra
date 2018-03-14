@@ -7,11 +7,12 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    Alert
 } from "react-native";
 
 
-class TriviaEstrella4 extends Component {
+class TriviaEstrella3 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -33,7 +34,7 @@ class TriviaEstrella4 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El muñón del cordón umbilical se cae después del nacimiento entre:
+                            La higiene genital de las niñas en el cambio de pañal:
                         </Text>
                     </View>
 
@@ -44,44 +45,44 @@ class TriviaEstrella4 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>1-3 días</Text>
+                            <Text style={styles.blanco}>Es igual que en los varones</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}>
+                            {/* Respuesta Correcta*/}
+                            <Text style={styles.blanco}>Debe hacerse de adelante hacia atrás</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>3-5 días</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd2')}
-                        >
-                            {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>7-10 días</Text>
+                            <Text style={styles.blanco}>Debe hacerse de atrás hacia adelante</Text>
                         </Button>
                     </View>
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
-                        <Button>
+                        <Button
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 
@@ -100,14 +101,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Pie: {
-        ...Platform.select({
-            ios: {
-                backgroundColor: '#DB0A88',
-            },
-            android: {
-                backgroundColor: '#DB0A88'
-            }
-        }),
+        backgroundColor: '#DB0A88'
     },
     colorBotones: {
         color: '#fff'
@@ -119,7 +113,14 @@ const styles = StyleSheet.create({
         marginTop: 100
     },
     Pie: {
-        backgroundColor: '#DB0A88'
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     textoPregunta: {
         fontSize: 19,
@@ -164,4 +165,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella4;
+export default TriviaEstrella3;

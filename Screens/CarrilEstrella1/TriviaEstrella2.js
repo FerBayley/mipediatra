@@ -12,7 +12,7 @@ import {
 } from "react-native";
 
 
-class TriviaEstrella3 extends Component {
+class TriviaEstrella2 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -34,29 +34,29 @@ class TriviaEstrella3 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La higiene genital de las niñas en el cambio de pañal:
+                            Los adhesivos del pañal se colocan:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}>
+                            {/* Respuesta Correcta*/}
+                            <Text style={styles.blanco}>Hacia atrás</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd3')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Es igual que en los varones</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}>
-                            {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>Debe hacerse de adelante hacia atrás</Text>
+                            <Text style={styles.blanco}>Hacia adelante</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -65,25 +65,24 @@ class TriviaEstrella3 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd3')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Debe hacerse de atrás hacia adelante</Text>
+                            <Text style={styles.blanco}>Es indistinto</Text>
                         </Button>
                     </View>
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
-                            <Text style={{ color: 'white' }}>Contacto</Text>
+                            <Text style={{color:'white'}}>Contacto</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}>
-                            <Text style={{ color: 'white' }}>Como jugar</Text>
+                        <Button>
+                            <Text style={{color:'white'}}>Como jugar</Text>
                         </Button>
 
                     </FooterTab>
@@ -101,7 +100,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Pie: {
-        backgroundColor: '#DB0A88'
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     colorBotones: {
         color: '#fff'
@@ -113,14 +119,7 @@ const styles = StyleSheet.create({
         marginTop: 100
     },
     Pie: {
-        ...Platform.select({
-            ios: {
-                backgroundColor: '#DB0A88',
-            },
-            android: {
-                backgroundColor: '#DB0A88'
-            }
-        }),
+        backgroundColor: '#DB0A88'
     },
     textoPregunta: {
         fontSize: 19,
@@ -165,4 +164,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella3;
+export default TriviaEstrella2;

@@ -33,29 +33,50 @@ class TriviaEstrella4 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Los pañales Estrella Baby brindan protección hasta:
+                            El muñón del cordón umbilical se cae después del nacimiento entre:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate(null)}>
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>1-3 días</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={styles.blanco}>3-5 días</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('ErrorEstrellaAdd4')}
+                        >
                             {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>4 horas</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}>
-                            <Text style={styles.blanco}>8 horas</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}>
-                            <Text style={styles.blanco}>12 horas</Text>
+                            <Text style={styles.blanco}>7-10 días</Text>
                         </Button>
                     </View>
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       

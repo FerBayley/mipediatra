@@ -7,12 +7,11 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform,
-    Alert
+    Platform
 } from "react-native";
 
 
-class TriviaEstrella2 extends Component {
+class TriviaEstrella6 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
@@ -34,15 +33,15 @@ class TriviaEstrella2 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Los adhesivos del pañal se colocan:
+                            Los hisopos deben utilizarse para la higiene del oído:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}>
+                            onPress={() => this.props.navigation.navigate('SuccesEstrella')}>
                             {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>Hacia atrás</Text>
+                            <Text style={styles.blanco}>Externo</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -51,12 +50,12 @@ class TriviaEstrella2 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SuccesEstrella')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Hacia adelante</Text>
+                            <Text style={styles.blanco}>Medio</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -65,24 +64,23 @@ class TriviaEstrella2 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd2')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd2')},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Es indistinto</Text>
+                            <Text style={styles.blanco}>Interno</Text>
                         </Button>
                     </View>
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
-                        <Button
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}>
+                        <Button>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 
@@ -165,4 +163,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella2;
+export default TriviaEstrella6;

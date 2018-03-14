@@ -35,20 +35,21 @@ import TriviaEwe3 from './Screens/Ewe/TriviaEwe3'
 import SuccesEwe from './Screens/Ewe/SuccesEwe'
 
 
-//Estrella Baby
-import EstrellaAdd1 from './Screens/EstrellaBaby/EstrellaAdd1'
-import EstrellaAdd2 from './Screens/EstrellaBaby/EstrellaAdd2'
-import EstrellaAdd3 from './Screens/EstrellaBaby/EstrellaAdd3'
-import ErrorEstrellaAdd4 from './Screens/EstrellaBaby/ErrorEstrellaAdd4'
-import ErrorEstrellaAdd5 from './Screens/EstrellaBaby/ErrorEstrellaAdd5'
-import ErrorEstrellaAdd6 from './Screens/EstrellaBaby/ErrorEstrellaAdd6'
+//Carril Estrella Baby
+import EstrellaAdd1 from './Screens/CarrilEstrella1/EstrellaAdd1'
+import EstrellaAdd2 from './Screens/CarrilEstrella1/EstrellaAdd2'
+import EstrellaAdd3 from './Screens/CarrilEstrella1/EstrellaAdd3'
+import TriviaEstrella1 from './Screens/CarrilEstrella1/TriviaEstrella1'
+import TriviaEstrella2 from './Screens/CarrilEstrella1/TriviaEstrella2'
+import TriviaEstrella3 from './Screens/CarrilEstrella1/TriviaEstrella3'
 
-import TriviaEstrella1 from './Screens/EstrellaBaby/TriviaEstrella1'
-import TriviaEstrella2 from './Screens/EstrellaBaby/TriviaEstrella2'
-import TriviaEstrella3 from './Screens/EstrellaBaby/TriviaEstrella3'
-import TriviaEstrella4 from './Screens/EstrellaBaby/TriviaEstrella4'
-import TriviaEstrella5 from './Screens/EstrellaBaby/TriviaEstrella5'
-import TriviaEstrella6 from './Screens/EstrellaBaby/TriviaEstrella6'
+import ErrorEstrellaAdd4 from './Screens/CarrilEstrella2/ErrorEstrellaAdd4'
+import ErrorEstrellaAdd5 from './Screens/CarrilEstrella2/ErrorEstrellaAdd5'
+import ErrorEstrellaAdd6 from './Screens/CarrilEstrella2/ErrorEstrellaAdd6'
+import TriviaEstrella4 from './Screens/CarrilEstrella2/TriviaEstrella4'
+import TriviaEstrella5 from './Screens/CarrilEstrella2/TriviaEstrella5'
+import TriviaEstrella6 from './Screens/CarrilEstrella2/TriviaEstrella6'
+
 
 import PremioEstrella from './Screens/EstrellaBaby/PremioEstrella'
 import SuccesEstrella from './Screens/EstrellaBaby/SuccesEstrella'

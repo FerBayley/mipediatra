@@ -51,7 +51,7 @@ class TriviaEstrella1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella4')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -65,7 +65,7 @@ class TriviaEstrella1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella4')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorEstrellaAdd4')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -76,13 +76,13 @@ class TriviaEstrella1 extends Component {
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       
 
                         <Button
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd1')}>
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}>
                             <Text style={{ color: 'white' }}>Como jugar</Text>
                         </Button>
 

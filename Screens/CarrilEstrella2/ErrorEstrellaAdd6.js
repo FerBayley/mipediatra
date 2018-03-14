@@ -1,5 +1,6 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
+import { StackNavigator } from 'react-navigation'
 import {
     View,
     StyleSheet,
@@ -7,10 +8,11 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking
+    Linking,
+    Alert
 } from "react-native";
 
-class ErrorEstrellaAdd4 extends Component {    
+class ErrorEstrellaAdd6 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -32,7 +34,7 @@ class ErrorEstrellaAdd4 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                       <Text>Add Error 1</Text>
+                      <Text>Error add 3</Text>
                     </View>                    
                 </Content>
 
@@ -42,7 +44,7 @@ class ErrorEstrellaAdd4 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('EstrellaMore1')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -55,7 +57,7 @@ class ErrorEstrellaAdd4 extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -79,4 +81,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default ErrorEstrellaAdd4;
+export default ErrorEstrellaAdd6;
