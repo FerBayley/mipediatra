@@ -36,16 +36,16 @@ import SuccesEwe from './Screens/Ewe/SuccesEwe'
 
 
 //Carril Estrella Baby
-import EstrellaAdd1 from './Screens/CarrilEstrella1/EstrellaAdd1'
-import EstrellaAdd2 from './Screens/CarrilEstrella1/EstrellaAdd2'
-import EstrellaAdd3 from './Screens/CarrilEstrella1/EstrellaAdd3'
+import EstrellaAdd1 from './Screens/EstrellaAds/EstrellaAdd1'
+import EstrellaAdd2 from './Screens/EstrellaAds/EstrellaAdd2'
+import EstrellaAdd3 from './Screens/EstrellaAds/EstrellaAdd3'
 import TriviaEstrella1 from './Screens/CarrilEstrella1/TriviaEstrella1'
 import TriviaEstrella2 from './Screens/CarrilEstrella1/TriviaEstrella2'
 import TriviaEstrella3 from './Screens/CarrilEstrella1/TriviaEstrella3'
 
-import ErrorEstrellaAdd4 from './Screens/CarrilEstrella2/ErrorEstrellaAdd4'
-import ErrorEstrellaAdd5 from './Screens/CarrilEstrella2/ErrorEstrellaAdd5'
-import ErrorEstrellaAdd6 from './Screens/CarrilEstrella2/ErrorEstrellaAdd6'
+import ErrorEstrellaAdd4 from './Screens/EstrellaAds/ErrorEstrellaAdd4'
+import ErrorEstrellaAdd5 from './Screens/EstrellaAds/ErrorEstrellaAdd5'
+import ErrorEstrellaAdd6 from './Screens/EstrellaAds/ErrorEstrellaAdd6'
 import TriviaEstrella4 from './Screens/CarrilEstrella2/TriviaEstrella4'
 import TriviaEstrella5 from './Screens/CarrilEstrella2/TriviaEstrella5'
 import TriviaEstrella6 from './Screens/CarrilEstrella2/TriviaEstrella6'

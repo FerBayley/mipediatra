@@ -34,7 +34,7 @@ class ErrorEstrellaAdd6 extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                      <Text>Error add 3</Text>
+                      <Text>Error estrella add 6</Text>
                     </View>                    
                 </Content>
 
