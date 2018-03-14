@@ -44,11 +44,31 @@ class TriviaEstrella1 extends Component {
                             <Text style={styles.blanco}>12</Text>
                         </Button>
 
-                        <Button full style={styles.btnB}>
+                        <Button full style={styles.btnB}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd1')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>5</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd1')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>A veces</Text>
                         </Button>
                     </View>

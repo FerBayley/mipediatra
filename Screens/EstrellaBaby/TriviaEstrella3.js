@@ -38,7 +38,17 @@ class TriviaEstrella3 extends Component {
                     </View>
 
                     <View style={styles.contenedorBtn}>
-                        <Button full style={styles.btnA}>
+                        <Button full style={styles.btnA}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd3')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Es igual que en los varones</Text>
                         </Button>
 
@@ -48,7 +58,17 @@ class TriviaEstrella3 extends Component {
                             <Text style={styles.blanco}>Debe hacerse de adelante hacia atrás</Text>
                         </Button>
 
-                        <Button full style={styles.btnC}>
+                        <Button full style={styles.btnC}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    'No te desanimes, tenes más oportunidades',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAdd3')},
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                        >
                             <Text style={styles.blanco}>Debe hacerse de atrás hacia adelante</Text>
                         </Button>
                     </View>

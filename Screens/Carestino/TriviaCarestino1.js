@@ -44,7 +44,7 @@ class TriviaCarestino1 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('CarestinoAdd1')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('CarestinoAdd3')},
                                     ],
                                     { cancelable: false }
                                   )}
