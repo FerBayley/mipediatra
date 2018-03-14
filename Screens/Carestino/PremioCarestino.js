@@ -6,16 +6,15 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform,
+    Platform
 } from "react-native";
-import { Font, AppLoading } from "expo";
 
 
-class PremioCarestino extends Component {
+class AddCarestino extends Component {
 
     static navigationOptions = {
-        title: 'Seleccionaste',
-        headerBackTitle: null,
+        title: 'Carestino',
+        headerBackTitle: 'Volver',
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -23,36 +22,17 @@ class PremioCarestino extends Component {
       };
 
 
-
-      async componentWillMount() {
-        await Font.loadAsync({
-          Roboto: require("native-base/Fonts/Roboto.ttf"),
-          Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
-        });
-        this.setState({ loading: false });
-      }
-
     render() {
         return (
             <Container style={styles.container}>
-                <Content>
-                    <View style={styles.logoCarestinoChico}>
-                        <Image
-                            style={{width: 230, height: 46}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/carestino-logo.png'}}
-                        />
-                        <Image
-                            style={{width: 334, height: 454}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/carestino/premio-carestino1.jpg'}}
-                        />
-                    </View>
+                <Content showsVerticalScrollIndicator={false}>
+                   <Text>Premio Carestino</Text>
                 </Content>
 
                 <Footer style={styles.Pie}>
-                    <FooterTab style={styles.Pie}>
-                        <Button
-                        onPress={() => this.props.navigation.navigate('TriviaCarestino1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                    <FooterTab>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaCarestino1')}>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -69,14 +49,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Pie: {
-            ...Platform.select({
-                ios: {
-                    backgroundColor: '#733596',
-                },
-                android: {
-                    backgroundColor: '#733596'
-                }
-            }),
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#DB0A88',
+            },
+            android: {
+                backgroundColor: '#DB0A88'
+            }
+        }),
     },
     colorBotones: {
         color: '#fff'
@@ -84,30 +64,16 @@ const styles = StyleSheet.create({
     logoCarestinoChico: {
         justifyContent: 'center',
         alignItems: 'center',
-            ...Platform.select({
-                ios: {
-                    marginTop: 35
-                },
-                android: {
-                    marginTop: 10
-                }
-            }),
+        marginTop: 35
     },
     addProducto: {
-        flex: 1, 
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 10,
-        ...Platform.select({
-            ios: {
-                marginTop: 5,
-            },
-            android: {
-                marginTop: 1,
-                alignSelf: 'stretch'
-            }
-        }),
+        marginTop: 10
+    },
+    Pie: {
+        backgroundColor: '#DB0A88'
     }
 });
 
-export default PremioCarestino;
+export default AddCarestino;

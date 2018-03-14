@@ -37,7 +37,7 @@ class PremioGraco extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab>
-                        <Button onPress={() => this.props.navigation.navigate('null')}>
+                        <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
                             <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>PROXIMAMENTE</Text>
                         </Button>                       
                     </FooterTab>

@@ -56,6 +56,27 @@ import CarestinoAdd1 from './Screens/Carestino/CarestinoAdd1'
 import CarestinoAdd2 from './Screens/Carestino/CarestinoAdd2'
 import CarestinoAdd3 from './Screens/Carestino/CarestinoAdd3'
 
+import EweMore1 from './Screens/MoreTrivias/EweMore1'
+import EweMore2 from './Screens/MoreTrivias/EweMore2'
+import EweMore3 from './Screens/MoreTrivias/EweMore3'
+import EweMore4 from './Screens/MoreTrivias/EweMore4'
+import EweMore5 from './Screens/MoreTrivias/EweMore5'
+import EweMore6 from './Screens/MoreTrivias/EweMore6'
+
+import BabyjoggerMore1 from './Screens/MoreTrivias/BabyjoggerMore1'
+import BabyjoggerMore2 from './Screens/MoreTrivias/BabyjoggerMore2'
+import BabyjoggerMore3 from './Screens/MoreTrivias/BabyjoggerMore3'
+import BabyjoggerMore4 from './Screens/MoreTrivias/BabyjoggerMore4'
+import BabyjoggerMore5 from './Screens/MoreTrivias/BabyjoggerMore5'
+import BabyjoggerMore6 from './Screens/MoreTrivias/BabyjoggerMore6'
+
+import EstrellaMore1 from './Screens/MoreTrivias/EstrellaMore1'
+import EstrellaMore2 from './Screens/MoreTrivias/EstrellaMore2'
+import EstrellaMore3 from './Screens/MoreTrivias/EstrellaMore3'
+import EstrellaMore4 from './Screens/MoreTrivias/EstrellaMore4'
+import EstrellaMore5 from './Screens/MoreTrivias/EstrellaMore5'
+import EstrellaMore6 from './Screens/MoreTrivias/EstrellaMore6'
+
 
 export default class App extends React.Component {
     render() {
@@ -117,5 +138,32 @@ const AppNavigator = StackNavigator({
     CarestinoAdd2: { screen: CarestinoAdd2 },
     CarestinoAdd3: { screen: CarestinoAdd3 },
     PremioCarestino: { screen: PremioCarestino },
-    AddCarestino: { screen: AddCarestino }
+    AddCarestino: { screen: AddCarestino },
+
+    //More EWE
+    EweMore1: { screen: EweMore1 },
+    EweMore2: { screen: EweMore2 },
+    EweMore3: { screen: EweMore3 },
+    EweMore4: { screen: EweMore4 },
+    EweMore5: { screen: EweMore5 },
+    EweMore6: { screen: EweMore6 },
+    //More EWE
+
+    //More BABYJOGGER
+    BabyjoggerMore1: { screen: BabyjoggerMore1 },
+    BabyjoggerMore2: { screen: BabyjoggerMore2 },
+    BabyjoggerMore3: { screen: BabyjoggerMore3 },
+    BabyjoggerMore4: { screen: BabyjoggerMore4 },
+    BabyjoggerMore5: { screen: BabyjoggerMore5 },
+    BabyjoggerMore6: { screen: BabyjoggerMore6 },
+    //More BABYJOGGER
+
+    //More ESTRELLABABY
+        EstrellaMore1: { screen: EstrellaMore1 },
+        EstrellaMore2: { screen: EstrellaMore2 },
+        EstrellaMore3: { screen: EstrellaMore3 },
+        EstrellaMore4: { screen: EstrellaMore4 },
+        EstrellaMore5: { screen: EstrellaMore5 },
+        EstrellaMore6: { screen: EstrellaMore6 },
+     //More ESTRELLABABY
 })
