@@ -16,7 +16,8 @@ class TriviaEstrella7 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
-        headerBackTitle: 'Volver',
+        headerLeft: null,
+        gesturesEnabled: false,
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
@@ -56,7 +57,7 @@ class TriviaEstrella7 extends Component {
 
                         {/* Respuesta Correcta*/}
                         <Button full style={styles.btnB}                           
-                            onPress={() => this.props.navigation.navigate(EstrellaAdd7)} 
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd7')} 
                         >
                             <Text style={styles.blanco}>Los pliegues de la ingle</Text>
                         </Button>

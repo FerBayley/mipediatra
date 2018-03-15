@@ -31,7 +31,8 @@ class Succes extends Component {
                     <View style={styles.addProducto}>
                         <Text style={styles.textHappy}>Felicitaciones!</Text>
                         <Text style={styles.textoParrafo}>
-                            Ganaste una chance para el sorteo de este premio, vas a recibir un mail para informarte si ganaste!
+                            Ganaste una chance para el sorteo de este premio, recibirás mails y alertas con los nombres de los ganadores 
+                            del sorteo.
                         </Text>
                     </View>
 

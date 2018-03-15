@@ -36,20 +36,19 @@ import SuccesEwe from './Screens/Ewe/SuccesEwe'
 
 
 //Carril Estrella Baby
-import EstrellaAdd1 from './Screens/EstrellaAds/EstrellaAdd1'
-import EstrellaAdd2 from './Screens/EstrellaAds/EstrellaAdd2'
-import EstrellaAdd3 from './Screens/EstrellaAds/EstrellaAdd3'
 import TriviaEstrella1 from './Screens/CarrilEstrella1/TriviaEstrella1'
 import TriviaEstrella2 from './Screens/CarrilEstrella1/TriviaEstrella2'
 import TriviaEstrella3 from './Screens/CarrilEstrella1/TriviaEstrella3'
 
+import EstrellaAdd1 from './Screens/EstrellaAds/EstrellaAdd1'
+import EstrellaAdd2 from './Screens/EstrellaAds/EstrellaAdd2'
+import EstrellaAdd3 from './Screens/EstrellaAds/EstrellaAdd3'
 import EstrellaAdd4 from './Screens/EstrellaAds/EstrellaAdd4'
-import EstrellaAdd8 from './Screens/EstrellaAds/EstrellaAdd8'
-import EstrellaAdd9 from './Screens/EstrellaAds/EstrellaAdd9'
-
-import EstrellaAdd7 from './Screens/EstrellaAds/EstrellaAdd7'
 import EstrellaAdd5 from './Screens/EstrellaAds/EstrellaAdd5'
 import EstrellaAdd6 from './Screens/EstrellaAds/EstrellaAdd6'
+import EstrellaAdd7 from './Screens/EstrellaAds/EstrellaAdd7'
+import EstrellaAdd8 from './Screens/EstrellaAds/EstrellaAdd8'
+import EstrellaAdd9 from './Screens/EstrellaAds/EstrellaAdd9'
 
 import A from './Screens/EstrellaAds/A'
 import B from './Screens/EstrellaAds/B'
@@ -111,6 +110,7 @@ const AppNavigator = StackNavigator({
     EstrellaAdd4: { screen: EstrellaAdd4 },
     EstrellaAdd5: { screen: EstrellaAdd5 },
     EstrellaAdd6: { screen: EstrellaAdd6 },
+    EstrellaAdd7: { screen: EstrellaAdd7 },
     TriviaEstrella1: { screen: TriviaEstrella1 },
     TriviaEstrella2: { screen: TriviaEstrella2 },
     TriviaEstrella3: { screen: TriviaEstrella3 },
@@ -184,7 +184,4 @@ const AppNavigator = StackNavigator({
     TriviaEstrella8: { screen: TriviaEstrella8 },
     TriviaEstrella9: { screen: TriviaEstrella9 },
 
-    EstrellaAdd7: { screen: EstrellaAdd7 },
-    EstrellaAdd8: { screen: EstrellaAdd8 },
-    EstrellaAdd9: { screen: EstrellaAdd9 },
 })

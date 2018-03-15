@@ -16,7 +16,8 @@ class TriviaEstrella2 extends Component {
 
     static navigationOptions = {
         title: 'Mi Pediatra Trivias',
-        headerBackTitle: 'Volver',
+        headerLeft: null,
+        gesturesEnabled: false,
         headerStyle: {
             backgroundColor: '#DB0A88',
           },
