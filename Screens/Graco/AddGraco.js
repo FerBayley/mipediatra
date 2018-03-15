@@ -30,10 +30,10 @@ class AddGraco extends Component {
                     <Text>Pauta Graco</Text>
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
-                        </Button>                       
+                        </Button>                  
 
                         <Button>
                             <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>

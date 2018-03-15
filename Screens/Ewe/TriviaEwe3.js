@@ -55,7 +55,7 @@ class TriviaEwe3 extends Component {
 
                 </Content>
                 <Footer style={styles.Pie}>
-                    <FooterTab>
+                    <FooterTab style={styles.Pie}>
                         <Button>
                             <Text style={{ color: 'white' }}>Contacto</Text>
                         </Button>                       

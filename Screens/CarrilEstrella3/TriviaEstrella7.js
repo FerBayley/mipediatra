@@ -61,9 +61,6 @@ class TriviaEstrella7 extends Component {
                             <Text style={styles.blanco}>Los pliegues de la ingle</Text>
                         </Button>
 
-
-
-
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
