@@ -45,7 +45,7 @@ class TriviaEstrella7 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -56,7 +56,7 @@ class TriviaEstrella7 extends Component {
 
                         {/* Respuesta Correcta*/}
                         <Button full style={styles.btnB}                           
-                            onPress={() => this.props.navigation.navigate(null)} 
+                            onPress={() => this.props.navigation.navigate(EstrellaAdd7)} 
                         >
                             <Text style={styles.blanco}>Los pliegues de la ingle</Text>
                         </Button>
@@ -70,7 +70,7 @@ class TriviaEstrella7 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}

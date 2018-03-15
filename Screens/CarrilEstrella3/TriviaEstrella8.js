@@ -42,7 +42,7 @@ class TriviaEstrella8 extends Component {
                     <View style={styles.contenedorBtn}>
                     {/* Respuesta Correcta*/}
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate(null)}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd8')}
                         >
                             <Text style={styles.blanco}>Desde el nacimiento</Text>
                         </Button>
@@ -55,7 +55,7 @@ class TriviaEstrella8 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('B')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}
@@ -71,7 +71,7 @@ class TriviaEstrella8 extends Component {
                                     'Respuesta Incorrecta',
                                     'No te desanimes, tenes más oportunidades',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('B')},
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
                                     ],
                                     { cancelable: false }
                                   )}

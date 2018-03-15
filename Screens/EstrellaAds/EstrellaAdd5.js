@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { Constants, WebBrowser } from 'expo';
 
-class EstrellaAdd1 extends Component {    
+class EstrellaAdd5 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -32,14 +32,12 @@ class EstrellaAdd1 extends Component {
                             barStyle="light-content"
                         />
                     </View>
-                    <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella2')}>
-                        <Image
-                            style={{width: 316, height: 610}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-add1.png'}}
-                        />
-                       </TouchableOpacity>
-                    </View>                      
+                        <View style={styles.addProducto}>
+                            <Image
+                                style={{width: 386, height: 600}}
+                                source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/panal2.png'}}
+                            />
+                        </View>                
                 </Content>
                 
                 <Button
@@ -57,7 +55,7 @@ class EstrellaAdd1 extends Component {
                         </Button>                       
 
                         <Button
-                            onPress={() => this.props.navigation.navigate('TriviaEstrella2')}
+                            onPress={() => this.props.navigation.navigate('TriviaEstrella6')}
                         >
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
@@ -97,4 +95,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default EstrellaAdd1;
+export default EstrellaAdd5;

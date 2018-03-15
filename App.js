@@ -43,9 +43,13 @@ import TriviaEstrella1 from './Screens/CarrilEstrella1/TriviaEstrella1'
 import TriviaEstrella2 from './Screens/CarrilEstrella1/TriviaEstrella2'
 import TriviaEstrella3 from './Screens/CarrilEstrella1/TriviaEstrella3'
 
-import ErrorEstrellaAdd4 from './Screens/EstrellaAds/ErrorEstrellaAdd4'
-import ErrorEstrellaAdd5 from './Screens/EstrellaAds/ErrorEstrellaAdd5'
-import ErrorEstrellaAdd6 from './Screens/EstrellaAds/ErrorEstrellaAdd6'
+import EstrellaAdd4 from './Screens/EstrellaAds/EstrellaAdd4'
+import EstrellaAdd8 from './Screens/EstrellaAds/EstrellaAdd8'
+import EstrellaAdd9 from './Screens/EstrellaAds/EstrellaAdd9'
+
+import EstrellaAdd7 from './Screens/EstrellaAds/EstrellaAdd7'
+import EstrellaAdd5 from './Screens/EstrellaAds/EstrellaAdd5'
+import EstrellaAdd6 from './Screens/EstrellaAds/EstrellaAdd6'
 
 import A from './Screens/EstrellaAds/A'
 import B from './Screens/EstrellaAds/B'
@@ -88,6 +92,7 @@ import TriviaEstrella7 from './Screens/CarrilEstrella3/TriviaEstrella7'
 import TriviaEstrella8 from './Screens/CarrilEstrella3/TriviaEstrella8'
 import TriviaEstrella9 from './Screens/CarrilEstrella3/TriviaEstrella9'
 
+
 export default class App extends React.Component {
     render() {
         return (            
@@ -103,9 +108,9 @@ const AppNavigator = StackNavigator({
     EstrellaAdd1: { screen: EstrellaAdd1 },
     EstrellaAdd2: { screen: EstrellaAdd2 },
     EstrellaAdd3: { screen: EstrellaAdd3 },
-    ErrorEstrellaAdd4: { screen: ErrorEstrellaAdd4 },
-    ErrorEstrellaAdd5: { screen: ErrorEstrellaAdd5 },
-    ErrorEstrellaAdd6: { screen: ErrorEstrellaAdd6 },
+    EstrellaAdd4: { screen: EstrellaAdd4 },
+    EstrellaAdd5: { screen: EstrellaAdd5 },
+    EstrellaAdd6: { screen: EstrellaAdd6 },
     TriviaEstrella1: { screen: TriviaEstrella1 },
     TriviaEstrella2: { screen: TriviaEstrella2 },
     TriviaEstrella3: { screen: TriviaEstrella3 },
@@ -178,4 +183,8 @@ const AppNavigator = StackNavigator({
     TriviaEstrella7: { screen: TriviaEstrella7 },
     TriviaEstrella8: { screen: TriviaEstrella8 },
     TriviaEstrella9: { screen: TriviaEstrella9 },
+
+    EstrellaAdd7: { screen: EstrellaAdd7 },
+    EstrellaAdd8: { screen: EstrellaAdd8 },
+    EstrellaAdd9: { screen: EstrellaAdd9 },
 })

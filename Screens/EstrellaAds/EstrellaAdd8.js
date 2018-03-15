@@ -12,7 +12,7 @@ import {
     Alert
 } from "react-native";
 
-class ErrorEstrellaAdd6 extends Component {    
+class EstrellaAdd8 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -47,7 +47,7 @@ class ErrorEstrellaAdd6 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella6')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella9')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -84,4 +84,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default ErrorEstrellaAdd6;
+export default EstrellaAdd8;

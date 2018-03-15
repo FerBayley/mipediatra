@@ -41,7 +41,7 @@ class TriviaEstrella9 extends Component {
                     <View style={styles.contenedorBtn}>
                         {/* Respuesta Correcta*/}
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate(null)} 
+                            onPress={() => this.props.navigation.navigate(EstrellaAdd9)} 
                         >
                             <Text style={styles.blanco}>1-3 días</Text>
                         </Button>

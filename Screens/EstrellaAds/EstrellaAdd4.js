@@ -10,7 +10,7 @@ import {
     Linking
 } from "react-native";
 
-class ErrorEstrellaAdd4 extends Component {    
+class EstrellaAdd4 extends Component {    
 
     static navigationOptions = {
         title: 'Publicidad',
@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default ErrorEstrellaAdd4;
+export default EstrellaAdd4;
