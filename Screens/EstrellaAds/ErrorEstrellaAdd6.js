@@ -33,9 +33,12 @@ class ErrorEstrellaAdd6 extends Component {
                             barStyle="light-content"
                         />
                     </View>
-                    <View style={styles.imagenPauta}>
-                      <Text>Error estrella add 6</Text>
-                    </View>                    
+                        <View style={styles.addProducto}>
+                            <Image
+                                style={{width: 386, height: 600}}
+                                source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/panal2.png'}}
+                            />
+                        </View>                    
                 </Content>
 
                 <Footer style={styles.Pie}>
@@ -44,7 +47,7 @@ class ErrorEstrellaAdd6 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Succes')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella6')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

@@ -84,6 +84,10 @@ import ErrorEweAdd1 from './Screens/CarrilEwe/ErrorEweAdd1'
 import ErrorEweAdd2 from './Screens/CarrilEwe/ErrorEweAdd2'
 import ErrorEweAdd3 from './Screens/CarrilEwe/ErrorEweAdd3'
 
+import TriviaEstrella7 from './Screens/CarrilEstrella3/TriviaEstrella7'
+import TriviaEstrella8 from './Screens/CarrilEstrella3/TriviaEstrella8'
+import TriviaEstrella9 from './Screens/CarrilEstrella3/TriviaEstrella9'
+
 export default class App extends React.Component {
     render() {
         return (            
@@ -170,4 +174,8 @@ const AppNavigator = StackNavigator({
     A: { screen: A },
     B: { screen: B },
     C: { screen: C },
+
+    TriviaEstrella7: { screen: TriviaEstrella7 },
+    TriviaEstrella8: { screen: TriviaEstrella8 },
+    TriviaEstrella9: { screen: TriviaEstrella9 },
 })

@@ -32,7 +32,7 @@ class C extends Component {
                         />
                     </View>
                     <View style={styles.imagenPauta}>
-                        <Text style={{ fontSize: 30, marginTop: 130 }}>Vista C</Text>
+                        {/*<Text style={{ fontSize: 30, marginTop: 130 }}>Vista C</Text>*/}
                        <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEstrella3')}>
                         <Image
                             style={{width: 316, height: 610}}

@@ -32,9 +32,12 @@ class ErrorEstrellaAdd5 extends Component {
                             barStyle="light-content"
                         />
                     </View>
-                    <View style={styles.imagenPauta}>
-                        <Text>Error Estrella 5</Text>
-                    </View>                  
+                        <View style={styles.addProducto}>
+                            <Image
+                                style={{width: 386, height: 600}}
+                                source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/panal2.png'}}
+                            />
+                        </View>                
                 </Content>
                 
                 <Button
