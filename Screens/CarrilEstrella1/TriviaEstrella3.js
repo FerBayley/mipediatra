@@ -47,6 +47,7 @@ class TriviaEstrella3 extends Component {
                                     'No te desanimes, tenes más oportunidades',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')},
+                                      {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -67,6 +68,7 @@ class TriviaEstrella3 extends Component {
                                     'No te desanimes, tenes más oportunidades',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')},
+                                      {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}
                                     ],
                                     { cancelable: false }
                                   )}
