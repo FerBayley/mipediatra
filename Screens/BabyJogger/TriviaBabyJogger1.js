@@ -50,7 +50,7 @@ class TriviaBabyJogger1 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd1')},
                                     ],
@@ -64,7 +64,7 @@ class TriviaBabyJogger1 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('ErrorBabyJoggeradd1')},
                                     ],

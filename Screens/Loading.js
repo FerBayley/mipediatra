@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, Text, ActivityIndicator, StatusBar } from 'react-native'
 
-
 class Loading extends Component {
 
     static navigationOptions = {

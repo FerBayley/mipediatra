@@ -50,7 +50,7 @@ class TriviaEstrella6 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('B')},
                                       {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}
@@ -65,7 +65,7 @@ class TriviaEstrella6 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('B')},
                                       {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}

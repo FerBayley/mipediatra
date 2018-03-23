@@ -49,7 +49,7 @@ class TriviaCarestino3 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')},
                                     ],
@@ -63,7 +63,7 @@ class TriviaCarestino3 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
-                                    'No te desanimes, tenes más oportunidades',
+                                    '',
                                     [
                                       {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')},
                                     ],

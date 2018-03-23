@@ -14,8 +14,8 @@ import {
 class PremioEstrella extends Component {
 
     static navigationOptions = {
-        title: 'Seleccionaste',
-        headerBackTitle: 'Volver',
+        title: 'Participas por el premio de:',
+        headerBackTitle: "",
         headerStyle: {
             backgroundColor: '#DB0A88',
           },

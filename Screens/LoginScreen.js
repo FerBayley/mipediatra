@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Form, Item, Input, Label, Text } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import { Constants } from 'expo';
+import Expo from 'expo';
 import React, { Component } from "react";
+import { GoogleSignin } from 'react-native-google-signin';
 import {
     View,
     StyleSheet,
@@ -10,7 +13,6 @@ import {
     TouchableOpacity,
     TextInput
 } from "react-native";
-import email from 'react-native-email';
 
 class LoginScreen extends Component {   
 
@@ -29,19 +31,16 @@ class LoginScreen extends Component {
                         </View>
                     </View>  
            
-                    <Button full style={styles.btn1}>
-                        <Text style={styles.btnTextBtn}>Crea una cuenta nueva</Text>
-                    </Button>
-
-                    <Button full style={styles.btn2} 
-                    onPress={() => this.props.navigation.navigate('Politicas')}>
-                        <Text style={styles.btnTextBtn}>Empezá a juagar acá</Text>
-                    </Button>
-                    
                     <Button full style={styles.btnFacebook}>
-                        <Text style={styles.btnTextBtn}>Facebook</Text>
-                    </Button>
+                        <Text>Ingresar con Facebook</Text>
+                    </Button>       
 
+                    <Button full style={styles.btnFacebook}
+                        onPress={() => this.signInWithGoogleAsync}>
+                        <Text>Ingresar con Google</Text>
+                    </Button>                    
+                    
+                    
                     <Grid style={styles.griden}>
                         <Col style={{ height: 200 }}>
                             <TouchableOpacity
@@ -63,6 +62,7 @@ class LoginScreen extends Component {
                 </Content>
             </Container>
         );
+    
     }
 }
 
@@ -86,24 +86,12 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 130
     },      
-    btn1: {
-        backgroundColor: '#ddd',
-        marginBottom: 15,
-        marginTop: 15,
-        borderRadius: 4,
-        height: 60
-    },
-    btn2: {
-        backgroundColor: '#DB0A88',
-        marginBottom: 5,
-        borderRadius: 4,
-        height: 45
-    },
     btnFacebook: {
-        backgroundColor: '#ddd',
+        backgroundColor: '#3b5998',
         marginBottom: 10,
+        marginTop: 20,
         borderRadius: 4,
-        height: 45
+        height: 55
     },
     btnText: {
         justifyContent: 'center',
