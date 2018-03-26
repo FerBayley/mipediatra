@@ -3,7 +3,6 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Constants } from 'expo';
 import Expo from 'expo';
 import React, { Component } from "react";
-import { GoogleSignin } from 'react-native-google-signin';
 import {
     View,
     StyleSheet,
@@ -11,8 +10,10 @@ import {
     StatusBar,
     Dimensions,
     TouchableOpacity,
-    TextInput
+    TextInput, 
+    Alert
 } from "react-native";
+const FB_APP_ID = '128016374696409'
 
 class LoginScreen extends Component {   
 
@@ -20,9 +21,33 @@ class LoginScreen extends Component {
         header: null,
       };    
 
+    constructor(props) {
+        super(props);
+        this.state = { email: '', password: '', error: 'Error al ingresar', loading: false, userInfo: null };
+    }  
+
+
+    async loginFB() {
+        const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('128016374696409', {
+            permissions: ['public_profile'],
+          });
+        if (type === 'success') {
+          // Get the user's name using Facebook's Graph API
+          const response = await fetch(
+            `https://graph.facebook.com/me?access_token=${token}`);
+          Alert.alert(
+            'Bienvenidos',
+            `Hola ${(await response.json()).name}!`,
+            [
+                {onPress: () => this.props.navigation.navigate('Politicas')},
+            ],
+          );
+        }
+      }
+
     render() {
         return (
-            
+
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
                     <View style={styles.logo}>
@@ -31,15 +56,19 @@ class LoginScreen extends Component {
                         </View>
                     </View>  
            
-                    <Button full style={styles.btnFacebook}>
+                    <Button full style={styles.btnFacebook}
+                        onPress={this.loginFB.bind(this)}
+                    >
                         <Text>Ingresar con Facebook</Text>
                     </Button>       
 
-                    <Button full style={styles.btnFacebook}
-                        onPress={() => this.signInWithGoogleAsync}>
-                        <Text>Ingresar con Google</Text>
-                    </Button>                    
-                    
+                    <Button full style={styles.btnGoogle}
+                        onPress={() => this.props.navigation.navigate('Politicas')}
+                    >
+                        <Text>Ingresar como invitado</Text>
+                    </Button>       
+
+
                     
                     <Grid style={styles.griden}>
                         <Col style={{ height: 200 }}>
@@ -51,7 +80,7 @@ class LoginScreen extends Component {
 
                         <Col style={{ height: 200 }}>
                         <TouchableOpacity 
-                            onPress={() => this.props.navigation.navigate('Politicas')}
+                            onPress={() => this.props.navigation.navigate('PoliticasMuestra')}
                         >
                             <Text style={styles.btnText}>Bases del juego</Text>
                         </TouchableOpacity>
@@ -84,12 +113,18 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        marginTop: 130
+        marginTop: 130,
+        marginBottom: 15
     },      
     btnFacebook: {
         backgroundColor: '#3b5998',
-        marginBottom: 10,
-        marginTop: 20,
+        marginTop: 10,
+        borderRadius: 4,
+        height: 55
+    },
+    btnGoogle: {
+        backgroundColor: '#dd4b39',
+        marginTop: 10,
         borderRadius: 4,
         height: 55
     },

@@ -25,6 +25,30 @@ class BrandScreen extends Component {
           headerTintColor: '#fff',
       };
 
+      const = transitionConfig = () => {
+        return {
+          transitionSpec: {
+            duration: 750,
+            easing: Easing.out(Easing.poly(4)),
+            timing: Animated.timing,
+            useNativeDriver: true,
+          },
+          screenInterpolator: sceneProps => {      
+            const { layout, position, scene } = sceneProps
+      
+            const thisSceneIndex = scene.index
+            const width = layout.initWidth
+      
+            const translateX = position.interpolate({
+              inputRange: [thisSceneIndex - 1, thisSceneIndex],
+              outputRange: [width, 0],
+            })
+      
+            return { transform: [ { translateY } ] }
+          },
+        }
+      }
+
     render() {
         return (
             <Container style={styles.container}>
@@ -42,50 +66,52 @@ class BrandScreen extends Component {
 
                     <Grid style={styles.Griden}>
                         <Col style={{ height: 400 }}>
+                            {/* Trivia Estrella */}
+                                <TouchableOpacity style={styles.Btn4}
+                                onPress={() => this.props.navigation.navigate('PremioEstrella')}>
+                                    <View>
+                                        <Image source={require('../assets/images/estrella-logo.png')} />
+                                    </View>
+                                </TouchableOpacity>
+                            {/* Trivia Estrella */}       
 
-                            <TouchableOpacity style={styles.Btn1}
-                                onPress={() => this.props.navigation.navigate('PremioCarestino')}>
-                                <View>
-                                    <Image source={require('../assets/images/carestino-logo.png')} />
-                                </View>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={styles.Btn2}
-                            onPress={() => this.props.navigation.navigate('PremioEwe')}>
-                                <View>
-                                    <Image source={require('../assets/images/ewe-logo.png')} />
-                                </View> 
-                            </TouchableOpacity>
-
+                            {/* Trivia Gracco */}   
                             <TouchableOpacity style={styles.Btn3}
-                            onPress={() => this.props.navigation.navigate('PremioGraco')}>
-                                <View>
-                                    <Image source={require('../assets/images/gracos-logo.png')} />
-                                </View>    
-                            </TouchableOpacity>                      
+                                onPress={() => this.props.navigation.navigate('PremioGraco')}>
+                                    <View>
+                                        <Image source={require('../assets/images/gracos-logo.png')} />
+                                    </View>    
+                            </TouchableOpacity>   
+                            {/* Trivia Gracco */}   
+
+                            {/* Trivia Silfab */}   
+                            <TouchableOpacity style={styles.Btn6}
+                                onPress={() => this.props.navigation.navigate('PremioSilfab')}>
+                                    <View>
+                                        <Image source={require('../assets/images/logo-silfab.png')} />
+                                    </View>
+                            </TouchableOpacity>  
+                            {/* Trivia Silfab */}             
                         </Col>
 
                         <Col style={{ height: 400 }}>
-                            <TouchableOpacity style={styles.Btn4}
-                            onPress={() => this.props.navigation.navigate('PremioEstrella')}>
-                                <View>
-                                    <Image source={require('../assets/images/estrella-logo.png')} />
-                                </View>
+                            {/* Trivia Ewe */}
+                            <TouchableOpacity style={styles.Btn2}
+                                onPress={() => this.props.navigation.navigate('PremioEwe')}>
+                                    <View>
+                                        <Image source={require('../assets/images/ewe-logo.png')} />
+                                    </View> 
                             </TouchableOpacity>
+                            {/* Trivia Ewe */}
 
+                            {/* Trivia BabyJogger */}
                             <TouchableOpacity style={styles.Btn5}
-                            onPress={() => this.props.navigation.navigate('PremioJogger')}>
-                                <View>
-                                    <Image source={require('../assets/images/jogger-logo.png')} />
-                                </View>
+                                onPress={() => this.props.navigation.navigate('PremioJogger')}>
+                                    <View>
+                                        <Image source={require('../assets/images/jogger-logo.png')} />
+                                    </View>
                             </TouchableOpacity> 
-
-                            <TouchableOpacity style={styles.Btn6}
-                            onPress={() => this.props.navigation.navigate('PremioSilfab')}>
-                                <View>
-                                    <Image source={require('../assets/images/logo-silfab.png')} />
-                                </View>
-                            </TouchableOpacity>  
+                            {/* Trivia BabyJogger */}
                         </Col>
                     </Grid>
                     

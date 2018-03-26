@@ -20,7 +20,7 @@ class Ayuda extends Component {
           },
           headerTintColor: '#fff'
       };
-
+      
 
     render() {
         return (
@@ -31,17 +31,23 @@ class Ayuda extends Component {
                             barStyle="light-content"
                         />
                     </View>
+
+                    <View>
+                        <Text style={styles.cuerpoAyuda}>
+                            1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 
+                        </Text>
+                        <Text style={styles.cuerpoAyuda}>
+                            2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.
+                        </Text>
+                    </View>
                 </Content>
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>Contacto</Text>
-                        </Button>                       
-
-                        <Button>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>Como jugar</Text>
-                        </Button>
-
+                        <Button
+                            onPress={() => this.props.navigation.navigate('LoginScreen')}
+                        >
+                            <Text style={{ color: 'white', fontWeight: '800' }}>EMPEZAR A JUGAR</Text>
+                        </Button>                      
                     </FooterTab>
                 </Footer>
             </Container>
@@ -71,6 +77,15 @@ const styles = StyleSheet.create({
     },
     Pie: {
         backgroundColor: '#DB0A88'
+    },
+    cuerpoAyuda: {
+        fontSize: 18,
+        paddingTop: 30,
+        paddingLeft: 20,
+        paddingRight: 20,
+        color: 'grey',
+        lineHeight: 25,
+        textAlign: 'justify'
     }
 });
 

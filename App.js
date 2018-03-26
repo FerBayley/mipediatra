@@ -1,18 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, ActivityIndicator } from 'react-native';
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator } from 'react-navigation';
+import * as firebase from 'firebase';
 
 import LoginScreen from './Screens/LoginScreen'
 import HomeScreen from './Screens/HomeScreen'
 import Politicas from './Screens/Politicas'
+import PoliticasMuestra from './Screens/PoliticasMuestra'
 import BrandScreen from './Screens/BrandScreen'
 import Ayuda from './Screens/Ayuda'
 import AddGraco from './Screens/Graco/AddGraco'
 import AddEwe from './Screens/Ewe/AddEwe'
-import TriviaCarestino1 from './Screens/Carestino/TriviaCarestino1'
-import TriviaCarestino2 from './Screens/Carestino/TriviaCarestino2'
-import TriviaCarestino3 from './Screens/Carestino/TriviaCarestino3'
-import PremioCarestino from './Screens/Carestino/PremioCarestino'
 import PremioGraco from './Screens/Graco/PremioGraco'
 import PremioSilfab from './Screens/Silfab/PremioSilfab'
 import Loading from './Screens/Loading'
@@ -66,10 +64,6 @@ import SuccesEstrella from './Screens/EstrellaBaby/SuccesEstrella'
 import Perdiste from './Screens/Perdiste'
 import NoAcepto from './Screens/NoAcepto'
 
-//CarestinoAdds
-import CarestinoAdd1 from './Screens/Carestino/CarestinoAdd1'
-import CarestinoAdd2 from './Screens/Carestino/CarestinoAdd2'
-import CarestinoAdd3 from './Screens/Carestino/CarestinoAdd3'
 
 import Succes from './Screens/Succes'
 
@@ -141,26 +135,18 @@ const AppNavigator = StackNavigator({
     BabyJoggeradd3: { screen: BabyJoggeradd3 },
     Loading: { screen: Loading },
     Politicas: { screen: Politicas },
+    PoliticasMuestra: { screen: PoliticasMuestra },
     HomeScreen: { screen: HomeScreen },
     Ayuda: { screen: Ayuda },
     AddGraco: { screen: AddGraco },
     Succes: { screen: Succes },
-    //Trivias de Carestino
-    TriviaCarestino1: { screen: TriviaCarestino1 },
-    TriviaCarestino2: { screen: TriviaCarestino2 },
-    TriviaCarestino3: { screen: TriviaCarestino3 },
-    TriviaCarestino3: { screen: TriviaCarestino3 },
+    
     //Pantalla que anuncia que se gano el set de preguntas
-    PremioCarestino: { screen: PremioCarestino },
     PremioGraco: { screen: PremioGraco },
     PremioSilfab: { screen: PremioSilfab },
     PremioJogger: { screen: PremioJogger },
     Perdiste: { screen: Perdiste },
     NoAcepto: { screen: NoAcepto },
-    CarestinoAdd1: { screen: CarestinoAdd1 },
-    CarestinoAdd2: { screen: CarestinoAdd2 },
-    CarestinoAdd3: { screen: CarestinoAdd3 },
-    PremioCarestino: { screen: PremioCarestino },
 
     ErrorBabyJoggeradd1: { screen: ErrorBabyJoggeradd1 },
     ErrorBabyJoggeradd2: { screen: ErrorBabyJoggeradd2 },
