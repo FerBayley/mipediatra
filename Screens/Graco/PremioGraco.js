@@ -64,13 +64,11 @@ class PremioGraco extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 153, height: 62, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/graco/graco-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/graco-logopremio.png')} />
 
                         <Image
                             style={{width: 310, height: 310, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/graco/sorteo-graco.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-graco.png')} />
                     </View>
                 </Content>
 

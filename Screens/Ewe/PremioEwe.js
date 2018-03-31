@@ -64,13 +64,11 @@ class PremioEwe extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 143, height: 79, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/ewe-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/ewe-logopremio.png')} />
 
                         <Image
                             style={{width: 263, height: 263, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/sorteo-ewe.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-ewe.png')} />
                     </View>
                 </Content>
 

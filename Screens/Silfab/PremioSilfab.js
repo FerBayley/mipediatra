@@ -61,9 +61,12 @@ class PremioSilfab extends Component {
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
-                            style={{width: 316, height: 600}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/silfab/silfab.png'}}
-                        />
+                            style={{width: 145, height: 58, marginTop: 50}}
+                            source={require('../../assets/images/silfab-logopremio.png')} />
+
+                        <Image
+                            style={{width: 273, height: 260, marginTop: 40}}
+                            source={require('../../assets/images/sorteo-silfab.png')} />
                     </View>
                 </Content>
 

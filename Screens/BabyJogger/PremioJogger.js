@@ -64,13 +64,11 @@ class PremioJogger extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 198, height: 45, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/babyjogger/jogger-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/jogger-logopremio.png')} />
 
                         <Image
                             style={{width: 370, height: 307, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/babyjogger/sorteo-jogger.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-jogger.png')} />
                     </View>
                 </Content>
 

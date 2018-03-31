@@ -64,13 +64,11 @@ class PremioFarmx extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 147, height: 108, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/farmx-logopremio.png')} />
 
                         <Image
                             style={{width: 199, height: 299, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/farmx/sorteo-farmx.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-farmx.png')} />
                     </View>
                 </Content>
 

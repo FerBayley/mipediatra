@@ -64,8 +64,7 @@ class BrandScreen extends Component {
                     <StatusBar barStyle="light-content" />
                     </View>
                     <View style={styles.logo}>                        
-                    {/* Adjust the tint and intensity */}
-                        <BlurView tint="light" intensity={50}>
+                        <BlurView>
                             <Image style={{ width: 230, height: 46 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoElegi}>Elegí con qué marca querés empezar a responder las trivias.</Text>
@@ -75,15 +74,15 @@ class BrandScreen extends Component {
                     <Grid style={styles.Griden}>
                         <Col style={{ height: 400 }}>
                             {/* Trivia Estrella */}
-                                <TouchableOpacity style={styles.Btn4}
+                            <TouchableOpacity style={styles.Btn4}
                                 onPress={() => this.props.navigation.navigate('PremioEstrella')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 130, height: 42 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg'}}
-                                         />
-                                    </BlurView>
-                                </TouchableOpacity>
+                                {/* Adjust the tint and intensity */}
+                                <BlurView tint="light" intensity={50}>
+                                    <Image 
+                                        style={{ width: 130, height: 42 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg'}}
+                                    />
+                                </BlurView>
+                            </TouchableOpacity>
                             {/* Trivia Estrella */}       
 
                             {/* Trivia Gracco */}   

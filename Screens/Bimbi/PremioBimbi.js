@@ -64,13 +64,11 @@ class PremioBimbi extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 137, height: 72, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/bimbi-logopremio.png')} />
 
                         <Image
                             style={{width: 301, height: 301, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/bimbi/sorteo-bimbi.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-bimbi.png')} />
                     </View>
                 </Content>
 

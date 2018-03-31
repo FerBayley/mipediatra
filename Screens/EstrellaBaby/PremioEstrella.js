@@ -64,13 +64,11 @@ class PremioEstrella extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 137, height: 48, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/estrella-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/estrella-logopremio.png')} />
 
                         <Image
                             style={{width: 359, height: 338, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/estrella/sorteo-estrella.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-estrella.png')} />
                     </View>
                 </Content>
 

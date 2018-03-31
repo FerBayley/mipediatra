@@ -64,13 +64,11 @@ class PremioNuk extends Component {
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
                             style={{width: 136, height: 53, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk-logopremio.png'}}
-                        />
+                            source={require('../../assets/images/nuk-logopremio.png')} />
 
                         <Image
                             style={{width: 243, height: 276, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/nuk/sorteo-nuk.png'}}
-                        />
+                            source={require('../../assets/images/sorteo-nuk.png')} />
                     </View>
                 </Content>
 
