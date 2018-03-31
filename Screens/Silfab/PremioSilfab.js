@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Left, Body, Right, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import {
     View,
@@ -6,37 +6,72 @@ import {
     StyleSheet,
     StatusBar,
     Image,
-    Platform
+    Platform,
+    TouchableHighlight,
+    Share
 } from "react-native";
 
 
 class PremioSilfab extends Component {
 
     static navigationOptions = {
-        title: 'Seleccionaste',
-        headerBackTitle: 'Volver',
-        headerStyle: {
-            backgroundColor: '#DB0A88',
-          },
-          headerTintColor: '#fff'
-      };
+        header: null,
+      };   
+
+      onShare(){
+        Share.share({
+            title: 'Mi Pediatra Trivias',
+            uri:'https://www.mipediatra.com.ar',
+            message: 'Descargate la app Mi Pediatra Trivias. Jugá y participá por muchos premios. Descargala en https://www.mipediatra.com.ar'
+        });
+    }
 
 
     render() {
         return (
-            <Container style={styles.container}>
-                <Content showsVerticalScrollIndicator={false}>
-                <Image
-                    style={{width: 316, height: 610}}
-                    source={{uri: 'http://ideaswhite.com/mipediatra/clientes/silfab/silfab.png'}}
-                />
+            <Container>
+                <Header style={styles.cabezal}>
+                    <Left>
+                        <Button transparent>
+                            <TouchableHighlight>
+                                <Icon 
+                                    name='arrow-back' 
+                                    style={styles.elementosHeader}
+                                    onPress={() => this.props.navigation.navigate('BrandScreen')}
+                                />
+                            </TouchableHighlight>
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Title style={styles.textoCabezal}>Mi Pediatra Trivias</Title>
+                    </Body>
+                    <Right>
+                        <Button transparent>
+                            <TouchableHighlight>
+                                <Icon name='share' style={styles.elementosHeader}
+                                    onPress={this.onShare}
+                                />
+                            </TouchableHighlight>
+                        </Button>
+                    </Right>
+                </Header>
+
+                <Content showsVerticalScrollIndicator={false} style={styles.container}>
+                    <StatusBar barStyle="light-content" />
+                    <View style={styles.addProducto}>
+                        <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
+                        <Image
+                            style={{width: 316, height: 600}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/silfab/silfab.png'}}
+                        />
+                    </View>
                 </Content>
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button
-                        onPress={() => this.props.navigation.navigate('BrandScreen')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>PROXIMAMENTE</Text>
+                        onPress={() => this.props.navigation.navigate('TriviaEstrella1')}>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -48,9 +83,7 @@ class PremioSilfab extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
+        backgroundColor: '#fff'
     },
     Pie: {
         ...Platform.select({
@@ -74,6 +107,28 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10
+    },
+    textoDeSelelccion: {
+        textAlign: 'center',
+        color: '#733596',
+        fontSize: 17,
+        fontWeight: '800',
+        marginTop: 20
+    },
+    cabezal: {
+        backgroundColor: '#DB0A88'
+    },
+    elementosHeader: {
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: '800',
+        paddingTop: 5,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 5
+    },
+    textoCabezal: {
+        color: '#fff'
     }
 });
 

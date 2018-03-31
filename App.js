@@ -85,6 +85,23 @@ import TriviaEstrella7 from './Screens/CarrilEstrella3/TriviaEstrella7'
 import TriviaEstrella8 from './Screens/CarrilEstrella3/TriviaEstrella8'
 import TriviaEstrella9 from './Screens/CarrilEstrella3/TriviaEstrella9'
 
+//Farmx
+import PremioFarmx from './Screens/Farmx/PremioFarmx'
+//Farmx
+
+//AuloGelio
+import PremioAuloGelio from './Screens/AuloGelio/PremioAuloGelio'
+//AuloGelio
+
+
+//Bimbi
+import PremioBimbi from './Screens/Bimbi/PremioBimbi'
+//Bimbi
+
+//Nuk
+import PremioNuk from './Screens/Nuk/PremioNuk'
+//Nuk
+
 
 export default class App extends React.Component {
     render() {
@@ -169,5 +186,21 @@ const AppNavigator = StackNavigator({
     TriviaEstrella7: { screen: TriviaEstrella7 },
     TriviaEstrella8: { screen: TriviaEstrella8 },
     TriviaEstrella9: { screen: TriviaEstrella9 },
+
+    //Farmx
+    PremioFarmx: { screen: PremioFarmx },
+    //Farmx
+
+    //AuloGelio
+    PremioAuloGelio: { screen: PremioAuloGelio },
+    //AuloGelio
+
+    //AuloGelio
+    PremioBimbi: { screen: PremioBimbi },
+    //AuloGelio
+
+    //Nuk
+    PremioNuk: { screen: PremioNuk },
+    //Nik
 
 })

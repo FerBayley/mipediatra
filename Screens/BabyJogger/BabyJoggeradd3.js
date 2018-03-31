@@ -27,7 +27,7 @@ class BabyJoggeradd3 extends Component {
         return (
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
-                    <View>
+                    <View>  
                         <StatusBar
                             barStyle="light-content"
                         />

@@ -54,8 +54,7 @@ class TriviaEstrella9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
-                                      {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -71,8 +70,7 @@ class TriviaEstrella9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')},
-                                      {text: 'Menú principal', onPress: () => this.props.navigation.navigate('BrandScreen')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('C')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -80,12 +78,23 @@ class TriviaEstrella9 extends Component {
                             <Text style={styles.blanco}>7-10 días</Text>
                         </Button>
                     </View>
-
                 </Content>
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button><Text style={{ color: 'white' }}>Contacto</Text></Button>                       
-                        <Button><Text style={{ color: 'white' }}>Como jugar</Text></Button>
+                        <Button 
+                            onPress={() =>
+                                Alert.alert(
+                                    '¿COMO JUGAR?',
+                                    '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                    { cancelable: false }
+                                  )}
+                        >
+                            <Text style={{ color: 'white', fontWeight: '800' }}>¿COMO JUGAR?</Text>
+                        </Button>                       
+
+                        <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
+                            <Text style={{ color: 'white', fontWeight: '800' }}>IR AL INCIO</Text>
+                        </Button>
                     </FooterTab>
                 </Footer>
             </Container>

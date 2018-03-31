@@ -14,7 +14,7 @@ import {
 import { BlurView } from 'expo';
 
 
-class PremioJogger extends Component {
+class PremioFarmx extends Component {
 
     static navigationOptions = {
         header: null,
@@ -63,13 +63,13 @@ class PremioJogger extends Component {
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
                         <Image
-                            style={{width: 198, height: 45, marginTop: 50}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/babyjogger/jogger-logopremio.png'}}
+                            style={{width: 147, height: 108, marginTop: 50}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx-logopremio.png'}}
                         />
 
                         <Image
-                            style={{width: 370, height: 307, marginTop: 40}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/babyjogger/sorteo-jogger.png'}}
+                            style={{width: 199, height: 299, marginTop: 40}}
+                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/farmx/sorteo-farmx.png'}}
                         />
                     </View>
                 </Content>
@@ -139,4 +139,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default PremioJogger;
+export default PremioFarmx;

@@ -3,6 +3,7 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Constants } from 'expo';
 import Expo from 'expo';
 import React, { Component } from "react";
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -15,7 +16,10 @@ import {
 } from "react-native";
 const FB_APP_ID = '128016374696409'
 
-class LoginScreen extends Component {   
+
+const uri = 'http://ideaswhite.com/mipediatra/img/mp_logo.jpg';
+
+class LoginScreen extends Component {  
 
     static navigationOptions = {
         header: null,
@@ -50,11 +54,11 @@ class LoginScreen extends Component {
 
             <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
-                    <View style={styles.logo}>
-                        <View style={styles.logo}>
-                            <Image source={require('../assets/images/mp_logo.jpg')} />
-                        </View>
-                    </View>  
+
+                {/* Adjust the tint and intensity */}
+                <BlurView tint="light" intensity={50} style={styles.logo}>
+                    <Image style={{ width: 338, height: 70 }} source={{ uri }} />
+                </BlurView>
            
                     <Button full style={styles.btnFacebook}
                         onPress={this.loginFB.bind(this)}
@@ -73,7 +77,16 @@ class LoginScreen extends Component {
                     <Grid style={styles.griden}>
                         <Col style={{ height: 200 }}>
                             <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Ayuda')}>
+                                onPress={() =>
+                                    Alert.alert(
+                                        'COMO JUGAR',
+                                        '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                        [
+                                            {text: 'Cerrar'},
+                                        ],
+                                        { cancelable: false }
+                                      )}
+                            >
                                 <Text style={styles.btnText}>Como jugar</Text>
                             </TouchableOpacity>                           
                         </Col>
@@ -113,7 +126,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        marginTop: 130,
+        marginTop: 230,
         marginBottom: 15
     },      
     btnFacebook: {
