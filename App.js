@@ -87,20 +87,88 @@ import TriviaEstrella9 from './Screens/CarrilEstrella3/TriviaEstrella9'
 
 //Farmx
 import PremioFarmx from './Screens/Farmx/PremioFarmx'
+// Farmx Trivias//
+import Ftrivia1 from './Screens/Farmx/Ftrivia1'
+import Ftrivia2 from './Screens/Farmx/Ftrivia2'
+import Ftrivia3 from './Screens/Farmx/Ftrivia3'
+import Ftrivia4 from './Screens/Farmx/Ftrivia4'
+import Ftrivia5 from './Screens/Farmx/Ftrivia5'
+import Ftrivia6 from './Screens/Farmx/Ftrivia6'
+// Farmx Trivias//
+// Farmx Add//
+import Fadd1 from './Screens/Farmx/Fadd1'
+import Fadd2 from './Screens/Farmx/Fadd2'
+import Fadd3 from './Screens/Farmx/Fadd3'
+import Fadd4 from './Screens/Farmx/Fadd4'
+import Fadd5 from './Screens/Farmx/Fadd5'
+import Fadd6 from './Screens/Farmx/Fadd6'
+// Farmx Add//
 //Farmx
 
 //AuloGelio
 import PremioAuloGelio from './Screens/AuloGelio/PremioAuloGelio'
+// AuloGelio Trivias//
+import Atrivia1 from './Screens/AuloGelio/Atrivia1'
+import Atrivia2 from './Screens/AuloGelio/Atrivia2'
+import Atrivia3 from './Screens/AuloGelio/Atrivia3'
+import Atrivia4 from './Screens/AuloGelio/Atrivia4'
+import Atrivia5 from './Screens/AuloGelio/Atrivia5'
+import Atrivia6 from './Screens/AuloGelio/Atrivia6'
+// AuloGelio Trivias//
+// AuloGelio Add//
+import Aadd1 from './Screens/AuloGelio/Aadd1'
+import Aadd2 from './Screens/AuloGelio/Aadd2'
+import Aadd3 from './Screens/AuloGelio/Aadd3'
+import Aadd4 from './Screens/AuloGelio/Aadd4'
+import Aadd5 from './Screens/AuloGelio/Aadd5'
+import Aadd6 from './Screens/AuloGelio/Aadd6'
+// AuloGelio Add//
 //AuloGelio
 
+// ======================================= //
 
-//Bimbi
+// Bimbi
 import PremioBimbi from './Screens/Bimbi/PremioBimbi'
-//Bimbi
+// Bimbi Trivias//
+import BimbiTrivia1 from './Screens/Bimbi/BimbiTrivia1'
+import BimbiTrivia2 from './Screens/Bimbi/BimbiTrivia2'
+import BimbiTrivia3 from './Screens/Bimbi/BimbiTrivia3'
+import BimbiTrivia4 from './Screens/Bimbi/BimbiTrivia4'
+import BimbiTrivia5 from './Screens/Bimbi/BimbiTrivia5'
+import BimbiTrivia6 from './Screens/Bimbi/BimbiTrivia6'
+// Bimbi Trivias//
+// Bimbi Add//
+import BimbiAdd1 from './Screens/Bimbi/BimbiAdd1'
+import BimbiAdd2 from './Screens/Bimbi/BimbiAdd2'
+import BimbiAdd3 from './Screens/Bimbi/BimbiAdd3'
+import BimbiAdd4 from './Screens/Bimbi/BimbiAdd4'
+import BimbiAdd5 from './Screens/Bimbi/BimbiAdd5'
+import BimbiAdd6 from './Screens/Bimbi/BimbiAdd6'
+// Bimbi Add //
+// Bimbi
 
-//Nuk
+
+// ================= NUK ====================== //
+// Nuk
 import PremioNuk from './Screens/Nuk/PremioNuk'
-//Nuk
+// Nuk Trivias //
+import NukTrivia1 from './Screens/Nuk/NukTrivia1'
+import NukTrivia2 from './Screens/Nuk/NukTrivia2'
+import NukTrivia3 from './Screens/Nuk/NukTrivia3'
+import NukTrivia4 from './Screens/Nuk/NukTrivia4'
+import NukTrivia5 from './Screens/Nuk/NukTrivia5'
+import NukTrivia6 from './Screens/Nuk/NukTrivia6'
+// Nuk Trivias //
+// Nuk Add //
+import NukAdd1 from './Screens/Nuk/NukAdd1'
+import NukAdd2 from './Screens/Nuk/NukAdd2'
+import NukAdd3 from './Screens/Nuk/NukAdd3'
+import NukAdd4 from './Screens/Nuk/NukAdd4'
+import NukAdd5 from './Screens/Nuk/NukAdd5'
+import NukAdd6 from './Screens/Nuk/NukAdd6'
+// Nik Add //
+// Nuk
+// ================== Nuk ==================== //
 
 
 export default class App extends React.Component {
@@ -187,20 +255,91 @@ const AppNavigator = StackNavigator({
     TriviaEstrella8: { screen: TriviaEstrella8 },
     TriviaEstrella9: { screen: TriviaEstrella9 },
 
+
+    // ======================================== //
     //Farmx
     PremioFarmx: { screen: PremioFarmx },
+    //Farmx Trivia //
+    Ftrivia1: { screen: Ftrivia1 },
+    Ftrivia2: { screen: Ftrivia2 },
+    Ftrivia3: { screen: Ftrivia3 },
+    Ftrivia4: { screen: Ftrivia4 },
+    Ftrivia5: { screen: Ftrivia5 },
+    Ftrivia6: { screen: Ftrivia6 },
+    //Farmx Trivia //
+    //Farmx Add //
+    Fadd1: { screen: Fadd1 },
+    Fadd2: { screen: Fadd2 },
+    Fadd3: { screen: Fadd3 },
+    Fadd4: { screen: Fadd4 },
+    Fadd5: { screen: Fadd5 },
+    Fadd6: { screen: Fadd6 },
+    //Farmx Add //
     //Farmx
 
     //AuloGelio
     PremioAuloGelio: { screen: PremioAuloGelio },
+    //AuloGelio Trivia //
+    Atrivia1: { screen: Atrivia1 },
+    Atrivia2: { screen: Atrivia2 },
+    Atrivia3: { screen: Atrivia3 },
+    Atrivia4: { screen: Atrivia4 },
+    Atrivia5: { screen: Atrivia5 },
+    Atrivia6: { screen: Atrivia6 },
+    //AuloGelio Trivia //
+    //AuloGelio Aad //
+    Aadd1: { screen: Aadd1 },
+    Aadd2: { screen: Aadd2 },
+    Aadd3: { screen: Aadd3 },
+    Aadd4: { screen: Aadd4 },
+    Aadd5: { screen: Aadd5 },
+    Aadd6: { screen: Aadd6 },
+    //AuloGelio Aad //
     //AuloGelio
 
-    //AuloGelio
+
+    // ======================================== //
+    //Bimbi
     PremioBimbi: { screen: PremioBimbi },
-    //AuloGelio
+    //Bimbi Trivia //
+    BimbiTrivia1: { screen: BimbiTrivia1 },
+    BimbiTrivia2: { screen: BimbiTrivia2 },
+    BimbiTrivia3: { screen: BimbiTrivia3 },
+    BimbiTrivia4: { screen: BimbiTrivia4 },
+    BimbiTrivia5: { screen: BimbiTrivia5 },
+    BimbiTrivia6: { screen: BimbiTrivia6 },
+    //Bimbi Trivia //
+    //Bimbi Trivia //
+    BimbiAdd1: { screen: BimbiAdd1 },
+    BimbiAdd2: { screen: BimbiAdd2 },
+    BimbiAdd3: { screen: BimbiAdd3 },
+    BimbiAdd4: { screen: BimbiAdd4 },
+    BimbiAdd5: { screen: BimbiAdd5 },
+    BimbiAdd6: { screen: BimbiAdd6 },
+    //Bimbi Trivia //
+    //Bimbi
 
+    // ======================================= //
     //Nuk
     PremioNuk: { screen: PremioNuk },
-    //Nik
+    //Nuk Trivia //
+    NukTrivia1: { screen: NukTrivia1 },
+    NukTrivia2: { screen: NukTrivia2 },
+    NukTrivia3: { screen: NukTrivia3 },
+    NukTrivia4: { screen: NukTrivia4 },
+    NukTrivia5: { screen: NukTrivia5 },
+    NukTrivia6: { screen: NukTrivia6 },
+    //Nuk Trivia //
+
+    //Nuk Add //
+    NukAdd1: { screen: NukAdd1 },
+    NukAdd2: { screen: NukAdd2 },
+    NukAdd3: { screen: NukAdd3 },
+    NukAdd4: { screen: NukAdd4 },
+    NukAdd5: { screen: NukAdd5 },
+    NukAdd6: { screen: NukAdd6 },
+    //Nuk Add //
+    //Nuk
+    // ==================================== //
 
 })
