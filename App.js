@@ -99,9 +99,6 @@ import Ftrivia6 from './Screens/Farmx/Ftrivia6'
 import Fadd1 from './Screens/Farmx/Fadd1'
 import Fadd2 from './Screens/Farmx/Fadd2'
 import Fadd3 from './Screens/Farmx/Fadd3'
-import Fadd4 from './Screens/Farmx/Fadd4'
-import Fadd5 from './Screens/Farmx/Fadd5'
-import Fadd6 from './Screens/Farmx/Fadd6'
 // Farmx Add//
 //Farmx
 
@@ -119,9 +116,6 @@ import Atrivia6 from './Screens/AuloGelio/Atrivia6'
 import Aadd1 from './Screens/AuloGelio/Aadd1'
 import Aadd2 from './Screens/AuloGelio/Aadd2'
 import Aadd3 from './Screens/AuloGelio/Aadd3'
-import Aadd4 from './Screens/AuloGelio/Aadd4'
-import Aadd5 from './Screens/AuloGelio/Aadd5'
-import Aadd6 from './Screens/AuloGelio/Aadd6'
 // AuloGelio Add//
 //AuloGelio
 
@@ -141,9 +135,6 @@ import BimbiTrivia6 from './Screens/Bimbi/BimbiTrivia6'
 import BimbiAdd1 from './Screens/Bimbi/BimbiAdd1'
 import BimbiAdd2 from './Screens/Bimbi/BimbiAdd2'
 import BimbiAdd3 from './Screens/Bimbi/BimbiAdd3'
-import BimbiAdd4 from './Screens/Bimbi/BimbiAdd4'
-import BimbiAdd5 from './Screens/Bimbi/BimbiAdd5'
-import BimbiAdd6 from './Screens/Bimbi/BimbiAdd6'
 // Bimbi Add //
 // Bimbi
 
@@ -163,9 +154,6 @@ import NukTrivia6 from './Screens/Nuk/NukTrivia6'
 import NukAdd1 from './Screens/Nuk/NukAdd1'
 import NukAdd2 from './Screens/Nuk/NukAdd2'
 import NukAdd3 from './Screens/Nuk/NukAdd3'
-import NukAdd4 from './Screens/Nuk/NukAdd4'
-import NukAdd5 from './Screens/Nuk/NukAdd5'
-import NukAdd6 from './Screens/Nuk/NukAdd6'
 // Nik Add //
 // Nuk
 // ================== Nuk ==================== //
@@ -271,9 +259,6 @@ const AppNavigator = StackNavigator({
     Fadd1: { screen: Fadd1 },
     Fadd2: { screen: Fadd2 },
     Fadd3: { screen: Fadd3 },
-    Fadd4: { screen: Fadd4 },
-    Fadd5: { screen: Fadd5 },
-    Fadd6: { screen: Fadd6 },
     //Farmx Add //
     //Farmx
 
@@ -291,9 +276,6 @@ const AppNavigator = StackNavigator({
     Aadd1: { screen: Aadd1 },
     Aadd2: { screen: Aadd2 },
     Aadd3: { screen: Aadd3 },
-    Aadd4: { screen: Aadd4 },
-    Aadd5: { screen: Aadd5 },
-    Aadd6: { screen: Aadd6 },
     //AuloGelio Aad //
     //AuloGelio
 
@@ -313,9 +295,6 @@ const AppNavigator = StackNavigator({
     BimbiAdd1: { screen: BimbiAdd1 },
     BimbiAdd2: { screen: BimbiAdd2 },
     BimbiAdd3: { screen: BimbiAdd3 },
-    BimbiAdd4: { screen: BimbiAdd4 },
-    BimbiAdd5: { screen: BimbiAdd5 },
-    BimbiAdd6: { screen: BimbiAdd6 },
     //Bimbi Trivia //
     //Bimbi
 
@@ -335,9 +314,6 @@ const AppNavigator = StackNavigator({
     NukAdd1: { screen: NukAdd1 },
     NukAdd2: { screen: NukAdd2 },
     NukAdd3: { screen: NukAdd3 },
-    NukAdd4: { screen: NukAdd4 },
-    NukAdd5: { screen: NukAdd5 },
-    NukAdd6: { screen: NukAdd6 },
     //Nuk Add //
     //Nuk
     // ==================================== //

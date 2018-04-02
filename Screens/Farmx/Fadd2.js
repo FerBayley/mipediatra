@@ -8,52 +8,42 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking
+    Linking,
+    ImageBackground
 } from "react-native";
 
 class Fadd2 extends Component {    
 
     static navigationOptions = {
-        title: 'Publicidad',
-        headerLeft: null,
-        gesturesEnabled: false,
-        headerStyle: {
-            backgroundColor: '#DB0A88',
-          },
-          headerTintColor: '#fff'
-      };
+        header: null,
+      };  
 
     render() {
         return (
-            <Container style={styles.container}>
+            <ImageBackground source={require('../../assets/images/fadd2.png')}
+                style={styles.container}>
+               <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
                     <View>
                         <StatusBar
-                            barStyle="light-content"
+                            barStyle="dark-content"
                         />
-                    </View>
-                    <View style={styles.imagenPauta}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('TriviaEwe2')}>
-                        <Image
-                            style={{width: 288, height: 556}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/clientes/ewe/ads/ewe1.png'}}
-                        />
-                       </TouchableOpacity>
-                    </View>                    
+                    </View>                 
                 </Content>
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar')}>
+                        <Button onPress={() => Linking.openURL('null')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEwe2')}>
+                        <Button onPress={() => this.props.navigation.navigate('null')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
             </Container>
+            </ImageBackground>                 
         );
     }
 }
@@ -61,7 +51,6 @@ class Fadd2 extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -78,18 +67,6 @@ const styles = StyleSheet.create({
     colorBotones: {
         color: '#fff'
     },
-    imagenPauta: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 30,
-        shadowOffset:{  
-            width: 20,  
-            height: 3,  
-        },
-        shadowColor: 'grey',
-        shadowOpacity: 5.0,
-        borderRadius: 4
-    }
 });
 
 

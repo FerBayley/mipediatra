@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     textBases: {
-        color: 'grey',
+        color: '#333',
         fontWeight: '400',
         textAlign: 'justify',
         lineHeight: 30,

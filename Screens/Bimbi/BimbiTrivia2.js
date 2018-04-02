@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Button } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
 import {
@@ -8,70 +8,94 @@ import {
     StatusBar,
     Image,
     Platform,
-    Alert
+    Alert,
+    TouchableHighlight,
+    Share
 } from "react-native";
 
 
 class BimbiTrivia2 extends Component {
 
     static navigationOptions = {
-        title: 'Mi Pediatra Trivias',
-        gesturesEnabled: false,
-        headerLeft: null,
-        headerStyle: {
-            backgroundColor: '#DB0A88',
-          },
-          headerTintColor: '#fff'
-      };
+        header: null,
+      };   
+
+      onShare(){
+        Share.share({
+            title: 'Mi Pediatra Trivias',
+            uri:'https://www.mipediatra.com.ar',
+            message: 'Descargate la app Mi Pediatra Trivias. Jugá y participá por muchos premios. Descargala en https://www.mipediatra.com.ar'
+        });
+    }
 
 
     render() {
         return (
             <Container>
+                 <Header style={styles.cabezal}>
+                    <Left>
+                        <Button transparent></Button>
+                    </Left>
+                    <Body>
+                        <Title style={styles.textoCabezal}>Mi Pediatra Trivias</Title>
+                    </Body>
+                    <Right>
+                        <Button transparent>
+                            <TouchableHighlight>
+                                <Icon name='share' style={styles.elementosHeader}
+                                    onPress={this.onShare}
+                                />
+                            </TouchableHighlight>
+                        </Button>
+                    </Right>
+                </Header>
                 <Content showsVerticalScrollIndicator={false}>
+                    <View>
+                        <StatusBar barStyle="light-content" />
+                    </View>
                      <View style={styles.logo}>
                         <Image
                             style={{width: 230, height: 46}}
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            ¿Hasta cuántas deposiciones diarias son normales en un bebé recién nacido?
+                            El control motriz de la cabeza en el bebé comienza alrededor de los:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd1')}>
-                            {/* Respuesta Correcta*/}
-                            <Text style={styles.blanco}>12</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>5</Text>
+                            <Text style={styles.blanco}>2 días de vida</Text>
                         </Button>
 
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('null')}
+                        >
+                            <Text style={styles.blanco}>2 meses de vida</Text>
+                        </Button>
+                        
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('A')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>A veces</Text>
+                            <Text style={styles.blanco}>4 meses de vida</Text>
                         </Button>
                     </View>
                 </Content>
@@ -82,6 +106,9 @@ class BimbiTrivia2 extends Component {
                                 Alert.alert(
                                     '¿COMO JUGAR?',
                                     '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                    [
+                                        {text: 'Cerrar'},
+                                    ],
                                     { cancelable: false }
                                   )}
                         >
@@ -140,7 +167,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         shadowOffset:{  width: 2,  height: 3,  },
         shadowColor: 'grey',
-        shadowOpacity: 1.0
+        shadowOpacity: 1.0,
     },
     btnB: {
         marginBottom: 15,
@@ -149,7 +176,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         shadowOffset:{  width: 2,  height: 3,  },
         shadowColor: 'grey',
-        shadowOpacity: 1.0
+        shadowOpacity: 1.0,
     },
     btnC: {
         marginBottom: 15,
@@ -158,7 +185,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         shadowOffset:{  width: 2,  height: 3,  },
         shadowColor: 'grey',
-        shadowOpacity: 1.0
+        shadowOpacity: 1.0,
     },
     contenedorBtn: {
         padding: 20,
@@ -167,6 +194,21 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 20,
         lineHeight: 25
+    },
+    cabezal: {
+        backgroundColor: '#DB0A88'
+    },
+    elementosHeader: {
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: '800',
+        paddingTop: 5,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 5
+    },
+    textoCabezal: {
+        color: '#fff'
     }
 });
 

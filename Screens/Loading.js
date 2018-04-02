@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text, ActivityIndicator, StatusBar } from 'react-native'
+import { StyleSheet, View, Text, ActivityIndicator, StatusBar, ImageBackground } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
 class Loading extends Component {
 

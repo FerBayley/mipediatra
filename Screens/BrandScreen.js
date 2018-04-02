@@ -61,7 +61,7 @@ class BrandScreen extends Component {
 
                 <Content showsVerticalScrollIndicator={false}>
                     <View>
-                    <StatusBar barStyle="light-content" />
+                        <StatusBar barStyle="light-content" />
                     </View>
                     <View style={styles.logo}>                        
                         <BlurView>
