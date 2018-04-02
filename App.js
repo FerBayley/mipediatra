@@ -87,6 +87,7 @@ import TriviaEstrella9 from './Screens/CarrilEstrella3/TriviaEstrella9'
 
 //Farmx
 import PremioFarmx from './Screens/Farmx/PremioFarmx'
+import Fganaste from './Screens/Farmx/Fganaste'
 // Farmx Trivias//
 import Ftrivia1 from './Screens/Farmx/Ftrivia1'
 import Ftrivia2 from './Screens/Farmx/Ftrivia2'
@@ -247,6 +248,7 @@ const AppNavigator = StackNavigator({
     // ======================================== //
     //Farmx
     PremioFarmx: { screen: PremioFarmx },
+    Fganaste: { screen: Fganaste },
     //Farmx Trivia //
     Ftrivia1: { screen: Ftrivia1 },
     Ftrivia2: { screen: Ftrivia2 },

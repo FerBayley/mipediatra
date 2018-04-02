@@ -94,7 +94,7 @@ class Ftrivia5 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Ftrivia6')}
                         >
                             <Text style={styles.blanco}>Todas las anteriores</Text>
                         </Button>

@@ -79,7 +79,7 @@ class Ftrivia1 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Fadd1')}
                         >
                             <Text style={styles.blanco}>El sudor</Text>
                         </Button>

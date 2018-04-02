@@ -65,7 +65,7 @@ class Ftrivia3 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}>
+                            onPress={() => this.props.navigation.navigate('Fadd3')}>
                             {/* Respuesta Correcta*/}
                             <Text style={styles.blanco}>De contacto</Text>
                         </Button>
