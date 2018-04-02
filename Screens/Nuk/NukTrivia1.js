@@ -79,7 +79,7 @@ class NukTrivia1 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('NukAdd1')}
                         >
                             <Text style={styles.blanco}>La muerte súbita del lactante</Text>
                         </Button>

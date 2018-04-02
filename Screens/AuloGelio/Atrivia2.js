@@ -65,7 +65,7 @@ class Atrivia2 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Aadd2')}
                         >
                             <Text style={styles.blanco}>Aceite de Citronela </Text>
                         </Button>

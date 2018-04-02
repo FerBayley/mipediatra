@@ -65,7 +65,7 @@ class Atrivia3 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Aadd3')}
                         >
                             <Text style={styles.blanco}>Embarazadas, bebés y niños, como también para adultos.</Text>
                         </Button>

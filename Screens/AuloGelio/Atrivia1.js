@@ -79,7 +79,7 @@ class Atrivia1 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Aadd1')}
                         >
                             <Text style={styles.blanco}>Aedes albopictus y Aedes aegypti</Text>
                         </Button>

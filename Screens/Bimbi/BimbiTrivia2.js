@@ -79,7 +79,7 @@ class BimbiTrivia2 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('BimbiAdd2')}
                         >
                             <Text style={styles.blanco}>2 meses de vida</Text>
                         </Button>

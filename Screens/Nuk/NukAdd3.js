@@ -33,11 +33,11 @@ class NukAdd3 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('null')}>
+                        <Button onPress={() => Linking.openURL('http://www.nukargentina.com.ar')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('null')}>
+                        <Button onPress={() => this.props.navigation.navigate('Nganaste')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

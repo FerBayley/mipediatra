@@ -93,7 +93,7 @@ class BimbiTrivia3 extends Component {
                         </Button>
                         
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('BimbiAdd3')}
                         >
                             <Text style={styles.blanco}>4-6 meses</Text>
                         </Button>

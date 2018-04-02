@@ -65,7 +65,7 @@ class NukTrivia2 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('NukAdd2')}
                         >
                             <Text style={styles.blanco}>El desarrollo óptimo de la cavidad oral</Text>
                         </Button>

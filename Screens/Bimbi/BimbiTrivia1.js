@@ -65,7 +65,7 @@ class BimbiTrivia1 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('BimbiAdd1')}
                         >
                             <Text style={styles.blanco}>Grandes grupos musculares</Text>
                         </Button>
