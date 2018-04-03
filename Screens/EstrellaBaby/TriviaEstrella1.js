@@ -14,7 +14,7 @@ import {
 } from "react-native";
 
 
-class TriviaEstrella3 extends Component {
+class TriviaEstrella1 extends Component {
 
     static navigationOptions = {
         header: null,
@@ -59,15 +59,15 @@ class TriviaEstrella3 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Las habilidades motoras gruesas se refieren a los movimientos que requieren:
+                            ¿Hasta cuántas deposiciones diarias son normales en un bebé recién nacido?
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BimbiAdd1')}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd1')}
                         >
-                            <Text style={styles.blanco}>Grandes grupos musculares</Text>
+                            <Text style={styles.blanco}>12</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -81,7 +81,7 @@ class TriviaEstrella3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Gruesos</Text>
+                            <Text style={styles.blanco}>5</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class TriviaEstrella3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Finos</Text>
+                            <Text style={styles.blanco}>5</Text>
                         </Button>
                     </View>
                 </Content>
@@ -212,4 +212,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella3;
+export default TriviaEstrella1;

@@ -59,7 +59,7 @@ class EweTrivia2 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La sudamina es la irritación de la piel causada por:
+                            La higiene con Óleo Calcáreo en el cambio de pañal del bebé se recomienda al menos:
                         </Text>
                     </View>
 
@@ -75,16 +75,10 @@ class EweTrivia2 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El sol</Text>
+                            <Text style={styles.blanco}>Los primeros 2 meses de vida</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>El sudor</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -95,7 +89,13 @@ class EweTrivia2 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La lactancia</Text>
+                            <Text style={styles.blanco}>Los primeros 3 meses de vida</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('AddEwe2')}
+                        >
+                            <Text style={styles.blanco}>Los primeros 6 meses de vida</Text>
                         </Button>
                     </View>
                 </Content>

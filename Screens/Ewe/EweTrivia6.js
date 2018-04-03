@@ -59,12 +59,18 @@ class EweTrivia6 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La sudamina es la irritación de la piel causada por:
+                            El uso de Créma de Caléndula Ewe durante la Lactancia:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
+                            onPress={() => this.props.navigation.navigate('null')}
+                        >
+                            <Text style={styles.blanco}>Previene las grietas de pezón</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -75,13 +81,7 @@ class EweTrivia6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El sol</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>El sudor</Text>
+                            <Text style={styles.blanco}>Reduce la producción de leche</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class EweTrivia6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La lactancia</Text>
+                            <Text style={styles.blanco}>Aumenta la resequedad</Text>
                         </Button>
                     </View>
                 </Content>

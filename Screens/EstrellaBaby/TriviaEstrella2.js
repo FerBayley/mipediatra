@@ -14,7 +14,7 @@ import {
 } from "react-native";
 
 
-class TriviaEstrella6 extends Component {
+class TriviaEstrella2 extends Component {
 
     static navigationOptions = {
         header: null,
@@ -59,15 +59,15 @@ class TriviaEstrella6 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Las habilidades motoras gruesas se refieren a los movimientos que requieren:
+                            Los adhesivos del pañal se colocan:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BimbiAdd1')}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}
                         >
-                            <Text style={styles.blanco}>Grandes grupos musculares</Text>
+                            <Text style={styles.blanco}>Hacia atrás</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -81,7 +81,7 @@ class TriviaEstrella6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Gruesos</Text>
+                            <Text style={styles.blanco}>Hacia adelante</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class TriviaEstrella6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Finos</Text>
+                            <Text style={styles.blanco}>Es indistinto</Text>
                         </Button>
                     </View>
                 </Content>
@@ -212,4 +212,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella6;
+export default TriviaEstrella2;

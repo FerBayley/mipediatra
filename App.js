@@ -144,10 +144,34 @@ import JoggerAdd3 from './Screens/BabyJogger/JoggerAdd3'
 
 //Estrella Baby =========================== //
 import PremioEstrella from './Screens/EstrellaBaby/PremioEstrella'
+import Eganaste from './Screens/EstrellaBaby/Eganaste'
+
+import TriviaEstrella1 from './Screens/EstrellaBaby/TriviaEstrella1'
+import TriviaEstrella2 from './Screens/EstrellaBaby/TriviaEstrella2'
+import TriviaEstrella3 from './Screens/EstrellaBaby/TriviaEstrella3'
+import TriviaEstrella4 from './Screens/EstrellaBaby/TriviaEstrella4'
+import TriviaEstrella5 from './Screens/EstrellaBaby/TriviaEstrella5'
+import TriviaEstrella6 from './Screens/EstrellaBaby/TriviaEstrella6'
+
+import EstrellaAdd1 from './Screens/EstrellaBaby/EstrellaAdd1'
+import EstrellaAdd2 from './Screens/EstrellaBaby/EstrellaAdd2'
+import EstrellaAdd3 from './Screens/EstrellaBaby/EstrellaAdd3'
 //Estrella Baby =========================== //
 
 //Ewe ===================================== //
 import PremioEwe from './Screens/Ewe/PremioEwe'
+import Eweganaste from './Screens/Ewe/Eweganaste'
+
+import AddEwe1 from './Screens/Ewe/AddEwe1'
+import AddEwe2 from './Screens/Ewe/AddEwe2'
+import AddEwe3 from './Screens/Ewe/AddEwe3'
+
+import EweTrivia1 from './Screens/Ewe/EweTrivia1'
+import EweTrivia2 from './Screens/Ewe/EweTrivia2'
+import EweTrivia3 from './Screens/Ewe/EweTrivia3'
+import EweTrivia4 from './Screens/Ewe/EweTrivia4'
+import EweTrivia5 from './Screens/Ewe/EweTrivia5'
+import EweTrivia6 from './Screens/Ewe/EweTrivia6'
 //Ewe ==================================== //
 
 
@@ -301,10 +325,34 @@ const AppNavigator = StackNavigator({
 
     //Estrella Baby ====================== //
     PremioEstrella: { screen: PremioEstrella },
+    Eganaste: { screen: Eganaste },
+
+    TriviaEstrella1: { screen: TriviaEstrella1 },
+    TriviaEstrella2: { screen: TriviaEstrella2 },
+    TriviaEstrella3: { screen: TriviaEstrella3 },
+    TriviaEstrella4: { screen: TriviaEstrella4 },
+    TriviaEstrella5: { screen: TriviaEstrella5 },
+    TriviaEstrella6: { screen: TriviaEstrella6 },
+
+    EstrellaAdd1: { screen: EstrellaAdd1 },
+    EstrellaAdd2: { screen: EstrellaAdd2 },
+    EstrellaAdd3: { screen: EstrellaAdd3 },
     //Estrella Baby ====================== //
 
     //Ewe ================================ //
     PremioEwe: { screen: PremioEwe },
+    Eweganaste: { screen: Eweganaste },
+
+    AddEwe1: { screen: AddEwe1 },
+    AddEwe2: { screen: AddEwe2 },
+    AddEwe3: { screen: AddEwe3 },
+
+    EweTrivia1: { screen: EweTrivia1 },
+    EweTrivia2: { screen: EweTrivia2 },
+    EweTrivia3: { screen: EweTrivia3 },
+    EweTrivia4: { screen: EweTrivia4 },
+    EweTrivia5: { screen: EweTrivia5 },
+    EweTrivia6: { screen: EweTrivia6 },
     //Ewe ================================ //
 
 })

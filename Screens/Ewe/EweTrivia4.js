@@ -59,7 +59,7 @@ class EweTrivia4 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La sudamina es la irritación de la piel causada por:
+                            Un bebé recién nacido puede necesitar diriamente que cambien su pañal hasta:
                         </Text>
                     </View>
 
@@ -75,16 +75,10 @@ class EweTrivia4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El sol</Text>
+                            <Text style={styles.blanco}>6 veces</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>El sudor</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -95,7 +89,13 @@ class EweTrivia4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La lactancia</Text>
+                            <Text style={styles.blanco}>9 veces</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('null')}
+                        >
+                            <Text style={styles.blanco}>12 veces</Text>
                         </Button>
                     </View>
                 </Content>

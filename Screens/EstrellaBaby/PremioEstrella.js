@@ -75,7 +75,7 @@ class PremioEstrella extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button
-                        onPress={() => this.props.navigation.navigate('nulls')}>
+                            onPress={() => this.props.navigation.navigate('TriviaEstrella1')}>
                             <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>

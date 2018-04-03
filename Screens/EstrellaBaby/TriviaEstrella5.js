@@ -59,18 +59,12 @@ class TriviaEstrella5 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Las habilidades motoras gruesas se refieren a los movimientos que requieren:
+                            Según la talla recomendada por Estrella Baby, un bebé de 16Kg debe usar:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BimbiAdd1')}
-                        >
-                            <Text style={styles.blanco}>Grandes grupos musculares</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -81,7 +75,13 @@ class TriviaEstrella5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Gruesos</Text>
+                            <Text style={styles.blanco}>Talle G</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('null')}
+                        >
+                            <Text style={styles.blanco}>Talle XG</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class TriviaEstrella5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Finos</Text>
+                            <Text style={styles.blanco}>Talle XXG</Text>
                         </Button>
                     </View>
                 </Content>

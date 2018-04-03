@@ -14,7 +14,7 @@ import {
 } from "react-native";
 
 
-class TriviaEstrella4 extends Component {
+class TriviaEstrella3 extends Component {
 
     static navigationOptions = {
         header: null,
@@ -59,18 +59,12 @@ class TriviaEstrella4 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            Las habilidades motoras gruesas se refieren a los movimientos que requieren:
+                            La higiene genital de las niñas en el cambio de pañal:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('BimbiAdd1')}
-                        >
-                            <Text style={styles.blanco}>Grandes grupos musculares</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -81,7 +75,13 @@ class TriviaEstrella4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Gruesos</Text>
+                            <Text style={styles.blanco}>Es igual que en los varones</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd3')}
+                        >
+                            <Text style={styles.blanco}>Debe hacerse de adelante hacia atrás</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class TriviaEstrella4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Músculos Finos</Text>
+                            <Text style={styles.blanco}>Debe hacerse de atrás hacia adelante</Text>
                         </Button>
                     </View>
                 </Content>
@@ -212,4 +212,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TriviaEstrella4;
+export default TriviaEstrella3;

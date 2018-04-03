@@ -20,30 +20,30 @@ class NukAdd1 extends Component {
 
     render() {
         return (
-            <ImageBackground source={require('../../assets/images/nukadd1.jpg')}
-                style={styles.container}>
-               <Container style={styles.container}>
-                <Content showsVerticalScrollIndicator={false}>
-                    <View>
-                        <StatusBar
-                            barStyle="dark-content"
-                        />
-                    </View>                 
-                </Content>
+                <ImageBackground source={require('../../assets/images/nukadd1.jpg')}
+                    style={styles.container}>
+                <Container style={styles.container}>
+                    <Content showsVerticalScrollIndicator={false}>
+                        <View>
+                            <StatusBar
+                                barStyle="dark-content"
+                            />
+                        </View>                 
+                    </Content>
 
-                <Footer style={styles.Pie}>
-                    <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('http://www.nukargentina.com.ar')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
-                        </Button>                       
+                    <Footer style={styles.Pie}>
+                        <FooterTab style={styles.Pie}>
+                            <Button onPress={() => Linking.openURL('http://www.nukargentina.com.ar')}>
+                                <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('NukTrivia2')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
-                        </Button>
-                    </FooterTab>
-                </Footer>
-            </Container>
-            </ImageBackground>                 
+                            <Button onPress={() => this.props.navigation.navigate('NukTrivia2')}>
+                                <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            </Button>
+                        </FooterTab>
+                    </Footer>
+                </Container>
+                </ImageBackground>              
         );
     }
 }

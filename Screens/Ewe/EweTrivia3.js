@@ -59,7 +59,7 @@ class EweTrivia3 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La sudamina es la irritación de la piel causada por:
+                            Demorar la higiene del pañal del bebé puede causar:
                         </Text>
                     </View>
 
@@ -75,13 +75,13 @@ class EweTrivia3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El sol</Text>
+                            <Text style={styles.blanco}>Dermotest</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('AddEwe3')}
                         >
-                            <Text style={styles.blanco}>El sudor</Text>
+                            <Text style={styles.blanco}>Dermatitis</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -95,7 +95,7 @@ class EweTrivia3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La lactancia</Text>
+                            <Text style={styles.blanco}>Dermositis</Text>
                         </Button>
                     </View>
                 </Content>

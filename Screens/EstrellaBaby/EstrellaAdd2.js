@@ -20,7 +20,7 @@ class EstrellaAdd2 extends Component {
 
     render() {
         return (
-            <ImageBackground source={require('../../assets/images/estrella-add1.png')}
+            <ImageBackground source={require('../../assets/images/estrella-add2.png')}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -37,7 +37,7 @@ class EstrellaAdd2 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('null')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella3')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

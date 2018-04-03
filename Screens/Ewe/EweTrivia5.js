@@ -59,7 +59,7 @@ class EweTrivia5 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La sudamina es la irritación de la piel causada por:
+                            El Aceite de Almendras puro Ewe nutre, protege, suaviza e hidrata:
                         </Text>
                     </View>
 
@@ -75,16 +75,10 @@ class EweTrivia5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El sol</Text>
+                            <Text style={styles.blanco}>La Piel</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>El sudor</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -95,7 +89,13 @@ class EweTrivia5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La lactancia</Text>
+                            <Text style={styles.blanco}>El Cabello</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
+                            onPress={() => this.props.navigation.navigate('null')}
+                        >
+                            <Text style={styles.blanco}>Piel, cabello y uñas</Text>
                         </Button>
                     </View>
                 </Content>
