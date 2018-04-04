@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
 import {
@@ -8,33 +8,85 @@ import {
     Image,
     Platform,
     TouchableOpacity,
-    Linking
+    TouchableHighlight,
+    Linking,
+    Text,
+    Share
 } from "react-native";
 
 class Fganaste extends Component {    
 
     static navigationOptions = {
         header: null,
-      };  
+      };   
+
+      onShare(){
+        Share.share({
+            title: 'Mi Pediatra Trivias',
+            uri:'https://www.mipediatra.com.ar',
+            message: 'Descargate la app Mi Pediatra Trivias. Jugá y participá por muchos premios. Descargala en https://www.mipediatra.com.ar'
+        });
+    }
 
     render() {
         return (
-               <Container style={{ flex:1, backgroundColor: 'red' }}>
-                   <Content>
-                    <View>
-                        <Text>FELICITACIONES GANANSTE PREMIO DE FARM X</Text>
+            <Container style={styles.container}>
+            <Header style={styles.cabezal}>
+               <Left>
+                   <Button transparent></Button>
+               </Left>
+               <Body>
+                   <Title style={styles.textoCabezal}>Finalizaste la Trivia</Title>
+               </Body>
+               <Right>
+                   <Button transparent>
+                       <TouchableHighlight>
+                           <Icon name='share' style={styles.elementosHeader}
+                               onPress={this.onShare}
+                           />
+                       </TouchableHighlight>
+                   </Button>
+               </Right>
+           </Header>
+
+           <Content  showsVerticalScrollIndicator={false}>
+               <View>
+                   <StatusBar barStyle="light-content" />
+               </View>
+
+               <View style={styles.container2}>
+                    <Text style={styles.titulo}>Felicitaciones!!!</Text>
+                    <Text style={styles.textoFelicita}>
+                        Gananste una chance para el sorteo de este premio. Recibiras mails y alertas para informarte si ganaste.
+                    </Text>
+                    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                        <Image style={{ width: 199, height: 229 }}
+                        source={require('../../assets/images/ganaste-farmx.png')} />
                     </View>
-                   </Content>
-               </Container>
+
+                    <Button block style={ styles.botonSegui }
+                        onPress={() => this.props.navigation.navigate('BrandScreen')}
+                    >
+                        <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
+                    </Button>
+                </View>
+           </Content>
+       </Container>
         );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: '#fff',
+        flex: 1
+    },
+    container2: {
+        backgroundColor: '#fff',
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: 15
     },
     Pie: {
         ...Platform.select({
@@ -49,6 +101,47 @@ const styles = StyleSheet.create({
     colorBotones: {
         color: '#fff'
     },
+    cabezal: {
+        backgroundColor: '#DB0A88'
+    },
+    elementosHeader: {
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: '800',
+        paddingTop: 5,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 5
+    },
+    textoCabezal: {
+        color: '#fff'
+    },
+    titulo: {
+        color: '#DB0A88',
+        fontSize: 28,
+        textAlign: 'center',
+        justifyContent: 'center',
+        marginTop: 100
+    },
+    textoFelicita: {
+        flex: 1,
+        color: '#733596',
+        textAlign: 'center',
+        alignItems: 'center',
+        padding: 20,
+        fontSize: 18,
+        lineHeight: 26
+    },
+    botonSegui: {
+        backgroundColor: '#39AD45',
+        marginTop: 50,
+        height: 60
+    },
+    textDelBoton: {
+        color: '#fff',
+        fontSize: 17,
+        fontWeight: 'bold'
+    }
 });
 
 

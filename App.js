@@ -4,18 +4,13 @@ import { StackNavigator } from 'react-navigation';
 import * as firebase from 'firebase';
 
 import LoginScreen from './Screens/LoginScreen'
-import HomeScreen from './Screens/HomeScreen'
 import Politicas from './Screens/Politicas'
 import PoliticasMuestra from './Screens/PoliticasMuestra'
 import BrandScreen from './Screens/BrandScreen'
 import Ayuda from './Screens/Ayuda'
 import PremioGraco from './Screens/Graco/PremioGraco'
 import Loading from './Screens/Loading'
-
-import Perdiste from './Screens/Perdiste'
 import NoAcepto from './Screens/NoAcepto'
-
-import Succes from './Screens/Succes'
 
 //Farmx
 import PremioFarmx from './Screens/Farmx/PremioFarmx'
@@ -27,11 +22,20 @@ import Ftrivia3 from './Screens/Farmx/Ftrivia3'
 import Ftrivia4 from './Screens/Farmx/Ftrivia4'
 import Ftrivia5 from './Screens/Farmx/Ftrivia5'
 import Ftrivia6 from './Screens/Farmx/Ftrivia6'
+import Ftrivia7 from './Screens/Farmx/Ftrivia7'
+import Ftrivia8 from './Screens/Farmx/Ftrivia8'
+import Ftrivia9 from './Screens/Farmx/Ftrivia9'
 // Farmx Trivias//
 // Farmx Add//
 import Fadd1 from './Screens/Farmx/Fadd1'
 import Fadd2 from './Screens/Farmx/Fadd2'
 import Fadd3 from './Screens/Farmx/Fadd3'
+import Fadd4 from './Screens/Farmx/Fadd4'
+import Fadd5 from './Screens/Farmx/Fadd5'
+import Fadd6 from './Screens/Farmx/Fadd6'
+import Fadd7 from './Screens/Farmx/Fadd7'
+import Fadd8 from './Screens/Farmx/Fadd8'
+import Fadd9 from './Screens/Farmx/Fadd9'
 // Farmx Add//
 //Farmx
 
@@ -45,11 +49,20 @@ import Atrivia3 from './Screens/AuloGelio/Atrivia3'
 import Atrivia4 from './Screens/AuloGelio/Atrivia4'
 import Atrivia5 from './Screens/AuloGelio/Atrivia5'
 import Atrivia6 from './Screens/AuloGelio/Atrivia6'
+import Atrivia7 from './Screens/AuloGelio/Atrivia7'
+import Atrivia8 from './Screens/AuloGelio/Atrivia8'
+import Atrivia9 from './Screens/AuloGelio/Atrivia9'
 // AuloGelio Trivias//
 // AuloGelio Add//
 import Aadd1 from './Screens/AuloGelio/Aadd1'
 import Aadd2 from './Screens/AuloGelio/Aadd2'
 import Aadd3 from './Screens/AuloGelio/Aadd3'
+import Aadd4 from './Screens/AuloGelio/Aadd4'
+import Aadd5 from './Screens/AuloGelio/Aadd5'
+import Aadd6 from './Screens/AuloGelio/Aadd6'
+import Aadd7 from './Screens/AuloGelio/Aadd7'
+import Aadd8 from './Screens/AuloGelio/Aadd8'
+import Aadd9 from './Screens/AuloGelio/Aadd9'
 // AuloGelio Add//
 //AuloGelio
 
@@ -65,11 +78,20 @@ import BimbiTrivia3 from './Screens/Bimbi/BimbiTrivia3'
 import BimbiTrivia4 from './Screens/Bimbi/BimbiTrivia4'
 import BimbiTrivia5 from './Screens/Bimbi/BimbiTrivia5'
 import BimbiTrivia6 from './Screens/Bimbi/BimbiTrivia6'
+import BimbiTrivia7 from './Screens/Bimbi/BimbiTrivia7'
+import BimbiTrivia8 from './Screens/Bimbi/BimbiTrivia8'
+import BimbiTrivia9 from './Screens/Bimbi/BimbiTrivia9'
 // Bimbi Trivias//
 // Bimbi Add//
 import BimbiAdd1 from './Screens/Bimbi/BimbiAdd1'
 import BimbiAdd2 from './Screens/Bimbi/BimbiAdd2'
 import BimbiAdd3 from './Screens/Bimbi/BimbiAdd3'
+import BimbiAdd4 from './Screens/Bimbi/BimbiAdd4'
+import BimbiAdd5 from './Screens/Bimbi/BimbiAdd5'
+import BimbiAdd6 from './Screens/Bimbi/BimbiAdd6'
+import BimbiAdd7 from './Screens/Bimbi/BimbiAdd7'
+import BimbiAdd8 from './Screens/Bimbi/BimbiAdd8'
+import BimbiAdd9 from './Screens/Bimbi/BimbiAdd9'
 // Bimbi Add //
 // Bimbi
 
@@ -85,29 +107,47 @@ import NukTrivia3 from './Screens/Nuk/NukTrivia3'
 import NukTrivia4 from './Screens/Nuk/NukTrivia4'
 import NukTrivia5 from './Screens/Nuk/NukTrivia5'
 import NukTrivia6 from './Screens/Nuk/NukTrivia6'
+import NukTrivia7 from './Screens/Nuk/NukTrivia7'
+import NukTrivia8 from './Screens/Nuk/NukTrivia8'
+import NukTrivia9 from './Screens/Nuk/NukTrivia9'
 // Nuk Trivias //
 // Nuk Add //
 import NukAdd1 from './Screens/Nuk/NukAdd1'
 import NukAdd2 from './Screens/Nuk/NukAdd2'
 import NukAdd3 from './Screens/Nuk/NukAdd3'
+import NukAdd4 from './Screens/Nuk/NukAdd4'
+import NukAdd5 from './Screens/Nuk/NukAdd5'
+import NukAdd6 from './Screens/Nuk/NukAdd6'
+import NukAdd7 from './Screens/Nuk/NukAdd7'
+import NukAdd8 from './Screens/Nuk/NukAdd8'
+import NukAdd9 from './Screens/Nuk/NukAdd9'
 // Nuk Add //
 // Nuk
 // ================== Nuk ==================== //
 
 //Silfab ===================================== //
+import Sganaste from './Screens/Silfab/Sganaste'
+import PremioSilfab from './Screens/Silfab/PremioSilfab'
+
 import TriviaSilfab1 from './Screens/Silfab/TriviaSilfab1'
 import TriviaSilfab2 from './Screens/Silfab/TriviaSilfab2'
 import TriviaSilfab3 from './Screens/Silfab/TriviaSilfab3'
 import TriviaSilfab4 from './Screens/Silfab/TriviaSilfab4'
 import TriviaSilfab5 from './Screens/Silfab/TriviaSilfab5'
 import TriviaSilfab6 from './Screens/Silfab/TriviaSilfab6'
-
-import Sganaste from './Screens/Silfab/Sganaste'
-import PremioSilfab from './Screens/Silfab/PremioSilfab'
+import TriviaSilfab7 from './Screens/Silfab/TriviaSilfab7'
+import TriviaSilfab8 from './Screens/Silfab/TriviaSilfab8'
+import TriviaSilfab9 from './Screens/Silfab/TriviaSilfab9'
 
 import SilfabAdd1 from './Screens/Silfab/SilfabAdd1'
 import SilfabAdd2 from './Screens/Silfab/SilfabAdd2'
 import SilfabAdd3 from './Screens/Silfab/SilfabAdd3'
+import SilfabAdd4 from './Screens/Silfab/SilfabAdd4'
+import SilfabAdd5 from './Screens/Silfab/SilfabAdd5'
+import SilfabAdd6 from './Screens/Silfab/SilfabAdd6'
+import SilfabAdd7 from './Screens/Silfab/SilfabAdd7'
+import SilfabAdd8 from './Screens/Silfab/SilfabAdd8'
+import SilfabAdd9 from './Screens/Silfab/SilfabAdd9'
 //Silfab ===================================== //
 
 
@@ -118,29 +158,22 @@ import TriviaGraco3 from './Screens/Graco/TriviaGraco3'
 import TriviaGraco4 from './Screens/Graco/TriviaGraco4'
 import TriviaGraco5 from './Screens/Graco/TriviaGraco5'
 import TriviaGraco6 from './Screens/Graco/TriviaGraco6'
+import TriviaGraco7 from './Screens/Graco/TriviaGraco7'
+import TriviaGraco8 from './Screens/Graco/TriviaGraco8'
+import TriviaGraco9 from './Screens/Graco/TriviaGraco9'
 
 import GracoAdd1 from './Screens/Graco/GracoAdd1'
 import GracoAdd2 from './Screens/Graco/GracoAdd2'
 import GracoAdd3 from './Screens/Graco/GracoAdd3'
+import GracoAdd4 from './Screens/Graco/GracoAdd4'
+import GracoAdd5 from './Screens/Graco/GracoAdd5'
+import GracoAdd6 from './Screens/Graco/GracoAdd6'
+import GracoAdd7 from './Screens/Graco/GracoAdd7'
+import GracoAdd8 from './Screens/Graco/GracoAdd8'
+import GracoAdd9 from './Screens/Graco/GracoAdd9'
 
 import Gganaste from './Screens/Graco/Gganaste'
 //Graco ==================================== //
-
-//BabyJogger =============================== //
-import PremioJogger from './Screens/BabyJogger/PremioJogger'
-import Jganaste from './Screens/BabyJogger/Jganaste'
-
-import TriviaJogger1 from './Screens/BabyJogger/TriviaJogger1'
-import TriviaJogger2 from './Screens/BabyJogger/TriviaJogger2'
-import TriviaJogger3 from './Screens/BabyJogger/TriviaJogger3'
-import TriviaJogger4 from './Screens/BabyJogger/TriviaJogger4'
-import TriviaJogger5 from './Screens/BabyJogger/TriviaJogger5'
-import TriviaJogger6 from './Screens/BabyJogger/TriviaJogger6'
-
-import JoggerAdd1 from './Screens/BabyJogger/JoggerAdd1'
-import JoggerAdd2 from './Screens/BabyJogger/JoggerAdd2'
-import JoggerAdd3 from './Screens/BabyJogger/JoggerAdd3'
-//BabyJogger ============================== //
 
 //Estrella Baby =========================== //
 import PremioEstrella from './Screens/EstrellaBaby/PremioEstrella'
@@ -152,19 +185,24 @@ import TriviaEstrella3 from './Screens/EstrellaBaby/TriviaEstrella3'
 import TriviaEstrella4 from './Screens/EstrellaBaby/TriviaEstrella4'
 import TriviaEstrella5 from './Screens/EstrellaBaby/TriviaEstrella5'
 import TriviaEstrella6 from './Screens/EstrellaBaby/TriviaEstrella6'
+import TriviaEstrella7 from './Screens/EstrellaBaby/TriviaEstrella7'
+import TriviaEstrella8 from './Screens/EstrellaBaby/TriviaEstrella8'
+import TriviaEstrella9 from './Screens/EstrellaBaby/TriviaEstrella9'
 
 import EstrellaAdd1 from './Screens/EstrellaBaby/EstrellaAdd1'
 import EstrellaAdd2 from './Screens/EstrellaBaby/EstrellaAdd2'
 import EstrellaAdd3 from './Screens/EstrellaBaby/EstrellaAdd3'
+import EstrellaAdd4 from './Screens/EstrellaBaby/EstrellaAdd4'
+import EstrellaAdd5 from './Screens/EstrellaBaby/EstrellaAdd5'
+import EstrellaAdd6 from './Screens/EstrellaBaby/EstrellaAdd6'
+import EstrellaAdd7 from './Screens/EstrellaBaby/EstrellaAdd7'
+import EstrellaAdd8 from './Screens/EstrellaBaby/EstrellaAdd8'
+import EstrellaAdd9 from './Screens/EstrellaBaby/EstrellaAdd9'
 //Estrella Baby =========================== //
 
 //Ewe ===================================== //
 import PremioEwe from './Screens/Ewe/PremioEwe'
 import Eweganaste from './Screens/Ewe/Eweganaste'
-
-import AddEwe1 from './Screens/Ewe/AddEwe1'
-import AddEwe2 from './Screens/Ewe/AddEwe2'
-import AddEwe3 from './Screens/Ewe/AddEwe3'
 
 import EweTrivia1 from './Screens/Ewe/EweTrivia1'
 import EweTrivia2 from './Screens/Ewe/EweTrivia2'
@@ -172,6 +210,19 @@ import EweTrivia3 from './Screens/Ewe/EweTrivia3'
 import EweTrivia4 from './Screens/Ewe/EweTrivia4'
 import EweTrivia5 from './Screens/Ewe/EweTrivia5'
 import EweTrivia6 from './Screens/Ewe/EweTrivia6'
+import EweTrivia7 from './Screens/Ewe/EweTrivia7'
+import EweTrivia8 from './Screens/Ewe/EweTrivia8'
+import EweTrivia9 from './Screens/Ewe/EweTrivia9'
+
+import AddEwe1 from './Screens/Ewe/AddEwe1'
+import AddEwe2 from './Screens/Ewe/AddEwe2'
+import AddEwe3 from './Screens/Ewe/AddEwe3'
+import AddEwe4 from './Screens/Ewe/AddEwe4'
+import AddEwe5 from './Screens/Ewe/AddEwe5'
+import AddEwe6 from './Screens/Ewe/AddEwe6'
+import AddEwe7 from './Screens/Ewe/AddEwe7'
+import AddEwe8 from './Screens/Ewe/AddEwe8'
+import AddEwe9 from './Screens/Ewe/AddEwe9'
 //Ewe ==================================== //
 
 
@@ -190,13 +241,10 @@ const AppNavigator = StackNavigator({
     Loading: { screen: Loading },
     Politicas: { screen: Politicas },
     PoliticasMuestra: { screen: PoliticasMuestra },
-    HomeScreen: { screen: HomeScreen },
     Ayuda: { screen: Ayuda },
-    Succes: { screen: Succes },
     
     //Pantalla que anuncia que se gano el set de preguntas
     PremioGraco: { screen: PremioGraco },
-    Perdiste: { screen: Perdiste },
     NoAcepto: { screen: NoAcepto },
 
     // ======================================== //
@@ -210,11 +258,20 @@ const AppNavigator = StackNavigator({
     Ftrivia4: { screen: Ftrivia4 },
     Ftrivia5: { screen: Ftrivia5 },
     Ftrivia6: { screen: Ftrivia6 },
+    Ftrivia7: { screen: Ftrivia7 },
+    Ftrivia8: { screen: Ftrivia8 },
+    Ftrivia9: { screen: Ftrivia9 },
     //Farmx Trivia //
     //Farmx Add //
     Fadd1: { screen: Fadd1 },
     Fadd2: { screen: Fadd2 },
     Fadd3: { screen: Fadd3 },
+    Fadd4: { screen: Fadd4 },
+    Fadd5: { screen: Fadd5 },
+    Fadd6: { screen: Fadd6 },
+    Fadd7: { screen: Fadd7 },
+    Fadd8: { screen: Fadd8 },
+    Fadd9: { screen: Fadd9 },
     //Farmx Add //
     //Farmx
 
@@ -228,11 +285,20 @@ const AppNavigator = StackNavigator({
     Atrivia4: { screen: Atrivia4 },
     Atrivia5: { screen: Atrivia5 },
     Atrivia6: { screen: Atrivia6 },
+    Atrivia7: { screen: Atrivia7 },
+    Atrivia8: { screen: Atrivia8 },
+    Atrivia9: { screen: Atrivia9 },
     //AuloGelio Trivia //
     //AuloGelio Aad //
     Aadd1: { screen: Aadd1 },
     Aadd2: { screen: Aadd2 },
     Aadd3: { screen: Aadd3 },
+    Aadd4: { screen: Aadd4 },
+    Aadd5: { screen: Aadd5 },
+    Aadd6: { screen: Aadd6 },
+    Aadd7: { screen: Aadd7 },
+    Aadd8: { screen: Aadd8 },
+    Aadd9: { screen: Aadd9 },
     //AuloGelio Aad //
     //AuloGelio
 
@@ -248,11 +314,22 @@ const AppNavigator = StackNavigator({
     BimbiTrivia4: { screen: BimbiTrivia4 },
     BimbiTrivia5: { screen: BimbiTrivia5 },
     BimbiTrivia6: { screen: BimbiTrivia6 },
+    BimbiTrivia7: { screen: BimbiTrivia7 },
+    BimbiTrivia8: { screen: BimbiTrivia8 },
+    BimbiTrivia9: { screen: BimbiTrivia9 },
     //Bimbi Trivia //
     //Bimbi Trivia //
     BimbiAdd1: { screen: BimbiAdd1 },
     BimbiAdd2: { screen: BimbiAdd2 },
     BimbiAdd3: { screen: BimbiAdd3 },
+    
+    BimbiAdd4: { screen: BimbiAdd4 },
+    BimbiAdd5: { screen: BimbiAdd5 },
+    BimbiAdd6: { screen: BimbiAdd6 },
+
+    BimbiAdd7: { screen: BimbiAdd7 },
+    BimbiAdd8: { screen: BimbiAdd8 },
+    BimbiAdd9: { screen: BimbiAdd9 },
     //Bimbi Trivia //
     //Bimbi
 
@@ -293,35 +370,28 @@ const AppNavigator = StackNavigator({
     //Silfab ============================= //
 
     //Graco ============================== //
+    Gganaste: { screen: Gganaste },
+    
     TriviaGraco1: { screen: TriviaGraco1 },
     TriviaGraco2: { screen: TriviaGraco2 },
     TriviaGraco3: { screen: TriviaGraco3 },
     TriviaGraco4: { screen: TriviaGraco4 },
     TriviaGraco5: { screen: TriviaGraco5 },
     TriviaGraco6: { screen: TriviaGraco6 },
-
-    Gganaste: { screen: Gganaste },
+    TriviaGraco7: { screen: TriviaGraco7 },
+    TriviaGraco8: { screen: TriviaGraco8 },
+    TriviaGraco9: { screen: TriviaGraco9 },
 
     GracoAdd1: { screen: GracoAdd1 },
     GracoAdd2: { screen: GracoAdd2 },
     GracoAdd3: { screen: GracoAdd3 },
+    GracoAdd4: { screen: GracoAdd4 },
+    GracoAdd5: { screen: GracoAdd5 },
+    GracoAdd6: { screen: GracoAdd6 },
+    GracoAdd7: { screen: GracoAdd7 },
+    GracoAdd8: { screen: GracoAdd8 },
+    GracoAdd9: { screen: GracoAdd9 },
     //Graco ============================== //
-
-    //BabyJogger ========================= //
-    PremioJogger: { screen: PremioJogger },
-    Jganaste: { screen: Jganaste },
-
-    TriviaJogger1: { screen: TriviaJogger1 },
-    TriviaJogger2: { screen: TriviaJogger2 },
-    TriviaJogger3: { screen: TriviaJogger3 },
-    TriviaJogger4: { screen: TriviaJogger4 },
-    TriviaJogger5: { screen: TriviaJogger5 },
-    TriviaJogger6: { screen: TriviaJogger6 },
-
-    JoggerAdd1: { screen: JoggerAdd1 },
-    JoggerAdd2: { screen: JoggerAdd2 },
-    JoggerAdd3: { screen: JoggerAdd3 },
-    //BabyJogger ========================= //
 
     //Estrella Baby ====================== //
     PremioEstrella: { screen: PremioEstrella },
@@ -333,19 +403,24 @@ const AppNavigator = StackNavigator({
     TriviaEstrella4: { screen: TriviaEstrella4 },
     TriviaEstrella5: { screen: TriviaEstrella5 },
     TriviaEstrella6: { screen: TriviaEstrella6 },
+    TriviaEstrella7: { screen: TriviaEstrella7 },
+    TriviaEstrella8: { screen: TriviaEstrella8 },
+    TriviaEstrella9: { screen: TriviaEstrella9 },
 
     EstrellaAdd1: { screen: EstrellaAdd1 },
     EstrellaAdd2: { screen: EstrellaAdd2 },
     EstrellaAdd3: { screen: EstrellaAdd3 },
+    EstrellaAdd4: { screen: EstrellaAdd4 },
+    EstrellaAdd5: { screen: EstrellaAdd5 },
+    EstrellaAdd6: { screen: EstrellaAdd6 },
+    EstrellaAdd7: { screen: EstrellaAdd7 },
+    EstrellaAdd8: { screen: EstrellaAdd8 },
+    EstrellaAdd9: { screen: EstrellaAdd9 },
     //Estrella Baby ====================== //
 
     //Ewe ================================ //
     PremioEwe: { screen: PremioEwe },
     Eweganaste: { screen: Eweganaste },
-
-    AddEwe1: { screen: AddEwe1 },
-    AddEwe2: { screen: AddEwe2 },
-    AddEwe3: { screen: AddEwe3 },
 
     EweTrivia1: { screen: EweTrivia1 },
     EweTrivia2: { screen: EweTrivia2 },
@@ -353,6 +428,19 @@ const AppNavigator = StackNavigator({
     EweTrivia4: { screen: EweTrivia4 },
     EweTrivia5: { screen: EweTrivia5 },
     EweTrivia6: { screen: EweTrivia6 },
+    EweTrivia7: { screen: EweTrivia7 },
+    EweTrivia8: { screen: EweTrivia8 },
+    EweTrivia9: { screen: EweTrivia9 },
+
+    AddEwe1: { screen: AddEwe1 },
+    AddEwe2: { screen: AddEwe2 },
+    AddEwe3: { screen: AddEwe3 },
+    AddEwe4: { screen: AddEwe4 },
+    AddEwe5: { screen: AddEwe5 },
+    AddEwe6: { screen: AddEwe6 },
+    AddEwe7: { screen: AddEwe7 },
+    AddEwe8: { screen: AddEwe8 },
+    AddEwe9: { screen: AddEwe9 },
     //Ewe ================================ //
 
 })

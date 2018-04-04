@@ -65,7 +65,7 @@ class BimbiTrivia6 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('BimbiAdd6')}
                         >
                             <Text style={styles.blanco}>Sedestación</Text>
                         </Button>
@@ -76,7 +76,7 @@ class BimbiTrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,7 +90,7 @@ class BimbiTrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}

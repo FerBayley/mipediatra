@@ -67,7 +67,7 @@ class Atrivia2 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() => this.props.navigation.navigate('Aadd2')}
                         >
-                            <Text style={styles.blanco}>Aceite de Citronela </Text>
+                            <Text style={styles.blanco}>Aceite de Citronela</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -76,7 +76,7 @@ class Atrivia2 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia4')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,7 +90,7 @@ class Atrivia2 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia4')}
                                     ],
                                     { cancelable: false }
                                   )}

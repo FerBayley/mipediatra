@@ -70,7 +70,7 @@ class Atrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -79,7 +79,7 @@ class Atrivia6 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Aadd6')}
                         >
                             <Text style={styles.blanco}>Hembra</Text>
                         </Button>
@@ -90,7 +90,7 @@ class Atrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}

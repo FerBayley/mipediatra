@@ -119,19 +119,7 @@ class BrandScreen extends Component {
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
-                            {/* Trivia AuloGelio */}   
-
-                            {/* Trivia Bimbi */}   
-                            <TouchableOpacity style={styles.Btn6}
-                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi.png'}}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Bimbi */}   
+                            {/* Trivia AuloGelio */}
                         </Col>
 
                         <Col style={{ height: 400 }}>
@@ -147,17 +135,17 @@ class BrandScreen extends Component {
                             </TouchableOpacity>
                             {/* Trivia Ewe */}
 
-                            {/* Trivia BabyJogger */}
-                            <TouchableOpacity style={styles.Btn5}
-                                onPress={() => this.props.navigation.navigate('PremioJogger')}>
+                            {/* Trivia Bimbi */}   
+                            <TouchableOpacity style={styles.Btn6}
+                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 127, height: 29 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/jogger-logo.png'}}
+                                            style={{ width: 158, height: 65 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi.png'}}
                                          />
                                     </BlurView>
-                            </TouchableOpacity> 
-                            {/* Trivia BabyJogger */}
+                            </TouchableOpacity>  
+                            {/* Trivia Bimbi */}   
 
                             {/* Trivia Silfab */}   
                             <TouchableOpacity style={styles.Btn6}
@@ -286,7 +274,7 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     Btn6: {
-        marginTop: 40,
+        marginTop: 25,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5

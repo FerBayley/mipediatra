@@ -70,7 +70,7 @@ class TriviaEstrella5 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -79,7 +79,7 @@ class TriviaEstrella5 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd5')}
                         >
                             <Text style={styles.blanco}>Talle XG</Text>
                         </Button>
@@ -90,7 +90,7 @@ class TriviaEstrella5 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella7')}
                                     ],
                                     { cancelable: false }
                                   )}

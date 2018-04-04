@@ -33,7 +33,7 @@ class Aadd3 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('http://bajerlaboratorios.com.ar/portfolios/aulo-gelio-aerosol/')}>
+                        <Button onPress={() => Linking.openURL('http://bajerlaboratorios.com.ar/portfolios/aulo-gelio-locion/')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
