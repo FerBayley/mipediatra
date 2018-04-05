@@ -37,7 +37,7 @@ class SilfabAdd4 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaSilfab2')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaSilfab5')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

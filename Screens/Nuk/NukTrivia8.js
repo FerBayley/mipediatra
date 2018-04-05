@@ -59,23 +59,15 @@ class NukTrivia8 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            ¿A qué edad pueden sentarse solos la mayoría de los bebés?
+                            Los primeros dientes que erupcionan en los bebés son:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    '',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
-                                    ],
-                                    { cancelable: false }
-                                  )}
+                            onPress={() => this.props.navigation.navigate('NukAdd8')}
                             >
-                            <Text style={styles.blanco}>0-3 meses</Text>
+                            <Text style={styles.blanco}>Incisivos centrales inferiores</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -84,18 +76,26 @@ class NukTrivia8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>3-6 meses</Text>
+                            <Text style={styles.blanco}>Incisivos laterales superiores</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    '',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
                         >
-                            <Text style={styles.blanco}>6-9 meses</Text>
+                            <Text style={styles.blanco}>Incisivos centrales superiores</Text>
                         </Button>
                     </View>
                 </Content>

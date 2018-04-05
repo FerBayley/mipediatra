@@ -59,7 +59,7 @@ class NukTrivia9 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            ¿A qué edad pueden sentarse solos la mayoría de los bebés?
+                            ¿Cuántas piezas tiene la dentadura "de leche"?
                         </Text>
                     </View>
 
@@ -70,32 +70,32 @@ class NukTrivia9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>0-3 meses</Text>
+                            <Text style={styles.blanco}>14 piezas</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('NukAdd9')}
+                            >
+                            <Text style={styles.blanco}>20 piezas</Text>
+                        </Button>
+                        
+                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
-                            >
-                            <Text style={styles.blanco}>3-6 meses</Text>
-                        </Button>
-                        
-                        <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
                         >
-                            <Text style={styles.blanco}>6-9 meses</Text>
+                            <Text style={styles.blanco}>24 piezas</Text>
                         </Button>
                     </View>
                 </Content>

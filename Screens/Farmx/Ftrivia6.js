@@ -70,7 +70,7 @@ class Ftrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -84,7 +84,7 @@ class Ftrivia6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -93,7 +93,7 @@ class Ftrivia6 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('Fadd6')}
                         >
                             <Text style={styles.blanco}>Salivación</Text>
                         </Button>

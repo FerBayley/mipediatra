@@ -59,7 +59,7 @@ class NukTrivia7 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            ¿A qué edad pueden sentarse solos la mayoría de los bebés?
+                            Las mamaderas NUK favorecen el desarrollo natural de la mandíbula para:
                         </Text>
                     </View>
 
@@ -70,12 +70,12 @@ class NukTrivia7 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>0-3 meses</Text>
+                            <Text style={styles.blanco}>Cuidar la dentición</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -84,18 +84,18 @@ class NukTrivia7 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>3-6 meses</Text>
+                            <Text style={styles.blanco}>Comer y hablar</Text>
                         </Button>
                         
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('NukAdd7')}
                         >
-                            <Text style={styles.blanco}>6-9 meses</Text>
+                            <Text style={styles.blanco}>Todas las anteriores</Text>
                         </Button>
                     </View>
                 </Content>

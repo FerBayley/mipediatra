@@ -59,15 +59,23 @@ class EweTrivia7 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El uso de Créma de Caléndula Ewe durante la Lactancia:
+                            La alimentación complementaria a la leche materna, se recomienda entre:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    '',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia1')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
                         >
-                            <Text style={styles.blanco}>Previene las grietas de pezón</Text>
+                            <Text style={styles.blanco}>Los 3-6 meses de vida</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -76,26 +84,18 @@ class EweTrivia7 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Reduce la producción de leche</Text>
+                            <Text style={styles.blanco}>Los 6-12 meses de vida</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    '',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
-                                    ],
-                                    { cancelable: false }
-                                  )}
+                            onPress={() => this.props.navigation.navigate('AddEwe7')}
                         >
-                            <Text style={styles.blanco}>Aumenta la resequedad</Text>
+                            <Text style={styles.blanco}>Los 6-24 meses de vida</Text>
                         </Button>
                     </View>
                 </Content>

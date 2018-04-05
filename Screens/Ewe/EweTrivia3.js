@@ -70,7 +70,7 @@ class EweTrivia3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia4')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,7 +90,7 @@ class EweTrivia3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia4')}
                                     ],
                                     { cancelable: false }
                                   )}

@@ -37,7 +37,7 @@ class Fadd4 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Ftrivia2')}>
+                        <Button onPress={() => this.props.navigation.navigate('Ftrivia5')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

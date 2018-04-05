@@ -70,7 +70,7 @@ class EweTrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -84,7 +84,7 @@ class EweTrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -93,7 +93,7 @@ class EweTrivia4 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('AddEwe4')}
                         >
                             <Text style={styles.blanco}>12 veces</Text>
                         </Button>

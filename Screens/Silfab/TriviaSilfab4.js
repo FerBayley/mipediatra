@@ -70,7 +70,7 @@ class TriviaSilfab4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaSilfab7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -79,7 +79,7 @@ class TriviaSilfab4 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('SilfabAdd4')}
                         >
                             <Text style={styles.blanco}>30-40</Text>
                         </Button>
@@ -90,7 +90,7 @@ class TriviaSilfab4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaSilfab7')}
                                     ],
                                     { cancelable: false }
                                   )}

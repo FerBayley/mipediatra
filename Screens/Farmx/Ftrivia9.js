@@ -59,23 +59,15 @@ class Ftrivia9 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La dermatitis en el cuello, pecho y alrededor de la boca, puede ser causada por la:
+                            Ante una herida cortante se debe revisar ante todo:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    '',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
-                                    ],
-                                    { cancelable: false }
-                                  )}
+                           onPress={() => this.props.navigation.navigate('Fadd9')}
                         >
-                            <Text style={styles.blanco}>Papilla</Text>
+                            <Text style={styles.blanco}>Que no queden elementos punzantes en la herida</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -84,18 +76,26 @@ class Ftrivia9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Leche materna</Text>
+                            <Text style={styles.blanco}>Que no sangre</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    '',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia1')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
                         >
-                            <Text style={styles.blanco}>Salivación</Text>
+                            <Text style={styles.blanco}>Que se lave</Text>
                         </Button>
                     </View>
                 </Content>

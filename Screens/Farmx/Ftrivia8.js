@@ -59,7 +59,7 @@ class Ftrivia8 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            La dermatitis en el cuello, pecho y alrededor de la boca, puede ser causada por la:
+                            FARM-X CREMA es antiséptica porque crea un ambiente desfavorable para:
                         </Text>
                     </View>
 
@@ -70,32 +70,32 @@ class Ftrivia8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Papilla</Text>
+                            <Text style={styles.blanco}>Las irritaciones</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('Fadd8')}
+                        >
+                            <Text style={styles.blanco}>Las bacterias</Text>
+                        </Button>
+
+                        <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Leche materna</Text>
-                        </Button>
-
-                        <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>Salivación</Text>
+                            <Text style={styles.blanco}>Las escaras</Text>
                         </Button>
                     </View>
                 </Content>

@@ -59,29 +59,29 @@ class EweTrivia9 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El uso de Créma de Caléndula Ewe durante la Lactancia:
+                            El uso de toallitas húmedas para la higiene de la colita no se recomienda hasta:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
-                        >
-                            <Text style={styles.blanco}>Previene las grietas de pezón</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Reduce la producción de leche</Text>
+                            <Text style={styles.blanco}>Los 3 meses de vida</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('AddEwe9')}
+                        >
+                            <Text style={styles.blanco}>Los 6 meses de vida</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -90,12 +90,12 @@ class EweTrivia9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EweTrivia1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Aumenta la resequedad</Text>
+                            <Text style={styles.blanco}>El nacimiento</Text>
                         </Button>
                     </View>
                 </Content>

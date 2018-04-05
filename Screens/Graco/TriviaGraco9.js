@@ -59,7 +59,7 @@ class TriviaGraco9 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El SRI Graco 4everExtend2Fit puede ser usada de:
+                            El SRI del grupo 0 y 0+ siempre se coloca:
                         </Text>
                     </View>
 
@@ -70,12 +70,12 @@ class TriviaGraco9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-30kg</Text>
+                            <Text style={styles.blanco}>En el asiento de adelante</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -84,18 +84,18 @@ class TriviaGraco9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco1')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-40Kg</Text>
+                            <Text style={styles.blanco}>En dirección al conductor</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('GracoAdd9')}
                         >
-                            <Text style={styles.blanco}>0-55Kg</Text>
+                            <Text style={styles.blanco}>Mirando hacia la luneta</Text>
                         </Button>
                     </View>
                 </Content>

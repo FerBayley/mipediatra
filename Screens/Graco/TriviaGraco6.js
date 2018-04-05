@@ -70,7 +70,7 @@ class TriviaGraco6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -84,7 +84,7 @@ class TriviaGraco6 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -93,7 +93,7 @@ class TriviaGraco6 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('GracoAdd6')}
                         >
                             <Text style={styles.blanco}>0-55Kg</Text>
                         </Button>

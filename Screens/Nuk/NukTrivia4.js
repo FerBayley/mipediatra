@@ -70,7 +70,7 @@ class NukTrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -79,7 +79,7 @@ class NukTrivia4 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() => this.props.navigation.navigate('NukAdd4')}
                         >
                             <Text style={styles.blanco}>Se adapte siempre a la cavidad bucal del niño</Text>
                         </Button>
@@ -90,7 +90,7 @@ class NukTrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia7')}
                                     ],
                                     { cancelable: false }
                                   )}

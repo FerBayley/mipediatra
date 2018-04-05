@@ -33,7 +33,7 @@ class AddEwe6 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('null')}>
+                        <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar/productos-categorias.php?xIDcategoria=2')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 

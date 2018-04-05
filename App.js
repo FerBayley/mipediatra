@@ -322,11 +322,9 @@ const AppNavigator = StackNavigator({
     BimbiAdd1: { screen: BimbiAdd1 },
     BimbiAdd2: { screen: BimbiAdd2 },
     BimbiAdd3: { screen: BimbiAdd3 },
-    
     BimbiAdd4: { screen: BimbiAdd4 },
     BimbiAdd5: { screen: BimbiAdd5 },
     BimbiAdd6: { screen: BimbiAdd6 },
-
     BimbiAdd7: { screen: BimbiAdd7 },
     BimbiAdd8: { screen: BimbiAdd8 },
     BimbiAdd9: { screen: BimbiAdd9 },
@@ -350,23 +348,39 @@ const AppNavigator = StackNavigator({
     NukAdd1: { screen: NukAdd1 },
     NukAdd2: { screen: NukAdd2 },
     NukAdd3: { screen: NukAdd3 },
+    NukAdd4: { screen: NukAdd4 },
+    NukAdd5: { screen: NukAdd5 },
+    NukAdd6: { screen: NukAdd6 },
+    NukAdd7: { screen: NukAdd7 },
+    NukAdd8: { screen: NukAdd8 },
+    NukAdd9: { screen: NukAdd9 },
     //Nuk Add //
     //Nuk
     // ==================================== //
 
     //Silfab ============================= //
+    Sganaste: { screen: Sganaste },
+    PremioSilfab: { screen: PremioSilfab },
+
     TriviaSilfab1: { screen: TriviaSilfab1 },
     TriviaSilfab2: { screen: TriviaSilfab2 },
     TriviaSilfab3: { screen: TriviaSilfab3 },
     TriviaSilfab4: { screen: TriviaSilfab4 },
     TriviaSilfab5: { screen: TriviaSilfab5 },
     TriviaSilfab6: { screen: TriviaSilfab6 },
+    TriviaSilfab7: { screen: TriviaSilfab7 },
+    TriviaSilfab8: { screen: TriviaSilfab8 },
+    TriviaSilfab9: { screen: TriviaSilfab9 },
 
-    Sganaste: { screen: Sganaste },
-    PremioSilfab: { screen: PremioSilfab },
     SilfabAdd1: { screen: SilfabAdd1 },
     SilfabAdd2: { screen: SilfabAdd2 },
     SilfabAdd3: { screen: SilfabAdd3 },
+    SilfabAdd4: { screen: SilfabAdd4 },
+    SilfabAdd5: { screen: SilfabAdd5 },
+    SilfabAdd6: { screen: SilfabAdd6 },
+    SilfabAdd7: { screen: SilfabAdd7 },
+    SilfabAdd8: { screen: SilfabAdd8 },
+    SilfabAdd9: { screen: SilfabAdd9 },
     //Silfab ============================= //
 
     //Graco ============================== //

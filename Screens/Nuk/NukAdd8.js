@@ -37,7 +37,7 @@ class NukAdd8 extends Component {
                                 <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                             </Button>                       
 
-                            <Button onPress={() => this.props.navigation.navigate('NukTrivia2')}>
+                            <Button onPress={() => this.props.navigation.navigate('NukTrivia9')}>
                                 <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>

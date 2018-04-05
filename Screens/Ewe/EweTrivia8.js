@@ -59,15 +59,23 @@ class EweTrivia8 extends Component {
                             source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
                         />
                         <Text style={styles.textoPregunta}>
-                            El uso de Créma de Caléndula Ewe durante la Lactancia:
+                            Aumenta el riego de dermatitis de pañal si el bebé:
                         </Text>
                     </View>
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('null')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Incorrecta',
+                                    '',
+                                    [
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
                         >
-                            <Text style={styles.blanco}>Previene las grietas de pezón</Text>
+                            <Text style={styles.blanco}>Cambia su alimentación</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -81,21 +89,13 @@ class EweTrivia8 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Reduce la producción de leche</Text>
+                            <Text style={styles.blanco}>Le están saliendo los dientes</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() =>
-                                Alert.alert(
-                                    'Respuesta Incorrecta',
-                                    '',
-                                    [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
-                                    ],
-                                    { cancelable: false }
-                                  )}
+                            onPress={() => this.props.navigation.navigate('AddEwe8')}
                         >
-                            <Text style={styles.blanco}>Aumenta la resequedad</Text>
+                            <Text style={styles.blanco}>Ambas</Text>
                         </Button>
                     </View>
                 </Content>
