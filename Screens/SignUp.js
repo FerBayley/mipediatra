@@ -1,108 +1,70 @@
-import { Container, Header, Content, Footer, FooterTab, Button, Form, Item, Input, Label, Text } from 'native-base';
-import { Col, Row, Grid } from 'react-native-easy-grid';
-import React, { Component } from "react";
+import React from 'react';
+import { Container, Header, Content, Footer, FooterTab, Button, Form, Item, Input, Label, Icon } from 'native-base';
 import {
     View,
-    StyleSheet,
-    Image, 
-    StatusBar,
-    Dimensions,
-    TouchableOpacity,
-    TextInput,
-    Platform
-} from "react-native";
-import { auth } from '../config/firebase';
-import { auth, db } from '../config/firebase';
+    Text,
+    StyleSheet, 
+    TouchableOpacity
+} from 'react-native';
 
-class LoginScreen extends Component {   
-
-    static navigationOptions = {
-        header: null
-      };
-
-    createUser(email, password) {
-        auth.createUserWithEmailAndPassword(email, password)
-        .then(results => {
-            db.ref(`/users/${result.uid}`).set({
-                uid:result.uid,
-                email: result.email,
-                avatar: generateAvatarUrl()
-            })
-        })
-    }  
-    
-
+export default class SignUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
             password: ''
         }
+        
     }
+
+
+    static navigationOptions = {
+        header: null
+      };   
 
     render() {
         return (
-            
-            <Container style={styles.container}>
+
+            <Container>
                 <Content>
-                    <View style={styles.logo}>
-                        <StatusBar
-                            backgroundColor="white"
-                            barStyle="light-content"
-                         />
-                        <View style={styles.logo}>
-                            <Image source={require('../assets/images/mp_logo.jpg')} />
-                        </View>
-                    </View>  
 
-
+                    <View style={{ height: 100, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('LoginScreen')}>
+                            <Text style={{ marginTop: 30, padding: 20 }}>Volver</Text>
+                        </TouchableOpacity>
+                    </View>
 
                     <Form>
                         <Item floatingLabel>
-                        <Label>Tu Email</Label>
-                        <Input 
-                        onChangeText={(text) => this.setState({ email: text })}
-                        value={this.state.email}
-                        />
+                            <Label>Nombre y Apellido</Label>
+                            <Input onChangeText={(text) => this.setState({ email: text })} 
+                                value={this.state.email}/>
+                        </Item>   
 
-                        </Item>
                         <Item floatingLabel last>
-                        <Label>Tu Contraseña</Label>
-                        <Input
-                        onChangeText={(text) => this.setState({ password: text })}
-                        value={this.state.password}
-                        />
+                            <Label>Contraseña</Label>
+                            <Input onChangeText={(text) => this.setState({ password: text })} 
+                                secureTextEntry={true}
+                                value={this.state.password} />
                         </Item>
+
+                        <View style={{ padding: 15 }}>
+                            <Button full style={styles.btnIngresar} onPress={() => this.createUser(this.state.email, this.state.password)}>
+                                <Text style={{ 
+                                    textAlign: 'center', 
+                                    fontWeight: '700', 
+                                    color: '#fff', 
+                                    fontSize: 17, 
+                                    fontWeight: '700' }}>
+                                    Crear cuenta
+                                </Text>
+                            </Button>   
+                        </View>
                     </Form>
-           
-                    <Button full style={styles.btn1}
-                    onPress={() => this.createUser(this.state.email, this.state.password)}>
-                        <Text style={styles.btnTextBtn}>Accedé con tu cuenta</Text>
-                    </Button>
-
-                    <Button full style={styles.btn2} 
-                    onPress={() => this.props.navigation.navigate('Ayuda')}>
-                        <Text style={styles.btnTextBtn}>Crea una cuenta acá</Text>
-                    </Button>
-
-                    <Grid style={styles.griden}>
-                        <Col style={{ height: 200 }}>
-                            <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Ayuda')}>
-                                <Text style={styles.btnText}>Ayuda</Text>
-                            </TouchableOpacity>                           
-                        </Col>
-
-                        <Col style={{ height: 200 }}>
-                        <TouchableOpacity onPress={this.handleEmail}>
-                            <Text style={styles.btnText}>Contacto</Text>
-                        </TouchableOpacity>
-                        
-                        </Col>
-                    </Grid>
-             
                 </Content>
             </Container>
+
+            
         );
     }
 }
@@ -112,49 +74,22 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10
-    },
-    Pie: {
-        ...Platform.select({
-            ios: {
-                backgroundColor: '#DB0A88',
-            },
-            android: {
-                backgroundColor: '#DB0A88'
-            }
-        }),
+        alignItems: 'center'
     },
     colorBotones: {
         color: '#fff'
-    },
-    logo: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        alignSelf: 'center',
-        marginTop: 70
-    },      
-    btn1: {
+    },    
+    btnIngresar: {
         backgroundColor: '#DB0A88',
-        marginBottom: 15,
-        marginTop: 15,
+        marginTop: 10,
         borderRadius: 4,
-        height: 60
-    },
-    btn2: {
-        backgroundColor: '#733596',
-        marginBottom: 10,
-        borderRadius: 4,
-        height: 45
+        height: 55
     },
     btnText: {
         justifyContent: 'center',
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 15,
         color: 'grey'
-    },
-    griden: {
-        marginTop: 10
     },
     btnTextBtn: {
         color: '#fff'
@@ -172,7 +107,9 @@ const styles = StyleSheet.create({
         color: 'grey',
         marginBottom: 5,
         textAlign: 'center'
+    },
+    label: {
+        color: '#733596',
+        fontSize: 19
     }
 });
-
-export default LoginScreen;

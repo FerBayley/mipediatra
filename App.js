@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, ActivityIndicator } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import * as firebase from 'firebase';
 
 import LoginScreen from './Screens/LoginScreen'
 import Politicas from './Screens/Politicas'
@@ -225,6 +224,9 @@ import AddEwe8 from './Screens/Ewe/AddEwe8'
 import AddEwe9 from './Screens/Ewe/AddEwe9'
 //Ewe ==================================== //
 
+import Login from './Screens/Login'
+import SignUp from './Screens/SignUp'
+
 
 export default class App extends React.Component {
     render() {
@@ -235,6 +237,7 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
+
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
 
@@ -456,5 +459,9 @@ const AppNavigator = StackNavigator({
     AddEwe8: { screen: AddEwe8 },
     AddEwe9: { screen: AddEwe9 },
     //Ewe ================================ //
+
+    Login: { screen: Login },
+    SignUp: { screen: SignUp }
+
 
 })

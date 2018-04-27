@@ -33,7 +33,11 @@ class Politicas extends Component {
                         />
                         </View>
                         <Text style={styles.textBases}>
-                        1.- Aceptación de Bases y Condiciones: Las presentes bases y condiciones de la Aplicación denominada “Mi Pediatra Trivias” es organizada por  Direct A-BTL SRL con domicilio en Varela 339 3° 15 -CABA.  
+                            Aclaración Importante:
+                            Apple no es sponsor del juego ni es parte responsablede de sus contenidos y de los premios publicitados en la app.
+                            A su vez, Ideas White, no es sponsor del juego ni es parte responsablede de sus contenidos y de los premios exibidos en la app.
+                            Declaro ser mayor de +17 años para poder participar en los juegos y trivias publicados en la app.
+                            1.- Aceptación de Bases y Condiciones: Las presentes bases y condiciones de la Aplicación denominada “Mi Pediatra Trivias” es organizada por  Direct A-BTL SRL con domicilio en Varela 339 3° 15 -CABA.  
                             Las personas intervinientes en esta promoción por su sola participación aceptan de pleno derecho y de forma incondicional todas y cada una de las disposiciones descriptas en estas bases y condiciones (en adelante, las “Bases”).
                             2.- Participantes: Podrán participar de Mi Pediatra Trivias, todas las personas físicas que, al momento de la vigencia de participación, sean mayores de dieciocho (18) años, que tengan domicilio en el territorio de la República Argentina, y cumplan con el resto de los requisitos establecidos en estas Bases.
                             3.- Vigencia y Territorio: La presente Promoción tendrá vigencia en la República Argentina, a partir del 1 de Marzo de 2018.
