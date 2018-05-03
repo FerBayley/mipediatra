@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -18,7 +21,9 @@ class Eganaste extends Component {
 
     static navigationOptions = {
         header: null,
-      };   
+        headerLeft: null,
+        gesturesEnabled: false,
+    };    
 
       onShare(){
         Share.share({
@@ -29,6 +34,9 @@ class Eganaste extends Component {
     }
 
     render() {
+
+        const uri = '../../assets/images/ganaste-estrella.png';
+
         return (
             <Container style={styles.container}>
             <Header style={styles.cabezal}>
@@ -36,7 +44,7 @@ class Eganaste extends Component {
                    <Button transparent></Button>
                </Left>
                <Body>
-                   <Title style={styles.textoCabezal}>Finalizaste la Trivia</Title>
+                   <Title style={styles.textoCabezal}>Mi Pediatra</Title>
                </Body>
                <Right>
                    <Button transparent>
@@ -59,13 +67,17 @@ class Eganaste extends Component {
                     <Text style={styles.textoFelicita}>
                         Gananste una chance para el sorteo de este premio. Recibiras mails y alertas para informarte si ganaste.
                     </Text>
+
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                        <Image style={{ width: 201, height: 213 }}
-                        source={require('../../assets/images/ganaste-estrella.png')} />
+
+                        <BlurView>
+                            <Image style={{ width: 201, height: 213 }}
+                            source={require( uri )} />
+                        </BlurView>
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BrandScreen')}
+                        onPress={() => this.props.navigation.navigate('TriviaEstrella1')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -121,7 +133,8 @@ const styles = StyleSheet.create({
         fontSize: 28,
         textAlign: 'center',
         justifyContent: 'center',
-        marginTop: 100
+        marginTop: 50,
+        fontWeight: '800'
     },
     textoFelicita: {
         flex: 1,

@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -16,11 +19,16 @@ class BimbiAdd6 extends Component {
 
     static navigationOptions = {
         header: null,
-      };  
+        headerLeft: null,
+        gesturesEnabled: false,
+    };  
 
     render() {
+
+        const add1 = '../../assets/images/bimbi-add1.jpg';
+
         return (
-            <ImageBackground source={require('../../assets/images/bimbi-add1.jpg')}
+            <ImageBackground source={require( add1 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>

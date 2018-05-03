@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -16,11 +19,16 @@ class Aadd9 extends Component {
 
     static navigationOptions = {
         header: null,
+        headerLeft: null,
+        gesturesEnabled: false,
       };  
 
     render() {
+
+        const fondoAulo3 = '../../assets/images/aulo-add3.png';
+
         return (
-            <ImageBackground source={require('../../assets/images/aulo-add2.png')}
+            <ImageBackground source={require( fondoAulo3 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>

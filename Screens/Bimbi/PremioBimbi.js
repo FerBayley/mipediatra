@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,8 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
 
 class PremioBimbi extends Component {
 
@@ -30,6 +31,10 @@ class PremioBimbi extends Component {
 
 
     render() {
+
+        const logoBimbi = '../../assets/images/bimbi-logopremio.png';
+        const premioBimbi = '../../assets/images/sorteo-bimbi.png';
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -62,13 +67,20 @@ class PremioBimbi extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 137, height: 72, marginTop: 50}}
-                            source={require('../../assets/images/bimbi-logopremio.png')} />
 
-                        <Image
-                            style={{width: 301, height: 301, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-bimbi.png')} />
+
+                        <BlurView>
+                            <Image
+                                style={{width: 137, height: 72, marginTop: 20}}
+                                source={require( logoBimbi )} />
+                        </BlurView>
+
+
+                        <BlurView>
+                            <Image
+                                style={{width: 301, height: 301, marginTop: 20}}
+                                source={require( premioBimbi )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -76,7 +88,7 @@ class PremioBimbi extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('BimbiTrivia1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +128,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

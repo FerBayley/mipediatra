@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -16,11 +19,16 @@ class Aadd1 extends Component {
 
     static navigationOptions = {
         header: null,
+        headerLeft: null,
+        gesturesEnabled: false,
       };  
 
     render() {
+
+        const fondoAulo1 = '../../assets/images/aulo-add1.png';
+
         return (
-            <ImageBackground source={require('../../assets/images/aulo-add1.png')}
+            <ImageBackground source={require( fondoAulo1 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -31,7 +39,7 @@ class Aadd1 extends Component {
                     </View>                 
                 </Content>
 
-                <Footer style={styles.Pie}>
+                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('http://bajerlaboratorios.com.ar/portfolios/aulo-gelio-aerosol/')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
@@ -40,8 +48,8 @@ class Aadd1 extends Component {
                         <Button onPress={() => this.props.navigation.navigate('Atrivia2')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
-                    </FooterTab>
-                </Footer>
+                </FooterTab>
+            </Footer>
             </Container>
             </ImageBackground>                 
         );

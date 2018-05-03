@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Header, Content, Footer, FooterTab, Button, Form, Item, Input, Label, Icon } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Form, Item, Input, Label, Icon, Left, Body, Title, Right } from 'native-base';
 import { 
     View, 
     Text, 
     StyleSheet, 
     TouchableOpacity, 
+    TouchableHighlight,
     Alert 
 } from 'react-native';
 
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
         fontWeight: '700'
     },
     contenedorForm: {
-        padding: 10,
-        marginTop: 50
+        padding: 20,
+        marginTop: 250
     }
 });

@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,7 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
 
 
 class PremioEstrella extends Component {
@@ -30,6 +32,10 @@ class PremioEstrella extends Component {
 
 
     render() {
+
+        const logoEstrella = '../../assets/images/estrella-logopremio.png';
+        const premioPanal = '../../assets/images/sorteo-estrella.png';
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -60,23 +66,29 @@ class PremioEstrella extends Component {
 
                 <Content showsVerticalScrollIndicator={false} style={styles.container}>
                     <StatusBar barStyle="light-content" />
-                    <View style={styles.addProducto}>
-                        <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 137, height: 48, marginTop: 50}}
-                            source={require('../../assets/images/estrella-logopremio.png')} />
+                        <View style={styles.addProducto}>
+                            <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
 
-                        <Image
-                            style={{width: 359, height: 338, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-estrella.png')} />
-                    </View>
+                            <BlurView>
+                                <Image
+                                    style={{width: 137, height: 48, marginTop: 20}}
+                                    source={require( logoEstrella )} />
+                            </BlurView>
+                            
+                            <BlurView>
+                            <Image
+                                style={{width: 359, height: 338, marginTop: 20}}
+                                source={require( premioPanal )} />
+                            </BlurView>
+
+                        </View>
                 </Content>
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button
                             onPress={() => this.props.navigation.navigate('TriviaEstrella1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +128,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

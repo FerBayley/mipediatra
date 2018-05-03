@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,8 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
 
 class PremioGraco extends Component {
 
@@ -30,6 +31,10 @@ class PremioGraco extends Component {
 
 
     render() {
+
+        const logoGraco = '../../assets/images/graco-logopremio.png';
+        const premioGraco = '../../assets/images/sorteo-graco.png';
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -62,13 +67,18 @@ class PremioGraco extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 153, height: 62, marginTop: 50}}
-                            source={require('../../assets/images/graco-logopremio.png')} />
 
-                        <Image
-                            style={{width: 310, height: 310, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-graco.png')} />
+                        <BlurView>
+                            <Image
+                                style={{width: 153, height: 62, marginTop: 20}}
+                                source={require( logoGraco )} />
+                        </BlurView>
+
+                        <BlurView>
+                            <Image
+                                style={{width: 310, height: 310, marginTop: 40}}
+                                source={require( premioGraco )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -76,7 +86,7 @@ class PremioGraco extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('TriviaGraco1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +126,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

@@ -238,6 +238,8 @@ export default class App extends React.Component {
 
 const AppNavigator = StackNavigator({
 
+    //Ayuda: { screen: Ayuda },
+
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
 

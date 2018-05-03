@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,8 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
 
 class PremioFarmx extends Component {
 
@@ -30,6 +31,10 @@ class PremioFarmx extends Component {
 
 
     render() {
+
+        const logoFarmx = '../../assets/images/farmx-logopremio.png';
+        const premioFarmx = '../../assets/images/sorteo-farmx.png';
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -62,13 +67,19 @@ class PremioFarmx extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 147, height: 108, marginTop: 50}}
-                            source={require('../../assets/images/farmx-logopremio.png')} />
 
-                        <Image
-                            style={{width: 199, height: 299, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-farmx.png')} />
+                        <BlurView>
+                            <Image
+                                style={{width: 147, height: 108, marginTop: 20}}
+                                source={require( logoFarmx )} />
+                        </BlurView>
+
+
+                        <BlurView>
+                            <Image
+                                style={{width: 199, height: 299, marginTop: 20}}
+                                source={require( premioFarmx )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -76,7 +87,7 @@ class PremioFarmx extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('Ftrivia1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +127,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

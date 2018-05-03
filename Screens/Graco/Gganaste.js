@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -18,7 +21,9 @@ class Gganaste extends Component {
 
     static navigationOptions = {
         header: null,
-      };   
+        headerLeft: null,
+        gesturesEnabled: false,
+    };   
 
       onShare(){
         Share.share({
@@ -29,6 +34,9 @@ class Gganaste extends Component {
     }
 
     render() {
+
+        const premioGraco = '../../assets/images/ganaste-graco.png';
+
         return (
             <Container style={styles.container}>
             <Header style={styles.cabezal}>
@@ -36,7 +44,7 @@ class Gganaste extends Component {
                    <Button transparent></Button>
                </Left>
                <Body>
-                   <Title style={styles.textoCabezal}>Finalizaste la Trivia</Title>
+                   <Title style={styles.textoCabezal}>Mi Pediatra</Title>
                </Body>
                <Right>
                    <Button transparent>
@@ -61,11 +69,11 @@ class Gganaste extends Component {
                     </Text>
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                         <Image style={{ width: 240, height: 240 }}
-                        source={require('../../assets/images/ganaste-graco.png')} />
+                        source={require( premioGraco )} />
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BrandScreen')}
+                        onPress={() => this.props.navigation.navigate('TriviaGraco1')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -121,7 +129,8 @@ const styles = StyleSheet.create({
         fontSize: 28,
         textAlign: 'center',
         justifyContent: 'center',
-        marginTop: 100
+        marginTop: 50,
+        fontWeight: '800'
     },
     textoFelicita: {
         flex: 1,

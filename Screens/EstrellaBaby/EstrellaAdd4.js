@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -19,8 +22,11 @@ class EstrellaAdd4 extends Component {
       };  
 
     render() {
+
+        const fondoEstrella1 = '../../assets/images/estrella-add1.png';
+
         return (
-            <ImageBackground source={require('../../assets/images/estrella-add1.png')}
+            <ImageBackground source={require( fondoEstrella1 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>

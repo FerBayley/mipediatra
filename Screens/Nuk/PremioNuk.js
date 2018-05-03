@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,8 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
 
 class PremioNuk extends Component {
 
@@ -30,6 +31,11 @@ class PremioNuk extends Component {
 
 
     render() {
+
+        const logoNuk = '../../assets/images/nuk-logopremio.png';
+        const premioNuk = '../../assets/images/sorteo-nuk.png';
+
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -62,13 +68,20 @@ class PremioNuk extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 136, height: 53, marginTop: 50}}
-                            source={require('../../assets/images/nuk-logopremio.png')} />
 
-                        <Image
-                            style={{width: 243, height: 276, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-nuk.png')} />
+
+                        <BlurView>
+                            <Image
+                                style={{width: 136, height: 53, marginTop: 20}}
+                                source={require( logoNuk )} />
+                        </BlurView>
+
+
+                        <BlurView>
+                            <Image
+                                style={{width: 243, height: 276, marginTop: 20}}
+                                source={require( premioNuk )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -76,7 +89,7 @@ class PremioNuk extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('NukTrivia1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +129,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

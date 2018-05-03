@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     StyleSheet,
@@ -18,7 +21,9 @@ class Nganaste extends Component {
 
     static navigationOptions = {
         header: null,
-      };   
+        headerLeft: null,
+        gesturesEnabled: false,
+    };    
 
       onShare(){
         Share.share({
@@ -29,6 +34,9 @@ class Nganaste extends Component {
     }
 
     render() {
+
+        const nuk = '../../assets/images/ganaste-nuk.png';
+        
         return (
             <Container style={styles.container}>
             <Header style={styles.cabezal}>
@@ -36,7 +44,7 @@ class Nganaste extends Component {
                    <Button transparent></Button>
                </Left>
                <Body>
-                   <Title style={styles.textoCabezal}>Finalizaste la Trivia</Title>
+                   <Title style={styles.textoCabezal}>Mi Pediatra</Title>
                </Body>
                <Right>
                    <Button transparent>
@@ -60,12 +68,15 @@ class Nganaste extends Component {
                         Gananste una chance para el sorteo de este premio. Recibiras mails y alertas para informarte si ganaste.
                     </Text>
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                        <Image style={{ width: 243, height: 276 }}
-                        source={require('../../assets/images/ganaste-nuk.png')} />
+
+                        <BlurView>
+                            <Image style={{ width: 243, height: 276 }}
+                            source={require( nuk )} />
+                        </BlurView>
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BrandScreen')}
+                        onPress={() => this.props.navigation.navigate('NukTrivia1')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -121,7 +132,8 @@ const styles = StyleSheet.create({
         fontSize: 28,
         textAlign: 'center',
         justifyContent: 'center',
-        marginTop: 100
+        marginTop: 50,
+        fontWeight: '800'
     },
     textoFelicita: {
         flex: 1,

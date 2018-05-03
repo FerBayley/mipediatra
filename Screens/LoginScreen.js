@@ -14,10 +14,9 @@ import {
     TextInput, 
     Alert
 } from "react-native";
-import Login from '../Screens/Login'
 
 const FB_APP_ID = '128016374696409'
-const uri = 'http://ideaswhite.com/mipediatra/img/mp_logo.jpg';
+const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
 
 class LoginScreen extends Component {  
 
@@ -54,7 +53,7 @@ class LoginScreen extends Component {
 
                 {/* Adjust the tint and intensity */}
                 <BlurView tint="light" intensity={50} style={styles.logo}>
-                    <Image style={{ width: 338, height: 70 }} source={{ uri }} />
+                    <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                 </BlurView>
 
                     <Button full style={styles.btnIngresar}
@@ -106,7 +105,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
-        padding: 10
+        padding: 25
     },
     Pie: {
         backgroundColor: '#DB0A88'
@@ -119,7 +118,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         marginTop: 250,
-        marginBottom: 15
+        marginBottom: 5
     },      
     btnFacebook: {
         backgroundColor: '#3b5998',

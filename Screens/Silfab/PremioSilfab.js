@@ -1,5 +1,8 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Left, Body, Right, Icon, Title } from 'native-base';
 import React, { Component } from "react";
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -28,6 +31,11 @@ class PremioSilfab extends Component {
 
 
     render() {
+
+        const logoSilfab = '../../assets/images/silfab-logopremio.png';
+        const premioSilfab = '../../assets/images/sorteo-silfab.png';
+
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -60,13 +68,20 @@ class PremioSilfab extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 145, height: 58, marginTop: 50}}
-                            source={require('../../assets/images/silfab-logopremio.png')} />
 
-                        <Image
-                            style={{width: 273, height: 260, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-silfab.png')} />
+
+                        <BlurView>
+                            <Image
+                                style={{width: 145, height: 58, marginTop: 20}}
+                                source={require( logoSilfab )} />
+                        </BlurView>
+
+
+                        <BlurView>
+                            <Image
+                                style={{width: 273, height: 260, marginTop: 20}}
+                                source={require( premioSilfab )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -74,7 +89,7 @@ class PremioSilfab extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('TriviaSilfab1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -114,7 +129,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },

@@ -1,7 +1,10 @@
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 import React, { Component } from "react";
-import { BlurView } from 'expo';
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
+
 import {
     View,
     StyleSheet,
@@ -17,11 +20,17 @@ class GracoAdd1 extends Component {
 
     static navigationOptions = {
         header: null,
-      };  
+        headerLeft: null,
+        gesturesEnabled: false,
+    };  
 
     render() {
+
+        const add1 ='../../assets/images/graco-add1.png';
+
+
         return (
-            <ImageBackground source={require('../../assets/images/graco-add1.png')}
+            <ImageBackground source={require( add1 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>

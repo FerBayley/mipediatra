@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -13,11 +16,12 @@ import {
     Share
 } from "react-native";
 
-
 class TriviaEstrella2 extends Component {
 
     static navigationOptions = {
         header: null,
+        headerLeft: null,
+        gesturesEnabled: false,
       };   
 
       onShare(){
@@ -30,8 +34,12 @@ class TriviaEstrella2 extends Component {
 
 
     render() {
+
+        const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
+
+
         return (
-            <Container>
+            <Container style={{ backgroundColor: '#FFF' }}>
                  <Header style={styles.cabezal}>
                     <Left>
                         <Button transparent></Button>
@@ -53,11 +61,12 @@ class TriviaEstrella2 extends Component {
                     <View>
                         <StatusBar barStyle="light-content" />
                     </View>
-                     <View style={styles.logo}>
-                        <Image
-                            style={{width: 230, height: 46}}
-                            source={{uri: 'http://ideaswhite.com/mipediatra/mp/logo-mp.png'}}
-                        />
+
+                     <View>
+                        <BlurView tint="light" intensity={50} style={styles.logo}>
+                            <Image style={{ width: 250, height: 58 }} source={{ uri }} />
+                        </BlurView>
+                        
                         <Text style={styles.textoPregunta}>
                             Los adhesivos del pañal se colocan:
                         </Text>
@@ -65,12 +74,6 @@ class TriviaEstrella2 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}
-                        >
-                            <Text style={styles.blanco}>Hacia atrás</Text>
-                        </Button>
-
-                        <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
                                     'Respuesta Incorrecta',
@@ -80,6 +83,12 @@ class TriviaEstrella2 extends Component {
                                     ],
                                     { cancelable: false }
                                   )}
+                        >
+                            <Text style={styles.blanco}>Hacia atrás</Text>
+                        </Button>
+
+                        <Button full style={styles.btnB}
+                            onPress={() => this.props.navigation.navigate('EstrellaAdd2')}
                         >
                             <Text style={styles.blanco}>Hacia adelante</Text>
                         </Button>
@@ -142,7 +151,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        marginTop: 100
+        marginTop: 25,
+        ...Platform.select({
+            ios: {
+                marginTop: 25
+            },
+            android: {
+                marginTop: 25
+            }
+        }),
     },
     Pie: {
         ...Platform.select({
@@ -192,8 +209,10 @@ const styles = StyleSheet.create({
     },
     blanco: {
         color: 'white',
-        fontSize: 20,
-        lineHeight: 25
+        fontSize: 15,
+        lineHeight: 25,
+        fontWeight: '800',
+        textAlign: 'center'
     },
     cabezal: {
         backgroundColor: '#DB0A88'

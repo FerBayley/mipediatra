@@ -2,6 +2,7 @@ import { Container, Header, Content, Footer, FooterTab, Button, Row, Grid, Col, 
 import React, { Component } from "react";
 import { Constants } from 'expo';
 import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -16,10 +17,6 @@ import {
     Alert,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
-
-const uri = 'http://ideaswhite.com/mipediatra/img/mp_logo.png';
 
 class BrandScreen extends Component {
 
@@ -38,6 +35,17 @@ class BrandScreen extends Component {
     }
 
     render() {
+
+        const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
+        const estrella = 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg';
+        const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
+        const farmx = 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx.png';
+        const aulogelio = 'http://ideaswhite.com/mipediatra/clientes/aulo/aulo.png';
+        const ewe = 'http://ideaswhite.com/mipediatra/img/ewe-logo.jpg';
+        const bimbi = 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi.png';
+        const silfab = 'http://ideaswhite.com/mipediatra/img/logo-silfab.png';
+        const nuk = 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png';
+
         return (
             <Container style={styles.container}>
                 <Header style={styles.cabezal}>
@@ -63,59 +71,66 @@ class BrandScreen extends Component {
                     <View>
                         <StatusBar barStyle="light-content" />
                     </View>
+
                     <View style={styles.logo}>                        
-                        <BlurView>
-                            <Image style={{ width: 230, height: 46 }} source={{ uri }} />
+                        {/* Adjust the tint and intensity */}
+                        <BlurView tint="light" intensity={50} style={styles.logo}>
+                            <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
+
                         <Text style={styles.textoElegi}>Elegí con qué marca querés empezar a responder las trivias.</Text>
-                        <Text style={styles.textoToca}>Tocá un logo mira el premio y comenzar a jugar</Text>
+                        <Text style={styles.textoToca}>Tocá un logo, mira el premio y comenzar a jugar</Text>
                     </View>
 
                     <Grid style={styles.Griden}>
                         <Col style={{ height: 400 }}>
                             {/* Trivia Estrella */}
-                            <TouchableOpacity style={styles.Btn4}
+                            <TouchableOpacity style={styles.Estrella}
                                 onPress={() => this.props.navigation.navigate('PremioEstrella')}>
                                 {/* Adjust the tint and intensity */}
                                 <BlurView tint="light" intensity={50}>
                                     <Image 
-                                        style={{ width: 130, height: 42 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg'}}
+                                        style={{ width: 130, height: 42 }} 
+                                        source={{ uri: estrella }}
                                     />
                                 </BlurView>
                             </TouchableOpacity>
                             {/* Trivia Estrella */}       
 
                             {/* Trivia Gracco */}   
-                            <TouchableOpacity style={styles.Btn3}
+                            <TouchableOpacity style={styles.Graco}
                                 onPress={() => this.props.navigation.navigate('PremioGraco')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 132, height: 44 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg'}}
+                                            style={{ width: 132, height: 44 }} 
+                                            source={{ uri: graco }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>   
                             {/* Trivia Gracco */}   
 
                             {/* Trivia Farmx */}
-                            <TouchableOpacity style={styles.Btn5}
+                            <TouchableOpacity style={styles.Farmx}
                                 onPress={() => this.props.navigation.navigate('PremioFarmx')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 159, height: 66 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx.png'}}
+                                            style={{ width: 159, height: 66 }} 
+                                            source={{ uri: farmx }}
                                          />
                                     </BlurView>
                             </TouchableOpacity> 
                             {/* Trivia Farmx */}    
 
                             {/* Trivia AuloGelio */}   
-                            <TouchableOpacity style={styles.Btn6}
+                            <TouchableOpacity style={styles.AuloGelio}
                                 onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 158, height: 65 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/aulo/aulo.png'}}
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: aulogelio }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
@@ -124,48 +139,52 @@ class BrandScreen extends Component {
 
                         <Col style={{ height: 400 }}>
                             {/* Trivia Ewe */}
-                            <TouchableOpacity style={styles.Btn2}
+                            <TouchableOpacity style={styles.Ewe}
                                 onPress={() => this.props.navigation.navigate('PremioEwe')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 106, height: 57 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/ewe-logo.jpg'}}
+                                            style={{ width: 106, height: 57 }} 
+                                            source={{ uri: ewe }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>
                             {/* Trivia Ewe */}
 
                             {/* Trivia Bimbi */}   
-                            <TouchableOpacity style={styles.Btn6}
+                            <TouchableOpacity style={styles.Bimbi}
                                 onPress={() => this.props.navigation.navigate('PremioBimbi')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 158, height: 65 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi.png'}}
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: bimbi }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
                             {/* Trivia Bimbi */}   
 
                             {/* Trivia Silfab */}   
-                            <TouchableOpacity style={styles.Btn6}
+                            <TouchableOpacity style={styles.Silfab}
                                 onPress={() => this.props.navigation.navigate('PremioSilfab')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 132, height: 44 }} source={{uri: 'http://ideaswhite.com/mipediatra/img/logo-silfab.png'}}
+                                            style={{ width: 132, height: 44 }} 
+                                            source={{ uri: silfab }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
                             {/* Trivia Silfab */}     
 
                             {/* Trivia Nuk */}   
-                            <TouchableOpacity style={styles.Btn6}
+                            <TouchableOpacity style={styles.Nuk}
                                 onPress={() => this.props.navigation.navigate('PremioNuk')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 158, height: 65 }} source={{uri: 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png'}}
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: nuk }}
                                         />
                                     </BlurView>
                             </TouchableOpacity>  
@@ -219,28 +238,26 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        marginTop: 20,
+        marginTop: 15,
         ...Platform.select({
             ios: {
-                marginTop: 70
+                marginTop: 15
             },
             android: {
-                marginTop: 15,
+                marginTop: 15
             }
         }),
     },
     textoElegi: {
-        fontSize: 21,
+        fontSize: 16,
         color: '#DB0A88',
-        padding: 20,
+        padding: 10,
         textAlign: 'center'
     },
     textoToca: {
-        fontSize: 17,
+        fontSize: 14,
         color: '#733596',
         fontWeight: '800',
-        paddingLeft: 20,
-        paddingRight: 20,
         textAlign: 'center'
     },
     Btn1: {
@@ -249,31 +266,49 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 5
     },
-    Btn2: {
+    Ewe: {
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
-    Btn3: {
+    Graco: {
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
-    Btn4: {
+    Estrella: {
         marginTop: 40,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
-    Btn5: {
+    Farmx: {
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
-    Btn6: {
+    AuloGelio: {
+        marginTop: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5
+    },
+    Bimbi: {
+        marginTop: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5
+    },
+    Silfab: {
+        marginTop: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5
+    },
+    Nuk: {
         marginTop: 25,
         justifyContent: 'center',
         alignItems: 'center',

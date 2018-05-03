@@ -1,6 +1,9 @@
 import { Container, Header, Content, Footer, FooterTab, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import React, { Component } from "react";
 import { StackNavigator } from 'react-navigation';
+import { Constants } from 'expo';
+import Expo from 'expo';
+import { BlurView } from 'expo';
 import {
     View,
     Text,
@@ -11,8 +14,6 @@ import {
     TouchableHighlight,
     Share
 } from "react-native";
-import { BlurView } from 'expo';
-
 
 class PremioAuloGelio extends Component {
 
@@ -30,6 +31,10 @@ class PremioAuloGelio extends Component {
 
 
     render() {
+
+        const auloLogo = '../../assets/images/aulo-logopremio.png';
+        const auloPremio = '../../assets/images/sorteo-aulo.png';
+
         return (
             <Container>
                 <Header style={styles.cabezal}>
@@ -62,13 +67,19 @@ class PremioAuloGelio extends Component {
                     <StatusBar barStyle="light-content" />
                     <View style={styles.addProducto}>
                         <Text style={styles.textoDeSelelccion}>Seleccionaste el premio de:</Text>
-                        <Image
-                            style={{width: 147, height: 147, marginTop: 50}}
-                            source={require('../../assets/images/aulo-logopremio.png')} />
+                        
+                        <BlurView>
+                            <Image
+                                style={{width: 147, height: 147, marginTop: 20}}
+                                source={require( auloLogo )} />
+                        </BlurView>
 
-                        <Image
-                            style={{width: 250, height: 194, marginTop: 40}}
-                            source={require('../../assets/images/sorteo-aulo.png')} />
+
+                        <BlurView>
+                            <Image
+                                style={{width: 250, height: 194, marginTop: 20}}
+                                source={require( auloPremio )} />
+                        </BlurView>
                     </View>
                 </Content>
 
@@ -76,7 +87,7 @@ class PremioAuloGelio extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('Atrivia1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 17 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>
@@ -116,7 +127,7 @@ const styles = StyleSheet.create({
     textoDeSelelccion: {
         textAlign: 'center',
         color: '#733596',
-        fontSize: 17,
+        fontSize: 14,
         fontWeight: '800',
         marginTop: 20
     },
