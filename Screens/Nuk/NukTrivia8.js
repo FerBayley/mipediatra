@@ -74,7 +74,15 @@ class NukTrivia8 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('NukAdd8')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('NukAdd8')}
+                                    ],
+                                    { cancelable: false }
+                                )}
                             >
                             <Text style={styles.blanco}>Incisivos centrales inferiores</Text>
                         </Button>

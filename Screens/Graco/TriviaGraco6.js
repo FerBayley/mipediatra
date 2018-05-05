@@ -101,8 +101,16 @@ class TriviaGraco6 extends Component {
                         </Button>
 
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('GracoAdd6')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('GracoAdd6')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>0-55Kg</Text>
                         </Button>
                     </View>

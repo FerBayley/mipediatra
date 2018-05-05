@@ -86,8 +86,16 @@ class Ftrivia8 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('Fadd8')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Fadd8')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>Las bacterias</Text>
                         </Button>
 

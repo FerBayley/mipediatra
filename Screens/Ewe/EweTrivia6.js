@@ -73,8 +73,16 @@ class EweTrivia6 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('AddEwe6')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('AddEwe6')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>Previene las grietas de pezón</Text>
                         </Button>
 

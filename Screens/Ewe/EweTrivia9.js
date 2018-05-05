@@ -87,8 +87,16 @@ class EweTrivia9 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('AddEwe9')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('AddEwe9')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>Los 6 meses de vida</Text>
                         </Button>
 

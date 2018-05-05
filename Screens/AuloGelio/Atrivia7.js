@@ -72,7 +72,15 @@ class Atrivia7 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('Aadd7')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Aadd7')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
                             >
                             <Text style={styles.blanco}>Iniciar el ciclo reproductivo</Text>
                         </Button>

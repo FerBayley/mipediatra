@@ -87,7 +87,15 @@ class NukTrivia9 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('NukAdd9')}
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('NukAdd9')}
+                                    ],
+                                    { cancelable: false }
+                                )}
                             >
                             <Text style={styles.blanco}>20 piezas</Text>
                         </Button>

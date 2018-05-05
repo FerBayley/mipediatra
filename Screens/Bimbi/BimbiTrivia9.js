@@ -100,8 +100,16 @@ class BimbiTrivia9 extends Component {
                         </Button>
                         
                         <Button full style={styles.btnC}
-                            onPress={() => this.props.navigation.navigate('BimbiAdd9')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('BimbiAdd9')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>3° año de vida</Text>
                         </Button>
                     </View>

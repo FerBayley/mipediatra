@@ -70,8 +70,16 @@ class Ftrivia9 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                           onPress={() => this.props.navigation.navigate('Fadd9')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Fadd9')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             <Text style={styles.blanco}>Que no queden elementos punzantes en la herida</Text>
                         </Button>
 

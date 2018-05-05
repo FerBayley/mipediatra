@@ -73,8 +73,16 @@ class TriviaSilfab6 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('SilfabAdd6')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdd6')}
+                                    ],
+                                    { cancelable: false }
+                                )}
+                            >
                             <Text style={styles.blanco}>Mayor al 50%</Text>
                         </Button>
 

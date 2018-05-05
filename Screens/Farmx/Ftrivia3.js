@@ -72,7 +72,16 @@ class Ftrivia3 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                            onPress={() => this.props.navigation.navigate('Fadd3')}>
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Fadd3')}
+                                    ],
+                                    { cancelable: false }
+                                  )}
+                            >
                             {/* Respuesta Correcta*/}
                             <Text style={styles.blanco}>De contacto</Text>
                         </Button>

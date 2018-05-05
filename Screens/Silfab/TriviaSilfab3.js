@@ -73,8 +73,16 @@ class TriviaSilfab3 extends Component {
 
                     <View style={styles.contenedorBtn}>
                         <Button full style={styles.btnA}
-                           onPress={() => this.props.navigation.navigate('SilfabAdd3')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdd3')}
+                                    ],
+                                    { cancelable: false }
+                                )}
+                            >
                             <Text style={styles.blanco}>INTI Y ANMAT</Text>
                         </Button>
 

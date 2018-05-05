@@ -84,8 +84,16 @@ class TriviaSilfab9 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('SilfabAdd9')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdd9')}
+                                    ],
+                                    { cancelable: false }
+                                )}
+                            >
                             <Text style={styles.blanco}>De mercurio</Text>
                         </Button>
 

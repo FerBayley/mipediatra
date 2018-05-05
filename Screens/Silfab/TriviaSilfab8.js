@@ -87,8 +87,16 @@ class TriviaSilfab8 extends Component {
                         </Button>
 
                         <Button full style={styles.btnB}
-                            onPress={() => this.props.navigation.navigate('SilfabAdd8')}
-                        >
+                            onPress={() =>
+                                Alert.alert(
+                                    'Respuesta Correcta',
+                                    '',
+                                    [
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdd8')}
+                                    ],
+                                    { cancelable: false }
+                                )}
+                            >
                             <Text style={styles.blanco}>Mayor o igual a  25</Text>
                         </Button>
 

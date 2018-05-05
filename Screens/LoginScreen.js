@@ -12,10 +12,10 @@ import {
     Dimensions,
     TouchableOpacity,
     TextInput, 
-    Alert
+    Alert,
+    Platform
 } from "react-native";
 
-const FB_APP_ID = '128016374696409'
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
 
 class LoginScreen extends Component {  
@@ -26,24 +26,6 @@ class LoginScreen extends Component {
         gesturesEnabled: false,
       };    
 
-    async loginFB() {
-        const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('128016374696409', {
-            permissions: ['public_profile', 'email'],
-          });
-        if (type === 'success') {
-          // Get the user's name using Facebook's Graph API
-          const response = await fetch(
-            `https://graph.facebook.com/me?access_token=${token}`);
-            Alert.alert(
-                'Ingreso exitoso',
-                'Bienvenidos!!!',
-                [
-                  {text: 'Empezá a jugar', onPress: () => this.props.navigation.navigate('Politicas')}
-                ],
-                { cancelable: false }
-          );
-        }
-      }
 
     render() {
         return (
@@ -53,19 +35,34 @@ class LoginScreen extends Component {
 
                 {/* Adjust the tint and intensity */}
                 <BlurView tint="light" intensity={50} style={styles.logo}>
-                    <Image style={{ width: 250, height: 58 }} source={{ uri }} />
+                    <Image style={styles.logoImage} source={{ uri }} />
                 </BlurView>
 
-                    <Button full style={styles.btnIngresar}
-                        onPress={() => this.props.navigation.navigate('Login')}
-                    >
-                        <Text style={{ fontWeight: '700' }}>Registrarme para empezar a jugar</Text>
-                    </Button>
+                <Form>
+                        <Item floatingLabel>
+                            <Label>Nombre y Apellido</Label>
+                                <Input
+                                    autoCorrect={false}
+                                    autoCapitalize="none"
+                                />
+                        </Item>
 
-                    <Button full style={styles.btnFacebook}
-                        onPress={this.loginFB.bind(this)} >
-                        <Text style={{ fontWeight: '700' }}>Ingresar con Facebook</Text>
-                    </Button>
+                        <Item floatingLabel>
+                            <Label>Email</Label>
+                                <Input
+                                    autoCorrect={false}
+                                    autoCapitalize="none"
+                                />
+                        </Item>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('PoliticasMuestra')}>
+                                <Text style={{ textAlign: 'center', paddingTop: 20 }}>Acepto las bases y condiciones</Text>
+                            </TouchableOpacity>
+                            <Button onPress={() => this.props.navigation.navigate('Politicas')}
+                                full style={styles.btnIngresar}>
+                                <Text style={{ color: '#fff', fontWeight: '800', fontSize: 16 }}>Empezá a jugar</Text>
+                            </Button>                            
+                    </Form>
+
 
                     <Grid style={styles.griden}>
                         <Col style={{ height: 200 }}>
@@ -118,7 +115,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         marginTop: 250,
-        marginBottom: 5
+        marginBottom: 5,
+        ...Platform.select({
+            ios: {
+                marginTop: 200
+            },
+            android: {
+                marginTop: 120
+            }
+        }),
     },      
     btnFacebook: {
         backgroundColor: '#3b5998',
@@ -167,6 +172,10 @@ const styles = StyleSheet.create({
     label: {
         color: '#733596',
         fontSize: 19
+    },
+    logoImage: {
+        width: 250, 
+        height: 58,
     }
 });
 
