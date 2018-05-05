@@ -77,7 +77,7 @@ class BimbiTrivia3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiTrivia4')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -91,7 +91,7 @@ class BimbiTrivia3 extends Component {
                                 'Respuesta Incorrecta',
                                 '',
                                 [
-                                  {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiTrivia4')}
+                                  {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAddError1')}
                                 ],
                                 { cancelable: false }
                               )}

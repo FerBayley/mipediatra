@@ -77,7 +77,7 @@ class Ftrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia7')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('FaddError2')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -91,7 +91,7 @@ class Ftrivia4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Ftrivia7')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('FaddError2')}
                                     ],
                                     { cancelable: false }
                                   )}

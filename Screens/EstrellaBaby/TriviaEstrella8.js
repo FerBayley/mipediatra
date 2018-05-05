@@ -76,7 +76,7 @@ class TriviaEstrella8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAddError3')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,7 +90,7 @@ class TriviaEstrella8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaEstrella1')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('EstrellaAddError3')}
                                     ],
                                     { cancelable: false }
                                   )}

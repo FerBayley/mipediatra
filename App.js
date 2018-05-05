@@ -35,6 +35,10 @@ import Fadd6 from './Screens/Farmx/Fadd6'
 import Fadd7 from './Screens/Farmx/Fadd7'
 import Fadd8 from './Screens/Farmx/Fadd8'
 import Fadd9 from './Screens/Farmx/Fadd9'
+
+import FaddError1 from './Screens/Farmx/FaddError1'
+import FaddError2 from './Screens/Farmx/FaddError2'
+import FaddError3 from './Screens/Farmx/FaddError3'
 // Farmx Add//
 //Farmx
 
@@ -62,6 +66,10 @@ import Aadd6 from './Screens/AuloGelio/Aadd6'
 import Aadd7 from './Screens/AuloGelio/Aadd7'
 import Aadd8 from './Screens/AuloGelio/Aadd8'
 import Aadd9 from './Screens/AuloGelio/Aadd9'
+
+import AaddError1 from './Screens/AuloGelio/AaddError1'
+import AaddError2 from './Screens/AuloGelio/AaddError2'
+import AaddError3 from './Screens/AuloGelio/AaddError3'
 // AuloGelio Add//
 //AuloGelio
 
@@ -91,6 +99,10 @@ import BimbiAdd6 from './Screens/Bimbi/BimbiAdd6'
 import BimbiAdd7 from './Screens/Bimbi/BimbiAdd7'
 import BimbiAdd8 from './Screens/Bimbi/BimbiAdd8'
 import BimbiAdd9 from './Screens/Bimbi/BimbiAdd9'
+
+import BimbiAddError1 from './Screens/Bimbi/BimbiAddError1'
+import BimbiAddError2 from './Screens/Bimbi/BimbiAddError2'
+import BimbiAddError3 from './Screens/Bimbi/BimbiAddError3'
 // Bimbi Add //
 // Bimbi
 
@@ -120,6 +132,11 @@ import NukAdd6 from './Screens/Nuk/NukAdd6'
 import NukAdd7 from './Screens/Nuk/NukAdd7'
 import NukAdd8 from './Screens/Nuk/NukAdd8'
 import NukAdd9 from './Screens/Nuk/NukAdd9'
+
+
+import NukAddError1 from './Screens/Nuk/NukAddError1'
+import NukAddError2 from './Screens/Nuk/NukAddError2'
+import NukAddError3 from './Screens/Nuk/NukAddError3'
 // Nuk Add //
 // Nuk
 // ================== Nuk ==================== //
@@ -147,6 +164,10 @@ import SilfabAdd6 from './Screens/Silfab/SilfabAdd6'
 import SilfabAdd7 from './Screens/Silfab/SilfabAdd7'
 import SilfabAdd8 from './Screens/Silfab/SilfabAdd8'
 import SilfabAdd9 from './Screens/Silfab/SilfabAdd9'
+
+import SilfabAddError1 from './Screens/Silfab/SilfabAddError1'
+import SilfabAddError2 from './Screens/Silfab/SilfabAddError2'
+import SilfabAddError3 from './Screens/Silfab/SilfabAddError3'
 //Silfab ===================================== //
 
 
@@ -172,6 +193,10 @@ import GracoAdd8 from './Screens/Graco/GracoAdd8'
 import GracoAdd9 from './Screens/Graco/GracoAdd9'
 
 import Gganaste from './Screens/Graco/Gganaste'
+
+import GracoAddError1 from './Screens/Graco/GracoAddError1'
+import GracoAddError2 from './Screens/Graco/GracoAddError2'
+import GracoAddError3 from './Screens/Graco/GracoAddError3'
 //Graco ==================================== //
 
 //Estrella Baby =========================== //
@@ -197,6 +222,10 @@ import EstrellaAdd6 from './Screens/EstrellaBaby/EstrellaAdd6'
 import EstrellaAdd7 from './Screens/EstrellaBaby/EstrellaAdd7'
 import EstrellaAdd8 from './Screens/EstrellaBaby/EstrellaAdd8'
 import EstrellaAdd9 from './Screens/EstrellaBaby/EstrellaAdd9'
+
+import EstrellaAddError1 from './Screens/EstrellaBaby/EstrellaAddError1'
+import EstrellaAddError2 from './Screens/EstrellaBaby/EstrellaAddError2'
+import EstrellaAddError3 from './Screens/EstrellaBaby/EstrellaAddError3'
 //Estrella Baby =========================== //
 
 //Ewe ===================================== //
@@ -222,6 +251,10 @@ import AddEwe6 from './Screens/Ewe/AddEwe6'
 import AddEwe7 from './Screens/Ewe/AddEwe7'
 import AddEwe8 from './Screens/Ewe/AddEwe8'
 import AddEwe9 from './Screens/Ewe/AddEwe9'
+
+import AddEweError1 from './Screens/Ewe/AddEweError1'
+import AddEweError2 from './Screens/Ewe/AddEweError2'
+import AddEweError3 from './Screens/Ewe/AddEweError3'
 //Ewe ==================================== //
 
 import Login from './Screens/Login'
@@ -277,6 +310,10 @@ const AppNavigator = StackNavigator({
     Fadd7: { screen: Fadd7 },
     Fadd8: { screen: Fadd8 },
     Fadd9: { screen: Fadd9 },
+
+    FaddError1: { screen: FaddError1 },
+    FaddError2: { screen: FaddError2 },
+    FaddError3: { screen: FaddError3 },
     //Farmx Add //
     //Farmx
 
@@ -304,6 +341,10 @@ const AppNavigator = StackNavigator({
     Aadd7: { screen: Aadd7 },
     Aadd8: { screen: Aadd8 },
     Aadd9: { screen: Aadd9 },
+
+    AaddError1: { screen: AaddError1 },
+    AaddError2: { screen: AaddError2 },
+    AaddError3: { screen: AaddError3 },
     //AuloGelio Aad //
     //AuloGelio
 
@@ -333,6 +374,10 @@ const AppNavigator = StackNavigator({
     BimbiAdd7: { screen: BimbiAdd7 },
     BimbiAdd8: { screen: BimbiAdd8 },
     BimbiAdd9: { screen: BimbiAdd9 },
+
+    BimbiAddError1: { screen: BimbiAddError1 },
+    BimbiAddError2: { screen: BimbiAddError2 },
+    BimbiAddError3: { screen: BimbiAddError3 },
     //Bimbi Trivia //
     //Bimbi
 
@@ -359,6 +404,10 @@ const AppNavigator = StackNavigator({
     NukAdd7: { screen: NukAdd7 },
     NukAdd8: { screen: NukAdd8 },
     NukAdd9: { screen: NukAdd9 },
+
+    NukAddError1: { screen: NukAddError1 },
+    NukAddError2: { screen: NukAddError2 },
+    NukAddError3: { screen: NukAddError3 },
     //Nuk Add //
     //Nuk
     // ==================================== //
@@ -386,6 +435,10 @@ const AppNavigator = StackNavigator({
     SilfabAdd7: { screen: SilfabAdd7 },
     SilfabAdd8: { screen: SilfabAdd8 },
     SilfabAdd9: { screen: SilfabAdd9 },
+
+    SilfabAddError1: { screen: SilfabAddError1 },
+    SilfabAddError2: { screen: SilfabAddError2 },
+    SilfabAddError3: { screen: SilfabAddError3 },
     //Silfab ============================= //
 
     //Graco ============================== //
@@ -410,6 +463,10 @@ const AppNavigator = StackNavigator({
     GracoAdd7: { screen: GracoAdd7 },
     GracoAdd8: { screen: GracoAdd8 },
     GracoAdd9: { screen: GracoAdd9 },
+
+    GracoAddError1: { screen: GracoAddError1 },
+    GracoAddError2: { screen: GracoAddError2 },
+    GracoAddError3: { screen: GracoAddError3 },
     //Graco ============================== //
 
     //Estrella Baby ====================== //
@@ -435,6 +492,10 @@ const AppNavigator = StackNavigator({
     EstrellaAdd7: { screen: EstrellaAdd7 },
     EstrellaAdd8: { screen: EstrellaAdd8 },
     EstrellaAdd9: { screen: EstrellaAdd9 },
+
+    EstrellaAddError1: { screen: EstrellaAddError1 },
+    EstrellaAddError2: { screen: EstrellaAddError2 },
+    EstrellaAddError3: { screen: EstrellaAddError3 },
     //Estrella Baby ====================== //
 
     //Ewe ================================ //
@@ -460,6 +521,10 @@ const AppNavigator = StackNavigator({
     AddEwe7: { screen: AddEwe7 },
     AddEwe8: { screen: AddEwe8 },
     AddEwe9: { screen: AddEwe9 },
+
+    AddEweError1: { screen: AddEweError1 },
+    AddEweError2: { screen: AddEweError2 },
+    AddEweError3: { screen: AddEweError3 },
     //Ewe ================================ //
 
     Login: { screen: Login },

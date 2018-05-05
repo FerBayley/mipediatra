@@ -78,7 +78,7 @@ class NukTrivia9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukAddError3')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -106,7 +106,7 @@ class NukTrivia9 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukTrivia1')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukAddError3')}
                                     ],
                                     { cancelable: false }
                                   )}

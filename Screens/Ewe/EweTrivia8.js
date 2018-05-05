@@ -79,7 +79,7 @@ class EweTrivia8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEweError3')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -93,7 +93,7 @@ class EweTrivia8 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEweError3')}
                                     ],
                                     { cancelable: false }
                                   )}

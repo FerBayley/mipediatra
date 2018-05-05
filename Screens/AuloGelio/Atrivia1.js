@@ -75,7 +75,7 @@ class Atrivia1 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia4')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AaddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -103,7 +103,7 @@ class Atrivia1 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Atrivia4')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AaddError1')}
                                     ],
                                     { cancelable: false }
                                   )}

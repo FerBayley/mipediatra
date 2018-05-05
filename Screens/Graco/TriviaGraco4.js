@@ -78,7 +78,7 @@ class TriviaGraco4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco7')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAddError2')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -106,7 +106,7 @@ class TriviaGraco4 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('TriviaGraco7')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAddError2')}
                                     ],
                                     { cancelable: false }
                                   )}
