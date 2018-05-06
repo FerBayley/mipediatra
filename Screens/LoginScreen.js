@@ -24,8 +24,7 @@ class LoginScreen extends Component {
         header: null,
         headerLeft: null,
         gesturesEnabled: false,
-      };    
-
+      };
 
     render() {
         return (
