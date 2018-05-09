@@ -15,7 +15,6 @@ import {
     Alert,
     Platform
 } from "react-native";
-
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
 
 class LoginScreen extends Component {  
@@ -38,29 +37,29 @@ class LoginScreen extends Component {
                 </BlurView>
 
                 <Form>
-                        <Item floatingLabel>
-                            <Label>Nombre y Apellido</Label>
-                                <Input
-                                    autoCorrect={false}
-                                    autoCapitalize="none"
-                                />
-                        </Item>
+                    <Item floatingLabel>
+                        <Label>Nombre y Apellido</Label>
+                            <Input
+                                autoCorrect={false}
+                                autoCapitalize="none"
+                            />
+                    </Item>
 
-                        <Item floatingLabel>
-                            <Label>Email</Label>
-                                <Input
-                                    autoCorrect={false}
-                                    autoCapitalize="none"
-                                />
-                        </Item>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('PoliticasMuestra')}>
-                                <Text style={{ textAlign: 'center', paddingTop: 20 }}>Acepto las bases y condiciones</Text>
-                            </TouchableOpacity>
-                            <Button onPress={() => this.props.navigation.navigate('Politicas')}
-                                full style={styles.btnIngresar}>
-                                <Text style={{ color: '#fff', fontWeight: '800', fontSize: 16 }}>Empezá a jugar</Text>
-                            </Button>                            
-                    </Form>
+                    <Item floatingLabel>
+                        <Label>Email</Label>
+                            <Input
+                                autoCorrect={false}
+                                autoCapitalize="none"
+                            />
+                    </Item>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('PoliticasMuestra')}>
+                        <Text style={{ textAlign: 'center', paddingTop: 20 }}>Acepto las bases y condiciones</Text>
+                    </TouchableOpacity>
+                        <Button onPress={() => this.props.navigation.navigate('Politicas')}
+                            full style={styles.btnIngresar}>
+                            <Text style={{ color: '#fff', fontWeight: '800', fontSize: 16 }}>Empezá a jugar</Text>
+                        </Button>   
+                </Form>                   
 
 
                     <Grid style={styles.griden}>
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
-        padding: 25
+        padding: 15
     },
     Pie: {
         backgroundColor: '#DB0A88'

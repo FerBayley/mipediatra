@@ -257,7 +257,6 @@ import AddEweError2 from './Screens/Ewe/AddEweError2'
 import AddEweError3 from './Screens/Ewe/AddEweError3'
 //Ewe ==================================== //
 
-import Login from './Screens/Login'
 import SignUp from './Screens/SignUp'
 
 
@@ -527,7 +526,6 @@ const AppNavigator = StackNavigator({
     AddEweError3: { screen: AddEweError3 },
     //Ewe ================================ //
 
-    Login: { screen: Login },
     SignUp: { screen: SignUp }
 
 
