@@ -90,7 +90,7 @@ class LoginScreen extends Component {
                         />  
                 </View>                  
                 <TouchableOpacity
-                    onPress={() => this.props.navigation.navigate('null')}>
+                    onPress={() => this.props.navigation.navigate('Sign')}>
                     <Text style={{ textAlign: 'center', marginTop: 10, marginBottom: 15, color: 'grey' }}>Registrarme para jugar</Text>
                 </TouchableOpacity>
 

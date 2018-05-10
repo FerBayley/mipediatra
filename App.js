@@ -257,6 +257,7 @@ import AddEweError3 from './Screens/Ewe/AddEweError3'
 //Ewe ==================================== //
 
 import Loading from './Screens/Loading'
+import Sign from './Screens/Sign'
 
 
 export default class App extends React.Component {
@@ -270,7 +271,6 @@ export default class App extends React.Component {
 const AppNavigator = StackNavigator({
 
     //Ayuda: { screen: Ayuda },
-
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
@@ -524,6 +524,7 @@ const AppNavigator = StackNavigator({
     //Ewe ================================ //
 
     Loading: { screen: Loading },
+    Sign: { screen: Sign },
 
 
 })
