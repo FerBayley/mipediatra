@@ -10,7 +10,6 @@ import {
     TouchableOpacity,
     Platform
 } from "react-native";
-import { auth } from '../config/firebase';
 
 class LoginScreen extends Component {   
 

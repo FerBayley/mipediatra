@@ -8,7 +8,6 @@ import PoliticasMuestra from './Screens/PoliticasMuestra'
 import BrandScreen from './Screens/BrandScreen'
 import Ayuda from './Screens/Ayuda'
 import PremioGraco from './Screens/Graco/PremioGraco'
-import Loading from './Screens/Loading'
 import NoAcepto from './Screens/NoAcepto'
 
 //Farmx
@@ -257,7 +256,7 @@ import AddEweError2 from './Screens/Ewe/AddEweError2'
 import AddEweError3 from './Screens/Ewe/AddEweError3'
 //Ewe ==================================== //
 
-import SignUp from './Screens/SignUp'
+import Loading from './Screens/Loading'
 
 
 export default class App extends React.Component {
@@ -274,8 +273,6 @@ const AppNavigator = StackNavigator({
 
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
-
-    Loading: { screen: Loading },
     Politicas: { screen: Politicas },
     PoliticasMuestra: { screen: PoliticasMuestra },
     Ayuda: { screen: Ayuda },
@@ -526,7 +523,7 @@ const AppNavigator = StackNavigator({
     AddEweError3: { screen: AddEweError3 },
     //Ewe ================================ //
 
-    SignUp: { screen: SignUp }
+    Loading: { screen: Loading },
 
 
 })
