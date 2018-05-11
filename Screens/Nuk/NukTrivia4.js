@@ -219,7 +219,8 @@ const styles = StyleSheet.create({
         fontSize: 15,
         lineHeight: 25,
         fontWeight: '800',
-        textAlign: 'center'
+        textAlign: 'center',
+        padding: 20
     },
     cabezal: {
         backgroundColor: '#DB0A88'

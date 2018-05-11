@@ -64,7 +64,7 @@ class TriviaEstrella6 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            Lo bebés recién nacidos pueden dormir diariamente hasta:
+                            Los bebés recién nacidos pueden dormir diariamente hasta:
                         </Text>
                     </View>
 

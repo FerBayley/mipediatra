@@ -229,6 +229,13 @@ const styles = StyleSheet.create({
     },
     textoCabezal: {
         color: '#fff'
+    },
+    blanco: {
+        color: 'white',
+        fontSize: 15,
+        lineHeight: 25,
+        fontWeight: '800',
+        textAlign: 'center'
     }
 });
 

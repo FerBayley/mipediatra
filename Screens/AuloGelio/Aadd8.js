@@ -45,7 +45,7 @@ class Aadd8 extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Trivia9')}>
+                        <Button onPress={() => this.props.navigation.navigate('Atrivia9')}>
                             <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

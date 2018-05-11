@@ -298,11 +298,7 @@ export default class App extends React.Component {
     }
 }
 
-const AppNavigator = StackNavigator({
-
-    BrandScreen: { screen: BrandScreen },
-
-    
+const AppNavigator = StackNavigator({    
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
@@ -420,6 +416,9 @@ const AppNavigator = StackNavigator({
     NukTrivia4: { screen: NukTrivia4 },
     NukTrivia5: { screen: NukTrivia5 },
     NukTrivia6: { screen: NukTrivia6 },
+    NukTrivia7: { screen: NukTrivia7 },
+    NukTrivia8: { screen: NukTrivia8 },
+    NukTrivia9: { screen: NukTrivia9 },
     //Nuk Trivia //
 
     //Nuk Add //

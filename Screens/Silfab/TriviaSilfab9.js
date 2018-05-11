@@ -35,6 +35,10 @@ class TriviaSilfab9 extends Component {
 
 
     render() {
+
+        const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
+
+        
         return (
             <Container style={{ backgroundColor: '#FFF' }}>
                  <Header style={styles.cabezal}>

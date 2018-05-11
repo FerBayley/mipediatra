@@ -143,7 +143,7 @@ class BrandScreen extends Component {
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 159, height: 65 }} 
+                                            style={{ width: 100, height: 41 }} 
                                             source={{ uri: liliana }}
                                          />
                                     </BlurView>
