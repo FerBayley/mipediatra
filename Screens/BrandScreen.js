@@ -45,6 +45,7 @@ class BrandScreen extends Component {
         const bimbi = 'http://ideaswhite.com/mipediatra/clientes/bimbi/bimbi.png';
         const silfab = 'http://ideaswhite.com/mipediatra/img/logo-silfab.png';
         const nuk = 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png';
+        const liliana = 'http://ideaswhite.com/mipediatra/clientes/liliana/liliana-logo.png';
 
         return (
             <Container style={styles.container}>
@@ -135,6 +136,19 @@ class BrandScreen extends Component {
                                     </BlurView>
                             </TouchableOpacity>  
                             {/* Trivia AuloGelio */}
+
+                            {/* Trivia Liliana */}   
+                            <TouchableOpacity style={styles.liliana}
+                                onPress={() => this.props.navigation.navigate('PremioLiliana')}>
+                                    {/* Adjust the tint and intensity */}
+                                    <BlurView tint="light" intensity={50}>
+                                        <Image 
+                                            style={{ width: 159, height: 65 }} 
+                                            source={{ uri: liliana }}
+                                         />
+                                    </BlurView>
+                            </TouchableOpacity>  
+                            {/* Trivia Liliana */}
                         </Col>
 
                         <Col style={{ height: 400 }}>
@@ -295,6 +309,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
+    },
+    liliana: {
+        marginTop: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5,
+        borderRadius: 4
     },
     Bimbi: {
         marginTop: 25,

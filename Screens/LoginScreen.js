@@ -22,16 +22,7 @@ import {
 import { FormLabel, FormInput } from 'react-native-elements';
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
 
-
-firebase.initializeApp({
-    apiKey: "AIzaSyCflgTZ9cKIdVHQsuzQINQ00_zO_ZZ9-HQ",
-    authDomain: "mipediatra-15b95.firebaseapp.com",
-    databaseURL: "https://mipediatra-15b95.firebaseio.com",
-    projectId: "mipediatra-15b95",
-    storageBucket: "mipediatra-15b95.appspot.com",
-    messagingSenderId: "77209171584" 
-  }
-);
+import Firebase from './Firebase';
 
 class LoginScreen extends Component {  
 
@@ -81,7 +72,7 @@ class LoginScreen extends Component {
         }
         return <View style={{ paddingRight: 10, paddingLeft: 10 }}>
 
-                <View style={{ backgroundColor: '#DB493C', height: 55, borderRadius: 5, marginTop: 10,
+                <View style={{ backgroundColor: '#D46229', height: 55, borderRadius: 5, marginTop: 10,
                                 justifyContent: 'center',  alignItems: 'center' }}>
                     <Button
                         onPress={this.onLoginPress.bind(this)} 
@@ -91,13 +82,13 @@ class LoginScreen extends Component {
                 </View>                  
                 <TouchableOpacity
                     onPress={() => this.props.navigation.navigate('Sign')}>
-                    <Text style={{ textAlign: 'center', marginTop: 10, marginBottom: 15, color: 'grey' }}>Registrarme para jugar</Text>
+                    <Text style={{ textAlign: 'center', 
+                                   marginTop: 10, 
+                                   marginBottom: 15, 
+                                   color: 'grey' }}>
+                                   Registrarme como usuario nuevo
+                    </Text>
                 </TouchableOpacity>
-
-
-                <Button
-                    onPress={this.onSignUpPress.bind(this)} 
-                    title='Sign Up'/>
             </View>
     }
 
@@ -128,7 +119,7 @@ class LoginScreen extends Component {
             <View style={{ marginBottom: 20 }}>
                 <FormInput 
                     value = {this.state.password}
-                    placeholder='Contraeña'
+                    placeholder='Contraseña'
                     secureTextEntry={true}
                     autoCorrect={false}
                     autoCapitalize="none"
@@ -137,7 +128,7 @@ class LoginScreen extends Component {
             </View>
 
                 <Text style={{ textAlign: 'center' }}>{this.state.error}</Text>
-                {this.renderButtonOrLoading()}                
+                {this.renderButtonOrLoading()}             
             </View>         
 
 
@@ -154,7 +145,7 @@ class LoginScreen extends Component {
                                         { cancelable: false }
                                       )}
                             >
-                                <Text style={styles.btnText}>Como jugar</Text>
+                                <Text style={styles.btnText}>¿COMO JUGAR?</Text>
                             </TouchableOpacity>                           
                         </Col>
 
@@ -162,7 +153,7 @@ class LoginScreen extends Component {
                         <TouchableOpacity 
                             onPress={() => this.props.navigation.navigate('PoliticasMuestra')}
                         >
-                            <Text style={styles.btnText}>Bases del juego</Text>
+                            <Text style={styles.btnText}>BASES DEL JUEGO</Text>
                         </TouchableOpacity>
                         
                         </Col>

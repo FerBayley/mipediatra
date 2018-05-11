@@ -256,6 +256,36 @@ import AddEweError2 from './Screens/Ewe/AddEweError2'
 import AddEweError3 from './Screens/Ewe/AddEweError3'
 //Ewe ==================================== //
 
+//Liliana ==================================== //
+import LiliAdd1 from './Screens/Liliana/LiliAdd1'
+import LiliAdd2 from './Screens/Liliana/LiliAdd2'
+import LiliAdd3 from './Screens/Liliana/LiliAdd3'
+import LiliAdd4 from './Screens/Liliana/LiliAdd4'
+import LiliAdd5 from './Screens/Liliana/LiliAdd5'
+import LiliAdd6 from './Screens/Liliana/LiliAdd6'
+import LiliAdd7 from './Screens/Liliana/LiliAdd7'
+import LiliAdd8 from './Screens/Liliana/LiliAdd8'
+import LiliAdd9 from './Screens/Liliana/LiliAdd9'
+
+import LiliError1 from './Screens/Liliana/LiliError1'
+import LiliError2 from './Screens/Liliana/LiliError2'
+import LiliError3 from './Screens/Liliana/LiliError3'
+
+import LiliGanaste from './Screens/Liliana/LiliGanaste'
+
+import PremioLiliana from './Screens/Liliana/PremioLiliana'
+
+import LiliTrivia1 from './Screens/Liliana/LiliTrivia1'
+import LiliTrivia2 from './Screens/Liliana/LiliTrivia2'
+import LiliTrivia3 from './Screens/Liliana/LiliTrivia3'
+import LiliTrivia4 from './Screens/Liliana/LiliTrivia4'
+import LiliTrivia5 from './Screens/Liliana/LiliTrivia5'
+import LiliTrivia6 from './Screens/Liliana/LiliTrivia6'
+import LiliTrivia7 from './Screens/Liliana/LiliTrivia7'
+import LiliTrivia8 from './Screens/Liliana/LiliTrivia8'
+import LiliTrivia9 from './Screens/Liliana/LiliTrivia9'
+//Liliana ==================================== //
+
 import Loading from './Screens/Loading'
 import Sign from './Screens/Sign'
 
@@ -269,8 +299,6 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
-
-    //Ayuda: { screen: Ayuda },
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
@@ -522,6 +550,36 @@ const AppNavigator = StackNavigator({
     AddEweError2: { screen: AddEweError2 },
     AddEweError3: { screen: AddEweError3 },
     //Ewe ================================ //
+
+    //Liliana ================================ //
+    LiliAdd1: { screen: LiliAdd1 },
+    LiliAdd2: { screen: LiliAdd2 },
+    LiliAdd3: { screen: LiliAdd3 },
+    LiliAdd4: { screen: LiliAdd4 },
+    LiliAdd5: { screen: LiliAdd5 },
+    LiliAdd6: { screen: LiliAdd6 },
+    LiliAdd7: { screen: LiliAdd7 },
+    LiliAdd8: { screen: LiliAdd8 },
+    LiliAdd9: { screen: LiliAdd9 },
+
+    LiliError1: { screen: LiliError1 },
+    LiliError2: { screen: LiliError2 },
+    LiliError3: { screen: LiliError3 },
+
+    LiliGanaste: { screen: LiliGanaste },
+
+    PremioLiliana: { screen: PremioLiliana },
+
+    LiliTrivia1: { screen: LiliTrivia1 },
+    LiliTrivia2: { screen: LiliTrivia2 },
+    LiliTrivia3: { screen: LiliTrivia3 },
+    LiliTrivia4: { screen: LiliTrivia4 },
+    LiliTrivia5: { screen: LiliTrivia5 },
+    LiliTrivia6: { screen: LiliTrivia6 },
+    LiliTrivia7: { screen: LiliTrivia7 },
+    LiliTrivia8: { screen: LiliTrivia8 },
+    LiliTrivia9: { screen: LiliTrivia9 },
+    //Liliana ================================ //
 
     Loading: { screen: Loading },
     Sign: { screen: Sign },
