@@ -78,7 +78,7 @@ class LiliTrivia3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('LiliError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -92,7 +92,7 @@ class LiliTrivia3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('LiliError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -106,7 +106,7 @@ class LiliTrivia3 extends Component {
                                     'Respuesta correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('LiliAdd3')}
                                     ],
                                     { cancelable: false }
                                   )}
