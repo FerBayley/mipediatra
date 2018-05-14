@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Form, Item, Label, Icon, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Form, Item, Label, Text } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Constants } from 'expo';
 import Expo from 'expo';
@@ -7,6 +7,8 @@ import { BlurView } from 'expo';
 import { Entypo } from '@expo/vector-icons';
 import * as firebase from 'firebase';
 import { StackNavigator } from 'react-navigation';
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {
     View,
     StyleSheet,
@@ -17,8 +19,7 @@ import {
     TextInput, 
     Alert,
     Platform,
-    Input,
-    Button
+    Input
 } from "react-native";
 import { FormLabel, FormInput } from 'react-native-elements';
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
@@ -74,14 +75,17 @@ class LoginScreen extends Component {
         }
         return <View style={{ paddingRight: 10, paddingLeft: 10 }}>
 
-                <View style={styles.botonNaranja}>
+                <View>
                     <Button
                         onPress={this.onLoginPress.bind(this)} 
                         title='Empezar a jugar'
-                        //Este es color visible para Android
-                        color='#D46229'
-                        //Este color activarlo para compilar para ios 
-                        //color='#FFFFFF'
+                        titleStyle={{ fontWeight: "800" }}
+                        buttonStyle={{
+                            backgroundColor: '#D46229', 
+                            width: "100%",
+                            height: 55,
+                            borderRadius: 5
+                          }}
                         />
                 </View>     
 

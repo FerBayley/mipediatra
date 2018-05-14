@@ -1,4 +1,4 @@
-import { Container, Header, Content, Footer, FooterTab, Form, Item, Label, Icon, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Form, Item, Label, Text } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Constants } from 'expo';
 import Expo from 'expo';
@@ -6,6 +6,8 @@ import React, { Component } from "react";
 import { BlurView } from 'expo';
 import * as firebase from 'firebase';
 import { StackNavigator } from 'react-navigation';
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {
     View,
     StyleSheet,
@@ -16,7 +18,6 @@ import {
     TextInput, 
     Alert,
     Platform,
-    Button,
     Input
 } from "react-native";
 import { FormLabel, FormInput } from 'react-native-elements';
@@ -80,9 +81,13 @@ class SignIn extends Component {
                     <Button
                         onPress={this.onSignUpPress.bind(this)} 
                         title='Registrarme para jugar'
-                        color='#DB0A88'
-                        //Este color aplicarlo en ios
-                        //color='#FFFFFF'
+                        titleStyle={{ fontWeight: "800" }}
+                        buttonStyle={{
+                            backgroundColor: '#DB0A88',
+                            width: "100%",
+                            height: 55,
+                            borderRadius: 5
+                          }}
                         />  
                 </View>
             </View>
