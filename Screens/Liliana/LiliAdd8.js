@@ -36,8 +36,7 @@ class LiliAdd8 extends Component {
                             <StatusBar
                                 barStyle="dark-content"
                             />
-                        </View>     
-                        <Text>LiliaAdd2</Text>            
+                        </View>              
                     </Content>
 
                     <Footer style={styles.Pie}>

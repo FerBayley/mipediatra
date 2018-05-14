@@ -27,9 +27,12 @@ import Firebase from './Firebase';
 class SignIn extends Component {  
 
     static navigationOptions = {
-        header: null,
-        headerLeft: null,
-        gesturesEnabled: false,
+        title: 'Registrarse para jugar',
+        headerBackTitle: 'Volver',
+        headerStyle: {
+            backgroundColor: '#DB0A88',
+          },
+          headerTintColor: '#fff'
       };
 
     constructor(props){
@@ -77,7 +80,7 @@ class SignIn extends Component {
                     <Button
                         onPress={this.onSignUpPress.bind(this)} 
                         title='Registrarme para jugar'
-                        color='#fff'
+                        color='#FFFFFF'
                         />  
                 </View>
             </View>
@@ -87,62 +90,66 @@ class SignIn extends Component {
         return (
 
             <Container style={styles.container}>
+
+                <StatusBar
+                    barStyle="light-content"
+                />
+
                 <Content showsVerticalScrollIndicator={false}>
 
-            <View style={{ marginTop: 100 }}>
+                        <View style={{ marginTop: 20 }}>
 
-                <View style={{ marginBottom: 20 }}>
-                    <FormInput 
-                        value = {this.state.text}
-                        onChangeText={text => this.setState({ text })} 
-                        placeholder='Nombre y apellido'
-                        autoCorrect={false}
-                    />
-                </View> 
+                            <View style={{ marginBottom: 20 }}>
+                                <FormInput 
+                                    value = {this.state.text}
+                                    onChangeText={text => this.setState({ text })} 
+                                    placeholder='Nombre y apellido'
+                                    autoCorrect={false}
+                                />
+                            </View> 
 
-                <View style={{ marginBottom: 20 }}>
-                    <FormInput 
-                        value = {this.state.email}
-                        onChangeText={email => this.setState({ email })} 
-                        placeholder='Email'
-                        autoCorrect={false}
-                        autoCapitalize="none"
-                    />
-                </View>
-            
-                <View style={{ marginBottom: 20 }}>
-                    <FormInput 
-                        value = {this.state.password}
-                        placeholder='Contraeña'
-                        secureTextEntry={true}
-                        autoCorrect={false}
-                        autoCapitalize="none"
-                        onChangeText={password => this.setState({password})} 
-                    />
-                     <Text style={{ fontSize: 15, 
-                                    color: 'grey',
-                                    marginTop: 10,
-                                    color: 'grey',
-                                    paddingRight: 10
-                                    }}>
-                                    Acepto las bases y condiciones
-                    </Text>
-                </View>
+                            <View style={{ marginBottom: 20 }}>
+                                <FormInput 
+                                    value = {this.state.email}
+                                    onChangeText={email => this.setState({ email })} 
+                                    placeholder='Email'
+                                    autoCorrect={false}
+                                    autoCapitalize="none"
+                                />
+                            </View>
+                        
+                            <View style={{ marginBottom: 20 }}>
+                                <FormInput 
+                                    value = {this.state.password}
+                                    placeholder='Contraseña'
+                                    secureTextEntry={true}
+                                    autoCorrect={false}
+                                    autoCapitalize="none"
+                                    onChangeText={password => this.setState({password})} 
+                                />
 
-                <Text style={{ textAlign: 'center' }}>{this.state.error}</Text>
-                {this.renderButtonOrLoading()}       
 
-                 <TouchableOpacity
-                    onPress={() => this.props.navigation.navigate('LoginScreen')}>
-                    <Text style={{ textAlign: 'center', 
-                                   marginTop: 15, 
-                                   marginBottom: 15, 
-                                   color: 'grey' }}>
-                                   Ya estoy registrado, volver
-                    </Text>
-                </TouchableOpacity>
+                                <View style={styles.botonPoliticasOk}>
+                                    <TouchableOpacity onPress={() => this.props.navigation.navigate('PoliticasMuestra')}>
+                                        <Text style={styles.textoPoliticasOk}>
+                                            Al registrarme acepto las bases y condiciones
+                                        </Text>
+                                    </TouchableOpacity>
+                                </View>
+                            </View>
 
-            </View>                    
+                            <Text style={{ textAlign: 'center' }}>{this.state.error}</Text>
+                            {this.renderButtonOrLoading()}       
+
+                            
+                            <View style={styles.botonYaEstoyRegistrado}>
+                                <TouchableOpacity onPress={() => this.props.navigation.navigate('LoginScreen')}>
+                                    <Text style={styles.textoYaEstoyRegistrado}>
+                                        Ya estoy registrado, volver
+                                    </Text>
+                                </TouchableOpacity>
+                            </View>
+                        </View>                    
                 </Content>
             </Container>
         );
@@ -161,22 +168,7 @@ const styles = StyleSheet.create({
     },
     colorBotones: {
         color: '#fff'
-    },
-    logo: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        alignSelf: 'center',
-        marginTop: 170,
-        marginBottom: 5,
-        ...Platform.select({
-            ios: {
-                marginTop: 170
-            },
-            android: {
-                marginTop: 120
-            }
-        }),
-    },      
+    },    
     btnFacebook: {
         backgroundColor: '#3b5998',
         marginTop: 10,
@@ -228,6 +220,20 @@ const styles = StyleSheet.create({
     logoImage: {
         width: 250, 
         height: 58,
+    },
+    botonPoliticasOk: {
+        alignItems: 'center',
+        marginTop: 15
+    },
+    textoPoliticasOk: {
+        color: 'grey'
+    },
+    botonYaEstoyRegistrado: {
+        alignItems: 'center'
+    },
+    textoYaEstoyRegistrado: {
+        color: 'grey',
+        marginTop: 15
     }
 });
 

@@ -4,6 +4,7 @@ import { Constants } from 'expo';
 import Expo from 'expo';
 import React, { Component } from "react";
 import { BlurView } from 'expo';
+import { Entypo } from '@expo/vector-icons';
 import * as firebase from 'firebase';
 import { StackNavigator } from 'react-navigation';
 import {
@@ -16,8 +17,8 @@ import {
     TextInput, 
     Alert,
     Platform,
-    Button,
-    Input
+    Input,
+    Button
 } from "react-native";
 import { FormLabel, FormInput } from 'react-native-elements';
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
@@ -25,6 +26,7 @@ const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
 import Firebase from './Firebase';
 
 class LoginScreen extends Component {  
+    
 
     static navigationOptions = {
         header: null,
@@ -72,16 +74,15 @@ class LoginScreen extends Component {
         }
         return <View style={{ paddingRight: 10, paddingLeft: 10 }}>
 
-                <View style={{ backgroundColor: '#D46229', height: 55, borderRadius: 5, marginTop: 10,
-                                justifyContent: 'center',  alignItems: 'center' }}>
+                <View style={styles.botonNaranja}>
                     <Button
                         onPress={this.onLoginPress.bind(this)} 
                         title='Empezar a jugar'
-                        color='#fff'
-                        />  
-                </View>                  
-                <TouchableOpacity
-                    onPress={() => this.props.navigation.navigate('Sign')}>
+                        color='#FFFFFF'
+                        />
+                </View>     
+
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Sign')}>
                     <Text style={{ textAlign: 'center', 
                                    marginTop: 10, 
                                    marginBottom: 15, 
@@ -96,6 +97,12 @@ class LoginScreen extends Component {
         return (
 
             <Container style={styles.container}>
+
+            <StatusBar
+                barStyle="dark-content"
+            />
+
+
                 <Content showsVerticalScrollIndicator={false}>
 
                 {/* Adjust the tint and intensity */}
@@ -129,7 +136,7 @@ class LoginScreen extends Component {
 
                 <Text style={{ textAlign: 'center' }}>{this.state.error}</Text>
                 {this.renderButtonOrLoading()}             
-            </View>         
+            </View>        
 
 
                     <Grid style={styles.griden}>
@@ -188,7 +195,7 @@ const styles = StyleSheet.create({
                 marginTop: 170
             },
             android: {
-                marginTop: 120
+                marginTop: 80
             }
         }),
     },      
@@ -217,7 +224,15 @@ const styles = StyleSheet.create({
         color: 'grey'
     },
     griden: {
-        marginTop: 150
+        marginTop: 25,
+        ...Platform.select({
+            ios: {
+                marginTop: 25
+            },
+            android: {
+                marginTop: 20
+            }
+        }),
     },
     btnTextBtn: {
         color: '#fff'
@@ -243,6 +258,32 @@ const styles = StyleSheet.create({
     logoImage: {
         width: 250, 
         height: 58,
+    },
+    botonNaranja: {
+        backgroundColor: '#D46229', 
+        height: 55, 
+        borderRadius: 5, 
+        marginTop: 10,
+        justifyContent: 'center',  
+        alignItems: 'center',
+        ...Platform.select({
+            ios: {
+                backgroundColor: '#D46229', 
+                height: 55, 
+                borderRadius: 5, 
+                marginTop: 10,
+                justifyContent: 'center',  
+                alignItems: 'center'
+            },
+            android: {
+                backgroundColor: '#D46229', 
+                height: 55, 
+                borderRadius: 5, 
+                marginTop: 10,
+                justifyContent: 'center',  
+                alignItems: 'center'
+            }
+        }),
     }
 });
 

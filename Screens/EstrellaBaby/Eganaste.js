@@ -77,7 +77,7 @@ class Eganaste extends Component {
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('TriviaEstrella1')}
+                        onPress={() => this.props.navigation.navigate('BrandScreen')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>

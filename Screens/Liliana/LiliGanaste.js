@@ -76,7 +76,7 @@ class LiliGanaste extends Component {
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('LiliTrivia1')}
+                        onPress={() => this.props.navigation.navigate('BrandScreen')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>

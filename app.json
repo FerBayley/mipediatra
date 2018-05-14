@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "mi-pediatra",
+    "name": "MP Trivias",
     "description": "Trivias de la revista Mi Pediatra.",
     "slug": "mipediatra",
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "platforms": ["ios", "android"],
-    "version": "2.0.0",
+    "version": "2.1.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "facebookScheme": "fb128016374696409",
@@ -15,11 +15,11 @@
       "resizeMode": "cover"
     },
     "ios": {
-      "bundleIdentifier": "com.ideaswhite.mipediatra8"
+      "bundleIdentifier": "com.ideaswhite.mipediatra11"
     },
     "android": {
       "package": "com.ideaswhite.mipediatra",
-      "versionCode": 2
+      "versionCode": 3
     }
   }
 }

@@ -36,8 +36,7 @@ class LiliError3 extends Component {
                             <StatusBar
                                 barStyle="dark-content"
                             />
-                        </View>     
-                        <Text>LiliaAdd3</Text>            
+                        </View>               
                     </Content>
 
                     <Footer style={styles.Pie}>
