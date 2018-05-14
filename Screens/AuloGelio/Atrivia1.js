@@ -13,7 +13,8 @@ import {
     Platform,
     Alert,
     TouchableHighlight,
-    Share
+    Share,
+    ActivityIndicator
 } from "react-native";
 
 class Atrivia1 extends Component {

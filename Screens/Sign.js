@@ -80,7 +80,9 @@ class SignIn extends Component {
                     <Button
                         onPress={this.onSignUpPress.bind(this)} 
                         title='Registrarme para jugar'
-                        color='#FFFFFF'
+                        color='#DB0A88'
+                        //Este color aplicarlo en ios
+                        //color='#FFFFFF'
                         />  
                 </View>
             </View>

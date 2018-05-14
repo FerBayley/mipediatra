@@ -78,7 +78,10 @@ class LoginScreen extends Component {
                     <Button
                         onPress={this.onLoginPress.bind(this)} 
                         title='Empezar a jugar'
-                        color='#FFFFFF'
+                        //Este es color visible para Android
+                        color='#D46229'
+                        //Este color activarlo para compilar para ios 
+                        //color='#FFFFFF'
                         />
                 </View>     
 

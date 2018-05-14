@@ -19,7 +19,7 @@
     },
     "android": {
       "package": "com.ideaswhite.mipediatra",
-      "versionCode": 3
+      "versionCode": 4
     }
   }
 }
