@@ -46,7 +46,7 @@ class Ayuda extends Component {
                         <Button
                             onPress={() => this.props.navigation.navigate('LoginScreen')}
                         >
-                            <Text style={{ color: 'white', fontWeight: '800' }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white' }}>EMPEZAR A JUGAR</Text>
                         </Button>                      
                     </FooterTab>
                 </Footer>

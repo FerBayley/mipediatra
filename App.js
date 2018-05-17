@@ -298,7 +298,7 @@ export default class App extends React.Component {
     }
 }
 
-const AppNavigator = StackNavigator({    
+const AppNavigator = StackNavigator({      
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },

@@ -17,8 +17,7 @@ import {
     TouchableOpacity,
     TextInput, 
     Alert,
-    Platform,
-    Input
+    Platform
 } from "react-native";
 import { FormLabel, FormInput } from 'react-native-elements';
 const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
@@ -76,8 +75,7 @@ class SignIn extends Component {
         }
         return <View style={{ paddingRight: 10, paddingLeft: 10 }}>
 
-                <View style={{ backgroundColor: '#DB0A88', height: 55, borderRadius: 5, marginTop: 10,
-                                justifyContent: 'center',  alignItems: 'center' }}>
+                <View style={{ marginTop: 10 }}>
                     <Button
                         onPress={this.onSignUpPress.bind(this)} 
                         title='Registrarme para jugar'
@@ -233,14 +231,31 @@ const styles = StyleSheet.create({
         marginTop: 15
     },
     textoPoliticasOk: {
-        color: 'grey'
+        color: 'grey',
+        ...Platform.select({
+            ios: {
+                textAlign: 'center'
+            },
+            android: {
+                textAlign: 'center',
+                fontSize: 12,
+            }
+        }),
     },
     botonYaEstoyRegistrado: {
         alignItems: 'center'
     },
     textoYaEstoyRegistrado: {
         color: 'grey',
-        marginTop: 15
+        marginTop: 15,
+        ...Platform.select({
+            ios: {
+                textAlign: 'center'
+            },
+            android: {
+                textAlign: 'center'
+            }
+        }),
     }
 });
 

@@ -35,7 +35,7 @@ class Eweganaste extends Component {
 
     render() {
 
-        const premioEwe = '../../assets/images/ganaste-ewe.png';
+        const premioEwe = '../../assets/images/ewe-win.png';
 
         return (
             <Container style={styles.container}>
@@ -65,13 +65,13 @@ class Eweganaste extends Component {
                <View style={styles.container2}>
                     <Text style={styles.titulo}>Felicitaciones!!!</Text>
                     <Text style={styles.textoFelicita}>
-                        Gananste una chance para el sorteo de este premio. Recibiras mails y alertas para informarte si ganaste.
+                        Ganaste una chance para el sorteo de este premio. Recibirás mails y alertas para informarte si ganaste.
                     </Text>
 
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
 
                         <BlurView>
-                            <Image style={{ width: 210, height: 210 }}
+                            <Image style={{ height: 249, width: 249 }}
                             source={require( premioEwe )} />
                         </BlurView>
                     </View>

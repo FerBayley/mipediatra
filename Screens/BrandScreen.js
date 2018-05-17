@@ -80,7 +80,7 @@ class BrandScreen extends Component {
                         </BlurView>
 
                         <Text style={styles.textoElegi}>Elegí con qué marca querés empezar a responder las trivias.</Text>
-                        <Text style={styles.textoToca}>Tocá un logo, mira el premio y comenzar a jugar</Text>
+                        <Text style={styles.textoToca}>Tocá un logo, mirá el premio y comenzá a jugar</Text>
                     </View>
 
                     <Grid style={styles.Griden}>
@@ -124,18 +124,18 @@ class BrandScreen extends Component {
                             </TouchableOpacity> 
                             {/* Trivia Farmx */}    
 
-                            {/* Trivia AuloGelio */}   
-                            <TouchableOpacity style={styles.AuloGelio}
-                                onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
+                            {/* Trivia Nuk */}   
+                            <TouchableOpacity style={styles.Nuk}
+                                onPress={() => this.props.navigation.navigate('PremioNuk')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
                                             style={{ width: 158, height: 65 }} 
-                                            source={{ uri: aulogelio }}
-                                         />
+                                            source={{ uri: nuk }}
+                                        />
                                     </BlurView>
                             </TouchableOpacity>  
-                            {/* Trivia AuloGelio */}
+                            {/* Trivia Nuk */}
 
                             {/* Trivia Liliana */}   
                             <TouchableOpacity style={styles.liliana}
@@ -165,19 +165,6 @@ class BrandScreen extends Component {
                             </TouchableOpacity>
                             {/* Trivia Ewe */}
 
-                            {/* Trivia Bimbi */}   
-                            <TouchableOpacity style={styles.Bimbi}
-                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: bimbi }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Bimbi */}   
-
                             {/* Trivia Silfab */}   
                             <TouchableOpacity style={styles.Silfab}
                                 onPress={() => this.props.navigation.navigate('PremioSilfab')}>
@@ -189,20 +176,34 @@ class BrandScreen extends Component {
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
-                            {/* Trivia Silfab */}     
+                            {/* Trivia Silfab */}
 
-                            {/* Trivia Nuk */}   
-                            <TouchableOpacity style={styles.Nuk}
-                                onPress={() => this.props.navigation.navigate('PremioNuk')}>
+                            {/* Trivia AuloGelio */}   
+                            <TouchableOpacity style={styles.AuloGelio}
+                                onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
                                             style={{ width: 158, height: 65 }} 
-                                            source={{ uri: nuk }}
-                                        />
+                                            source={{ uri: aulogelio }}
+                                         />
                                     </BlurView>
                             </TouchableOpacity>  
-                            {/* Trivia Nuk */}     
+                            {/* Trivia AuloGelio */}
+
+                            {/* Trivia Bimbi */}   
+                            <TouchableOpacity style={styles.Bimbi}
+                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
+                                    {/* Adjust the tint and intensity */}
+                                    <BlurView tint="light" intensity={50}>
+                                        <Image 
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: bimbi }}
+                                         />
+                                    </BlurView>
+                            </TouchableOpacity>  
+                            {/* Trivia Bimbi */}
+          
                         </Col>
                     </Grid>  
                     <View style={{ marginBottom: 100 }}></View>  
@@ -214,7 +215,7 @@ class BrandScreen extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     '¿COMO JUGAR?',
-                                    '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                    '\n 1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. \n \n 2.- Cada 3 respuestas correctas consecutivas, ganás 1 chance para el sorteo del premio que elegiste.',
                                     [
                                         {text: 'Cerrar'},
                                     ],

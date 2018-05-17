@@ -77,7 +77,7 @@ class PremioFarmx extends Component {
 
                         <BlurView>
                             <Image
-                                style={{width: 199, height: 299, marginTop: 20}}
+                                style={{width: 220, height: 299, marginTop: 20}}
                                 source={require( premioFarmx )} />
                         </BlurView>
                     </View>

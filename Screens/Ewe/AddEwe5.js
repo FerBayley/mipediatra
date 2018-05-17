@@ -42,11 +42,11 @@ class AddEwe5 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar/producto-detalle.php?xIDproducto=26')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('EweTrivia6')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

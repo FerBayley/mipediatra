@@ -121,18 +121,18 @@ class TriviaGraco6 extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     '¿COMO JUGAR?',
-                                    '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                    '\n 1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. \n \n 2.- Cada 3 respuestas correctas consecutivas, ganás 1 chance para el sorteo del premio que elegiste.',
                                     [
                                         {text: 'Cerrar'},
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={{ color: 'white', fontWeight: '800' }}>¿COMO JUGAR?</Text>
+                            <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>IR AL INCIO</Text>
+                            <Text style={{ color: 'white' }}>IR AL INCIO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

@@ -33,7 +33,7 @@ class PremioEwe extends Component {
     render() {
 
         const logoEwe = '../../assets/images/ewe-logopremio.png';
-        const premioEwe = '../../assets/images/sorteo-ewe.png';
+        const premioEwe = '../../assets/images/ewe-win.png';
 
         return (
             <Container>
@@ -77,7 +77,7 @@ class PremioEwe extends Component {
 
                         <BlurView>
                             <Image
-                                style={{width: 263, height: 263, marginTop: 20}}
+                                style={{width: 249, height: 249, marginTop: 30}}
                                 source={require( premioEwe )} />
                         </BlurView>
                     </View>
@@ -87,7 +87,7 @@ class PremioEwe extends Component {
                     <FooterTab style={styles.Pie}>
                         <Button
                         onPress={() => this.props.navigation.navigate('EweTrivia1')}>
-                            <Text style={{ color: 'white', fontWeight: '800', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
+                            <Text style={{ color: 'white', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>
                 </Footer>

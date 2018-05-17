@@ -42,11 +42,11 @@ class LiliAdd4 extends Component {
                     <Footer style={styles.Pie}>
                         <FooterTab style={styles.Pie}>
                             <Button onPress={() => Linking.openURL('https://www.instagram.com/lilianaelectrodomesticos/?hl=es-la')}>
-                                <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                                <Text style={{ color: 'white' }}>VER MAS</Text>
                             </Button>                       
 
                             <Button onPress={() => this.props.navigation.navigate('LiliTrivia5')}>
-                                <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                                <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>
                     </Footer>

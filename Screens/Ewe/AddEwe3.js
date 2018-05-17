@@ -42,11 +42,11 @@ class AddEwe3 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar/productos-categorias.php?xIDcategoria=2')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('Eweganaste')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

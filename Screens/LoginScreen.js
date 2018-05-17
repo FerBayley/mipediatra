@@ -151,8 +151,8 @@ class LoginScreen extends Component {
                             <TouchableOpacity
                                 onPress={() =>
                                     Alert.alert(
-                                        'COMO JUGAR',
-                                        '1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. 2.- Cada 3 respuestas correctas consecutivas ganás 1 chance para el sorteo del premio que elegiste.',
+                                        '¿COMO JUGAR?',
+                                        '\n 1.- Respondé la mayor cantidad de trivias de manera correcta para sumar chances en los sorteos de cada marca. \n \n 2.- Cada 3 respuestas correctas consecutivas, ganás 1 chance para el sorteo del premio que elegiste.',
                                         [
                                             {text: 'Cerrar'},
                                         ],
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
-        padding: 15
+        padding: 10
     },
     Pie: {
         backgroundColor: '#DB0A88'
@@ -267,25 +267,16 @@ const styles = StyleSheet.create({
         height: 58,
     },
     botonNaranja: {
-        backgroundColor: '#D46229', 
-        height: 55, 
-        borderRadius: 5, 
         marginTop: 10,
         justifyContent: 'center',  
         alignItems: 'center',
         ...Platform.select({
             ios: {
-                backgroundColor: '#D46229', 
-                height: 55, 
-                borderRadius: 5, 
                 marginTop: 10,
                 justifyContent: 'center',  
                 alignItems: 'center'
             },
             android: {
-                backgroundColor: '#D46229', 
-                height: 55, 
-                borderRadius: 5, 
                 marginTop: 10,
                 justifyContent: 'center',  
                 alignItems: 'center'

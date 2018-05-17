@@ -42,11 +42,11 @@ class SilfabAdd1 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('http://www.silfab.com.ar')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('TriviaSilfab7')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

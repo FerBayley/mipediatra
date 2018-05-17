@@ -44,11 +44,11 @@ class GracoAdd1 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button onPress={() => Linking.openURL('https://www.facebook.com/GracoArg')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>VER MAS</Text>
+                            <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('TriviaGraco1')}>
-                            <Text style={{ color: 'white', fontWeight: '800' }}>SEGUIR JUGANDO</Text>
+                            <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
