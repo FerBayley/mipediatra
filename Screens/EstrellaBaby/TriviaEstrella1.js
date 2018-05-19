@@ -111,7 +111,7 @@ class TriviaEstrella1 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>5</Text>
+                            <Text style={styles.blanco}>3</Text>
                         </Button>
                     </View>
                 </Content>
