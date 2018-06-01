@@ -50,7 +50,7 @@ class SignIn extends Component {
             this.props.navigation.navigate('Politicas');
         })
         .catch(() => {
-            this.setState({error:'Oppps... algo salio mal',loading:false });
+            this.setState({error:'Los datos ingresados no son correctos',loading:false });
         })
     }
 
@@ -65,7 +65,7 @@ class SignIn extends Component {
             this.props.navigation.navigate('Politicas');
         })
         .catch(() => {
-            this.setState({error:'Oppps... algo salio mal',loading:false});
+            this.setState({error:'Los datos ingresados no son correctos',loading:false});
         })
     }
 

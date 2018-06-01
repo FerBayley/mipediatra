@@ -50,7 +50,7 @@ class LoginScreen extends Component {
             this.props.navigation.navigate('Politicas');
         })
         .catch(() => {
-            this.setState({error:'Oppps... algo salio mal',loading:false });
+            this.setState({error:'Usuario o contraseña incorrectos',loading:false });
         })
     }
 
@@ -65,7 +65,7 @@ class LoginScreen extends Component {
             this.props.navigation.navigate('Politicas');
         })
         .catch(() => {
-            this.setState({error:'Oppps... algo salio mal',loading:false});
+            this.setState({error:'Usuario o contraseña incorrectos',loading:false});
         })
     }
 
@@ -84,7 +84,8 @@ class LoginScreen extends Component {
                             backgroundColor: '#D46229', 
                             width: "100%",
                             height: 55,
-                            borderRadius: 5
+                            borderRadius: 5,
+                            marginTop: 10
                           }}
                         />
                 </View>     
