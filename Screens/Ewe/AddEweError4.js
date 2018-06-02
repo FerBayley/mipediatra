@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class AddEwe1 extends Component {    
+class AddEweErro4 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -45,7 +45,7 @@ class AddEwe1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('EweTrivia10')}>
+                        <Button onPress={() => this.props.navigation.navigate('EweTrivia16')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default AddEwe1;
+export default AddEweErro4;

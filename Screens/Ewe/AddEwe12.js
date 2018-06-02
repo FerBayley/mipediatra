@@ -15,20 +15,20 @@ import {
     ImageBackground
 } from "react-native";
 
-class AddEwe1 extends Component {    
+class AddEwe12 extends Component {    
 
     static navigationOptions = {
         header: null,
         headerLeft: null,
         gesturesEnabled: false,
-    };   
+    };     
 
     render() {
 
-        const AddEwe1 = '../../assets/images/ewe-add1.png';
+        const AddEwe3 = '../../assets/images/ewe-add3.png';
 
         return (
-            <ImageBackground source={require( AddEwe1 )}
+            <ImageBackground source={require( AddEwe3 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -41,11 +41,11 @@ class AddEwe1 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar')}>
+                        <Button onPress={() => Linking.openURL('http://www.lineaewe.com.ar/productos-categorias.php?xIDcategoria=2')}>
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('EweTrivia10')}>
+                        <Button onPress={() => this.props.navigation.navigate('Eweganaste')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default AddEwe1;
+export default AddEwe12;

@@ -461,10 +461,32 @@ import AddEwe6 from './Screens/Ewe/AddEwe6'
 import AddEwe7 from './Screens/Ewe/AddEwe7'
 import AddEwe8 from './Screens/Ewe/AddEwe8'
 import AddEwe9 from './Screens/Ewe/AddEwe9'
+import AddEwe10 from './Screens/Ewe/AddEwe10'
+import AddEwe11 from './Screens/Ewe/AddEwe11'
+import AddEwe12 from './Screens/Ewe/AddEwe12'
+import AddEwe13 from './Screens/Ewe/AddEwe13'
+import AddEwe14 from './Screens/Ewe/AddEwe14'
+import AddEwe15 from './Screens/Ewe/AddEwe15'
+import AddEwe16 from './Screens/Ewe/AddEwe16'
+import AddEwe17 from './Screens/Ewe/AddEwe17'
+import AddEwe18 from './Screens/Ewe/AddEwe18'
+import AddEwe19 from './Screens/Ewe/AddEwe19'
+import AddEwe20 from './Screens/Ewe/AddEwe20'
+import AddEwe21 from './Screens/Ewe/AddEwe21'
+import AddEwe22 from './Screens/Ewe/AddEwe22'
+import AddEwe23 from './Screens/Ewe/AddEwe23'
+import AddEwe24 from './Screens/Ewe/AddEwe24'
+import AddEwe25 from './Screens/Ewe/AddEwe25'
+import AddEwe26 from './Screens/Ewe/AddEwe26'
+import AddEwe27 from './Screens/Ewe/AddEwe27'
 
 import AddEweError1 from './Screens/Ewe/AddEweError1'
 import AddEweError2 from './Screens/Ewe/AddEweError2'
 import AddEweError3 from './Screens/Ewe/AddEweError3'
+import AddEweError4 from './Screens/Ewe/AddEweError4'
+import AddEweError5 from './Screens/Ewe/AddEweError5'
+import AddEweError6 from './Screens/Ewe/AddEweError6'
+import AddEweError7 from './Screens/Ewe/AddEweError7'
 //Ewe ==================================== //
 
 //Liliana ==================================== //
@@ -986,10 +1008,32 @@ const AppNavigator = StackNavigator({
     AddEwe7: { screen: AddEwe7 },
     AddEwe8: { screen: AddEwe8 },
     AddEwe9: { screen: AddEwe9 },
+    AddEwe10: { screen: AddEwe10 },
+    AddEwe11: { screen: AddEwe11 },
+    AddEwe12: { screen: AddEwe12 },
+    AddEwe13: { screen: AddEwe13 },
+    AddEwe14: { screen: AddEwe14 },
+    AddEwe15: { screen: AddEwe15 },
+    AddEwe16: { screen: AddEwe16 },
+    AddEwe17: { screen: AddEwe17 },
+    AddEwe18: { screen: AddEwe18 },
+    AddEwe19: { screen: AddEwe19 },
+    AddEwe20: { screen: AddEwe20 },
+    AddEwe21: { screen: AddEwe21 },
+    AddEwe22: { screen: AddEwe22 },
+    AddEwe23: { screen: AddEwe23 },
+    AddEwe24: { screen: AddEwe24 },
+    AddEwe25: { screen: AddEwe25 },
+    AddEwe26: { screen: AddEwe26 },
+    AddEwe27: { screen: AddEwe27 },
 
     AddEweError1: { screen: AddEweError1 },
     AddEweError2: { screen: AddEweError2 },
     AddEweError3: { screen: AddEweError3 },
+    AddEweError4: { screen: AddEweError4 },
+    AddEweError5: { screen: AddEweError5 },
+    AddEweError6: { screen: AddEweError6 },
+    AddEweError7: { screen: AddEweError7 },
     //Ewe ================================ //
 
     //Liliana ================================ //

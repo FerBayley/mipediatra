@@ -78,7 +78,7 @@ class EweTrivia22 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEweError3')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEweError7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -89,10 +89,10 @@ class EweTrivia22 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('AddEwe9')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('AddEweError7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -103,10 +103,10 @@ class EweTrivia22 extends Component {
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEweError3')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AddEwe22')}
                                     ],
                                     { cancelable: false }
                                   )}
