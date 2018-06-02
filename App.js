@@ -23,6 +23,24 @@ import Ftrivia6 from './Screens/Farmx/Ftrivia6'
 import Ftrivia7 from './Screens/Farmx/Ftrivia7'
 import Ftrivia8 from './Screens/Farmx/Ftrivia8'
 import Ftrivia9 from './Screens/Farmx/Ftrivia9'
+import Ftrivia10 from './Screens/Farmx/Ftrivia10'
+import Ftrivia11 from './Screens/Farmx/Ftrivia11'
+import Ftrivia12 from './Screens/Farmx/Ftrivia12'
+import Ftrivia13 from './Screens/Farmx/Ftrivia13'
+import Ftrivia14 from './Screens/Farmx/Ftrivia14'
+import Ftrivia15 from './Screens/Farmx/Ftrivia15'
+import Ftrivia16 from './Screens/Farmx/Ftrivia16'
+import Ftrivia17 from './Screens/Farmx/Ftrivia17'
+import Ftrivia18 from './Screens/Farmx/Ftrivia18'
+import Ftrivia19 from './Screens/Farmx/Ftrivia19'
+import Ftrivia20 from './Screens/Farmx/Ftrivia20'
+import Ftrivia21 from './Screens/Farmx/Ftrivia21'
+import Ftrivia22 from './Screens/Farmx/Ftrivia22'
+import Ftrivia23 from './Screens/Farmx/Ftrivia23'
+import Ftrivia24 from './Screens/Farmx/Ftrivia24'
+import Ftrivia25 from './Screens/Farmx/Ftrivia25'
+import Ftrivia26 from './Screens/Farmx/Ftrivia9'
+import Ftrivia27 from './Screens/Farmx/Ftrivia27'
 // Farmx Trivias//
 // Farmx Add//
 import Fadd1 from './Screens/Farmx/Fadd1'
@@ -54,7 +72,25 @@ import Atrivia6 from './Screens/AuloGelio/Atrivia6'
 import Atrivia7 from './Screens/AuloGelio/Atrivia7'
 import Atrivia8 from './Screens/AuloGelio/Atrivia8'
 import Atrivia9 from './Screens/AuloGelio/Atrivia9'
+import Atrivia10 from './Screens/AuloGelio/Atrivia10'
+import Atrivia11 from './Screens/AuloGelio/Atrivia11'
+import Atrivia12 from './Screens/AuloGelio/Atrivia12'
+import Atrivia13 from './Screens/AuloGelio/Atrivia13'
+import Atrivia14 from './Screens/AuloGelio/Atrivia14'
+import Atrivia15 from './Screens/AuloGelio/Atrivia15'
+import Atrivia16 from './Screens/AuloGelio/Atrivia16'
+import Atrivia17 from './Screens/AuloGelio/Atrivia17'
+import Atrivia18 from './Screens/AuloGelio/Atrivia18'
+import Atrivia19 from './Screens/AuloGelio/Atrivia19'
+import Atrivia20 from './Screens/AuloGelio/Atrivia20'
+import Atrivia21 from './Screens/AuloGelio/Atrivia21'
+import Atrivia22 from './Screens/AuloGelio/Atrivia22'
+import Atrivia23 from './Screens/AuloGelio/Atrivia23'
+import Atrivia24 from './Screens/AuloGelio/Atrivia24'
+import Atrivia25 from './Screens/AuloGelio/Atrivia25'
+import Atrivia26 from './Screens/AuloGelio/Atrivia26'
 // AuloGelio Trivias//
+
 // AuloGelio Add//
 import Aadd1 from './Screens/AuloGelio/Aadd1'
 import Aadd2 from './Screens/AuloGelio/Aadd2'
@@ -87,6 +123,24 @@ import BimbiTrivia6 from './Screens/Bimbi/BimbiTrivia6'
 import BimbiTrivia7 from './Screens/Bimbi/BimbiTrivia7'
 import BimbiTrivia8 from './Screens/Bimbi/BimbiTrivia8'
 import BimbiTrivia9 from './Screens/Bimbi/BimbiTrivia9'
+import BimbiTrivia10 from './Screens/Bimbi/BimbiTrivia10'
+import BimbiTrivia11 from './Screens/Bimbi/BimbiTrivia11'
+import BimbiTrivia12 from './Screens/Bimbi/BimbiTrivia12'
+import BimbiTrivia13 from './Screens/Bimbi/BimbiTrivia13'
+import BimbiTrivia14 from './Screens/Bimbi/BimbiTrivia14'
+import BimbiTrivia15 from './Screens/Bimbi/BimbiTrivia15'
+import BimbiTrivia16 from './Screens/Bimbi/BimbiTrivia16'
+import BimbiTrivia17 from './Screens/Bimbi/BimbiTrivia17'
+import BimbiTrivia18 from './Screens/Bimbi/BimbiTrivia18'
+import BimbiTrivia19 from './Screens/Bimbi/BimbiTrivia19'
+import BimbiTrivia20 from './Screens/Bimbi/BimbiTrivia20'
+import BimbiTrivia21 from './Screens/Bimbi/BimbiTrivia21'
+import BimbiTrivia22 from './Screens/Bimbi/BimbiTrivia22'
+import BimbiTrivia23 from './Screens/Bimbi/BimbiTrivia23'
+import BimbiTrivia24 from './Screens/Bimbi/BimbiTrivia24'
+import BimbiTrivia25 from './Screens/Bimbi/BimbiTrivia25'
+import BimbiTrivia26 from './Screens/Bimbi/BimbiTrivia26'
+import BimbiTrivia27 from './Screens/Bimbi/BimbiTrivia27'
 // Bimbi Trivias//
 // Bimbi Add//
 import BimbiAdd1 from './Screens/Bimbi/BimbiAdd1'
@@ -120,6 +174,24 @@ import NukTrivia6 from './Screens/Nuk/NukTrivia6'
 import NukTrivia7 from './Screens/Nuk/NukTrivia7'
 import NukTrivia8 from './Screens/Nuk/NukTrivia8'
 import NukTrivia9 from './Screens/Nuk/NukTrivia9'
+import NukTrivia10 from './Screens/Nuk/NukTrivia10'
+import NukTrivia11 from './Screens/Nuk/NukTrivia11'
+import NukTrivia12 from './Screens/Nuk/NukTrivia12'
+import NukTrivia13 from './Screens/Nuk/NukTrivia13'
+import NukTrivia14 from './Screens/Nuk/NukTrivia14'
+import NukTrivia15 from './Screens/Nuk/NukTrivia15'
+import NukTrivia16 from './Screens/Nuk/NukTrivia16'
+import NukTrivia17 from './Screens/Nuk/NukTrivia17'
+import NukTrivia18 from './Screens/Nuk/NukTrivia18'
+import NukTrivia19 from './Screens/Nuk/NukTrivia19'
+import NukTrivia20 from './Screens/Nuk/NukTrivia20'
+import NukTrivia21 from './Screens/Nuk/NukTrivia21'
+import NukTrivia22 from './Screens/Nuk/NukTrivia22'
+import NukTrivia23 from './Screens/Nuk/NukTrivia23'
+import NukTrivia24 from './Screens/Nuk/NukTrivia24'
+import NukTrivia25 from './Screens/Nuk/NukTrivia25'
+import NukTrivia26 from './Screens/Nuk/NukTrivia26'
+import NukTrivia27 from './Screens/Nuk/NukTrivia27'
 // Nuk Trivias //
 // Nuk Add //
 import NukAdd1 from './Screens/Nuk/NukAdd1'
@@ -153,6 +225,25 @@ import TriviaSilfab6 from './Screens/Silfab/TriviaSilfab6'
 import TriviaSilfab7 from './Screens/Silfab/TriviaSilfab7'
 import TriviaSilfab8 from './Screens/Silfab/TriviaSilfab8'
 import TriviaSilfab9 from './Screens/Silfab/TriviaSilfab9'
+import TriviaSilfab10 from './Screens/Silfab/TriviaSilfab10'
+import TriviaSilfab11 from './Screens/Silfab/TriviaSilfab11'
+import TriviaSilfab12 from './Screens/Silfab/TriviaSilfab12'
+import TriviaSilfab13 from './Screens/Silfab/TriviaSilfab13'
+import TriviaSilfab14 from './Screens/Silfab/TriviaSilfab14'
+import TriviaSilfab15 from './Screens/Silfab/TriviaSilfab15'
+import TriviaSilfab16 from './Screens/Silfab/TriviaSilfab16'
+import TriviaSilfab17 from './Screens/Silfab/TriviaSilfab17'
+import TriviaSilfab18 from './Screens/Silfab/TriviaSilfab18'
+import TriviaSilfab19 from './Screens/Silfab/TriviaSilfab19'
+import TriviaSilfab20 from './Screens/Silfab/TriviaSilfab20'
+import TriviaSilfab21 from './Screens/Silfab/TriviaSilfab21'
+import TriviaSilfab22 from './Screens/Silfab/TriviaSilfab22'
+import TriviaSilfab23 from './Screens/Silfab/TriviaSilfab23'
+import TriviaSilfab24 from './Screens/Silfab/TriviaSilfab24'
+import TriviaSilfab25 from './Screens/Silfab/TriviaSilfab25'
+import TriviaSilfab26 from './Screens/Silfab/TriviaSilfab26'
+import TriviaSilfab27 from './Screens/Silfab/TriviaSilfab27'
+
 
 import SilfabAdd1 from './Screens/Silfab/SilfabAdd1'
 import SilfabAdd2 from './Screens/Silfab/SilfabAdd2'
@@ -180,6 +271,23 @@ import TriviaGraco6 from './Screens/Graco/TriviaGraco6'
 import TriviaGraco7 from './Screens/Graco/TriviaGraco7'
 import TriviaGraco8 from './Screens/Graco/TriviaGraco8'
 import TriviaGraco9 from './Screens/Graco/TriviaGraco9'
+import TriviaGraco10 from './Screens/Graco/TriviaGraco10'
+import TriviaGraco11 from './Screens/Graco/TriviaGraco11'
+import TriviaGraco12 from './Screens/Graco/TriviaGraco12'
+import TriviaGraco13 from './Screens/Graco/TriviaGraco13'
+import TriviaGraco14 from './Screens/Graco/TriviaGraco14'
+import TriviaGraco15 from './Screens/Graco/TriviaGraco15'
+import TriviaGraco16 from './Screens/Graco/TriviaGraco16'
+import TriviaGraco17 from './Screens/Graco/TriviaGraco17'
+import TriviaGraco18 from './Screens/Graco/TriviaGraco18'
+import TriviaGraco19 from './Screens/Graco/TriviaGraco19'
+import TriviaGraco20 from './Screens/Graco/TriviaGraco20'
+import TriviaGraco21 from './Screens/Graco/TriviaGraco21'
+import TriviaGraco22 from './Screens/Graco/TriviaGraco22'
+import TriviaGraco23 from './Screens/Graco/TriviaGraco23'
+import TriviaGraco24 from './Screens/Graco/TriviaGraco24'
+import TriviaGraco25 from './Screens/Graco/TriviaGraco25'
+import TriviaGraco26 from './Screens/Graco/TriviaGraco26'
 
 import GracoAdd1 from './Screens/Graco/GracoAdd1'
 import GracoAdd2 from './Screens/Graco/GracoAdd2'
@@ -212,6 +320,26 @@ import TriviaEstrella7 from './Screens/EstrellaBaby/TriviaEstrella7'
 import TriviaEstrella8 from './Screens/EstrellaBaby/TriviaEstrella8'
 import TriviaEstrella9 from './Screens/EstrellaBaby/TriviaEstrella9'
 
+import TriviaEstrella10 from './Screens/EstrellaBaby/TriviaEstrella10'
+import TriviaEstrella11 from './Screens/EstrellaBaby/TriviaEstrella11'
+import TriviaEstrella12 from './Screens/EstrellaBaby/TriviaEstrella12'
+import TriviaEstrella13 from './Screens/EstrellaBaby/TriviaEstrella13'
+import TriviaEstrella14 from './Screens/EstrellaBaby/TriviaEstrella14'
+import TriviaEstrella15 from './Screens/EstrellaBaby/TriviaEstrella15'
+import TriviaEstrella16 from './Screens/EstrellaBaby/TriviaEstrella16'
+import TriviaEstrella17 from './Screens/EstrellaBaby/TriviaEstrella17'
+import TriviaEstrella18 from './Screens/EstrellaBaby/TriviaEstrella18'
+import TriviaEstrella19 from './Screens/EstrellaBaby/TriviaEstrella19'
+import TriviaEstrella20 from './Screens/EstrellaBaby/TriviaEstrella20'
+import TriviaEstrella21 from './Screens/EstrellaBaby/TriviaEstrella21'
+import TriviaEstrella22 from './Screens/EstrellaBaby/TriviaEstrella22'
+import TriviaEstrella23 from './Screens/EstrellaBaby/TriviaEstrella23'
+import TriviaEstrella24 from './Screens/EstrellaBaby/TriviaEstrella24'
+import TriviaEstrella25 from './Screens/EstrellaBaby/TriviaEstrella25'
+import TriviaEstrella26 from './Screens/EstrellaBaby/TriviaEstrella26'
+import TriviaEstrella27 from './Screens/EstrellaBaby/TriviaEstrella27'
+
+
 import EstrellaAdd1 from './Screens/EstrellaBaby/EstrellaAdd1'
 import EstrellaAdd2 from './Screens/EstrellaBaby/EstrellaAdd2'
 import EstrellaAdd3 from './Screens/EstrellaBaby/EstrellaAdd3'
@@ -240,6 +368,25 @@ import EweTrivia6 from './Screens/Ewe/EweTrivia6'
 import EweTrivia7 from './Screens/Ewe/EweTrivia7'
 import EweTrivia8 from './Screens/Ewe/EweTrivia8'
 import EweTrivia9 from './Screens/Ewe/EweTrivia9'
+import EweTrivia10 from './Screens/Ewe/EweTrivia10'
+import EweTrivia11 from './Screens/Ewe/EweTrivia11'
+import EweTrivia12 from './Screens/Ewe/EweTrivia12'
+import EweTrivia13 from './Screens/Ewe/EweTrivia13'
+import EweTrivia14 from './Screens/Ewe/EweTrivia14'
+import EweTrivia15 from './Screens/Ewe/EweTrivia15'
+import EweTrivia16 from './Screens/Ewe/EweTrivia16'
+import EweTrivia17 from './Screens/Ewe/EweTrivia17'
+import EweTrivia18 from './Screens/Ewe/EweTrivia18'
+import EweTrivia19 from './Screens/Ewe/EweTrivia9'
+import EweTrivia20 from './Screens/Ewe/EweTrivia20'
+import EweTrivia21 from './Screens/Ewe/EweTrivia21'
+import EweTrivia22 from './Screens/Ewe/EweTrivia22'
+import EweTrivia23 from './Screens/Ewe/EweTrivia23'
+import EweTrivia24 from './Screens/Ewe/EweTrivia24'
+import EweTrivia25 from './Screens/Ewe/EweTrivia25'
+import EweTrivia26 from './Screens/Ewe/EweTrivia26'
+import EweTrivia27 from './Screens/Ewe/EweTrivia27'
+
 
 import AddEwe1 from './Screens/Ewe/AddEwe1'
 import AddEwe2 from './Screens/Ewe/AddEwe2'
@@ -284,6 +431,23 @@ import LiliTrivia6 from './Screens/Liliana/LiliTrivia6'
 import LiliTrivia7 from './Screens/Liliana/LiliTrivia7'
 import LiliTrivia8 from './Screens/Liliana/LiliTrivia8'
 import LiliTrivia9 from './Screens/Liliana/LiliTrivia9'
+import LiliTrivia10 from './Screens/Liliana/LiliTrivia10'
+import LiliTrivia11 from './Screens/Liliana/LiliTrivia11'
+import LiliTrivia12 from './Screens/Liliana/LiliTrivia12'
+import LiliTrivia13 from './Screens/Liliana/LiliTrivia13'
+import LiliTrivia14 from './Screens/Liliana/LiliTrivia14'
+import LiliTrivia15 from './Screens/Liliana/LiliTrivia15'
+import LiliTrivia16 from './Screens/Liliana/LiliTrivia16'
+import LiliTrivia17 from './Screens/Liliana/LiliTrivia17'
+import LiliTrivia18 from './Screens/Liliana/LiliTrivia18'
+import LiliTrivia19 from './Screens/Liliana/LiliTrivia19'
+import LiliTrivia20 from './Screens/Liliana/LiliTrivia20'
+import LiliTrivia21 from './Screens/Liliana/LiliTrivia21'
+import LiliTrivia22 from './Screens/Liliana/LiliTrivia22'
+import LiliTrivia23 from './Screens/Liliana/LiliTrivia23'
+import LiliTrivia24 from './Screens/Liliana/LiliTrivia24'
+import LiliTrivia25 from './Screens/Liliana/LiliTrivia25'
+import LiliTrivia26 from './Screens/Liliana/LiliTrivia26'
 //Liliana ==================================== //
 
 import Loading from './Screens/Loading'
@@ -323,6 +487,24 @@ const AppNavigator = StackNavigator({
     Ftrivia7: { screen: Ftrivia7 },
     Ftrivia8: { screen: Ftrivia8 },
     Ftrivia9: { screen: Ftrivia9 },
+    Ftrivia10: { screen: Ftrivia10 },
+    Ftrivia11: { screen: Ftrivia11 },
+    Ftrivia12: { screen: Ftrivia12 },
+    Ftrivia13: { screen: Ftrivia13 },
+    Ftrivia14: { screen: Ftrivia14 },
+    Ftrivia15: { screen: Ftrivia15 },
+    Ftrivia16: { screen: Ftrivia16 },
+    Ftrivia17: { screen: Ftrivia17 },
+    Ftrivia18: { screen: Ftrivia18 },
+    Ftrivia19: { screen: Ftrivia19 },
+    Ftrivia20: { screen: Ftrivia20 },
+    Ftrivia21: { screen: Ftrivia21 },
+    Ftrivia22: { screen: Ftrivia22 },
+    Ftrivia23: { screen: Ftrivia23 },
+    Ftrivia24: { screen: Ftrivia24 },
+    Ftrivia25: { screen: Ftrivia25 },
+    Ftrivia26: { screen: Ftrivia26 },
+    Ftrivia27: { screen: Ftrivia27 },
     //Farmx Trivia //
     //Farmx Add //
     Fadd1: { screen: Fadd1 },
@@ -354,6 +536,24 @@ const AppNavigator = StackNavigator({
     Atrivia7: { screen: Atrivia7 },
     Atrivia8: { screen: Atrivia8 },
     Atrivia9: { screen: Atrivia9 },
+
+    Atrivia10: { screen: Atrivia10 },
+    Atrivia11: { screen: Atrivia11 },
+    Atrivia12: { screen: Atrivia12 },
+    Atrivia13: { screen: Atrivia13 },
+    Atrivia14: { screen: Atrivia14 },
+    Atrivia15: { screen: Atrivia15 },
+    Atrivia16: { screen: Atrivia16 },
+    Atrivia17: { screen: Atrivia17 },
+    Atrivia18: { screen: Atrivia18 },
+    Atrivia19: { screen: Atrivia19 },
+    Atrivia20: { screen: Atrivia20 },
+    Atrivia21: { screen: Atrivia21 },
+    Atrivia22: { screen: Atrivia22 },
+    Atrivia23: { screen: Atrivia23 },
+    Atrivia24: { screen: Atrivia24 },
+    Atrivia25: { screen: Atrivia25 },
+    Atrivia26: { screen: Atrivia26 },
     //AuloGelio Trivia //
     //AuloGelio Aad //
     Aadd1: { screen: Aadd1 },
@@ -387,6 +587,25 @@ const AppNavigator = StackNavigator({
     BimbiTrivia7: { screen: BimbiTrivia7 },
     BimbiTrivia8: { screen: BimbiTrivia8 },
     BimbiTrivia9: { screen: BimbiTrivia9 },
+
+    BimbiTrivia10: { screen: BimbiTrivia10 },
+    BimbiTrivia11: { screen: BimbiTrivia11 },
+    BimbiTrivia12: { screen: BimbiTrivia12 },
+    BimbiTrivia13: { screen: BimbiTrivia13 },
+    BimbiTrivia14: { screen: BimbiTrivia14 },
+    BimbiTrivia15: { screen: BimbiTrivia15 },
+    BimbiTrivia16: { screen: BimbiTrivia16 },
+    BimbiTrivia17: { screen: BimbiTrivia17 },
+    BimbiTrivia18: { screen: BimbiTrivia18 },
+    BimbiTrivia19: { screen: BimbiTrivia19 },
+    BimbiTrivia20: { screen: BimbiTrivia20 },
+    BimbiTrivia21: { screen: BimbiTrivia21 },
+    BimbiTrivia22: { screen: BimbiTrivia22 },
+    BimbiTrivia23: { screen: BimbiTrivia23 },
+    BimbiTrivia24: { screen: BimbiTrivia24 },
+    BimbiTrivia25: { screen: BimbiTrivia25 },
+    BimbiTrivia26: { screen: BimbiTrivia26 },
+    BimbiTrivia27: { screen: BimbiTrivia27 },
     //Bimbi Trivia //
     //Bimbi Trivia //
     BimbiAdd1: { screen: BimbiAdd1 },
@@ -419,6 +638,24 @@ const AppNavigator = StackNavigator({
     NukTrivia7: { screen: NukTrivia7 },
     NukTrivia8: { screen: NukTrivia8 },
     NukTrivia9: { screen: NukTrivia9 },
+    NukTrivia10: { screen: NukTrivia10 },
+    NukTrivia11: { screen: NukTrivia11 },
+    NukTrivia12: { screen: NukTrivia12 },
+    NukTrivia13: { screen: NukTrivia13 },
+    NukTrivia14: { screen: NukTrivia14 },
+    NukTrivia15: { screen: NukTrivia15 },
+    NukTrivia16: { screen: NukTrivia16 },
+    NukTrivia17: { screen: NukTrivia17 },
+    NukTrivia18: { screen: NukTrivia18 },
+    NukTrivia19: { screen: NukTrivia19 },
+    NukTrivia20: { screen: NukTrivia20 },
+    NukTrivia21: { screen: NukTrivia21 },
+    NukTrivia22: { screen: NukTrivia22 },
+    NukTrivia23: { screen: NukTrivia23 },
+    NukTrivia24: { screen: NukTrivia24 },
+    NukTrivia25: { screen: NukTrivia25 },
+    NukTrivia26: { screen: NukTrivia26 },
+    NukTrivia27: { screen: NukTrivia27 },
     //Nuk Trivia //
 
     //Nuk Add //
@@ -452,6 +689,24 @@ const AppNavigator = StackNavigator({
     TriviaSilfab7: { screen: TriviaSilfab7 },
     TriviaSilfab8: { screen: TriviaSilfab8 },
     TriviaSilfab9: { screen: TriviaSilfab9 },
+    TriviaSilfab10: { screen: TriviaSilfab10 },
+    TriviaSilfab11: { screen: TriviaSilfab11 },
+    TriviaSilfab12: { screen: TriviaSilfab12 },
+    TriviaSilfab13: { screen: TriviaSilfab13 },
+    TriviaSilfab14: { screen: TriviaSilfab14 },
+    TriviaSilfab15: { screen: TriviaSilfab15 },
+    TriviaSilfab16: { screen: TriviaSilfab16 },
+    TriviaSilfab17: { screen: TriviaSilfab17 },
+    TriviaSilfab18: { screen: TriviaSilfab18 },
+    TriviaSilfab19: { screen: TriviaSilfab19 },
+    TriviaSilfab20: { screen: TriviaSilfab20 },
+    TriviaSilfab21: { screen: TriviaSilfab21 },
+    TriviaSilfab22: { screen: TriviaSilfab22 },
+    TriviaSilfab23: { screen: TriviaSilfab23 },
+    TriviaSilfab24: { screen: TriviaSilfab24 },
+    TriviaSilfab25: { screen: TriviaSilfab25 },
+    TriviaSilfab26: { screen: TriviaSilfab26 },
+    TriviaSilfab27: { screen: TriviaSilfab27 },
 
     SilfabAdd1: { screen: SilfabAdd1 },
     SilfabAdd2: { screen: SilfabAdd2 },
@@ -462,7 +717,7 @@ const AppNavigator = StackNavigator({
     SilfabAdd7: { screen: SilfabAdd7 },
     SilfabAdd8: { screen: SilfabAdd8 },
     SilfabAdd9: { screen: SilfabAdd9 },
-
+    
     SilfabAddError1: { screen: SilfabAddError1 },
     SilfabAddError2: { screen: SilfabAddError2 },
     SilfabAddError3: { screen: SilfabAddError3 },
@@ -480,6 +735,23 @@ const AppNavigator = StackNavigator({
     TriviaGraco7: { screen: TriviaGraco7 },
     TriviaGraco8: { screen: TriviaGraco8 },
     TriviaGraco9: { screen: TriviaGraco9 },
+    TriviaGraco10: { screen: TriviaGraco10 },
+    TriviaGraco11: { screen: TriviaGraco11 },
+    TriviaGraco12: { screen: TriviaGraco12 },
+    TriviaGraco13: { screen: TriviaGraco13 },
+    TriviaGraco14: { screen: TriviaGraco14 },
+    TriviaGraco15: { screen: TriviaGraco15 },
+    TriviaGraco16: { screen: TriviaGraco16 },
+    TriviaGraco17: { screen: TriviaGraco17 },
+    TriviaGraco18: { screen: TriviaGraco18 },
+    TriviaGraco19: { screen: TriviaGraco19 },
+    TriviaGraco20: { screen: TriviaGraco20 },
+    TriviaGraco21: { screen: TriviaGraco21 },
+    TriviaGraco22: { screen: TriviaGraco22 },
+    TriviaGraco23: { screen: TriviaGraco23 },
+    TriviaGraco24: { screen: TriviaGraco24 },
+    TriviaGraco25: { screen: TriviaGraco25 },
+    TriviaGraco26: { screen: TriviaGraco26 },
 
     GracoAdd1: { screen: GracoAdd1 },
     GracoAdd2: { screen: GracoAdd2 },
@@ -509,6 +781,24 @@ const AppNavigator = StackNavigator({
     TriviaEstrella7: { screen: TriviaEstrella7 },
     TriviaEstrella8: { screen: TriviaEstrella8 },
     TriviaEstrella9: { screen: TriviaEstrella9 },
+    TriviaEstrella10: { screen: TriviaEstrella10 },
+    TriviaEstrella11: { screen: TriviaEstrella11 },
+    TriviaEstrella12: { screen: TriviaEstrella12 },
+    TriviaEstrella13: { screen: TriviaEstrella13 },
+    TriviaEstrella14: { screen: TriviaEstrella14 },
+    TriviaEstrella15: { screen: TriviaEstrella15 },
+    TriviaEstrella16: { screen: TriviaEstrella16 },
+    TriviaEstrella17: { screen: TriviaEstrella17 },
+    TriviaEstrella18: { screen: TriviaEstrella18 },
+    TriviaEstrella19: { screen: TriviaEstrella19 },
+    TriviaEstrella20: { screen: TriviaEstrella20 },
+    TriviaEstrella21: { screen: TriviaEstrella21 },
+    TriviaEstrella22: { screen: TriviaEstrella22 },
+    TriviaEstrella23: { screen: TriviaEstrella23 },
+    TriviaEstrella24: { screen: TriviaEstrella24 },
+    TriviaEstrella25: { screen: TriviaEstrella25 },
+    TriviaEstrella26: { screen: TriviaEstrella26 },
+    TriviaEstrella27: { screen: TriviaEstrella27 },
 
     EstrellaAdd1: { screen: EstrellaAdd1 },
     EstrellaAdd2: { screen: EstrellaAdd2 },
@@ -538,6 +828,24 @@ const AppNavigator = StackNavigator({
     EweTrivia7: { screen: EweTrivia7 },
     EweTrivia8: { screen: EweTrivia8 },
     EweTrivia9: { screen: EweTrivia9 },
+    EweTrivia10: { screen: EweTrivia10 },
+    EweTrivia11: { screen: EweTrivia11 },
+    EweTrivia12: { screen: EweTrivia12 },
+    EweTrivia13: { screen: EweTrivia13 },
+    EweTrivia14: { screen: EweTrivia14 },
+    EweTrivia15: { screen: EweTrivia15 },
+    EweTrivia16: { screen: EweTrivia16 },
+    EweTrivia17: { screen: EweTrivia17 },
+    EweTrivia18: { screen: EweTrivia18 },
+    EweTrivia19: { screen: EweTrivia19 },
+    EweTrivia20: { screen: EweTrivia20 },
+    EweTrivia21: { screen: EweTrivia21 },
+    EweTrivia22: { screen: EweTrivia22 },
+    EweTrivia23: { screen: EweTrivia23 },
+    EweTrivia24: { screen: EweTrivia24 },
+    EweTrivia25: { screen: EweTrivia25 },
+    EweTrivia26: { screen: EweTrivia26 },
+    EweTrivia27: { screen: EweTrivia27 },
 
     AddEwe1: { screen: AddEwe1 },
     AddEwe2: { screen: AddEwe2 },
@@ -582,6 +890,23 @@ const AppNavigator = StackNavigator({
     LiliTrivia7: { screen: LiliTrivia7 },
     LiliTrivia8: { screen: LiliTrivia8 },
     LiliTrivia9: { screen: LiliTrivia9 },
+    LiliTrivia10: { screen: LiliTrivia10 },
+    LiliTrivia11: { screen: LiliTrivia11 },
+    LiliTrivia12: { screen: LiliTrivia12 },
+    LiliTrivia13: { screen: LiliTrivia13 },
+    LiliTrivia14: { screen: LiliTrivia14 },
+    LiliTrivia15: { screen: LiliTrivia15 },
+    LiliTrivia16: { screen: LiliTrivia16 },
+    LiliTrivia17: { screen: LiliTrivia17 },
+    LiliTrivia18: { screen: LiliTrivia18 },
+    LiliTrivia19: { screen: LiliTrivia19 },
+    LiliTrivia20: { screen: LiliTrivia20 },
+    LiliTrivia21: { screen: LiliTrivia21 },
+    LiliTrivia22: { screen: LiliTrivia22 },
+    LiliTrivia23: { screen: LiliTrivia23 },
+    LiliTrivia24: { screen: LiliTrivia24 },
+    LiliTrivia25: { screen: LiliTrivia25 },
+    LiliTrivia26: { screen: LiliTrivia26 },
     //Liliana ================================ //
 
     Loading: { screen: Loading },
