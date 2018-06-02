@@ -74,10 +74,10 @@ class BimbiTrivia10 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAdd10')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -91,7 +91,7 @@ class BimbiTrivia10 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAddError4')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -102,10 +102,10 @@ class BimbiTrivia10 extends Component {
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('BimbiAddError4')}
                                     ],
                                     { cancelable: false }
                                   )}

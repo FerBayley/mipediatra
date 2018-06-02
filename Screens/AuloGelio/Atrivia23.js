@@ -77,7 +77,7 @@ class Atrivia23 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Aadd23')}
                                     ],
                                     { cancelable: false }
                                   )}

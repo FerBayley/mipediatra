@@ -74,10 +74,10 @@ class BimbiTrivia19 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAdd19')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -91,7 +91,7 @@ class BimbiTrivia19 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('BimbiAddError7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -105,7 +105,7 @@ class BimbiTrivia19 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('BimbiAddError7')}
                                     ],
                                     { cancelable: false }
                                   )}

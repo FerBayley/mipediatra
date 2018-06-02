@@ -77,7 +77,7 @@ class Atrivia20 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Aadd20')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -91,7 +91,7 @@ class Atrivia20 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AaddError6')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -105,7 +105,7 @@ class Atrivia20 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('AaddError6')}
                                     ],
                                     { cancelable: false }
                                   )}

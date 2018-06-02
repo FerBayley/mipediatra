@@ -101,10 +101,29 @@ import Aadd6 from './Screens/AuloGelio/Aadd6'
 import Aadd7 from './Screens/AuloGelio/Aadd7'
 import Aadd8 from './Screens/AuloGelio/Aadd8'
 import Aadd9 from './Screens/AuloGelio/Aadd9'
+import Aadd10 from './Screens/AuloGelio/Aadd10'
+import Aadd11 from './Screens/AuloGelio/Aadd11'
+import Aadd12 from './Screens/AuloGelio/Aadd12'
+import Aadd13 from './Screens/AuloGelio/Aadd13'
+import Aadd14 from './Screens/AuloGelio/Aadd14'
+import Aadd15 from './Screens/AuloGelio/Aadd15'
+import Aadd16 from './Screens/AuloGelio/Aadd16'
+import Aadd17 from './Screens/AuloGelio/Aadd17'
+import Aadd18 from './Screens/AuloGelio/Aadd18'
+import Aadd19 from './Screens/AuloGelio/Aadd19'
+import Aadd20 from './Screens/AuloGelio/Aadd20'
+import Aadd21 from './Screens/AuloGelio/Aadd21'
+import Aadd22 from './Screens/AuloGelio/Aadd22'
+import Aadd23 from './Screens/AuloGelio/Aadd23'
+import Aadd24 from './Screens/AuloGelio/Aadd24'
 
 import AaddError1 from './Screens/AuloGelio/AaddError1'
 import AaddError2 from './Screens/AuloGelio/AaddError2'
 import AaddError3 from './Screens/AuloGelio/AaddError3'
+import AaddError4 from './Screens/AuloGelio/AaddError4'
+import AaddError5 from './Screens/AuloGelio/AaddError5'
+import AaddError6 from './Screens/AuloGelio/AaddError6'
+import AaddError7 from './Screens/AuloGelio/AaddError7'
 // AuloGelio Add//
 //AuloGelio
 
@@ -152,10 +171,33 @@ import BimbiAdd6 from './Screens/Bimbi/BimbiAdd6'
 import BimbiAdd7 from './Screens/Bimbi/BimbiAdd7'
 import BimbiAdd8 from './Screens/Bimbi/BimbiAdd8'
 import BimbiAdd9 from './Screens/Bimbi/BimbiAdd9'
+import BimbiAdd10 from './Screens/Bimbi/BimbiAdd10'
+import BimbiAdd11 from './Screens/Bimbi/BimbiAdd11'
+import BimbiAdd12 from './Screens/Bimbi/BimbiAdd12'
+import BimbiAdd13 from './Screens/Bimbi/BimbiAdd13'
+import BimbiAdd14 from './Screens/Bimbi/BimbiAdd14'
+import BimbiAdd15 from './Screens/Bimbi/BimbiAdd15'
+import BimbiAdd16 from './Screens/Bimbi/BimbiAdd16'
+import BimbiAdd17 from './Screens/Bimbi/BimbiAdd17'
+import BimbiAdd18 from './Screens/Bimbi/BimbiAdd18'
+import BimbiAdd19 from './Screens/Bimbi/BimbiAdd19'
+import BimbiAdd20 from './Screens/Bimbi/BimbiAdd20'
+import BimbiAdd21 from './Screens/Bimbi/BimbiAdd21'
+import BimbiAdd22 from './Screens/Bimbi/BimbiAdd22'
+import BimbiAdd23 from './Screens/Bimbi/BimbiAdd23'
+import BimbiAdd24 from './Screens/Bimbi/BimbiAdd24'
+import BimbiAdd25 from './Screens/Bimbi/BimbiAdd25'
+import BimbiAdd26 from './Screens/Bimbi/BimbiAdd26'
+import BimbiAdd27 from './Screens/Bimbi/BimbiAdd27'
 
 import BimbiAddError1 from './Screens/Bimbi/BimbiAddError1'
 import BimbiAddError2 from './Screens/Bimbi/BimbiAddError2'
 import BimbiAddError3 from './Screens/Bimbi/BimbiAddError3'
+import BimbiAddError4 from './Screens/Bimbi/BimbiAddError4'
+import BimbiAddError5 from './Screens/Bimbi/BimbiAddError5'
+import BimbiAddError6 from './Screens/Bimbi/BimbiAddError6'
+import BimbiAddError7 from './Screens/Bimbi/BimbiAddError7'
+import BimbiAddError8 from './Screens/Bimbi/BimbiAddError8'
 // Bimbi Add //
 // Bimbi
 
@@ -462,7 +504,9 @@ export default class App extends React.Component {
     }
 }
 
-const AppNavigator = StackNavigator({      
+const AppNavigator = StackNavigator({   
+    
+
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
@@ -536,7 +580,6 @@ const AppNavigator = StackNavigator({
     Atrivia7: { screen: Atrivia7 },
     Atrivia8: { screen: Atrivia8 },
     Atrivia9: { screen: Atrivia9 },
-
     Atrivia10: { screen: Atrivia10 },
     Atrivia11: { screen: Atrivia11 },
     Atrivia12: { screen: Atrivia12 },
@@ -565,10 +608,29 @@ const AppNavigator = StackNavigator({
     Aadd7: { screen: Aadd7 },
     Aadd8: { screen: Aadd8 },
     Aadd9: { screen: Aadd9 },
+    Aadd10: { screen: Aadd10 },
+    Aadd11: { screen: Aadd11 },
+    Aadd12: { screen: Aadd12 },
+    Aadd13: { screen: Aadd13 },
+    Aadd14: { screen: Aadd14 },
+    Aadd15: { screen: Aadd15 },
+    Aadd16: { screen: Aadd16 },
+    Aadd17: { screen: Aadd17 },
+    Aadd18: { screen: Aadd18 },
+    Aadd19: { screen: Aadd19 },
+    Aadd20: { screen: Aadd20 },
+    Aadd21: { screen: Aadd21 },
+    Aadd22: { screen: Aadd22 },
+    Aadd23: { screen: Aadd23 },
+    Aadd24: { screen: Aadd24 },
 
     AaddError1: { screen: AaddError1 },
     AaddError2: { screen: AaddError2 },
     AaddError3: { screen: AaddError3 },
+    AaddError4: { screen: AaddError4 },
+    AaddError5: { screen: AaddError5 },
+    AaddError6: { screen: AaddError6 },
+    AaddError7: { screen: AaddError7 },
     //AuloGelio Aad //
     //AuloGelio
 
@@ -617,10 +679,33 @@ const AppNavigator = StackNavigator({
     BimbiAdd7: { screen: BimbiAdd7 },
     BimbiAdd8: { screen: BimbiAdd8 },
     BimbiAdd9: { screen: BimbiAdd9 },
+    BimbiAdd10: { screen: BimbiAdd10 },
+    BimbiAdd11: { screen: BimbiAdd11 },
+    BimbiAdd12: { screen: BimbiAdd12 },
+    BimbiAdd13: { screen: BimbiAdd13 },
+    BimbiAdd14: { screen: BimbiAdd14 },
+    BimbiAdd15: { screen: BimbiAdd15 },
+    BimbiAdd16: { screen: BimbiAdd16 },
+    BimbiAdd17: { screen: BimbiAdd17 },
+    BimbiAdd18: { screen: BimbiAdd18 },
+    BimbiAdd19: { screen: BimbiAdd19 },
+    BimbiAdd20: { screen: BimbiAdd20 },
+    BimbiAdd21: { screen: BimbiAdd21 },
+    BimbiAdd22: { screen: BimbiAdd22 },
+    BimbiAdd23: { screen: BimbiAdd23 },
+    BimbiAdd24: { screen: BimbiAdd24 },
+    BimbiAdd25: { screen: BimbiAdd25 },
+    BimbiAdd26: { screen: BimbiAdd26 },
+    BimbiAdd27: { screen: BimbiAdd27 },
 
     BimbiAddError1: { screen: BimbiAddError1 },
     BimbiAddError2: { screen: BimbiAddError2 },
     BimbiAddError3: { screen: BimbiAddError3 },
+    BimbiAddError4: { screen: BimbiAddError4 },
+    BimbiAddError5: { screen: BimbiAddError5 },
+    BimbiAddError6: { screen: BimbiAddError6 },
+    BimbiAddError7: { screen: BimbiAddError7 },
+    BimbiAddError8: { screen: BimbiAddError8 },
     //Bimbi Trivia //
     //Bimbi
 

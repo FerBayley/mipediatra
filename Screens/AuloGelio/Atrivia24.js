@@ -74,7 +74,7 @@ class Atrivia24 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
                                       {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
@@ -88,10 +88,10 @@ class Atrivia24 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Aadd24')}
                                     ],
                                     { cancelable: false }
                                   )}
