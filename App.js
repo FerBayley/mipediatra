@@ -52,10 +52,33 @@ import Fadd6 from './Screens/Farmx/Fadd6'
 import Fadd7 from './Screens/Farmx/Fadd7'
 import Fadd8 from './Screens/Farmx/Fadd8'
 import Fadd9 from './Screens/Farmx/Fadd9'
+import Fadd10 from './Screens/Farmx/Fadd10'
+import Fadd11 from './Screens/Farmx/Fadd11'
+import Fadd12 from './Screens/Farmx/Fadd12'
+import Fadd13 from './Screens/Farmx/Fadd13'
+import Fadd14 from './Screens/Farmx/Fadd14'
+import Fadd15 from './Screens/Farmx/Fadd15'
+import Fadd16 from './Screens/Farmx/Fadd16'
+import Fadd17 from './Screens/Farmx/Fadd17'
+import Fadd18 from './Screens/Farmx/Fadd18'
+import Fadd19 from './Screens/Farmx/Fadd19'
+import Fadd20 from './Screens/Farmx/Fadd20'
+import Fadd21 from './Screens/Farmx/Fadd21'
+import Fadd22 from './Screens/Farmx/Fadd22'
+import Fadd23 from './Screens/Farmx/Fadd23'
+import Fadd24 from './Screens/Farmx/Fadd24'
+import Fadd25 from './Screens/Farmx/Fadd25'
+import Fadd26 from './Screens/Farmx/Fadd26'
+import Fadd27 from './Screens/Farmx/Fadd27'
 
 import FaddError1 from './Screens/Farmx/FaddError1'
 import FaddError2 from './Screens/Farmx/FaddError2'
 import FaddError3 from './Screens/Farmx/FaddError3'
+import FaddError4 from './Screens/Farmx/FaddError4'
+import FaddError5 from './Screens/Farmx/FaddError5'
+import FaddError6 from './Screens/Farmx/FaddError6'
+import FaddError7 from './Screens/Farmx/FaddError7'
+import FaddError8 from './Screens/Farmx/FaddError8'
 // Farmx Add//
 //Farmx
 
@@ -604,10 +627,33 @@ const AppNavigator = StackNavigator({
     Fadd7: { screen: Fadd7 },
     Fadd8: { screen: Fadd8 },
     Fadd9: { screen: Fadd9 },
+    Fadd10: { screen: Fadd10 },
+    Fadd11: { screen: Fadd11 },
+    Fadd12: { screen: Fadd12 },
+    Fadd13: { screen: Fadd13 },
+    Fadd14: { screen: Fadd14 },
+    Fadd15: { screen: Fadd15 },
+    Fadd16: { screen: Fadd16 },
+    Fadd17: { screen: Fadd17 },
+    Fadd18: { screen: Fadd18 },
+    Fadd19: { screen: Fadd19 },
+    Fadd20: { screen: Fadd20 },
+    Fadd21: { screen: Fadd21 },
+    Fadd22: { screen: Fadd22 },
+    Fadd23: { screen: Fadd23 },
+    Fadd24: { screen: Fadd24 },
+    Fadd25: { screen: Fadd25 },
+    Fadd26: { screen: Fadd26 },
+    Fadd27: { screen: Fadd27 },
 
     FaddError1: { screen: FaddError1 },
     FaddError2: { screen: FaddError2 },
     FaddError3: { screen: FaddError3 },
+    FaddError4: { screen: FaddError4 },
+    FaddError5: { screen: FaddError5 },
+    FaddError6: { screen: FaddError6 },
+    FaddError7: { screen: FaddError7 },
+    FaddError8: { screen: FaddError8 },
     //Farmx Add //
     //Farmx
 

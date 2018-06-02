@@ -75,7 +75,7 @@ class Ftrivia14 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('Fadd14')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -89,7 +89,7 @@ class Ftrivia14 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('FaddError5')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -103,7 +103,7 @@ class Ftrivia14 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('FaddError5')}
                                     ],
                                     { cancelable: false }
                                   )}

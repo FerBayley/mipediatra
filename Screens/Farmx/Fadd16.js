@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class Fadd1 extends Component {    
+class Fadd16 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -45,7 +45,7 @@ class Fadd1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Ftrivia10')}>
+                        <Button onPress={() => this.props.navigation.navigate('Ftrivia17')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Fadd1;
+export default Fadd16;

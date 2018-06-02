@@ -15,20 +15,20 @@ import {
     ImageBackground
 } from "react-native";
 
-class Fadd1 extends Component {    
+class Fadd27 extends Component {    
 
     static navigationOptions = {
         header: null,
         headerLeft: null,
         gesturesEnabled: false,
-    };  
+    };    
 
     render() {
 
-        const fadd1 = '../../assets/images/fadd1.png';
+        const fadd3 ='../../assets/images/fadd3.png';
 
         return (
-            <ImageBackground source={require( fadd1 )}
+            <ImageBackground source={require(fadd3 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -45,7 +45,7 @@ class Fadd1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Ftrivia10')}>
+                        <Button onPress={() => this.props.navigation.navigate('Fganaste')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Fadd1;
+export default Fadd27;

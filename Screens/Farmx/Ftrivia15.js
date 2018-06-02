@@ -72,10 +72,10 @@ class Ftrivia15 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('FaddError5')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -86,10 +86,10 @@ class Ftrivia15 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('Fadd15')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -103,7 +103,7 @@ class Ftrivia15 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('FaddError5')}
                                     ],
                                     { cancelable: false }
                                   )}
