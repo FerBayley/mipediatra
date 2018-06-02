@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class EstrellaAdd1 extends Component {    
+class EstrellaAddError6 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -43,7 +43,7 @@ class EstrellaAdd1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella10')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella19')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default EstrellaAdd1;
+export default EstrellaAddError6;

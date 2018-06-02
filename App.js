@@ -361,7 +361,6 @@ import TriviaEstrella6 from './Screens/EstrellaBaby/TriviaEstrella6'
 import TriviaEstrella7 from './Screens/EstrellaBaby/TriviaEstrella7'
 import TriviaEstrella8 from './Screens/EstrellaBaby/TriviaEstrella8'
 import TriviaEstrella9 from './Screens/EstrellaBaby/TriviaEstrella9'
-
 import TriviaEstrella10 from './Screens/EstrellaBaby/TriviaEstrella10'
 import TriviaEstrella11 from './Screens/EstrellaBaby/TriviaEstrella11'
 import TriviaEstrella12 from './Screens/EstrellaBaby/TriviaEstrella12'
@@ -391,10 +390,33 @@ import EstrellaAdd6 from './Screens/EstrellaBaby/EstrellaAdd6'
 import EstrellaAdd7 from './Screens/EstrellaBaby/EstrellaAdd7'
 import EstrellaAdd8 from './Screens/EstrellaBaby/EstrellaAdd8'
 import EstrellaAdd9 from './Screens/EstrellaBaby/EstrellaAdd9'
+import EstrellaAdd10 from './Screens/EstrellaBaby/EstrellaAdd10'
+import EstrellaAdd11 from './Screens/EstrellaBaby/EstrellaAdd11'
+import EstrellaAdd12 from './Screens/EstrellaBaby/EstrellaAdd12'
+import EstrellaAdd13 from './Screens/EstrellaBaby/EstrellaAdd13'
+import EstrellaAdd14 from './Screens/EstrellaBaby/EstrellaAdd14'
+import EstrellaAdd15 from './Screens/EstrellaBaby/EstrellaAdd15'
+import EstrellaAdd16 from './Screens/EstrellaBaby/EstrellaAdd16'
+import EstrellaAdd17 from './Screens/EstrellaBaby/EstrellaAdd17'
+import EstrellaAdd18 from './Screens/EstrellaBaby/EstrellaAdd18'
+import EstrellaAdd19 from './Screens/EstrellaBaby/EstrellaAdd19'
+import EstrellaAdd20 from './Screens/EstrellaBaby/EstrellaAdd20'
+import EstrellaAdd21 from './Screens/EstrellaBaby/EstrellaAdd21'
+import EstrellaAdd22 from './Screens/EstrellaBaby/EstrellaAdd22'
+import EstrellaAdd23 from './Screens/EstrellaBaby/EstrellaAdd23'
+import EstrellaAdd24 from './Screens/EstrellaBaby/EstrellaAdd24'
+import EstrellaAdd25 from './Screens/EstrellaBaby/EstrellaAdd25'
+import EstrellaAdd26 from './Screens/EstrellaBaby/EstrellaAdd26'
+import EstrellaAdd27 from './Screens/EstrellaBaby/EstrellaAdd27'
 
 import EstrellaAddError1 from './Screens/EstrellaBaby/EstrellaAddError1'
 import EstrellaAddError2 from './Screens/EstrellaBaby/EstrellaAddError2'
 import EstrellaAddError3 from './Screens/EstrellaBaby/EstrellaAddError3'
+import EstrellaAddError4 from './Screens/EstrellaBaby/EstrellaAddError4'
+import EstrellaAddError5 from './Screens/EstrellaBaby/EstrellaAddError5'
+import EstrellaAddError6 from './Screens/EstrellaBaby/EstrellaAddError6'
+import EstrellaAddError7 from './Screens/EstrellaBaby/EstrellaAddError7'
+import EstrellaAddError8 from './Screens/EstrellaBaby/EstrellaAddError8'
 //Estrella Baby =========================== //
 
 //Ewe ===================================== //
@@ -894,10 +916,33 @@ const AppNavigator = StackNavigator({
     EstrellaAdd7: { screen: EstrellaAdd7 },
     EstrellaAdd8: { screen: EstrellaAdd8 },
     EstrellaAdd9: { screen: EstrellaAdd9 },
+    EstrellaAdd10: { screen: EstrellaAdd10 },
+    EstrellaAdd11: { screen: EstrellaAdd11 },
+    EstrellaAdd12: { screen: EstrellaAdd12 },
+    EstrellaAdd13: { screen: EstrellaAdd13 },
+    EstrellaAdd14: { screen: EstrellaAdd14 },
+    EstrellaAdd15: { screen: EstrellaAdd15 },
+    EstrellaAdd16: { screen: EstrellaAdd16 },
+    EstrellaAdd17: { screen: EstrellaAdd17 },
+    EstrellaAdd18: { screen: EstrellaAdd18 },
+    EstrellaAdd19: { screen: EstrellaAdd19 },
+    EstrellaAdd20: { screen: EstrellaAdd20 },
+    EstrellaAdd21: { screen: EstrellaAdd21 },
+    EstrellaAdd22: { screen: EstrellaAdd22 },
+    EstrellaAdd23: { screen: EstrellaAdd23 },
+    EstrellaAdd24: { screen: EstrellaAdd24 },
+    EstrellaAdd25: { screen: EstrellaAdd25 },
+    EstrellaAdd26: { screen: EstrellaAdd26 },
+    EstrellaAdd27: { screen: EstrellaAdd27 },
 
     EstrellaAddError1: { screen: EstrellaAddError1 },
     EstrellaAddError2: { screen: EstrellaAddError2 },
     EstrellaAddError3: { screen: EstrellaAddError3 },
+    EstrellaAddError4: { screen: EstrellaAddError4 },
+    EstrellaAddError5: { screen: EstrellaAddError5 },
+    EstrellaAddError6: { screen: EstrellaAddError6 },
+    EstrellaAddError7: { screen: EstrellaAddError7 },
+    EstrellaAddError8: { screen: EstrellaAddError8 },
     //Estrella Baby ====================== //
 
     //Ewe ================================ //

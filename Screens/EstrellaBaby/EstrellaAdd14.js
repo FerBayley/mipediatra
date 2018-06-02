@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class EstrellaAdd1 extends Component {    
+class EstrellaAdd14 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -23,10 +23,10 @@ class EstrellaAdd1 extends Component {
 
     render() {
 
-        const fondoEstrella1 = '../../assets/images/estrella-add1.png';
+        const fondoEstrella2 = '../../assets/images/estrella-add2.png';
 
         return (
-            <ImageBackground source={require( fondoEstrella1 )}
+            <ImageBackground source={require( fondoEstrella2 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -34,7 +34,7 @@ class EstrellaAdd1 extends Component {
                         <StatusBar
                             barStyle="dark-content"
                         />
-                    </View>              
+                    </View>                 
                 </Content>
 
                 <Footer style={styles.Pie}>
@@ -43,7 +43,7 @@ class EstrellaAdd1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella10')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaEstrella15')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default EstrellaAdd1;
+export default EstrellaAdd14;
