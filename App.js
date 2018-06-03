@@ -633,8 +633,6 @@ import LiliTrivia21 from './Screens/Liliana/LiliTrivia21'
 import LiliTrivia22 from './Screens/Liliana/LiliTrivia22'
 import LiliTrivia23 from './Screens/Liliana/LiliTrivia23'
 import LiliTrivia24 from './Screens/Liliana/LiliTrivia24'
-import LiliTrivia25 from './Screens/Liliana/LiliTrivia25'
-import LiliTrivia26 from './Screens/Liliana/LiliTrivia26'
 //Liliana ==================================== //
 
 import Loading from './Screens/Loading'
@@ -1281,8 +1279,6 @@ const AppNavigator = StackNavigator({
     LiliTrivia22: { screen: LiliTrivia22 },
     LiliTrivia23: { screen: LiliTrivia23 },
     LiliTrivia24: { screen: LiliTrivia24 },
-    LiliTrivia25: { screen: LiliTrivia25 },
-    LiliTrivia26: { screen: LiliTrivia26 },
     //Liliana ================================ //
 
     Loading: { screen: Loading },
