@@ -45,7 +45,7 @@ class LiliError3 extends Component {
                                 <Text style={{ color: 'white' }}>VER MAS</Text>
                             </Button>                       
 
-                            <Button onPress={() => this.props.navigation.navigate('LiliTrivia1')}>
+                            <Button onPress={() => this.props.navigation.navigate('LiliTrivia10')}>
                                 <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>

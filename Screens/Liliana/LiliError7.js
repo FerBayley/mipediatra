@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class LiliAdd10 extends Component {    
+class LiliError7 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -25,10 +25,10 @@ class LiliAdd10 extends Component {
 
     render() {
 
-        const liliadd1 = '../../assets/images/lili-add1.png';
+        const liliAdd3 = '../../assets/images/liliana-add3.png';
 
         return (
-                <ImageBackground source={require( liliadd1 )}
+                <ImageBackground source={require( liliAdd3 )}
                     style={styles.container}>
                 <Container style={styles.container}>
                     <Content showsVerticalScrollIndicator={false}>
@@ -36,16 +36,16 @@ class LiliAdd10 extends Component {
                             <StatusBar
                                 barStyle="dark-content"
                             />
-                        </View>              
+                        </View>               
                     </Content>
 
                     <Footer style={styles.Pie}>
                         <FooterTab style={styles.Pie}>
-                            <Button onPress={() => Linking.openURL('https://www.instagram.com/lilianaelectrodomesticos/?hl=es-la')}>
+                            <Button onPress={() => Linking.openURL('https://www.youtube.com/watch?v=QZ5C64n9fw4')}>
                                 <Text style={{ color: 'white' }}>VER MAS</Text>
                             </Button>                       
 
-                            <Button onPress={() => this.props.navigation.navigate('LiliTrivia11')}>
+                            <Button onPress={() => this.props.navigation.navigate('LiliTrivia22')}>
                                 <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default LiliAdd10;
+export default LiliError7;

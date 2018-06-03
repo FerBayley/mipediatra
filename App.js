@@ -595,6 +595,10 @@ import LiliAdd24 from './Screens/Liliana/LiliAdd24'
 import LiliError1 from './Screens/Liliana/LiliError1'
 import LiliError2 from './Screens/Liliana/LiliError2'
 import LiliError3 from './Screens/Liliana/LiliError3'
+import LiliError4 from './Screens/Liliana/LiliError4'
+import LiliError5 from './Screens/Liliana/LiliError5'
+import LiliError6 from './Screens/Liliana/LiliError6'
+import LiliError7 from './Screens/Liliana/LiliError7'
 
 import LiliGanaste from './Screens/Liliana/LiliGanaste'
 
@@ -1234,6 +1238,10 @@ const AppNavigator = StackNavigator({
     LiliError1: { screen: LiliError1 },
     LiliError2: { screen: LiliError2 },
     LiliError3: { screen: LiliError3 },
+    LiliError4: { screen: LiliError4 },
+    LiliError5: { screen: LiliError5 },
+    LiliError6: { screen: LiliError6 },
+    LiliError7: { screen: LiliError7 },
 
     LiliGanaste: { screen: LiliGanaste },
 

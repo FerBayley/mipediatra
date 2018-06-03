@@ -45,7 +45,7 @@ class LiliAdd14 extends Component {
                                 <Text style={{ color: 'white' }}>VER MAS</Text>
                             </Button>                       
 
-                            <Button onPress={() => this.props.navigation.navigate('null')}>
+                            <Button onPress={() => this.props.navigation.navigate('LiliTrivia15')}>
                                 <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>
