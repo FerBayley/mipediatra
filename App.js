@@ -291,6 +291,11 @@ import NukAdd27 from './Screens/Nuk/NukAdd27'
 import NukAddError1 from './Screens/Nuk/NukAddError1'
 import NukAddError2 from './Screens/Nuk/NukAddError2'
 import NukAddError3 from './Screens/Nuk/NukAddError3'
+import NukAddError4 from './Screens/Nuk/NukAddError4'
+import NukAddError5 from './Screens/Nuk/NukAddError5'
+import NukAddError6 from './Screens/Nuk/NukAddError6'
+import NukAddError7 from './Screens/Nuk/NukAddError7'
+import NukAddError8 from './Screens/Nuk/NukAddError8'
 // Nuk Add //
 // Nuk
 // ================== Nuk ==================== //
@@ -938,6 +943,11 @@ const AppNavigator = StackNavigator({
     NukAddError1: { screen: NukAddError1 },
     NukAddError2: { screen: NukAddError2 },
     NukAddError3: { screen: NukAddError3 },
+    NukAddError4: { screen: NukAddError4 },
+    NukAddError5: { screen: NukAddError5 },
+    NukAddError6: { screen: NukAddError6 },
+    NukAddError7: { screen: NukAddError7 },
+    NukAddError8: { screen: NukAddError8 },
     //Nuk Add //
     //Nuk
     // ==================================== //

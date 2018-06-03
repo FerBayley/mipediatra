@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class NukAdd16 extends Component {    
+class NukAddError5 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -45,7 +45,7 @@ class NukAdd16 extends Component {
                                 <Text style={{ color: 'white' }}>VER MAS</Text>
                             </Button>                       
 
-                            <Button onPress={() => this.props.navigation.navigate('NukTrivia17')}>
+                            <Button onPress={() => this.props.navigation.navigate('NukTrivia16')}>
                                 <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                             </Button>
                         </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default NukAdd16;
+export default NukAddError5;

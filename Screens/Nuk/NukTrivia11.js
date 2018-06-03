@@ -75,10 +75,10 @@ class NukTrivia11 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukAdd11')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -89,10 +89,10 @@ class NukTrivia11 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('NukAddError4')}
                                     ],
                                     { cancelable: false }
                                 )}
@@ -106,7 +106,7 @@ class NukTrivia11 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('NukAddError4')}
                                     ],
                                     { cancelable: false }
                                   )}
