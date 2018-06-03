@@ -47,7 +47,7 @@ class GracoAdd1 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaGraco1')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaGraco10')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

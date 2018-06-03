@@ -268,6 +268,24 @@ import NukAdd6 from './Screens/Nuk/NukAdd6'
 import NukAdd7 from './Screens/Nuk/NukAdd7'
 import NukAdd8 from './Screens/Nuk/NukAdd8'
 import NukAdd9 from './Screens/Nuk/NukAdd9'
+import NukAdd10 from './Screens/Nuk/NukAdd10'
+import NukAdd11 from './Screens/Nuk/NukAdd11'
+import NukAdd12 from './Screens/Nuk/NukAdd12'
+import NukAdd13 from './Screens/Nuk/NukAdd13'
+import NukAdd14 from './Screens/Nuk/NukAdd14'
+import NukAdd15 from './Screens/Nuk/NukAdd15'
+import NukAdd16 from './Screens/Nuk/NukAdd16'
+import NukAdd17 from './Screens/Nuk/NukAdd17'
+import NukAdd18 from './Screens/Nuk/NukAdd18'
+import NukAdd19 from './Screens/Nuk/NukAdd19'
+import NukAdd20 from './Screens/Nuk/NukAdd20'
+import NukAdd21 from './Screens/Nuk/NukAdd21'
+import NukAdd22 from './Screens/Nuk/NukAdd22'
+import NukAdd23 from './Screens/Nuk/NukAdd23'
+import NukAdd24 from './Screens/Nuk/NukAdd24'
+import NukAdd25 from './Screens/Nuk/NukAdd25'
+import NukAdd26 from './Screens/Nuk/NukAdd26'
+import NukAdd27 from './Screens/Nuk/NukAdd27'
 
 
 import NukAddError1 from './Screens/Nuk/NukAddError1'
@@ -319,6 +337,24 @@ import SilfabAdd6 from './Screens/Silfab/SilfabAdd6'
 import SilfabAdd7 from './Screens/Silfab/SilfabAdd7'
 import SilfabAdd8 from './Screens/Silfab/SilfabAdd8'
 import SilfabAdd9 from './Screens/Silfab/SilfabAdd9'
+import SilfabAdd10 from './Screens/Silfab/SilfabAdd10'
+import SilfabAdd11 from './Screens/Silfab/SilfabAdd11'
+import SilfabAdd12 from './Screens/Silfab/SilfabAdd12'
+import SilfabAdd13 from './Screens/Silfab/SilfabAdd13'
+import SilfabAdd14 from './Screens/Silfab/SilfabAdd14'
+import SilfabAdd15 from './Screens/Silfab/SilfabAdd15'
+import SilfabAdd16 from './Screens/Silfab/SilfabAdd16'
+import SilfabAdd17 from './Screens/Silfab/SilfabAdd17'
+import SilfabAdd18 from './Screens/Silfab/SilfabAdd18'
+import SilfabAdd19 from './Screens/Silfab/SilfabAdd19'
+import SilfabAdd20 from './Screens/Silfab/SilfabAdd20'
+import SilfabAdd21 from './Screens/Silfab/SilfabAdd21'
+import SilfabAdd22 from './Screens/Silfab/SilfabAdd22'
+import SilfabAdd23 from './Screens/Silfab/SilfabAdd23'
+import SilfabAdd24 from './Screens/Silfab/SilfabAdd24'
+import SilfabAdd25 from './Screens/Silfab/SilfabAdd25'
+import SilfabAdd26 from './Screens/Silfab/SilfabAdd26'
+import SilfabAdd27 from './Screens/Silfab/SilfabAdd27'
 
 import SilfabAddError1 from './Screens/Silfab/SilfabAddError1'
 import SilfabAddError2 from './Screens/Silfab/SilfabAddError2'
@@ -351,8 +387,6 @@ import TriviaGraco21 from './Screens/Graco/TriviaGraco21'
 import TriviaGraco22 from './Screens/Graco/TriviaGraco22'
 import TriviaGraco23 from './Screens/Graco/TriviaGraco23'
 import TriviaGraco24 from './Screens/Graco/TriviaGraco24'
-import TriviaGraco25 from './Screens/Graco/TriviaGraco25'
-import TriviaGraco26 from './Screens/Graco/TriviaGraco26'
 
 import GracoAdd1 from './Screens/Graco/GracoAdd1'
 import GracoAdd2 from './Screens/Graco/GracoAdd2'
@@ -363,12 +397,32 @@ import GracoAdd6 from './Screens/Graco/GracoAdd6'
 import GracoAdd7 from './Screens/Graco/GracoAdd7'
 import GracoAdd8 from './Screens/Graco/GracoAdd8'
 import GracoAdd9 from './Screens/Graco/GracoAdd9'
+import GracoAdd10 from './Screens/Graco/GracoAdd10'
+import GracoAdd11 from './Screens/Graco/GracoAdd11'
+import GracoAdd12 from './Screens/Graco/GracoAdd12'
+import GracoAdd13 from './Screens/Graco/GracoAdd13'
+import GracoAdd14 from './Screens/Graco/GracoAdd14'
+import GracoAdd15 from './Screens/Graco/GracoAdd15'
+import GracoAdd16 from './Screens/Graco/GracoAdd16'
+import GracoAdd17 from './Screens/Graco/GracoAdd17'
+import GracoAdd18 from './Screens/Graco/GracoAdd18'
+import GracoAdd19 from './Screens/Graco/GracoAdd19'
+import GracoAdd20 from './Screens/Graco/GracoAdd20'
+import GracoAdd21 from './Screens/Graco/GracoAdd21'
+import GracoAdd22 from './Screens/Graco/GracoAdd22'
+import GracoAdd23 from './Screens/Graco/GracoAdd23'
+import GracoAdd24 from './Screens/Graco/GracoAdd24'
 
 import Gganaste from './Screens/Graco/Gganaste'
 
 import GracoAddError1 from './Screens/Graco/GracoAddError1'
 import GracoAddError2 from './Screens/Graco/GracoAddError2'
 import GracoAddError3 from './Screens/Graco/GracoAddError3'
+import GracoAddError4 from './Screens/Graco/GracoAddError4'
+import GracoAddError5 from './Screens/Graco/GracoAddError5'
+import GracoAddError6 from './Screens/Graco/GracoAddError6'
+import GracoAddError7 from './Screens/Graco/GracoAddError7'
+
 //Graco ==================================== //
 
 //Estrella Baby =========================== //
@@ -522,6 +576,21 @@ import LiliAdd6 from './Screens/Liliana/LiliAdd6'
 import LiliAdd7 from './Screens/Liliana/LiliAdd7'
 import LiliAdd8 from './Screens/Liliana/LiliAdd8'
 import LiliAdd9 from './Screens/Liliana/LiliAdd9'
+import LiliAdd10 from './Screens/Liliana/LiliAdd10'
+import LiliAdd11 from './Screens/Liliana/LiliAdd11'
+import LiliAdd12 from './Screens/Liliana/LiliAdd12'
+import LiliAdd13 from './Screens/Liliana/LiliAdd13'
+import LiliAdd14 from './Screens/Liliana/LiliAdd14'
+import LiliAdd15 from './Screens/Liliana/LiliAdd15'
+import LiliAdd16 from './Screens/Liliana/LiliAdd16'
+import LiliAdd17 from './Screens/Liliana/LiliAdd17'
+import LiliAdd18 from './Screens/Liliana/LiliAdd18'
+import LiliAdd19 from './Screens/Liliana/LiliAdd19'
+import LiliAdd20 from './Screens/Liliana/LiliAdd20'
+import LiliAdd21 from './Screens/Liliana/LiliAdd21'
+import LiliAdd22 from './Screens/Liliana/LiliAdd22'
+import LiliAdd23 from './Screens/Liliana/LiliAdd23'
+import LiliAdd24 from './Screens/Liliana/LiliAdd24'
 
 import LiliError1 from './Screens/Liliana/LiliError1'
 import LiliError2 from './Screens/Liliana/LiliError2'
@@ -843,6 +912,24 @@ const AppNavigator = StackNavigator({
     NukAdd7: { screen: NukAdd7 },
     NukAdd8: { screen: NukAdd8 },
     NukAdd9: { screen: NukAdd9 },
+    NukAdd10: { screen: NukAdd10 },
+    NukAdd11: { screen: NukAdd11 },
+    NukAdd12: { screen: NukAdd12 },
+    NukAdd13: { screen: NukAdd13 },
+    NukAdd14: { screen: NukAdd14 },
+    NukAdd15: { screen: NukAdd15 },
+    NukAdd16: { screen: NukAdd16 },
+    NukAdd17: { screen: NukAdd17 },
+    NukAdd18: { screen: NukAdd18 },
+    NukAdd19: { screen: NukAdd19 },
+    NukAdd20: { screen: NukAdd20 },
+    NukAdd21: { screen: NukAdd21 },
+    NukAdd22: { screen: NukAdd22 },
+    NukAdd23: { screen: NukAdd23 },
+    NukAdd24: { screen: NukAdd24 },
+    NukAdd25: { screen: NukAdd25 },
+    NukAdd26: { screen: NukAdd26 },
+    NukAdd27: { screen: NukAdd27 },
 
     NukAddError1: { screen: NukAddError1 },
     NukAddError2: { screen: NukAddError2 },
@@ -892,6 +979,25 @@ const AppNavigator = StackNavigator({
     SilfabAdd7: { screen: SilfabAdd7 },
     SilfabAdd8: { screen: SilfabAdd8 },
     SilfabAdd9: { screen: SilfabAdd9 },
+
+    SilfabAdd10: { screen: SilfabAdd10 },
+    SilfabAdd11: { screen: SilfabAdd11 },
+    SilfabAdd12: { screen: SilfabAdd12 },
+    SilfabAdd13: { screen: SilfabAdd13 },
+    SilfabAdd14: { screen: SilfabAdd14 },
+    SilfabAdd15: { screen: SilfabAdd15 },
+    SilfabAdd16: { screen: SilfabAdd16 },
+    SilfabAdd17: { screen: SilfabAdd17 },
+    SilfabAdd18: { screen: SilfabAdd18 },
+    SilfabAdd19: { screen: SilfabAdd19 },
+    SilfabAdd20: { screen: SilfabAdd20 },
+    SilfabAdd21: { screen: SilfabAdd21 },
+    SilfabAdd22: { screen: SilfabAdd22 },
+    SilfabAdd23: { screen: SilfabAdd23 },
+    SilfabAdd24: { screen: SilfabAdd24 },
+    SilfabAdd25: { screen: SilfabAdd25 },
+    SilfabAdd26: { screen: SilfabAdd26 },
+    SilfabAdd27: { screen: SilfabAdd27 },
     
     SilfabAddError1: { screen: SilfabAddError1 },
     SilfabAddError2: { screen: SilfabAddError2 },
@@ -925,8 +1031,6 @@ const AppNavigator = StackNavigator({
     TriviaGraco22: { screen: TriviaGraco22 },
     TriviaGraco23: { screen: TriviaGraco23 },
     TriviaGraco24: { screen: TriviaGraco24 },
-    TriviaGraco25: { screen: TriviaGraco25 },
-    TriviaGraco26: { screen: TriviaGraco26 },
 
     GracoAdd1: { screen: GracoAdd1 },
     GracoAdd2: { screen: GracoAdd2 },
@@ -937,10 +1041,29 @@ const AppNavigator = StackNavigator({
     GracoAdd7: { screen: GracoAdd7 },
     GracoAdd8: { screen: GracoAdd8 },
     GracoAdd9: { screen: GracoAdd9 },
+    GracoAdd10: { screen: GracoAdd10 },
+    GracoAdd11: { screen: GracoAdd11 },
+    GracoAdd12: { screen: GracoAdd12 },
+    GracoAdd13: { screen: GracoAdd13 },
+    GracoAdd14: { screen: GracoAdd14 },
+    GracoAdd15: { screen: GracoAdd15 },
+    GracoAdd16: { screen: GracoAdd16 },
+    GracoAdd17: { screen: GracoAdd17 },
+    GracoAdd18: { screen: GracoAdd18 },
+    GracoAdd19: { screen: GracoAdd19 },
+    GracoAdd20: { screen: GracoAdd20 },
+    GracoAdd21: { screen: GracoAdd21 },
+    GracoAdd22: { screen: GracoAdd22 },
+    GracoAdd23: { screen: GracoAdd23 },
+    GracoAdd24: { screen: GracoAdd24 },
 
     GracoAddError1: { screen: GracoAddError1 },
     GracoAddError2: { screen: GracoAddError2 },
     GracoAddError3: { screen: GracoAddError3 },
+    GracoAddError4: { screen: GracoAddError4 },
+    GracoAddError5: { screen: GracoAddError5 },
+    GracoAddError6: { screen: GracoAddError6 },
+    GracoAddError7: { screen: GracoAddError7 },
     //Graco ============================== //
 
     //Estrella Baby ====================== //
@@ -1092,6 +1215,21 @@ const AppNavigator = StackNavigator({
     LiliAdd7: { screen: LiliAdd7 },
     LiliAdd8: { screen: LiliAdd8 },
     LiliAdd9: { screen: LiliAdd9 },
+    LiliAdd10: { screen: LiliAdd10 },
+    LiliAdd11: { screen: LiliAdd11 },
+    LiliAdd12: { screen: LiliAdd12 },
+    LiliAdd13: { screen: LiliAdd13 },
+    LiliAdd14: { screen: LiliAdd14 },
+    LiliAdd15: { screen: LiliAdd15 },
+    LiliAdd16: { screen: LiliAdd16 },
+    LiliAdd17: { screen: LiliAdd17 },
+    LiliAdd18: { screen: LiliAdd18 },
+    LiliAdd19: { screen: LiliAdd19 },
+    LiliAdd20: { screen: LiliAdd20 },
+    LiliAdd21: { screen: LiliAdd21 },
+    LiliAdd22: { screen: LiliAdd22 },
+    LiliAdd23: { screen: LiliAdd23 },
+    LiliAdd24: { screen: LiliAdd24 },
 
     LiliError1: { screen: LiliError1 },
     LiliError2: { screen: LiliError2 },

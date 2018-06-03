@@ -78,7 +78,7 @@ class TriviaGraco14 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAddError5')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -89,29 +89,29 @@ class TriviaGraco14 extends Component {
                         <Button full style={styles.btnB}
                              onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAdd14')}
                                     ],
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>De 12 a 16hs</Text>
+                            <Text style={styles.blanco}>De 10 a 16hs</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('GracoAddError5')}
                                     ],
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>La del bebé acostado desde el interior (20cm)</Text>
+                            <Text style={styles.blanco}>De 12 a 16hs</Text>
                         </Button>
                     </View>
                 </Content>
