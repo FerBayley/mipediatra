@@ -6,7 +6,7 @@
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "platforms": ["ios", "android"],
-    "version": "2.2.6",
+    "version": "2.2.7",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "facebookScheme": "fb128016374696409",
@@ -19,7 +19,7 @@
     },
     "android": {
       "package": "com.ideaswhite.mipediatra",
-      "versionCode": 8
+      "versionCode": 9
     }
   }
 }
