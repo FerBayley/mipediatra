@@ -68,7 +68,7 @@ class TriviaSilfab24 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        La fpromula para calcular el IMC es:
+                        La formula para calcular el IMC es:
                         </Text>
                     </View>
 
@@ -76,10 +76,10 @@ class TriviaSilfab24 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAdd24')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,10 +90,10 @@ class TriviaSilfab24 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdderror8')}
                                     ],
                                     { cancelable: false }
                                 )}
@@ -107,7 +107,7 @@ class TriviaSilfab24 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAdderror8')}
                                     ],
                                     { cancelable: false }
                                   )}

@@ -76,10 +76,10 @@ class TriviaSilfab16 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAdd16')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -90,10 +90,10 @@ class TriviaSilfab16 extends Component {
                         <Button full style={styles.btnB}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAddError6')}
                                     ],
                                     { cancelable: false }
                                 )}
@@ -107,7 +107,7 @@ class TriviaSilfab16 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAddError6')}
                                     ],
                                     { cancelable: false }
                                   )}

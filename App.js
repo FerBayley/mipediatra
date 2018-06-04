@@ -364,6 +364,11 @@ import SilfabAdd27 from './Screens/Silfab/SilfabAdd27'
 import SilfabAddError1 from './Screens/Silfab/SilfabAddError1'
 import SilfabAddError2 from './Screens/Silfab/SilfabAddError2'
 import SilfabAddError3 from './Screens/Silfab/SilfabAddError3'
+import SilfabAddError4 from './Screens/Silfab/SilfabAddError4'
+import SilfabAddError5 from './Screens/Silfab/SilfabAddError5'
+import SilfabAddError6 from './Screens/Silfab/SilfabAddError6'
+import SilfabAddError7 from './Screens/Silfab/SilfabAddError7'
+import SilfabAddError8 from './Screens/Silfab/SilfabAddError8'
 //Silfab ===================================== //
 
 
@@ -1014,6 +1019,11 @@ const AppNavigator = StackNavigator({
     SilfabAddError1: { screen: SilfabAddError1 },
     SilfabAddError2: { screen: SilfabAddError2 },
     SilfabAddError3: { screen: SilfabAddError3 },
+    SilfabAddError4: { screen: SilfabAddError4 },
+    SilfabAddError5: { screen: SilfabAddError5 },
+    SilfabAddError6: { screen: SilfabAddError6 },
+    SilfabAddError7: { screen: SilfabAddError7 },
+    SilfabAddError8: { screen: SilfabAddError8 },
     //Silfab ============================= //
 
     //Graco ============================== //

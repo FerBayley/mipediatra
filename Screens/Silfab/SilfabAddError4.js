@@ -15,7 +15,7 @@ import {
     ImageBackground
 } from "react-native";
 
-class SilfabAdd23 extends Component {    
+class SilfabAddError4 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -25,10 +25,10 @@ class SilfabAdd23 extends Component {
 
     render() {
 
-        const add2 = '../../assets/images/silfab-add2.png';
+        const add1 = '../../assets/images/silfab-add1.png';
 
         return (
-            <ImageBackground source={require( add2 )}
+            <ImageBackground source={require( add1 )}
                 style={styles.container}>
                <Container style={styles.container}>
                 <Content showsVerticalScrollIndicator={false}>
@@ -45,7 +45,7 @@ class SilfabAdd23 extends Component {
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaSilfab24')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaSilfab13')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default SilfabAdd23;
+export default SilfabAddError4;

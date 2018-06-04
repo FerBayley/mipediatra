@@ -79,7 +79,7 @@ class TriviaSilfab27 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -93,7 +93,7 @@ class TriviaSilfab27 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                    {text: 'Avanzar', onPress: () => this.props.navigation.navigate('SilfabAdd27')}
                                     ],
                                     { cancelable: false }
                                 )}
@@ -107,7 +107,7 @@ class TriviaSilfab27 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('SilfabAddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
