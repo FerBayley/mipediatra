@@ -132,7 +132,7 @@ class LiliTrivia23 extends Component {
                         </Button>                       
 
                         <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
-                            <Text style={{ color: 'white' }}>IR AL INCIO</Text>
+                            <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
