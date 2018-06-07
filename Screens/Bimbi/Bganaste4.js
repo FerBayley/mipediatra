@@ -17,7 +17,7 @@ import {
     Share
 } from "react-native";
 
-class Bganaste extends Component {    
+class Bganaste4 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -158,4 +158,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Bganaste;
+export default Bganaste4;

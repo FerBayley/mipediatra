@@ -247,6 +247,36 @@ import BimbiAddError5 from './Screens/Bimbi/BimbiAddError5'
 import BimbiAddError6 from './Screens/Bimbi/BimbiAddError6'
 import BimbiAddError7 from './Screens/Bimbi/BimbiAddError7'
 import BimbiAddError8 from './Screens/Bimbi/BimbiAddError8'
+
+import Bganaste4 from './Screens/Bimbi/Bganaste4'
+import Bganaste7 from './Screens/Bimbi/Bganaste7'
+import Bganaste10 from './Screens/Bimbi/Bganaste10'
+import Bganaste13 from './Screens/Bimbi/Bganaste13'
+import Bganaste16 from './Screens/Bimbi/Bganaste16'
+import Bganaste19 from './Screens/Bimbi/Bganaste19'
+import Bganaste22 from './Screens/Bimbi/Bganaste22'
+import Bganaste25 from './Screens/Bimbi/Bganaste25'
+import Bganaste27 from './Screens/Bimbi/Bganaste27'
+
+import BimbiBrand4 from './Screens/Bimbi/BimbiBrand4'
+import BimbiBrand7 from './Screens/Bimbi/BimbiBrand7'
+import BimbiBrand10 from './Screens/Bimbi/BimbiBrand10'
+import BimbiBrand13 from './Screens/Bimbi/BimbiBrand13'
+import BimbiBrand16 from './Screens/Bimbi/BimbiBrand16'
+import BimbiBrand19 from './Screens/Bimbi/BimbiBrand19'
+import BimbiBrand22 from './Screens/Bimbi/BimbiBrand22'
+import BimbiBrand25 from './Screens/Bimbi/BimbiBrand25'
+import BimbiBrand27 from './Screens/Bimbi/BimbiBrand27'
+
+import PremioBimbi4 from './Screens/Bimbi/PremioBimbi4'
+import PremioBimbi7 from './Screens/Bimbi/PremioBimbi7'
+import PremioBimbi10 from './Screens/Bimbi/PremioBimbi10'
+import PremioBimbi13 from './Screens/Bimbi/PremioBimbi13'
+import PremioBimbi16 from './Screens/Bimbi/PremioBimbi16'
+import PremioBimbi19 from './Screens/Bimbi/PremioBimbi19'
+import PremioBimbi22 from './Screens/Bimbi/PremioBimbi22'
+import PremioBimbi25 from './Screens/Bimbi/PremioBimbi25'
+import PremioBimbi27 from './Screens/Bimbi/PremioBimbi27'
 // Bimbi Add //
 // Bimbi
 
@@ -929,6 +959,36 @@ const AppNavigator = StackNavigator({
     BimbiAddError6: { screen: BimbiAddError6 },
     BimbiAddError7: { screen: BimbiAddError7 },
     BimbiAddError8: { screen: BimbiAddError8 },
+
+    Bganaste4: { screen: Bganaste4 },
+    Bganaste7: { screen: Bganaste7 },
+    Bganaste10: { screen: Bganaste10 },
+    Bganaste13: { screen: Bganaste13 },
+    Bganaste16: { screen: Bganaste16 },
+    Bganaste19: { screen: Bganaste19 },
+    Bganaste22: { screen: Bganaste22 },
+    Bganaste25: { screen: Bganaste25 },
+    Bganaste27: { screen: Bganaste27 },
+
+    BimbiBrand4: { screen: BimbiBrand4 },
+    BimbiBrand7: { screen: BimbiBrand7 },
+    BimbiBrand10: { screen: BimbiBrand10 },
+    BimbiBrand13: { screen: BimbiBrand13 },
+    BimbiBrand16: { screen: BimbiBrand16 },
+    BimbiBrand19: { screen: BimbiBrand19 },
+    BimbiBrand22: { screen: BimbiBrand22 },
+    BimbiBrand25: { screen: BimbiBrand25 },
+    BimbiBrand27: { screen: BimbiBrand27 },
+
+    PremioBimbi4: { screen: PremioBimbi4 },
+    PremioBimbi7: { screen: PremioBimbi7 },
+    PremioBimbi10: { screen: PremioBimbi10 },
+    PremioBimbi13: { screen: PremioBimbi13 },
+    PremioBimbi16: { screen: PremioBimbi16 },
+    PremioBimbi19: { screen: PremioBimbi19 },
+    PremioBimbi22: { screen: PremioBimbi22 },
+    PremioBimbi25: { screen: PremioBimbi25 },
+    PremioBimbi27: { screen: PremioBimbi27 },
     //Bimbi Trivia //
     //Bimbi
 

@@ -17,7 +17,7 @@ import {
     Share
 } from "react-native";
 
-class Bganaste extends Component {    
+class Bganaste13 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -76,7 +76,7 @@ class Bganaste extends Component {
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BimbiBrand4')}
+                        onPress={() => this.props.navigation.navigate('BimbiBrand13')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -158,4 +158,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Bganaste;
+export default Bganaste13;
