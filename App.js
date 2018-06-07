@@ -560,6 +560,34 @@ import EstrellaAddError5 from './Screens/EstrellaBaby/EstrellaAddError5'
 import EstrellaAddError6 from './Screens/EstrellaBaby/EstrellaAddError6'
 import EstrellaAddError7 from './Screens/EstrellaBaby/EstrellaAddError7'
 import EstrellaAddError8 from './Screens/EstrellaBaby/EstrellaAddError8'
+
+import Eganaste7 from './Screens/EstrellaBaby/Eganaste7'
+import Eganaste10 from './Screens/EstrellaBaby/Eganaste10'
+import Eganaste13 from './Screens/EstrellaBaby/Eganaste13'
+import Eganaste16 from './Screens/EstrellaBaby/Eganaste16'
+import Eganaste19 from './Screens/EstrellaBaby/Eganaste19'
+import Eganaste22 from './Screens/EstrellaBaby/Eganaste22'
+import Eganaste25 from './Screens/EstrellaBaby/Eganaste25'
+import Eganaste27 from './Screens/EstrellaBaby/Eganaste27'
+
+import PremioEstrella7 from './Screens/EstrellaBaby/PremioEstrella7'
+import PremioEstrella10 from './Screens/EstrellaBaby/PremioEstrella10'
+import PremioEstrella13 from './Screens/EstrellaBaby/PremioEstrella13'
+import PremioEstrella16 from './Screens/EstrellaBaby/PremioEstrella16'
+import PremioEstrella19 from './Screens/EstrellaBaby/PremioEstrella19'
+import PremioEstrella22 from './Screens/EstrellaBaby/PremioEstrella22'
+import PremioEstrella25 from './Screens/EstrellaBaby/PremioEstrella25'
+import PremioEstrella27 from './Screens/EstrellaBaby/PremioEstrella27'
+
+import EstrellaBrand7 from './Screens/EstrellaBaby/EstrellaBrand7'
+import EstrellaBrand10 from './Screens/EstrellaBaby/EstrellaBrand10'
+import EstrellaBrand13 from './Screens/EstrellaBaby/EstrellaBrand13'
+import EstrellaBrand16 from './Screens/EstrellaBaby/EstrellaBrand16'
+import EstrellaBrand19 from './Screens/EstrellaBaby/EstrellaBrand19'
+import EstrellaBrand22 from './Screens/EstrellaBaby/EstrellaBrand22'
+import EstrellaBrand25 from './Screens/EstrellaBaby/EstrellaBrand25'
+import EstrellaBrand27 from './Screens/EstrellaBaby/EstrellaBrand27'
+
 //Estrella Baby =========================== //
 
 //Ewe ===================================== //
@@ -1268,6 +1296,34 @@ const AppNavigator = StackNavigator({
     EstrellaAddError6: { screen: EstrellaAddError6 },
     EstrellaAddError7: { screen: EstrellaAddError7 },
     EstrellaAddError8: { screen: EstrellaAddError8 },
+
+    Eganaste7: { screen: Eganaste7 },
+    Eganaste10: { screen: Eganaste10 },
+    Eganaste13: { screen: Eganaste13 },
+    Eganaste16: { screen: Eganaste16 },
+    Eganaste19: { screen: Eganaste19 },
+    Eganaste22: { screen: Eganaste22 },
+    Eganaste25: { screen: Eganaste25 },
+    Eganaste27: { screen: Eganaste27 },
+
+    PremioEstrella7: { screen: PremioEstrella7 },
+    PremioEstrella10: { screen: PremioEstrella10 },
+    PremioEstrella13: { screen: PremioEstrella13 },
+    PremioEstrella16: { screen: PremioEstrella16 },
+    PremioEstrella19: { screen: PremioEstrella19 },
+    PremioEstrella22: { screen: PremioEstrella22 },
+    PremioEstrella25: { screen: PremioEstrella25 },
+    PremioEstrella27: { screen: PremioEstrella27 },
+
+    EstrellaBrand7: { screen: EstrellaBrand7 },
+    EstrellaBrand10: { screen: EstrellaBrand10 },
+    EstrellaBrand13: { screen: EstrellaBrand13 },
+    EstrellaBrand16: { screen: EstrellaBrand16 },
+    EstrellaBrand19: { screen: EstrellaBrand19 },
+    EstrellaBrand22: { screen: EstrellaBrand22 },
+    EstrellaBrand25: { screen: EstrellaBrand25 },
+    EstrellaBrand27: { screen: EstrellaBrand27 },
+
     //Estrella Baby ====================== //
 
     //Ewe ================================ //
