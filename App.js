@@ -147,6 +147,15 @@ import AaddError4 from './Screens/AuloGelio/AaddError4'
 import AaddError5 from './Screens/AuloGelio/AaddError5'
 import AaddError6 from './Screens/AuloGelio/AaddError6'
 import AaddError7 from './Screens/AuloGelio/AaddError7'
+
+import AuloBrand4 from './Screens/AuloGelio/AuloBrand4'
+import AuloBrand7 from './Screens/AuloGelio/AuloBrand7'
+import AuloBrand10 from './Screens/AuloGelio/AuloBrand10'
+import AuloBrand13 from './Screens/AuloGelio/AuloBrand13'
+import AuloBrand16 from './Screens/AuloGelio/AuloBrand16'
+import AuloBrand19 from './Screens/AuloGelio/AuloBrand19'
+import AuloBrand22 from './Screens/AuloGelio/AuloBrand22'
+import AuloBrand25 from './Screens/AuloGelio/AuloBrand25'
 // AuloGelio Add//
 //AuloGelio
 
@@ -802,6 +811,15 @@ const AppNavigator = StackNavigator({
     AaddError5: { screen: AaddError5 },
     AaddError6: { screen: AaddError6 },
     AaddError7: { screen: AaddError7 },
+
+    AuloBrand4: { screen: AuloBrand4 },
+    AuloBrand7: { screen: AuloBrand7 },
+    AuloBrand10: { screen: AuloBrand10 },
+    AuloBrand13: { screen: AuloBrand13 },
+    AuloBrand16: { screen: AuloBrand16 },
+    AuloBrand19: { screen: AuloBrand19 },
+    AuloBrand22: { screen: AuloBrand22 },
+    AuloBrand25: { screen: AuloBrand25 },
     //AuloGelio Aad //
     //AuloGelio
 
