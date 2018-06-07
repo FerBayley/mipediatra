@@ -156,6 +156,23 @@ import AuloBrand16 from './Screens/AuloGelio/AuloBrand16'
 import AuloBrand19 from './Screens/AuloGelio/AuloBrand19'
 import AuloBrand22 from './Screens/AuloGelio/AuloBrand22'
 import AuloBrand25 from './Screens/AuloGelio/AuloBrand25'
+
+import PremioAulo4 from './Screens/AuloGelio/PremioAulo4'
+import PremioAulo7 from './Screens/AuloGelio/PremioAulo7'
+import PremioAulo10 from './Screens/AuloGelio/PremioAulo10'
+import PremioAulo13 from './Screens/AuloGelio/PremioAulo13'
+import PremioAulo16 from './Screens/AuloGelio/PremioAulo16'
+import PremioAulo19 from './Screens/AuloGelio/PremioAulo19'
+import PremioAulo22 from './Screens/AuloGelio/PremioAulo22'
+import PremioAulo25 from './Screens/AuloGelio/PremioAulo25'
+
+import Aganaste7 from './Screens/AuloGelio/Aganaste7'
+import Aganaste10 from './Screens/AuloGelio/Aganaste10'
+import Aganaste13 from './Screens/AuloGelio/Aganaste13'
+import Aganaste16 from './Screens/AuloGelio/Aganaste16'
+import Aganaste19 from './Screens/AuloGelio/Aganaste19'
+import Aganaste22 from './Screens/AuloGelio/Aganaste22'
+import Aganaste25 from './Screens/AuloGelio/Aganaste25'
 // AuloGelio Add//
 //AuloGelio
 
@@ -662,7 +679,7 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({   
-    
+    BrandScreen: { screen: BrandScreen },
 
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
@@ -820,6 +837,23 @@ const AppNavigator = StackNavigator({
     AuloBrand19: { screen: AuloBrand19 },
     AuloBrand22: { screen: AuloBrand22 },
     AuloBrand25: { screen: AuloBrand25 },
+
+    PremioAulo4: { screen: PremioAulo4 },
+    PremioAulo47: { screen: PremioAulo7 },
+    PremioAulo10: { screen: PremioAulo10 },
+    PremioAulo13: { screen: PremioAulo13 },
+    PremioAulo16: { screen: PremioAulo16 },
+    PremioAul19: { screen: PremioAulo19 },
+    PremioAulo22: { screen: PremioAulo22 },
+    PremioAulo25: { screen: PremioAulo25 },
+
+    Aganaste7: { screen: Aganaste7 },
+    Aganaste10: { screen: Aganaste10 },
+    Aganaste13: { screen: Aganaste13 },
+    Aganaste16: { screen: Aganaste16 },
+    Aganaste19: { screen: Aganaste19 },
+    Aganaste22: { screen: Aganaste22 },
+    Aganaste25: { screen: Aganaste25 },
     //AuloGelio Aad //
     //AuloGelio
 

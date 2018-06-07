@@ -17,7 +17,7 @@ import {
     Share
 } from "react-native";
 
-class Fganaste extends Component {    
+class Aganaste25 extends Component {    
 
     static navigationOptions = {
         header: null,
@@ -77,7 +77,7 @@ class Fganaste extends Component {
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('AuloBrand4')}
+                        onPress={() => this.props.navigation.navigate('AuloBrand25')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -154,4 +154,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Fganaste;
+export default Aganaste25;

@@ -180,7 +180,7 @@ class AuloBrand10 extends Component {
 
                             {/* Trivia AuloGelio */}   
                             <TouchableOpacity style={styles.AuloGelio}
-                                onPress={() => this.props.navigation.navigate('null')}>
+                                onPress={() => this.props.navigation.navigate('PremioAulo10')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
