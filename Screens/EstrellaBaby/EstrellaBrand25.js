@@ -87,7 +87,7 @@ class EstrellaBrand25 extends Component {
                         <Col style={{ height: 400 }}>
                             {/* Trivia Estrella */}
                             <TouchableOpacity style={styles.Estrella}
-                                onPress={() => this.props.navigation.navigate('null')}>
+                                onPress={() => this.props.navigation.navigate('PremioEstrella25')}>
                                 {/* Adjust the tint and intensity */}
                                 <BlurView tint="light" intensity={50}>
                                     <Image 

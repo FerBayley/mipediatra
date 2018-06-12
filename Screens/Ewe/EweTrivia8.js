@@ -132,7 +132,7 @@ class EweTrivia8 extends Component {
                             <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
+                        <Button onPress={() => this.props.navigation.navigate('EweBrand10')}>
                             <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>

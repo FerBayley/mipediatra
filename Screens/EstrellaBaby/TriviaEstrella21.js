@@ -128,7 +128,7 @@ class TriviaEstrella21 extends Component {
                             <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('BrandScreen')}>
+                        <Button onPress={() => this.props.navigation.navigate('EstrellaBrand4')}>
                             <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>
