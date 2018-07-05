@@ -38,7 +38,6 @@ class BrandPritt16 extends Component {
 
         const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
         const estrella = 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg';
-        const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
         const farmx = 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx.png';
         const aulogelio = 'http://ideaswhite.com/mipediatra/clientes/aulo/aulo.png';
         const ewe = 'http://ideaswhite.com/mipediatra/img/ewe-logo.jpg';
@@ -46,6 +45,8 @@ class BrandPritt16 extends Component {
         const silfab = 'http://ideaswhite.com/mipediatra/img/logo-silfab.png';
         const nuk = 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png';
         const liliana = 'http://ideaswhite.com/mipediatra/clientes/liliana/liliana-logo.png';
+        const pritt = 'http://ideaswhite.com/mipediatra/clientes/pritt/pritt-logo.png';
+        //const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
 
         return (
             <Container style={styles.container}>
@@ -98,18 +99,18 @@ class BrandPritt16 extends Component {
                             </TouchableOpacity>
                             {/* Trivia Estrella */}       
 
-                            {/* Trivia Gracco */}   
+                            {/* Trivia Pritt */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('PremioGraco16')}>
+                                onPress={() => this.props.navigation.navigate('null')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 132, height: 44 }} 
-                                            source={{ uri: graco }}
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: pritt }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>   
-                            {/* Trivia Gracco */}   
+                            {/* Trivia Pritt */}   
 
                             {/* Trivia Farmx */}
                             <TouchableOpacity style={styles.Farmx}

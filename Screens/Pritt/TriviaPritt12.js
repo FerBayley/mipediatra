@@ -78,7 +78,7 @@ class TriviaPritt12 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAdd12')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -92,7 +92,7 @@ class TriviaPritt12 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('GracoAddError4')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -106,7 +106,7 @@ class TriviaPritt12 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('GracoAddError4')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
                                     ],
                                     { cancelable: false }
                                   )}
