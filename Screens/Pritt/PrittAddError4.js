@@ -26,7 +26,7 @@ class PrittAddError4 extends Component {
 
     render() {
 
-        const add1 ='../../assets/images/graco-add1.png';
+        const add1 ='../../assets/images/pritt-add1.png';
 
 
         return (
@@ -43,11 +43,11 @@ class PrittAddError4 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('https://www.facebook.com/GracoArg')}>
+                        <Button onPress={() => Linking.openURL('http://www.prittworld.es/es.html')}>
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('TriviaGraco13')}>
+                        <Button onPress={() => this.props.navigation.navigate('TriviaPritt13')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

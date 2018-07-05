@@ -78,7 +78,7 @@ class TriviaPritt3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('PrittAddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -92,7 +92,7 @@ class TriviaPritt3 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('PrittAddError1')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -106,7 +106,7 @@ class TriviaPritt3 extends Component {
                                     'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('PrittAdd3')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -131,7 +131,7 @@ class TriviaPritt3 extends Component {
                             <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('BrandGraco7')}>
+                        <Button onPress={() => this.props.navigation.navigate('null')}>
                             <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>

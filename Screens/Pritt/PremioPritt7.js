@@ -85,7 +85,7 @@ class PremioPritt7 extends Component {
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
                         <Button
-                        onPress={() => this.props.navigation.navigate('TriviaGraco10')}>
+                        onPress={() => this.props.navigation.navigate('TriviaPritt7')}>
                             <Text style={{ color: 'white', fontSize: 14 }}>EMPEZAR A JUGAR</Text>
                         </Button>                       
                     </FooterTab>

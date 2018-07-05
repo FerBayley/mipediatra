@@ -101,7 +101,7 @@ class BrandPritt19 extends Component {
 
                             {/* Trivia Pritt */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('null')}>
+                                onPress={() => this.props.navigation.navigate('PremioPritt19')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 

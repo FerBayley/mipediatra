@@ -35,7 +35,7 @@ class Pganaste extends Component {
 
     render() {
 
-        const premioGraco = '../../assets/images/ganaste-graco.png';
+        const premioGraco = '../../assets/images/premiopritt.png';
 
         return (
             <Container style={styles.container}>
@@ -68,12 +68,12 @@ class Pganaste extends Component {
                         Ganaste una chance para el sorteo de este premio. Recibirás mails y alertas para informarte si ganaste.
                     </Text>
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                        <Image style={{ width: 240, height: 240 }}
+                        <Image style={{ width: 97, height: 356 }}
                         source={require( premioGraco )} />
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BrandGraco4')}
+                        onPress={() => this.props.navigation.navigate('BrandPritt4')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         fontSize: 28,
         textAlign: 'center',
         justifyContent: 'center',
-        marginTop: 50,
+        marginTop: 20,
         fontWeight: '800'
     },
     textoFelicita: {

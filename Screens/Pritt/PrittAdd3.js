@@ -25,7 +25,7 @@ class PrittAdd3 extends Component {
 
     render() {
 
-        const add3 = '../../assets/images/graco-add3.png';
+        const add3 = '../../assets/images/pritt-add3.png';
 
         return (
             <ImageBackground source={require( add3 )}
@@ -41,11 +41,11 @@ class PrittAdd3 extends Component {
 
                 <Footer style={styles.Pie}>
                     <FooterTab style={styles.Pie}>
-                        <Button onPress={() => Linking.openURL('https://www.facebook.com/GracoArg')}>
+                        <Button onPress={() => Linking.openURL('http://www.prittworld.es/es.html')}>
                             <Text style={{ color: 'white' }}>VER MAS</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('Gganaste')}>
+                        <Button onPress={() => this.props.navigation.navigate('Pganaste')}>
                             <Text style={{ color: 'white' }}>SEGUIR JUGANDO</Text>
                         </Button>
                     </FooterTab>

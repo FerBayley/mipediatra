@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, ActivityIndicator } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 import LoginScreen from './Screens/LoginScreen'
@@ -400,16 +399,8 @@ import PremioNuk19 from './Screens/Nuk/PremioNuk19'
 import PremioNuk22 from './Screens/Nuk/PremioNuk22'
 import PremioNuk25 from './Screens/Nuk/PremioNuk25'
 import PremioNuk27 from './Screens/Nuk/PremioNuk27'
-
 import BrandNuk4 from './Screens/Nuk/BrandNuk4'
 import BrandNuk7 from './Screens/Nuk/BrandNuk7'
-import BrandNuk10 from './Screens/Nuk/BrandNuk10'
-import BrandNuk13 from './Screens/Nuk/BrandNuk13'
-import BrandNuk16 from './Screens/Nuk/BrandNuk16'
-import BrandNuk19 from './Screens/Nuk/BrandNuk19'
-import BrandNuk22 from './Screens/Nuk/BrandNuk22'
-import BrandNuk25 from './Screens/Nuk/BrandNuk25'
-import BrandNuk27 from './Screens/Nuk/BrandNuk27'
 // Nuk Add //
 // Nuk
 // ================== Nuk ==================== //
@@ -595,8 +586,6 @@ import BrandGraco4 from './Screens/Graco/BrandGraco4'
 import BrandGraco7 from './Screens/Graco/BrandGraco7'
 import BrandGraco10 from './Screens/Graco/BrandGraco10'
 import BrandGraco13 from './Screens/Graco/BrandGraco13'
-import BrandGraco16 from './Screens/Graco/BrandGraco16'
-import BrandGraco19 from './Screens/Graco/BrandGraco19'
 import BrandGraco22 from './Screens/Graco/BrandGraco22'
 //Graco ==================================== //
 
@@ -774,7 +763,6 @@ import Eweganaste7 from './Screens/Ewe/Eweganaste7'
 import Eweganaste10 from './Screens/Ewe/Eweganaste10'
 import Eweganaste13 from './Screens/Ewe/Eweganaste13'
 import Eweganaste16 from './Screens/Ewe/Eweganaste16'
-import Eweganaste19 from './Screens/Ewe/Eweganaste19'
 import Eweganaste22 from './Screens/Ewe/Eweganaste22'
 import Eweganaste25 from './Screens/Ewe/Eweganaste25'
 import Eweganaste27 from './Screens/Ewe/Eweganaste27'
@@ -883,9 +871,8 @@ import LiliTrivia21 from './Screens/Liliana/LiliTrivia21'
 import LiliTrivia22 from './Screens/Liliana/LiliTrivia22'
 import LiliTrivia23 from './Screens/Liliana/LiliTrivia23'
 import LiliTrivia24 from './Screens/Liliana/LiliTrivia24'
-//Liliana ==================================== //
 
-//Pritt ==================================== //
+
 import TriviaPritt1 from './Screens/Pritt/TriviaPritt1'
 import TriviaPritt2 from './Screens/Pritt/TriviaPritt2'
 import TriviaPritt3 from './Screens/Pritt/TriviaPritt3'
@@ -902,14 +889,6 @@ import TriviaPritt13 from './Screens/Pritt/TriviaPritt13'
 import TriviaPritt14 from './Screens/Pritt/TriviaPritt14'
 import TriviaPritt15 from './Screens/Pritt/TriviaPritt15'
 
-import PrittAddError1 from './Screens/Pritt/PrittAddError1'
-import PrittAddError2 from './Screens/Pritt/PrittAddError2'
-import PrittAddError3 from './Screens/Pritt/PrittAddError3'
-import PrittAddError4 from './Screens/Pritt/PrittAddError4'
-import PrittAddError5 from './Screens/Pritt/PrittAddError5'
-import PrittAddError6 from './Screens/Pritt/PrittAddError6'
-import PrittAddError7 from './Screens/Pritt/PrittAddError7'
-
 import PrittAdd1 from './Screens/Pritt/PrittAdd1'
 import PrittAdd2 from './Screens/Pritt/PrittAdd2'
 import PrittAdd3 from './Screens/Pritt/PrittAdd3'
@@ -925,6 +904,14 @@ import PrittAdd12 from './Screens/Pritt/PrittAdd12'
 import PrittAdd13 from './Screens/Pritt/PrittAdd13'
 import PrittAdd14 from './Screens/Pritt/PrittAdd14'
 import PrittAdd15 from './Screens/Pritt/PrittAdd15'
+
+import PrittAddError1 from './Screens/Pritt/PrittAddError1'
+import PrittAddError2 from './Screens/Pritt/PrittAddError2'
+import PrittAddError3 from './Screens/Pritt/PrittAddError3'
+import PrittAddError4 from './Screens/Pritt/PrittAddError4'
+import PrittAddError5 from './Screens/Pritt/PrittAddError5'
+import PrittAddError6 from './Screens/Pritt/PrittAddError6'
+import PrittAddError7 from './Screens/Pritt/PrittAddError7'
 
 import PremioPritt from './Screens/Pritt/PremioPritt'
 import PremioPritt4 from './Screens/Pritt/PremioPritt4'
@@ -943,7 +930,7 @@ import Pganaste16 from './Screens/Pritt/Pganaste16'
 import Pganaste19 from './Screens/Pritt/Pganaste19'
 import Pganaste22 from './Screens/Pritt/Pganaste22'
 
-import BrandPritt4 from './Screens/Pritt/Pganaste'
+import BrandPritt4 from './Screens/Pritt/BrandPritt4'
 import BrandPritt7 from './Screens/Pritt/BrandPritt7'
 import BrandPritt10 from './Screens/Pritt/BrandPritt10'
 import BrandPritt13 from './Screens/Pritt/BrandPritt13'
@@ -1853,21 +1840,21 @@ const AppNavigator = StackNavigator({
 
 
     //Pritt  ================================ //
-    TriviaPritt1: { screen: LiliTrivia1 },
-    TriviaPritt2: { screen: LiliTrivia2 },
-    TriviaPritt3: { screen: LiliTrivia3 },
-    TriviaPritt4: { screen: LiliTrivia4 },
-    TriviaPritt5: { screen: LiliTrivia5 },
-    TriviaPritt6: { screen: LiliTrivia6 },
-    TriviaPritt7: { screen: LiliTrivia7 },
-    TriviaPritt8: { screen: LiliTrivia8 },
-    TriviaPritt9: { screen: LiliTrivia9 },
-    TriviaPritt10: { screen: LiliTrivia10 },
-    TriviaPritt11: { screen: LiliTrivia11 },
-    TriviaPritt12: { screen: LiliTrivia12 },
-    TriviaPritt13: { screen: LiliTrivia13 },
-    TriviaPritt14: { screen: LiliTrivia14 },
-    TriviaPritt15: { screen: LiliTrivia15 },
+    TriviaPritt1: { screen: TriviaPritt1 },
+    TriviaPritt2: { screen: TriviaPritt2 },
+    TriviaPritt3: { screen: TriviaPritt3 },
+    TriviaPritt4: { screen: TriviaPritt4 },
+    TriviaPritt5: { screen: TriviaPritt5 },
+    TriviaPritt6: { screen: TriviaPritt6 },
+    TriviaPritt7: { screen: TriviaPritt7 },
+    TriviaPritt8: { screen: TriviaPritt8 },
+    TriviaPritt9: { screen: TriviaPritt9 },
+    TriviaPritt10: { screen: TriviaPritt10 },
+    TriviaPritt11: { screen: TriviaPritt11 },
+    TriviaPritt12: { screen: TriviaPritt12 },
+    TriviaPritt13: { screen: TriviaPritt13 },
+    TriviaPritt14: { screen: TriviaPritt14 },
+    TriviaPritt15: { screen: TriviaPritt15 },
 
     PrittAddError1: { screen: PrittAddError1 },
     PrittAddError2: { screen: PrittAddError2 },
@@ -1877,20 +1864,21 @@ const AppNavigator = StackNavigator({
     PrittAddError6: { screen: PrittAddError6 },
     PrittAddError7: { screen: PrittAddError7 },
 
-    PrittAdd1: { screen: LiliTrivia1 },
-    PrittAdd2: { screen: LiliTrivia2 },
-    PrittAdd3: { screen: LiliTrivia3 },
-    PrittAdd4: { screen: LiliTrivia4 },
-    PrittAdd5: { screen: LiliTrivia5 },
-    PrittAdd7: { screen: LiliTrivia6 },
-    PrittAdd8: { screen: LiliTrivia7 },
-    PrittAdd9: { screen: LiliTrivia8 },
-    PrittAdd10: { screen: LiliTrivia9 },
-    PrittAdd11: { screen: LiliTrivia10 },
-    PrittAdd12: { screen: LiliTrivia11 },
-    PrittAdd13: { screen: LiliTrivia12 },
-    PrittAdd14: { screen: LiliTrivia13 },
-    PrittAdd15: { screen: LiliTrivia14 },
+    PrittAdd1: { screen: PrittAdd1 },
+    PrittAdd2: { screen: PrittAdd2 },
+    PrittAdd3: { screen: PrittAdd3 },
+    PrittAdd4: { screen: PrittAdd4 },
+    PrittAdd5: { screen: PrittAdd5 },
+    PrittAdd6: { screen: PrittAdd6 },
+    PrittAdd7: { screen: PrittAdd7 },
+    PrittAdd8: { screen: PrittAdd8 },
+    PrittAdd9: { screen: PrittAdd9 },
+    PrittAdd10: { screen: PrittAdd10 },
+    PrittAdd11: { screen: PrittAdd11 },
+    PrittAdd12: { screen: PrittAdd12 },
+    PrittAdd13: { screen: PrittAdd13 },
+    PrittAdd14: { screen: PrittAdd14 },
+    PrittAdd15: { screen: PrittAdd15 },
 
     PremioPritt: { screen: PremioPritt },
     PremioPritt4: { screen: PremioPritt4 },

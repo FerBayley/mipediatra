@@ -73,7 +73,7 @@ class Pganaste16 extends Component {
                     </View>
 
                     <Button block style={ styles.botonSegui }
-                        onPress={() => this.props.navigation.navigate('BrandGraco16')}
+                        onPress={() => this.props.navigation.navigate('BrandPritt16')}
                     >
                         <Text style={styles.textDelBoton}>Seguí sumando chances para ganar</Text>
                     </Button>

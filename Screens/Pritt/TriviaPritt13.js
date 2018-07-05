@@ -75,10 +75,10 @@ class TriviaPritt13 extends Component {
                         <Button full style={styles.btnA}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Correcta',
+                                    'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('PrittAddError7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -92,7 +92,7 @@ class TriviaPritt13 extends Component {
                                     'Respuesta Incorrecta',
                                     '',
                                     [
-                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Seguí participando', onPress: () => this.props.navigation.navigate('PrittAddError7')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -103,10 +103,10 @@ class TriviaPritt13 extends Component {
                         <Button full style={styles.btnC}
                             onPress={() =>
                                 Alert.alert(
-                                    'Respuesta Incorrecta',
+                                    'Respuesta Correcta',
                                     '',
                                     [
-                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('null')}
+                                      {text: 'Avanzar', onPress: () => this.props.navigation.navigate('PrittAdd13')}
                                     ],
                                     { cancelable: false }
                                   )}
@@ -131,7 +131,7 @@ class TriviaPritt13 extends Component {
                             <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('BrandGraco22')}>
+                        <Button onPress={() => this.props.navigation.navigate('null')}>
                             <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>
