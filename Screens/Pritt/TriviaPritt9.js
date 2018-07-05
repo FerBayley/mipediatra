@@ -67,7 +67,7 @@ class TriviaPritt9 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            El SRI del grupo 0 y 0+ siempre se coloca:
+                        La palabra collage proviene del término francés “coller” que significa:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt9 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>En el asiento de adelante</Text>
+                            <Text style={styles.blanco}>Tomar</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt9 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>En dirección al conductor</Text>
+                            <Text style={styles.blanco}>Cortar</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt9 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>Mirando hacia la luneta</Text>
+                            <Text style={styles.blanco}>Pegar</Text>
                         </Button>
                     </View>
                 </Content>

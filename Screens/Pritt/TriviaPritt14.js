@@ -67,7 +67,7 @@ class TriviaPritt14 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        La Sociedad Argentina de Pediatría recomienda no exponer al bebé  -mayor de 6 meses- al sol
+                        El pegamento PRITT Stick:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt14 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>De 11 a 14hs</Text>
+                            <Text style={styles.blanco}>No contiene solventes y es lavable</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt14 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>De 10 a 16hs</Text>
+                            <Text style={styles.blanco}>Es apto para uso escolar</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt14 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>De 12 a 16hs</Text>
+                            <Text style={styles.blanco}>Todas las anteriores</Text>
                         </Button>
                     </View>
                 </Content>

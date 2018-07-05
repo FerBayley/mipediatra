@@ -67,7 +67,7 @@ class TriviaPritt11 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        La cantidad de horas de sueño promedio diario de un bebé recién nacido es:
+                        Los PRITT TaK son cuadraditos adhesivos multiuso:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt11 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>2 horas</Text>
+                            <Text style={styles.blanco}>Remobibles y reutilizables</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt11 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>12 horas</Text>
+                            <Text style={styles.blanco}>No tóxicos</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt11 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>17 horas</Text>
+                            <Text style={styles.blanco}>Ambos</Text>
                         </Button>
                     </View>
                 </Content>

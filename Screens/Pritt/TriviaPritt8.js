@@ -67,7 +67,7 @@ class TriviaPritt8 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            A partir de qué edad los niños deben usar un SRI:
+                        PRITT Hobby Silicona Líquida, es un pegamento:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt8 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>2 años</Text>
+                            <Text style={styles.blanco}>De uso Escolar</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt8 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>8 años</Text>
+                            <Text style={styles.blanco}>De uso Profesional</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt8 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>Desde el primer viaje en vehículo</Text>
+                            <Text style={styles.blanco}>De uso Intensivo</Text>
                         </Button>
                     </View>
                 </Content>

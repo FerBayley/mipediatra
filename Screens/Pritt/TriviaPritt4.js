@@ -67,7 +67,7 @@ class TriviaPritt4 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            La practicuna Graco Napper Forecaster, además de ser cuna y corralito trae:
+                        ¿Cuál de estos pegamentos PRITT es ideal para pegar goma eva, madera, corcho y tela?
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Capota</Text>
+                            <Text style={styles.blanco}>PRITT Hobby Silicona Líquida</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt4 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>Napper y cambiador</Text>
+                            <Text style={styles.blanco}>PRITT Stick Original</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt4 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Almohadas</Text>
+                            <Text style={styles.blanco}>Cola Blanca PRITT</Text>
                         </Button>
                     </View>
                 </Content>

@@ -67,7 +67,7 @@ class TriviaPritt12 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        Según la Sociedad Argentina de Pediatría, un bebé duerme más seguro:
+                        PRITT Multi Fix es ideal para:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt12 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>En su cuna</Text>
+                            <Text style={styles.blanco}>Uso esolar</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt12 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El la cama de los padres</Text>
+                            <Text style={styles.blanco}>Uso profesional</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt12 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>Junto a su mamá</Text>
+                            <Text style={styles.blanco}>Ambos</Text>
                         </Button>
                     </View>
                 </Content>

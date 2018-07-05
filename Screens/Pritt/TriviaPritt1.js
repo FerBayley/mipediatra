@@ -67,7 +67,7 @@ class TriviaPritt1 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            El booster sin respaldo debe ser usado por niños de:
+                        ¿Cuál es el pegamento PRITT ideal para pegar papel, cartón y fotografías sin derrames?
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt1 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>15 a 25kg</Text>
+                            <Text style={styles.blanco}>Pritt Hobby Silicona Líquida</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt1 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>22 a 45 Kg</Text>
+                            <Text style={styles.blanco}>Pritt Stick Original</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt1 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Mayor altura que 1.5m </Text>
+                            <Text style={styles.blanco}>Cola Blanca Pritt</Text>
                         </Button>
                     </View>
                 </Content>

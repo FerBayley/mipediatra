@@ -67,7 +67,7 @@ class TriviaPritt15 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        Las Butacas Graco resisten:
+                        PRITT es el único pegamento en barra del mundo hecho con:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt15 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El doble de fuerza de impacto requerido por estándares</Text>
+                            <Text style={styles.blanco}>Papa y azúcar</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt15 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>El agua</Text>
+                            <Text style={styles.blanco}>Fibra de caña</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt15 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>El calor</Text>
+                            <Text style={styles.blanco}>Baba de caracol</Text>
                         </Button>
                     </View>
                 </Content>

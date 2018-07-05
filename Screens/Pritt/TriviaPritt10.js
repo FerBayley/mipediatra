@@ -67,7 +67,7 @@ class TriviaPritt10 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        El Graco Travel Sistem Modes equivale a 3 cochecitos y tiene:
+                        A diferencia de la pintura, en el collage se incorporan elementos:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt10 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>3 formas de uso</Text>
+                            <Text style={styles.blanco}>De distinto color</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt10 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>5 formas de uso</Text>
+                            <Text style={styles.blanco}>De distinto material</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt10 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>10 formas de uso</Text>
+                            <Text style={styles.blanco}>Con pincel</Text>
                         </Button>
                     </View>
                 </Content>

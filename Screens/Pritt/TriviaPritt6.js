@@ -67,7 +67,7 @@ class TriviaPritt6 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            El SRI Graco 4everExtend2Fit puede ser usada de:
+                        Los PRITT Tak son:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-30kg</Text>
+                            <Text style={styles.blanco}>Hojas adhesivas</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt6 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-40Kg</Text>
+                            <Text style={styles.blanco}>Cuadritos Adhesivos Multiusos</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt6 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>0-55Kg</Text>
+                            <Text style={styles.blanco}>Stickers escolares</Text>
                         </Button>
                     </View>
                 </Content>

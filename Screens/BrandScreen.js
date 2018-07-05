@@ -101,7 +101,7 @@ class BrandScreen extends Component {
 
                             {/* Trivia Pritt */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('null')}>
+                                onPress={() => this.props.navigation.navigate('PremioPritt')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
@@ -286,10 +286,10 @@ const styles = StyleSheet.create({
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 5
+        marginBottom: 2
     },
     Graco: {
-        marginTop: 30,
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
@@ -298,16 +298,16 @@ const styles = StyleSheet.create({
         marginTop: 40,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 5
+        marginBottom: 2
     },
     Farmx: {
-        marginTop: 30,
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
     AuloGelio: {
-        marginTop: 25,
+        marginTop: 35,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
@@ -326,7 +326,7 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     Silfab: {
-        marginTop: 25,
+        marginTop: 23,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5

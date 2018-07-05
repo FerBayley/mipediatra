@@ -67,7 +67,7 @@ class TriviaPritt2 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            El SRI Graco Forever es un SRI:
+                        PRITT Hobby Silicona Líquida es un pegamento:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt2 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Grupo 0+</Text>
+                            <Text style={styles.blanco}>Blanco y Multiuso</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt2 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Grupo 2</Text>
+                            <Text style={styles.blanco}>Negro y Multiuso</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt2 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>Abarca del grupo 0 al 3</Text>
+                            <Text style={styles.blanco}>Transparente y Multiuso</Text>
                         </Button>
                     </View>
                 </Content>

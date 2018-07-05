@@ -67,7 +67,7 @@ class TriviaPritt5 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            Cuál es el lugar más seguro para colocar el SRI, si el asiento trasero central no cuenta con cinturón compatible:
+                        El pegamento PRITT Stick Original es una barra disponible en :
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>En el asiento trasero detrás de conductor</Text>
+                            <Text style={styles.blanco}>1 tamaño</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt5 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>En el asiento trasero del lado del acompañante</Text>
+                            <Text style={styles.blanco}>2 tamaños</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt5 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>En el asiento de adelante</Text>
+                            <Text style={styles.blanco}>3 tamaños</Text>
                         </Button>
                     </View>
                 </Content>

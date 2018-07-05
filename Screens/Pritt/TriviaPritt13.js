@@ -67,7 +67,7 @@ class TriviaPritt13 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                        La altura segura de la baranda de una cuna debe ser
+                        El pegamento PRITT Stick Original puede mantenerse en su envase sin secarse:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt13 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La del bebé parado desde el interior (60cm)</Text>
+                            <Text style={styles.blanco}>Por semanas</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt13 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La del bebé sentado desde el interior (40cm)</Text>
+                            <Text style={styles.blanco}>Por meses</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt13 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>La del bebé acostado desde el interior (20cm)</Text>
+                            <Text style={styles.blanco}>Por años</Text>
                         </Button>
                     </View>
                 </Content>

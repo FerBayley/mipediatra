@@ -67,7 +67,7 @@ class TriviaPritt3 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            Todas las butacas y boosters Graco están homologados y cumplen 
+                        PRITT Multi Fix es un adhesivo: 
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>La Norma Federal 213 de Seguridad de Automóviles </Text>
+                            <Text style={styles.blanco}>Escolar multimaterial</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt3 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>Las normas National Highway Traffic Safety Administrartion de EE UU</Text>
+                            <Text style={styles.blanco}>Transparente y No tóxico</Text>
                         </Button>
 
                         <Button full style={styles.btnC}

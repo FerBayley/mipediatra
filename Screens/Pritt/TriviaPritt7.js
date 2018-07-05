@@ -67,7 +67,7 @@ class TriviaPritt7 extends Component {
                             <Image style={{ width: 250, height: 58 }} source={{ uri }} />
                         </BlurView>
                         <Text style={styles.textoPregunta}>
-                            El Graco TravelSystem Remix es porta bebé, asiento y cochecito y puede usarse de 7 formas diferentes con bebés de:
+                        La técnica de pegado de servilletas sobre madera, vidrios y cerámicas se conoce como:
                         </Text>
                     </View>
 
@@ -83,7 +83,7 @@ class TriviaPritt7 extends Component {
                                     { cancelable: false }
                                   )}
                             >
-                            <Text style={styles.blanco}>0-22 Kg</Text>
+                            <Text style={styles.blanco}>Vitrificado</Text>
                         </Button>
 
                         <Button full style={styles.btnB}
@@ -97,7 +97,7 @@ class TriviaPritt7 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-12 Kg</Text>
+                            <Text style={styles.blanco}>Decoupage</Text>
                         </Button>
 
                         <Button full style={styles.btnC}
@@ -111,7 +111,7 @@ class TriviaPritt7 extends Component {
                                     { cancelable: false }
                                   )}
                         >
-                            <Text style={styles.blanco}>0-15Kg</Text>
+                            <Text style={styles.blanco}>Collage</Text>
                         </Button>
                     </View>
                 </Content>
