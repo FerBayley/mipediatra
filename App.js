@@ -885,6 +885,94 @@ import LiliTrivia23 from './Screens/Liliana/LiliTrivia23'
 import LiliTrivia24 from './Screens/Liliana/LiliTrivia24'
 //Liliana ==================================== //
 
+//Pritt ==================================== //
+import TriviaPritt1 from './Screens/Pritt/TriviaPritt1'
+import TriviaPritt2 from './Screens/Pritt/TriviaPritt2'
+import TriviaPritt3 from './Screens/Pritt/TriviaPritt3'
+import TriviaPritt4 from './Screens/Pritt/TriviaPritt4'
+import TriviaPritt5 from './Screens/Pritt/TriviaPritt5'
+import TriviaPritt6 from './Screens/Pritt/TriviaPritt6'
+import TriviaPritt7 from './Screens/Pritt/TriviaPritt7'
+import TriviaPritt8 from './Screens/Pritt/TriviaPritt8'
+import TriviaPritt9 from './Screens/Pritt/TriviaPritt9'
+import TriviaPritt10 from './Screens/Pritt/TriviaPritt10'
+import TriviaPritt11 from './Screens/Pritt/TriviaPritt11'
+import TriviaPritt12 from './Screens/Pritt/TriviaPritt12'
+import TriviaPritt13 from './Screens/Pritt/TriviaPritt13'
+import TriviaPritt14 from './Screens/Pritt/TriviaPritt14'
+import TriviaPritt15 from './Screens/Pritt/TriviaPritt15'
+import TriviaPritt16 from './Screens/Pritt/TriviaPritt16'
+import TriviaPritt17 from './Screens/Pritt/TriviaPritt17'
+import TriviaPritt18 from './Screens/Pritt/TriviaPritt18'
+import TriviaPritt19 from './Screens/Pritt/TriviaPritt19'
+import TriviaPritt20 from './Screens/Pritt/TriviaPritt20'
+import TriviaPritt21 from './Screens/Pritt/TriviaPritt21'
+import TriviaPritt22 from './Screens/Pritt/TriviaPritt22'
+import TriviaPritt23 from './Screens/Pritt/TriviaPritt23'
+import TriviaPritt24 from './Screens/Pritt/TriviaPritt24'
+
+import PrittAddError1 from './Screens/Pritt/PrittAddError1'
+import PrittAddError2 from './Screens/Pritt/PrittAddError2'
+import PrittAddError3 from './Screens/Pritt/PrittAddError3'
+import PrittAddError4 from './Screens/Pritt/PrittAddError4'
+import PrittAddError5 from './Screens/Pritt/PrittAddError5'
+import PrittAddError6 from './Screens/Pritt/PrittAddError6'
+import PrittAddError7 from './Screens/Pritt/PrittAddError7'
+
+import PrittAdd1 from './Screens/Pritt/PrittAdd1'
+import PrittAdd2 from './Screens/Pritt/PrittAdd2'
+import PrittAdd3 from './Screens/Pritt/PrittAdd3'
+import PrittAdd4 from './Screens/Pritt/PrittAdd4'
+import PrittAdd5 from './Screens/Pritt/PrittAdd5'
+import PrittAdd6 from './Screens/Pritt/PrittAdd6'
+import PrittAdd7 from './Screens/Pritt/PrittAdd7'
+import PrittAdd8 from './Screens/Pritt/PrittAdd8'
+import PrittAdd9 from './Screens/Pritt/PrittAdd9'
+import PrittAdd10 from './Screens/Pritt/PrittAdd10'
+import PrittAdd11 from './Screens/Pritt/PrittAdd11'
+import PrittAdd12 from './Screens/Pritt/PrittAdd12'
+import PrittAdd13 from './Screens/Pritt/PrittAdd13'
+import PrittAdd14 from './Screens/Pritt/PrittAdd14'
+import PrittAdd15 from './Screens/Pritt/PrittAdd15'
+import PrittAdd16 from './Screens/Pritt/PrittAdd16'
+import PrittAdd17 from './Screens/Pritt/PrittAdd17'
+import PrittAdd18 from './Screens/Pritt/PrittAdd18'
+import PrittAdd19 from './Screens/Pritt/PrittAdd19'
+import PrittAdd20 from './Screens/Pritt/PrittAdd20'
+import PrittAdd21 from './Screens/Pritt/PrittAdd21'
+import PrittAdd22 from './Screens/Pritt/PrittAdd22'
+import PrittAdd23 from './Screens/Pritt/PrittAdd23'
+import PrittAdd24 from './Screens/Pritt/PrittAdd24'
+
+import PremioPritt from './Screens/Pritt/PremioPritt'
+import PremioPritt4 from './Screens/Pritt/PremioPritt4'
+import PremioPritt7 from './Screens/Pritt/PremioPritt7'
+import PremioPritt10 from './Screens/Pritt/PremioPritt10'
+import PremioPritt13 from './Screens/Pritt/PremioPritt13'
+import PremioPritt16 from './Screens/Pritt/PremioPritt16'
+import PremioPritt19 from './Screens/Pritt/PremioPritt19'
+import PremioPritt22 from './Screens/Pritt/PremioPritt22'
+
+import Pganaste from './Screens/Pritt/Pganaste'
+import Pganaste7 from './Screens/Pritt/Pganaste7'
+import Pganaste10 from './Screens/Pritt/Pganaste10'
+import Pganaste13 from './Screens/Pritt/Pganaste13'
+import Pganaste16 from './Screens/Pritt/Pganaste16'
+import Pganaste19 from './Screens/Pritt/Pganaste19'
+import Pganaste22 from './Screens/Pritt/Pganaste22'
+
+import BrandPritt4 from './Screens/Pritt/Pganaste'
+import BrandPritt7 from './Screens/Pritt/BrandPritt7'
+import BrandPritt10 from './Screens/Pritt/BrandPritt10'
+import BrandPritt13 from './Screens/Pritt/BrandPritt13'
+import BrandPritt16 from './Screens/Pritt/BrandPritt16'
+import BrandPritt19 from './Screens/Pritt/BrandPritt19'
+import BrandPritt22 from './Screens/Pritt/BrandPritt22'
+
+
+
+//Pritt ==================================== //
+
 import Loading from './Screens/Loading'
 import Sign from './Screens/Sign'
 
@@ -898,6 +986,8 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({   
+    BrandScreen: { screen: BrandScreen },
+    
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
@@ -1781,6 +1871,91 @@ const AppNavigator = StackNavigator({
     LiliTrivia23: { screen: LiliTrivia23 },
     LiliTrivia24: { screen: LiliTrivia24 },
     //Liliana ================================ //
+
+
+    //Pritt  ================================ //
+    TriviaPritt1: { screen: LiliTrivia1 },
+    TriviaPritt2: { screen: LiliTrivia2 },
+    TriviaPritt3: { screen: LiliTrivia3 },
+    TriviaPritt4: { screen: LiliTrivia4 },
+    TriviaPritt5: { screen: LiliTrivia5 },
+    TriviaPritt6: { screen: LiliTrivia6 },
+    TriviaPritt7: { screen: LiliTrivia7 },
+    TriviaPritt8: { screen: LiliTrivia8 },
+    TriviaPritt9: { screen: LiliTrivia9 },
+    TriviaPritt10: { screen: LiliTrivia10 },
+    TriviaPritt11: { screen: LiliTrivia11 },
+    TriviaPritt12: { screen: LiliTrivia12 },
+    TriviaPritt13: { screen: LiliTrivia13 },
+    TriviaPritt14: { screen: LiliTrivia14 },
+    TriviaPritt15: { screen: LiliTrivia15 },
+    TriviaPritt16: { screen: LiliTrivia16 },
+    TriviaPritt17: { screen: LiliTrivia17 },
+    TriviaPritt18: { screen: LiliTrivia18 },
+    TriviaPritt19: { screen: LiliTrivia19 },
+    TriviaPritt20: { screen: LiliTrivia20 },
+    TriviaPritt21: { screen: LiliTrivia21 },
+    TriviaPritt22: { screen: LiliTrivia22 },
+    TriviaPritt23: { screen: LiliTrivia23 },
+    TriviaPritt24: { screen: LiliTrivia24 },
+
+    PrittAddError1: { screen: PrittAddError1 },
+    PrittAddError2: { screen: PrittAddError2 },
+    PrittAddError3: { screen: PrittAddError3 },
+    PrittAddError4: { screen: PrittAddError4 },
+    PrittAddError5: { screen: PrittAddError5 },
+    PrittAddError6: { screen: PrittAddError6 },
+    PrittAddError7: { screen: PrittAddError7 },
+
+    PrittAdd1: { screen: LiliTrivia1 },
+    PrittAdd2: { screen: LiliTrivia2 },
+    PrittAdd3: { screen: LiliTrivia3 },
+    PrittAdd4: { screen: LiliTrivia4 },
+    PrittAdd5: { screen: LiliTrivia5 },
+    PrittAdd7: { screen: LiliTrivia6 },
+    PrittAdd8: { screen: LiliTrivia7 },
+    PrittAdd9: { screen: LiliTrivia8 },
+    PrittAdd10: { screen: LiliTrivia9 },
+    PrittAdd11: { screen: LiliTrivia10 },
+    PrittAdd12: { screen: LiliTrivia11 },
+    PrittAdd13: { screen: LiliTrivia12 },
+    PrittAdd14: { screen: LiliTrivia13 },
+    PrittAdd15: { screen: LiliTrivia14 },
+    PrittAdd16: { screen: LiliTrivia15 },
+    PrittAdd17: { screen: LiliTrivia16 },
+    PrittAdd18: { screen: LiliTrivia17 },
+    PrittAdd19: { screen: LiliTrivia18 },
+    PrittAdd20: { screen: LiliTrivia19 },
+    PrittAdd21: { screen: LiliTrivia20 },
+    PrittAdd22: { screen: LiliTrivia21 },
+    PrittAdd23: { screen: LiliTrivia22 },
+    PrittAdd24: { screen: LiliTrivia23 },
+    PrittAdd25: { screen: LiliTrivia24 },
+
+    PremioPritt: { screen: PremioPritt },
+    PremioPritt4: { screen: PremioPritt4 },
+    PremioPritt7: { screen: PremioPritt7 },
+    PremioPritt10: { screen: PremioPritt10 },
+    PremioPritt13: { screen: PremioPritt13 },
+    PremioPritt16: { screen: PremioPritt16 },
+    PremioPritt19: { screen: PremioPritt19 },
+    PremioPritt22: { screen: PremioPritt22 },
+
+    Pganaste: { screen: Pganaste },
+    Pganaste7: { screen: Pganaste7 },
+    Pganaste10: { screen: Pganaste10 },
+    Pganaste13: { screen: Pganaste13 },
+    Pganaste16: { screen: Pganaste16 },
+    Pganaste19: { screen: Pganaste19 },
+    Pganaste22: { screen: Pganaste22 },
+
+    BrandPritt4: { screen: BrandPritt4 },
+    BrandPritt7: { screen: BrandPritt7 },
+    BrandPritt10: { screen: BrandPritt10 },
+    BrandPritt13: { screen: BrandPritt13 },
+    BrandPritt16: { screen: BrandPritt16 },
+    BrandPritt19: { screen: BrandPritt19 },
+    BrandPritt22: { screen: BrandPritt22 },
 
     Loading: { screen: Loading },
     Sign: { screen: Sign },

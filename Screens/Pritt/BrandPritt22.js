@@ -18,7 +18,7 @@ import {
     Share
 } from "react-native";
 
-class BrandScreen extends Component {
+class BrandPritt22 extends Component {
 
     static navigationOptions = {
         header: null,
@@ -38,6 +38,7 @@ class BrandScreen extends Component {
 
         const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
         const estrella = 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg';
+        const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
         const farmx = 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx.png';
         const aulogelio = 'http://ideaswhite.com/mipediatra/clientes/aulo/aulo.png';
         const ewe = 'http://ideaswhite.com/mipediatra/img/ewe-logo.jpg';
@@ -45,8 +46,6 @@ class BrandScreen extends Component {
         const silfab = 'http://ideaswhite.com/mipediatra/img/logo-silfab.png';
         const nuk = 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png';
         const liliana = 'http://ideaswhite.com/mipediatra/clientes/liliana/liliana-logo.png';
-        const pritt = 'http://ideaswhite.com/mipediatra/clientes/pritt/pritt-logo.png';
-        //const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
 
         return (
             <Container style={styles.container}>
@@ -99,18 +98,18 @@ class BrandScreen extends Component {
                             </TouchableOpacity>
                             {/* Trivia Estrella */}       
 
-                            {/* Trivia Pritt */}   
+                            {/* Trivia Gracco */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('null')}>
+                                onPress={() => this.props.navigation.navigate('PremioGraco22')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: pritt }}
+                                            style={{ width: 132, height: 44 }} 
+                                            source={{ uri: graco }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>   
-                            {/* Trivia Pritt */}   
+                            {/* Trivia Gracco */}   
 
                             {/* Trivia Farmx */}
                             <TouchableOpacity style={styles.Farmx}
@@ -357,4 +356,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default BrandScreen;
+export default BrandPritt22;
