@@ -38,7 +38,6 @@ class BrandNuk19 extends Component {
 
         const uri = 'http://ideaswhite.com/mipediatra/img/logo-trivias.png';
         const estrella = 'http://ideaswhite.com/mipediatra/img/estrella-logo.jpg';
-        const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
         const farmx = 'http://ideaswhite.com/mipediatra/clientes/farmx/farmx.png';
         const aulogelio = 'http://ideaswhite.com/mipediatra/clientes/aulo/aulo.png';
         const ewe = 'http://ideaswhite.com/mipediatra/img/ewe-logo.jpg';
@@ -46,6 +45,8 @@ class BrandNuk19 extends Component {
         const silfab = 'http://ideaswhite.com/mipediatra/img/logo-silfab.png';
         const nuk = 'http://ideaswhite.com/mipediatra/clientes/nuk/nuk.png';
         const liliana = 'http://ideaswhite.com/mipediatra/clientes/liliana/liliana-logo.png';
+        const pritt = 'http://ideaswhite.com/mipediatra/clientes/pritt/pritt-logo.png';
+        //const graco = 'http://ideaswhite.com/mipediatra/img/graco-loco.jpg';
 
         return (
             <Container style={styles.container}>
@@ -87,7 +88,7 @@ class BrandNuk19 extends Component {
                         <Col style={{ height: 400 }}>
                             {/* Trivia Estrella */}
                             <TouchableOpacity style={styles.Estrella}
-                                onPress={() => this.props.navigation.navigate('PremioEstrella')}>
+                                onPress={() => this.props.navigation.navigate('PremioEstrella4')}>
                                 {/* Adjust the tint and intensity */}
                                 <BlurView tint="light" intensity={50}>
                                     <Image 
@@ -98,22 +99,22 @@ class BrandNuk19 extends Component {
                             </TouchableOpacity>
                             {/* Trivia Estrella */}       
 
-                            {/* Trivia Gracco */}   
+                            {/* Trivia Pritt */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('PremioGraco')}>
+                                onPress={() => this.props.navigation.navigate('PremioPritt')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 132, height: 44 }} 
-                                            source={{ uri: graco }}
+                                            style={{ width: 158, height: 65 }} 
+                                            source={{ uri: pritt }}
                                          />
                                     </BlurView>
                             </TouchableOpacity>   
-                            {/* Trivia Gracco */}   
+                            {/* Trivia Pritt */}   
 
                             {/* Trivia Farmx */}
                             <TouchableOpacity style={styles.Farmx}
-                                onPress={() => this.props.navigation.navigate('PremioFarmx')}>
+                                onPress={() => this.props.navigation.navigate('PremioFarmx27')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
@@ -154,7 +155,7 @@ class BrandNuk19 extends Component {
                         <Col style={{ height: 400 }}>
                             {/* Trivia Ewe */}
                             <TouchableOpacity style={styles.Ewe}
-                                onPress={() => this.props.navigation.navigate('PremioEwe')}>
+                                onPress={() => this.props.navigation.navigate('PremioEwe4')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
@@ -180,7 +181,7 @@ class BrandNuk19 extends Component {
 
                             {/* Trivia AuloGelio */}   
                             <TouchableOpacity style={styles.AuloGelio}
-                                onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
+                                onPress={() => this.props.navigation.navigate('PremioAulo4')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
@@ -193,7 +194,7 @@ class BrandNuk19 extends Component {
 
                             {/* Trivia Bimbi */}   
                             <TouchableOpacity style={styles.Bimbi}
-                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
+                                onPress={() => this.props.navigation.navigate('PremioBimbi16')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
@@ -285,10 +286,10 @@ const styles = StyleSheet.create({
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 5
+        marginBottom: 2
     },
     Graco: {
-        marginTop: 30,
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
@@ -297,16 +298,16 @@ const styles = StyleSheet.create({
         marginTop: 40,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 5
+        marginBottom: 2
     },
     Farmx: {
-        marginTop: 30,
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
     },
     AuloGelio: {
-        marginTop: 25,
+        marginTop: 35,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5
@@ -325,7 +326,7 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     Silfab: {
-        marginTop: 25,
+        marginTop: 23,
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 5

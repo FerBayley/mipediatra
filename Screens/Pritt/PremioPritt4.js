@@ -32,8 +32,7 @@ class PremioPritt4 extends Component {
 
     render() {
 
-        const logoGraco = '../../assets/images/graco-logopremio.png';
-        const premioGraco = '../../assets/images/sorteo-graco.png';
+        const premioPritt = '../../assets/images/premiopritt.png';
 
         return (
             <Container>
@@ -70,14 +69,8 @@ class PremioPritt4 extends Component {
 
                         <BlurView>
                             <Image
-                                style={{width: 153, height: 62, marginTop: 20}}
-                                source={require( logoGraco )} />
-                        </BlurView>
-
-                        <BlurView>
-                            <Image
-                                style={{width: 310, height: 310, marginTop: 40}}
-                                source={require( premioGraco )} />
+                                style={{width: 97, height: 356, marginTop: 60}}
+                                source={require( premioPritt )} />
                         </BlurView>
                     </View>
                 </Content>

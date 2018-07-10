@@ -131,7 +131,7 @@ class TriviaPritt6 extends Component {
                             <Text style={{ color: 'white' }}>¿COMO JUGAR?</Text>
                         </Button>                       
 
-                        <Button onPress={() => this.props.navigation.navigate('null')}>
+                        <Button onPress={() => this.props.navigation.navigate('BrandPritt16')}>
                             <Text style={{ color: 'white' }}>IR AL INICIO</Text>
                         </Button>
                     </FooterTab>

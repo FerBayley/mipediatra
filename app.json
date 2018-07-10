@@ -6,7 +6,7 @@
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "platforms": ["ios", "android"],
-    "version": "2.2.2",
+    "version": "3.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "facebookScheme": "fb128016374696409",
@@ -15,11 +15,11 @@
       "resizeMode": "cover"
     },
     "ios": {
-      "bundleIdentifier": "com.ideaswhite.mipediatra12"
+      "bundleIdentifier": "com.ideaswhite.mipediatra11"
     },
     "android": {
       "package": "com.ideaswhite.mipediatra",
-      "versionCode": 13
+      "versionCode": 15
     }
   }
 }

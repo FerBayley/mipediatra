@@ -837,11 +837,11 @@ import PremioLiliana19 from './Screens/Liliana/PremioLiliana19'
 import PremioLiliana22 from './Screens/Liliana/PremioLiliana22'
 
 import BrandLiliana7 from './Screens/Liliana/BrandLiliana7'
-import BrandLiliana10 from './Screens/Liliana/PremioLiliana10'
-import BrandLiliana13 from './Screens/Liliana/PremioLiliana13'
-import BrandLiliana16 from './Screens/Liliana/PremioLiliana16'
-import BrandLiliana19 from './Screens/Liliana/PremioLiliana19'
-import BrandLiliana22 from './Screens/Liliana/PremioLiliana22'
+import BrandLiliana10 from './Screens/Liliana/BrandLiliana10'
+import BrandLiliana13 from './Screens/Liliana/BrandLiliana13'
+import BrandLiliana16 from './Screens/Liliana/BrandLiliana16'
+import BrandLiliana19 from './Screens/Liliana/BrandLiliana19'
+import BrandLiliana22 from './Screens/Liliana/BrandLiliana22'
 
 import LiliGanaste from './Screens/Liliana/LiliGanaste'
 
@@ -952,6 +952,8 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({       
+    BrandScreen: { screen: BrandScreen },
+
     LoginScreen: { screen: LoginScreen },
     BrandScreen: { screen: BrandScreen },
     Politicas: { screen: Politicas },
