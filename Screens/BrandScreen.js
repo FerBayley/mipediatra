@@ -92,7 +92,7 @@ class BrandScreen extends Component {
                                 {/* Adjust the tint and intensity */}
                                 <BlurView tint="light" intensity={50}>
                                     <Image 
-                                        style={{ width: 130, height: 42 }} 
+                                        style={{ width: 130, height: 42, marginBottom: 60 }} 
                                         source={{ uri: estrella }}
                                     />
                                 </BlurView>
@@ -110,46 +110,7 @@ class BrandScreen extends Component {
                                          />
                                     </BlurView>
                             </TouchableOpacity>   
-                            {/* Trivia Pritt */}   
-
-                            {/* Trivia Farmx */}
-                            <TouchableOpacity style={styles.Farmx}
-                                onPress={() => this.props.navigation.navigate('PremioFarmx')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 159, height: 66 }} 
-                                            source={{ uri: farmx }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity> 
-                            {/* Trivia Farmx */}    
-
-                            {/* Trivia Nuk */}   
-                            <TouchableOpacity style={styles.Nuk}
-                                onPress={() => this.props.navigation.navigate('PremioNuk')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: nuk }}
-                                        />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Nuk */}
-
-                            {/* Trivia Liliana */}   
-                            <TouchableOpacity style={styles.liliana}
-                                onPress={() => this.props.navigation.navigate('PremioLiliana')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 100, height: 41 }} 
-                                            source={{ uri: liliana }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Liliana */}
+                            {/* Trivia Pritt */}
                         </Col>
 
                         <Col style={{ height: 400 }}>
@@ -159,7 +120,7 @@ class BrandScreen extends Component {
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
-                                            style={{ width: 106, height: 57 }} 
+                                            style={{ width: 106, height: 57, marginBottom: 60 }} 
                                             source={{ uri: ewe }}
                                          />
                                     </BlurView>
@@ -178,32 +139,6 @@ class BrandScreen extends Component {
                                     </BlurView>
                             </TouchableOpacity>  
                             {/* Trivia Silfab */}
-
-                            {/* Trivia AuloGelio */}   
-                            <TouchableOpacity style={styles.AuloGelio}
-                                onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: aulogelio }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia AuloGelio */}
-
-                            {/* Trivia Bimbi */}   
-                            <TouchableOpacity style={styles.Bimbi}
-                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: bimbi }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Bimbi */}
           
                         </Col>
                     </Grid>  
@@ -354,6 +289,9 @@ const styles = StyleSheet.create({
     },
     textoCabezal: {
         color: '#fff'
+    },
+    Griden: {
+        marginTop: 50
     }
 });
 

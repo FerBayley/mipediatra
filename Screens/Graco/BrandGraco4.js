@@ -96,59 +96,20 @@ class BrandGraco4 extends Component {
                                     />
                                 </BlurView>
                             </TouchableOpacity>
-                            {/* Trivia Estrella */}       
+                            {/* Trivia Estrella */}
 
-                            {/* Trivia Gracco */}   
+                            {/* Trivia Pritt */}   
                             <TouchableOpacity style={styles.Graco}
-                                onPress={() => this.props.navigation.navigate('PRemioGraco4')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 132, height: 44 }} 
-                                            source={{ uri: graco }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>   
-                            {/* Trivia Gracco */}   
-
-                            {/* Trivia Farmx */}
-                            <TouchableOpacity style={styles.Farmx}
-                                onPress={() => this.props.navigation.navigate('PremioFarmx')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 159, height: 66 }} 
-                                            source={{ uri: farmx }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity> 
-                            {/* Trivia Farmx */}    
-
-                            {/* Trivia Nuk */}   
-                            <TouchableOpacity style={styles.Nuk}
-                                onPress={() => this.props.navigation.navigate('PremioNuk')}>
+                                onPress={() => this.props.navigation.navigate('PremioPritt')}>
                                     {/* Adjust the tint and intensity */}
                                     <BlurView tint="light" intensity={50}>
                                         <Image 
                                             style={{ width: 158, height: 65 }} 
-                                            source={{ uri: nuk }}
-                                        />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Nuk */}
-
-                            {/* Trivia Liliana */}   
-                            <TouchableOpacity style={styles.liliana}
-                                onPress={() => this.props.navigation.navigate('PremioLiliana')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 100, height: 41 }} 
-                                            source={{ uri: liliana }}
+                                            source={{ uri: pritt }}
                                          />
                                     </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Liliana */}
+                            </TouchableOpacity>   
+                            {/* Trivia Pritt */}
                         </Col>
 
                         <Col style={{ height: 400 }}>
@@ -176,34 +137,7 @@ class BrandGraco4 extends Component {
                                          />
                                     </BlurView>
                             </TouchableOpacity>  
-                            {/* Trivia Silfab */}
-
-                            {/* Trivia AuloGelio */}   
-                            <TouchableOpacity style={styles.AuloGelio}
-                                onPress={() => this.props.navigation.navigate('PremioAuloGelio')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: aulogelio }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia AuloGelio */}
-
-                            {/* Trivia Bimbi */}   
-                            <TouchableOpacity style={styles.Bimbi}
-                                onPress={() => this.props.navigation.navigate('PremioBimbi')}>
-                                    {/* Adjust the tint and intensity */}
-                                    <BlurView tint="light" intensity={50}>
-                                        <Image 
-                                            style={{ width: 158, height: 65 }} 
-                                            source={{ uri: bimbi }}
-                                         />
-                                    </BlurView>
-                            </TouchableOpacity>  
-                            {/* Trivia Bimbi */}
-          
+                            {/* Trivia Silfab */}          
                         </Col>
                     </Grid>  
                     <View style={{ marginBottom: 100 }}></View>  
